@@ -1,4 +1,4 @@
-import { ItemView, normalizePath, setIcon, TFile, type WorkspaceLeaf } from "obsidian";
+import { ItemView, normalizePath, setIcon, TFile, type HoverParent, type HoverPopover, type WorkspaceLeaf } from "obsidian";
 import { raizDe } from "./ajustes";
 import { abrirEntrada, ModalBuscar } from "./buscar";
 import { comunDe, datosIdioma } from "./datos";
@@ -12,7 +12,9 @@ import { t } from "./ui";
 
 export const VISTA_ENCUENTRO = "compendio-srd-encuentro";
 
-export class VistaEncuentro extends ItemView {
+export class VistaEncuentro extends ItemView implements HoverParent {
+	hoverPopover: HoverPopover | null = null;
+
 	constructor(leaf: WorkspaceLeaf, private readonly plugin: CompendioSrd) {
 		super(leaf);
 	}
@@ -139,6 +141,7 @@ export class VistaEncuentro extends ItemView {
 			const nombre = fila.createDiv({ cls: "srd-nombre" });
 			const f = nota(x.clave);
 			const enlace = nombre.createEl("a", { text: e.nombre, cls: "srd-enlace" });
+			if (f) this.vistaPrevia(enlace, f.path);
 			enlace.addEventListener("click", () => {
 				if (f) void this.app.workspace.getLeaf(false).openFile(f);
 				else void abrirEntrada(this.app, this.plugin, x.clave, idioma);
@@ -193,6 +196,7 @@ export class VistaEncuentro extends ItemView {
 				const [texto, titulo] = textos[a];
 				const li = ul.createEl("li", { text: `${texto} ` });
 				const enlace = li.createEl("a", { text: titulo, cls: "srd-enlace" });
+				if (regla && this.app.vault.getAbstractFileByPath(normalizePath(`${regla}.md`))) this.vistaPrevia(enlace, `${regla}#${titulo}`);
 				enlace.addEventListener("click", () => {
 					if (regla && this.app.vault.getAbstractFileByPath(normalizePath(`${regla}.md`))) {
 						void this.app.workspace.openLinkText(`${regla}#${titulo}`, "", false);
@@ -216,6 +220,15 @@ export class VistaEncuentro extends ItemView {
 		boton(ui.vaciar, false, () => {
 			enc.criaturas = [];
 			void this.cambiar();
+		});
+	}
+
+	/** La ventanita de "Vista previa de página" al pasar por un enlace, como en las notas. */
+	private vistaPrevia(el: HTMLElement, linktext: string): void {
+		el.addEventListener("mouseover", (event) => {
+			this.app.workspace.trigger("hover-link", {
+				event, source: VISTA_ENCUENTRO, hoverParent: this, targetEl: el, linktext, sourcePath: "",
+			});
 		});
 	}
 

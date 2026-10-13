@@ -20,6 +20,7 @@ class Plugin {
 		registro.comandos.push(c);
 		return c;
 	}
+	registerHoverLinkSource() {}
 	registerView(tipo) {
 		registro.vistas.push(tipo);
 	}

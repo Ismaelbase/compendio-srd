@@ -15,6 +15,8 @@ export default class CompendioSrd extends Plugin {
 		await this.cargar();
 		const ui = t();
 		this.registerView(VISTA_ENCUENTRO, (leaf) => new VistaEncuentro(leaf, this));
+		// los enlaces del encuentro abren la vista previa al pasar por encima (sin Ctrl, como en el modo lectura)
+		this.registerHoverLinkSource(VISTA_ENCUENTRO, { display: this.manifest.name, defaultMod: false });
 		this.addRibbonIcon("swords", ui.cmdEncuentro, () => void this.abrirEncuentro());
 		this.addCommand({ id: "importar", name: ui.cmdImportar, callback: () => this.abrirImportar() });
 		this.addCommand({ id: "buscar", name: ui.cmdBuscar, callback: () => new ModalBuscar(this.app, this).open() });
