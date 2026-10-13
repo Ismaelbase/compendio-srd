@@ -5,6 +5,7 @@ import { dirname, join } from "node:path";
 import { Generador, rutasPlan, type Nota, type OpcionesNotas } from "../src/notas";
 import { IDIOMAS, SECCIONES, type Idioma } from "../src/tipos";
 import { pruebasEncuentro } from "./encuentro";
+import { pruebasImportar } from "./importar";
 
 const salida = process.argv[2] ?? ".test/boveda";
 let fallos = 0;
@@ -102,6 +103,7 @@ comprobar(generar({ ...base, pies: false, fantasy: true }, ["es", "de"]), "metro
 	comprobar(notas, "solo criaturas en francés");
 }
 fallos += pruebasEncuentro();
+fallos += await pruebasImportar();
 
 console.log(fallos ? `${fallos} fallos` : "todo bien");
 process.exit(fallos ? 1 : 0);

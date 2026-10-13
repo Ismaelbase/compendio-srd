@@ -11,6 +11,7 @@ await esbuild.build({
 	format: "esm",
 	target: "node20",
 	loader: { ".gz": "base64" },
+	alias: { obsidian: "./test/obsidian-falso.ts" },
 	outfile: ".test/run.mjs",
 	logLevel: "warning",
 });

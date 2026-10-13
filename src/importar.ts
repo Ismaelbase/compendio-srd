@@ -60,6 +60,63 @@ function idiomasPresentes(app: App, raiz: string): Idioma[] {
 	return IDIOMAS.filter((l) => app.vault.getAbstractFileByPath(carpetaIdioma(raiz, l)) instanceof TFolder);
 }
 
+export interface Pedido {
+	idiomas: ReadonlySet<Idioma>;
+	secciones: ReadonlySet<Seccion>;
+	sobrescribir: boolean;
+}
+
+export interface Informe {
+	cuenta: Record<Resultado, number>;
+	errores: string[];
+	hechas: number;
+	total: number;
+}
+
+/** Escribe las notas de los idiomas y secciones pedidos. avance() se llama cada 20 notas. */
+export async function importarNotas(
+	app: App,
+	plugin: CompendioSrd,
+	pedido: Pedido,
+	avance: (hechas: number, total: number) => Promise<void> | void,
+	cancelado: () => boolean,
+): Promise<Informe> {
+	const ui = t();
+	const a = plugin.ajustes;
+	const op: OpcionesNotas = { raiz: raizDe(a.carpeta), pies: a.pies, fantasy: a.fantasy, enlazarEstados: a.enlazarEstados };
+	const escritor = new Escritor(app, plugin);
+	const idiomas = IDIOMAS.filter((l) => pedido.idiomas.has(l));
+	const plan = new Set<string>();
+	for (const l of idiomas) for (const r of rutasPlan(l, pedido.secciones, op.raiz)) plan.add(r);
+	const existe = (r: string) => plan.has(r) || escritor.existe(r);
+	const conPie = [...new Set([...idiomas, ...idiomasPresentes(app, op.raiz)])];
+	const rutasDe = new Map(conPie.map((l) => [l, new Generador(l, op, existe).rutas] as const));
+	const total = plan.size;
+	const cuenta: Record<Resultado, number> = { creada: 0, cambiada: 0, igual: 0, saltada: 0 };
+	const errores: string[] = [];
+	let hechas = 0;
+	for (const l of idiomas) {
+		if (cancelado()) break;
+		const otros = conPie.filter((x) => x !== l).map((x) => ({ idioma: x, rutas: rutasDe.get(x) ?? new Map<string, string>() }));
+		const g = new Generador(l, op, existe, otros);
+		for (const n of g.notas(pedido.secciones)) {
+			if (cancelado()) break;
+			try {
+				cuenta[await escritor.escribir(n.ruta, n.contenido, pedido.sobrescribir)]++;
+			} catch (e) {
+				cuenta.saltada++;
+				errores.push(ui.errorEscribir(n.ruta, e instanceof Error ? e.message : String(e)));
+			}
+			hechas++;
+			if (hechas % 20 === 0) await avance(hechas, total);
+			if (hechas % 500 === 0) await plugin.guardar();
+		}
+	}
+	await plugin.guardar();
+	await avance(hechas, total);
+	return { cuenta, errores, hechas, total };
+}
+
 export class ModalImportar extends Modal {
 	private idiomas = new Set<Idioma>();
 	private secciones = new Set<Seccion>(SECCIONES);
@@ -139,8 +196,7 @@ export class ModalImportar extends Modal {
 		this.enMarcha = true;
 		this.cancelado = false;
 		await this.plugin.guardar();
-		const a = this.plugin.ajustes;
-		const op: OpcionesNotas = { raiz: raizDe(a.carpeta), pies: a.pies, fantasy: a.fantasy, enlazarEstados: a.enlazarEstados };
+		const raiz = raizDe(this.plugin.ajustes.carpeta);
 		const el = this.contentEl;
 		el.empty();
 		const estado = el.createEl("p", { text: ui.preparando });
@@ -150,40 +206,16 @@ export class ModalImportar extends Modal {
 		}));
 		await pausa();
 
-		const escritor = new Escritor(this.app, this.plugin);
+		const r = await importarNotas(this.app, this.plugin, {
+			idiomas: this.idiomas, secciones: this.secciones, sobrescribir: this.sobrescribir,
+		}, async (hechas, total) => {
+			barra.max = total;
+			barra.value = hechas;
+			estado.setText(ui.escribiendo(hechas, total));
+			await pausa();
+		}, () => this.cancelado);
+		const { cuenta, errores, hechas } = r;
 		const idiomas = IDIOMAS.filter((l) => this.idiomas.has(l));
-		const plan = new Set<string>();
-		for (const l of idiomas) for (const r of rutasPlan(l, this.secciones, op.raiz)) plan.add(r);
-		const existe = (r: string) => plan.has(r) || escritor.existe(r);
-		const conPie = [...new Set([...idiomas, ...idiomasPresentes(this.app, op.raiz)])];
-		const rutasDe = new Map(conPie.map((l) => [l, new Generador(l, op, existe).rutas] as const));
-		const total = plan.size;
-		barra.max = total;
-		const cuenta: Record<Resultado, number> = { creada: 0, cambiada: 0, igual: 0, saltada: 0 };
-		const errores: string[] = [];
-		let hechas = 0;
-		for (const l of idiomas) {
-			if (this.cancelado) break;
-			const otros = conPie.filter((x) => x !== l).map((x) => ({ idioma: x, rutas: rutasDe.get(x) ?? new Map<string, string>() }));
-			const g = new Generador(l, op, existe, otros);
-			for (const n of g.notas(this.secciones)) {
-				if (this.cancelado) break;
-				try {
-					cuenta[await escritor.escribir(n.ruta, n.contenido, this.sobrescribir)]++;
-				} catch (e) {
-					cuenta.saltada++;
-					errores.push(ui.errorEscribir(n.ruta, e instanceof Error ? e.message : String(e)));
-				}
-				hechas++;
-				if (hechas % 20 === 0) {
-					barra.value = hechas;
-					estado.setText(ui.escribiendo(hechas, total));
-					await pausa();
-				}
-				if (hechas % 500 === 0) await this.plugin.guardar();
-			}
-		}
-		await this.plugin.guardar();
 		this.enMarcha = false;
 		barra.value = hechas;
 		const resumen = ui.resumen(cuenta.creada, cuenta.cambiada, cuenta.igual, cuenta.saltada);
@@ -193,7 +225,7 @@ export class ModalImportar extends Modal {
 		botones.clear();
 		botones.addButton((b) => b.setButtonText(ui.cerrar).setCta().onClick(() => this.close()));
 		new Notice(resumen);
-		const inicio = this.app.vault.getAbstractFileByPath(normalizePath(`${carpetaIdioma(op.raiz, idiomas[0] ?? "es")}/${TEXTOS[idiomas[0] ?? "es"].inicio}.md`));
+		const inicio = this.app.vault.getAbstractFileByPath(normalizePath(`${carpetaIdioma(raiz, idiomas[0] ?? "es")}/${TEXTOS[idiomas[0] ?? "es"].inicio}.md`));
 		if (!this.cancelado && inicio instanceof TFile && cuenta.creada) await this.app.workspace.getLeaf(false).openFile(inicio);
 	}
 }
