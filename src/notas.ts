@@ -1,6 +1,7 @@
 // Las notas de un idioma: rutas, propiedades y texto en Markdown. No usa la API de Obsidian (se prueba en Node).
 import { comunDe, conUnidades, datosComunes, datosIdioma } from "./datos";
 import { bloques, callout, enlace, enLinea, escapar, sinMarcas, type Contexto, type Enlaces } from "./markdown";
+import { disenoFS, nombreDiseno } from "./fantasy";
 import { TEXTOS, type Propiedad, type Textos } from "./textos";
 import {
 	SECCION_DE, type Bloque, type CampoCriatura, type Clase, type ComunConjuro, type ComunCriatura,
@@ -8,9 +9,11 @@ import {
 } from "./tipos";
 
 export interface Nota {
-	/** ruta en la boveda, sin ".md" */
+	/** ruta en la boveda, sin la extension */
 	ruta: string;
 	contenido: string;
+	/** "md" si no se dice otra cosa (el diseño de Fantasy Statblocks va en .json) */
+	ext?: string;
 }
 
 export interface OpcionesNotas {
@@ -304,6 +307,13 @@ export class Generador {
 			if (n) out.push(n);
 		}
 		out.push(...this.indices(secciones), this.inicio(secciones), this.creditos());
+		if (this.op.fantasy && secciones.has("criaturas")) {
+			out.push({
+				ruta: `${carpetaIdioma(this.op.raiz, this.idioma)}/${nombreDiseno(this.idioma)}`,
+				contenido: `${JSON.stringify(disenoFS(this.idioma), null, "\t")}\n`,
+				ext: "json",
+			});
+		}
 		return out;
 	}
 
@@ -484,8 +494,10 @@ export class Generador {
 		const c = e.campos ?? {};
 		const texto = (k: CampoCriatura) => (c[k] ? sinMarcas(c[k] ?? "") : undefined);
 		const md = (bs: Bloque[]) => bloques(bs, { ...ctx, vistos: new Set() }, { titulo: 3 }).join("\n\n");
+		const linea = (k: CampoCriatura) => (c[k] ? enLinea(c[k] ?? "", { ...ctx, vistos: new Set() }) : undefined);
 		const out: [string, Valor][] = [
 			["statblock", true],
+			["layout", nombreDiseno(this.idioma)],
 			["name", e.nombre],
 			["type", e.tipo],
 			["ac", cc.ca],
@@ -494,6 +506,14 @@ export class Generador {
 			["modifier", cc.iniciativa],
 			["speed", texto("vel")],
 			["stats", cc.car],
+			// para el diseño de 2024 (fantasy.ts): cada linea tal cual la ficha
+			["initiative_text", linea("ini")],
+			["hp_text", linea("pg")],
+			["stats_table", e.car?.length ? this.tablaCaracteristicas(e.car) : undefined],
+			["skills_text", linea("hab")],
+			["immunities_text", linea("inm")],
+			["gear", linea("equipo")],
+			["cr_text", linea("vd")],
 		];
 		const salvaciones = (e.car ?? [])
 			.map((x, i) => [x[0], cc.salv[i] ?? 0, cc.mod[i] ?? 0] as const)
@@ -518,8 +538,8 @@ export class Generador {
 		for (const s of e.secciones ?? []) {
 			const k = FS_SECCION[s.clave];
 			if (!k) continue;
-			if (s.clave === "legendarias" && s.intro) out.push(["legendary_description", sinMarcas(s.intro)]);
-			out.push([k, s.items.map((it) => ({ name: it.nombre, desc: md(it.bloques) }))]);
+			if (s.clave === "legendarias" && s.intro) out.push(["legendary_description", enLinea(s.intro, ctx)]);
+			out.push([k, s.items.map((it) => ({ name: `${it.nombre}${this.T.finRasgo}`, desc: md(it.bloques) }))]);
 		}
 		return out;
 	}

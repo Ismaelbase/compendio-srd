@@ -26,6 +26,10 @@ function generar(op: OpcionesNotas, idiomas: readonly Idioma[]): Map<string, str
 		const g = new Generador(l, op, existe, otros);
 		const ns: Nota[] = g.notas(secciones);
 		for (const n of ns) {
+			if (n.ext === "json") {
+				comprobarDiseno(n.ruta, n.contenido);
+				continue;
+			}
 			if (notas.has(n.ruta)) fallo(`ruta repetida ${n.ruta}`);
 			notas.set(n.ruta, n.contenido);
 		}
@@ -35,6 +39,23 @@ function generar(op: OpcionesNotas, idiomas: readonly Idioma[]): Map<string, str
 	}
 	return notas;
 }
+
+/** El diseño de Fantasy Statblocks: lo que pide su "Import From JSON" (name y blocks) y bloques bien formados. */
+function comprobarDiseno(ruta: string, texto: string): void {
+	const d = JSON.parse(texto) as { name?: string; id?: string; blocks?: unknown[] };
+	if (!d.name || !d.id || !Array.isArray(d.blocks)) fallo(`${ruta}: diseño sin name, id o blocks`);
+	const ids = new Set<string>();
+	const ver = (b: Record<string, unknown>) => {
+		if (typeof b.type !== "string" || typeof b.id !== "string" || !Array.isArray(b.properties)) fallo(`${ruta}: bloque mal: ${JSON.stringify(b).slice(0, 80)}`);
+		if (ids.has(b.id as string)) fallo(`${ruta}: id repetido ${String(b.id)}`);
+		ids.add(b.id as string);
+		if ("heading" in b && !b.heading) fallo(`${ruta}: titulo vacio en ${String(b.id)}`);
+		for (const x of (b.nested as Record<string, unknown>[] | undefined) ?? []) ver(x);
+	};
+	for (const b of d.blocks ?? []) ver(b as Record<string, unknown>);
+	disenos++;
+}
+let disenos = 0;
 
 function comprobar(notas: Map<string, string>, etiqueta: string): void {
 	let enlaces = 0;
@@ -92,7 +113,14 @@ for (const [ruta, texto] of todas) {
 }
 console.log(`escritas en ${salida}`);
 
-comprobar(generar({ ...base, pies: false, fantasy: true }, ["es", "de"]), "metros y Fantasy Statblocks");
+{
+	const conFs = generar({ ...base, pies: false, fantasy: true }, ["es", "de"]);
+	comprobar(conFs, "metros y Fantasy Statblocks");
+	// una muestra para mirarla a ojo
+	const aboleth = conFs.get("Compendio SRD/Español/Criaturas/Aboleth");
+	if (aboleth) writeFileSync(".test/muestra-fantasy-aboleth.md", aboleth);
+}
+if (disenos !== 2) fallo(`diseños de Fantasy Statblocks: ${disenos} y no 2`);
 // un idioma solo y solo criaturas: nada puede enlazar a notas que no se escriben
 {
 	const op = { ...base, raiz: "Solo" };

@@ -31,8 +31,8 @@ export class Escritor {
 		}
 	}
 
-	async escribir(ruta: string, contenido: string, sobrescribir: boolean): Promise<Resultado> {
-		const path = normalizePath(`${ruta}.md`);
+	async escribir(ruta: string, contenido: string, sobrescribir: boolean, ext = "md"): Promise<Resultado> {
+		const path = normalizePath(`${ruta}.${ext}`);
 		const huellas = this.plugin.ajustes.huellas;
 		const f = this.app.vault.getAbstractFileByPath(path);
 		if (!f) {
@@ -91,7 +91,7 @@ export async function importarNotas(
 	const existe = (r: string) => plan.has(r) || escritor.existe(r);
 	const conPie = [...new Set([...idiomas, ...idiomasPresentes(app, op.raiz)])];
 	const rutasDe = new Map(conPie.map((l) => [l, new Generador(l, op, existe).rutas] as const));
-	const total = plan.size;
+	const total = plan.size + (op.fantasy && pedido.secciones.has("criaturas") ? idiomas.length : 0);
 	const cuenta: Record<Resultado, number> = { creada: 0, cambiada: 0, igual: 0, saltada: 0 };
 	const errores: string[] = [];
 	let hechas = 0;
@@ -102,7 +102,7 @@ export async function importarNotas(
 		for (const n of g.notas(pedido.secciones)) {
 			if (cancelado()) break;
 			try {
-				cuenta[await escritor.escribir(n.ruta, n.contenido, pedido.sobrescribir)]++;
+				cuenta[await escritor.escribir(n.ruta, n.contenido, pedido.sobrescribir, n.ext)]++;
 			} catch (e) {
 				cuenta.saltada++;
 				errores.push(ui.errorEscribir(n.ruta, e instanceof Error ? e.message : String(e)));
