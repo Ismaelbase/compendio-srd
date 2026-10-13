@@ -54,6 +54,8 @@ function comprobarDiseno(ruta: string, texto: string): void {
 	};
 	for (const b of d.blocks ?? []) ver(b as Record<string, unknown>);
 	disenos++;
+	mkdirSync(".test/disenos", { recursive: true });
+	writeFileSync(`.test/disenos/${d.name ?? "diseño"}.json`, texto);
 }
 let disenos = 0;
 
