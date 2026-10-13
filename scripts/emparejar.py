@@ -19,6 +19,7 @@ import sys
 import unicodedata
 
 from cifras import clave_punto, emparejar_items
+from casa import aplicar_casa
 from corregir import aplicar
 from srd import LANGS
 
@@ -250,6 +251,7 @@ def main():
     err_corr = aplicar(salida, "correcciones_criaturas.json")
     problemas += [f"correccion: {e}" for e in err_corr]
     print(f"{sum(len(r.get('correcciones', [])) for r in salida)} erratas de traduccion corregidas")
+    print("normas de casa:", aplicar_casa(salida))
     # despues de corregir, las cifras de la cabecera de cada idioma tienen que ser las del ingles
     for rec in salida:
         c = rec["comun"]
