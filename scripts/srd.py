@@ -21,22 +21,23 @@ CACHE = os.environ.get("SRD_CACHE", os.path.join(os.environ.get("LOCALAPPDATA", 
                                                   "compendio-srd", "cache"))
 LANGS = ("es", "en", "de", "fr", "it")
 PDFS = {l: f"SRD 5.2.1 {l.upper()} (oficial, CC-BY).pdf" for l in LANGS}
-VERSION_VOLCADO = 1
+VERSION_VOLCADO = 2  # 2: cada tramo lleva tambien su x final (celdas de tabla en una misma linea)
 
 # Primera pagina de cada capitulo, leida en el titulo de capitulo de cada PDF (GillSans-SemiBold 26).
 CAP = {
-    "es": dict(conjuros=114, glosario=194, herramientas=211, objetos=223, monstruos=278, monstruos_az=283,
-               animales=376, fin=398),
-    "en": dict(conjuros=104, glosario=176, herramientas=192, objetos=204, monstruos=254, monstruos_az=258,
-               animales=344, fin=364),
-    "de": dict(conjuros=118, glosario=203, herramientas=222, objetos=236, monstruos=295, monstruos_az=300,
-               animales=392, fin=412),
-    "fr": dict(conjuros=111, glosario=187, herramientas=203, objetos=215, monstruos=267, monstruos_az=272,
-               animales=360, fin=380),
-    "it": dict(conjuros=118, glosario=202, herramientas=220, objetos=232, monstruos=289, monstruos_az=294,
-               animales=385, fin=405),
+    "es": dict(juego=5, creacion=21, clases=32, origenes=89, dotes=94, equipo=97, conjuros=114, glosario=194,
+               herramientas=211, objetos=223, monstruos=278, monstruos_az=283, animales=376, fin=398),
+    "en": dict(juego=5, creacion=19, clases=28, origenes=83, dotes=87, equipo=89, conjuros=104, glosario=176,
+               herramientas=192, objetos=204, monstruos=254, monstruos_az=258, animales=344, fin=364),
+    "de": dict(juego=5, creacion=22, clases=33, origenes=93, dotes=98, equipo=101, conjuros=118, glosario=203,
+               herramientas=222, objetos=236, monstruos=295, monstruos_az=300, animales=392, fin=412),
+    "fr": dict(juego=5, creacion=20, clases=30, origenes=87, dotes=92, equipo=95, conjuros=111, glosario=187,
+               herramientas=203, objetos=215, monstruos=267, monstruos_az=272, animales=360, fin=380),
+    "it": dict(juego=5, creacion=21, clases=32, origenes=93, dotes=98, equipo=101, conjuros=118, glosario=202,
+               herramientas=220, objetos=232, monstruos=289, monstruos_az=294, animales=385, fin=405),
 }
-ORDEN_CAP = ["conjuros", "glosario", "herramientas", "objetos", "monstruos", "monstruos_az", "animales", "fin"]
+ORDEN_CAP = ["juego", "creacion", "clases", "origenes", "dotes", "equipo", "conjuros", "glosario", "herramientas",
+             "objetos", "monstruos", "monstruos_az", "animales", "fin"]
 
 
 def rango(lang, cap):
@@ -92,8 +93,8 @@ def volcar(lang, forzar=False):
                         "x1": round(max(s["bbox"][2] for s in spans), 1),
                         "col": 0 if x0 < W / 2 - 10 else 1,
                         "font": font, "size": size,
-                        "spans": [[s["text"], s["font"], round(s["size"], 1), s["flags"], round(s["bbox"][0], 1)]
-                                  for s in spans],
+                        "spans": [[s["text"], s["font"], round(s["size"], 1), s["flags"], round(s["bbox"][0], 1),
+                                   round(s["bbox"][2], 1)] for s in spans],
                         "t": "".join(s["text"] for s in l["spans"]),
                     }
                     f.write(json.dumps(fila, ensure_ascii=False) + "\n")
