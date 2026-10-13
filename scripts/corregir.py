@@ -71,6 +71,17 @@ def aplicar(registros, fichero):
         if r is None or c["idioma"] not in r:
             errores.append(f"{c['id']} ({c['idioma']}): no existe")
             continue
+        if "insertar" in c:
+            # parrafo que falta en una traduccion: va detras del bloque que empieza por 'tras'
+            bl = r[c["idioma"]]["bloques"]
+            k = next((i for i, b in enumerate(bl) if b.get("txt", "").startswith(c["tras"])), None)
+            if k is None:
+                errores.append(f"{c['id']} ({c['idioma']}): no esta el bloque '{c['tras'][:40]}'")
+                continue
+            bl.insert(k + 1, c["insertar"])
+            r.setdefault("correcciones", []).append({"idioma": c["idioma"], "antes": "",
+                                                     "despues": c["insertar"]["txt"], "por_que": c["por_que"]})
+            continue
         sitios, veces = sitios_de(r[c["idioma"]], c["antes"], c.get("donde"))
         if veces != 1:
             errores.append(f"{c['id']} ({c['idioma']}): '{c['antes']}' sale {veces} veces")

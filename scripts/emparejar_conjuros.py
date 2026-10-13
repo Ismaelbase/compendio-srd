@@ -216,7 +216,7 @@ def construir():
 
 def main():
     salida, problemas = construir()
-    err = aplicar(salida, "correcciones_conjuros.json")
+    err = aplicar(salida, "correcciones_conjuros.json") + aplicar(salida, "correcciones_conjuros_revision.json")
     problemas += [f"correccion: {e}" for e in err]
     print(f"{sum(len(r.get('correcciones', [])) for r in salida)} erratas de traduccion corregidas")
     with open(os.path.join(DATOS, "conjuros.json"), "w", encoding="utf-8", newline="\n") as fh:

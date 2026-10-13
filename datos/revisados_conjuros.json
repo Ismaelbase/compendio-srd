@@ -1,0 +1,809 @@
+{
+ "_que_es": "Diferencias de cifras con el ingles revisadas el 13/10/2026 que NO son errata (numeros con letra, conversiones de unidades, listas en otro orden). comprobar_conjuros.py no las vuelve a avisar.",
+ "revisados": [
+  {
+   "id": "alarm",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«zehn Sekunden» son los 10 segundos del inglés escritos con letra."
+  },
+  {
+   "id": "alarm",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "1,6 km es la conversión alemana de 1 milla; la regla es la misma."
+  },
+  {
+   "id": "animal-messenger",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "37,5 y 75 km son 25 y 50 millas a 1,5 km por milla, y las 25 palabras son las «twenty-five words» en cifra."
+  },
+  {
+   "id": "animal-messenger",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "40 y 80 km son 25 y 50 millas a 1,6 km por milla, «null» es el 0 y las 25 Worte son las veinticinco palabras."
+  },
+  {
+   "id": "arcane-hand",
+   "idioma": "es",
+   "donde": "bloques[4]",
+   "por_que": "«1,5 m × tu modificador» equivale a cinco pies por punto de modificador."
+  },
+  {
+   "id": "arcane-hand",
+   "idioma": "fr",
+   "donde": "bloques[4]",
+   "por_que": "«1,50 m multiplié par votre modificateur» equivale a cinco pies por punto de modificador."
+  },
+  {
+   "id": "awaken",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "«Intelligence inférieure à 4» es lo mismo que 3 o menos."
+  },
+  {
+   "id": "blade-barrier",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Un radio de 9 m es el diámetro de 18 m (60 pies), y «sechs Meter» y 1,5 m son los 20 y 5 pies."
+  },
+  {
+   "id": "blade-barrier",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "6 m y 1,50 m son los 20 y 5 pies dichos una sola vez para las dos formas del muro."
+  },
+  {
+   "id": "clairvoyance",
+   "idioma": "de",
+   "donde": "alcance",
+   "por_que": "1,6 km es la conversión alemana de 1 milla."
+  },
+  {
+   "id": "clone",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "Un cubo de 2,5 cm de lado es la pulgada cúbica."
+  },
+  {
+   "id": "clone",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "16 cm³ es la pulgada cúbica (16,4 cm³)."
+  },
+  {
+   "id": "clone",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "15 cm³ es la pulgada cúbica redondeada."
+  },
+  {
+   "id": "clone",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "Un cubo de 2,5 cm de lado es la pulgada cúbica."
+  },
+  {
+   "id": "commune-with-nature",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "4,8 km son 3 millas a 1,6 km por milla, y 90 m los 300 pies."
+  },
+  {
+   "id": "control-water",
+   "idioma": "es",
+   "donde": "bloques[3]",
+   "por_que": "Es la Inundación, que en español va en otra posición por el orden alfabético; comparada con Flood, 6 m, 6 m y 25 % cuadran."
+  },
+  {
+   "id": "control-water",
+   "idioma": "de",
+   "donde": "bloques[4]",
+   "por_que": "Es la Flut con el párrafo de «el nivel sigue elevado» fundido dentro; 6 m, 6 m y 25 % coinciden con Flood."
+  },
+  {
+   "id": "control-water",
+   "idioma": "de",
+   "donde": "bloques[5]",
+   "por_que": "«15 mal 15 Metern» es el cuadrado de 50 pies; el resto de cifras del remolino cuadran."
+  },
+  {
+   "id": "control-water",
+   "idioma": "fr",
+   "donde": "bloques[2]",
+   "por_que": "Es la Crue, desplazada por el orden alfabético; 6 m, 6 m y 25 % coinciden con Flood."
+  },
+  {
+   "id": "control-water",
+   "idioma": "fr",
+   "donde": "bloques[4]",
+   "por_que": "Es Séparation des eaux, desplazada por el orden alfabético; «un round» es el «next round» de Part Water."
+  },
+  {
+   "id": "control-water",
+   "idioma": "it",
+   "donde": "bloques[2]",
+   "por_que": "Es el Gorgo, desplazado por el orden alfabético; todas sus cifras coinciden con Whirlpool."
+  },
+  {
+   "id": "control-water",
+   "idioma": "it",
+   "donde": "bloques[5]",
+   "por_que": "Es la Inondazione, desplazada por el orden alfabético; 6 m, 6 m y 25 % coinciden con Flood."
+  },
+  {
+   "id": "control-weather",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "8 km son 5 millas a 1,6 km por milla."
+  },
+  {
+   "id": "dream",
+   "idioma": "es",
+   "donde": "bloques[3]",
+   "por_que": "Las 10 palabras son las «ten words» en cifra."
+  },
+  {
+   "id": "elementalism",
+   "idioma": "es",
+   "donde": "bloques[4]",
+   "por_que": "«una taza» es la «1 cup» del inglés."
+  },
+  {
+   "id": "elementalism",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "Es Erde anlocken, que va en otro orden, y 2,3 m² es el cuadrado de 5 pies (1,5 × 1,5 m)."
+  },
+  {
+   "id": "elementalism",
+   "idioma": "de",
+   "donde": "bloques[4]",
+   "por_que": "Es Feuer anlocken, que va en otro orden; el cubo de 1,5 m y «eine Minute» coinciden con Beckon Fire."
+  },
+  {
+   "id": "elementalism",
+   "idioma": "fr",
+   "donde": "bloques[4]",
+   "por_que": "20 cl es la taza («1 cup») pasada a centilitros."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "«cada metro te cuesta 1 m adicional» es la misma regla que el pie extra por pie."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "es",
+   "donde": "bloques[2]",
+   "por_que": "2 de daño por cada 30 cm equivale al doble de los pies desplazados."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "«jeder Meter kostet zwei Meter» es lo mismo que pagar un pie extra por cada pie."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "10 de daño por cada 1,5 m equivale al doble de los pies desplazados."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "fr",
+   "donde": "bloques[2]",
+   "por_que": "2 dégâts por cada 30 cm equivale al doble de los pies desplazados."
+  },
+  {
+   "id": "etherealness",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "«ogni 30 cm costano 30 cm extra» es la regla del pie extra por pie."
+  },
+  {
+   "id": "find-steed",
+   "idioma": "de",
+   "donde": "bloques[5]",
+   "por_que": "La telepatía a 1,6 km es la milla del inglés; el resto del perfil cuadra."
+  },
+  {
+   "id": "fire-storm",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "«10 Cubes» son los «ten Cubes» en cifra."
+  },
+  {
+   "id": "floating-disk",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "La tercera mención de los 20 pies se resume en «dans ce rayon»; la regla es la misma."
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "4000 m² es la conversión real redondeada de 40.000 pies² (unos 3700 m²), igual que hace el español con otras superficies; el alto de 9 m cuadra."
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "3.600 m² son los 40.000 pies² a la escala de 1,5 m por casilla."
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "3 600 m² son los 40.000 pies² a la escala de 1,5 m por casilla."
+  },
+  {
+   "id": "forcecage",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "1,25 cm es la media pulgada de barrote y de hueco."
+  },
+  {
+   "id": "forcecage",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«einem Zentimeter» redondea la media pulgada (1,27 cm); no cambia nada en mesa."
+  },
+  {
+   "id": "forcecage",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "1,25 cm y «espacés d’autant» son la media pulgada de barrote y de hueco."
+  },
+  {
+   "id": "forcecage",
+   "idioma": "it",
+   "donde": "bloques[1]",
+   "por_que": "1,25 cm es la media pulgada de barrote y de hueco."
+  },
+  {
+   "id": "giant-insect",
+   "idioma": "de",
+   "donde": "bloques[3]",
+   "por_que": "«ab dem 5.» equivale a «above 4»."
+  },
+  {
+   "id": "globe-of-invulnerability",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "«einen Grad» es el nivel 1 escrito con letra."
+  },
+  {
+   "id": "globe-of-invulnerability",
+   "idioma": "fr",
+   "donde": "bloques[2]",
+   "por_que": "«d’un niveau de plus» es el nivel 1 escrito con letra."
+  },
+  {
+   "id": "glyph-of-warding",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Un radio de 1,5 m es el diámetro de 10 pies, y «drei Meter» son los 10 pies del traslado."
+  },
+  {
+   "id": "goodberry",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "Diez bayas, 1 punto de golpe y un día coinciden; solo cambia cómo se escriben."
+  },
+  {
+   "id": "goodberry",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "Diez bayas, 1 punto de golpe y una jornada coinciden; solo cambia cómo se escriben."
+  },
+  {
+   "id": "guards-and-wards",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "250 m² es la conversión redondeada de 2.500 pies²; las tres formas (15 m, cien de 1,5 m y veinticinco de 3 m) cuadran."
+  },
+  {
+   "id": "guards-and-wards",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "225 m² son los 2.500 pies² a la escala de 1,5 m, y el 25 es el «twenty-five»."
+  },
+  {
+   "id": "guards-and-wards",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "225 m² son los 2.500 pies² a la escala de 1,5 m."
+  },
+  {
+   "id": "gust-of-wind",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "«2 m por cada metro» es la misma proporción que 2 pies por pie."
+  },
+  {
+   "id": "gust-of-wind",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«zwei Meter für jeden Meter» es la misma proporción que 2 pies por pie."
+  },
+  {
+   "id": "gust-of-wind",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "«le double du déplacement» es la misma proporción que 2 pies por pie."
+  },
+  {
+   "id": "imprisonment",
+   "idioma": "de",
+   "donde": "bloques[7]",
+   "por_que": "«zehn Jahre» es la década del inglés."
+  },
+  {
+   "id": "imprisonment",
+   "idioma": "it",
+   "donde": "bloques[7]",
+   "por_que": "«dieci anni» es la década del inglés."
+  },
+  {
+   "id": "locate-animals-or-plants",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "8 km son 5 millas a 1,6 km por milla."
+  },
+  {
+   "id": "magic-mouth",
+   "idioma": "fr",
+   "donde": "bloques[2]",
+   "por_que": "La tercera mención de los 30 pies se dice «dans ce même rayon»; la regla es la misma."
+  },
+  {
+   "id": "magic-mouth",
+   "idioma": "it",
+   "donde": "bloques[2]",
+   "por_que": "Las dos condiciones del ejemplo comparten un solo «entro 9 metri»; la regla es la misma."
+  },
+  {
+   "id": "magic-weapon",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "«3e, 4e ou 5e niveau» es el nivel 3 a 5 del inglés."
+  },
+  {
+   "id": "meteor-swarm",
+   "idioma": "de",
+   "donde": "alcance",
+   "por_que": "1,6 km es la conversión alemana de 1 milla."
+  },
+  {
+   "id": "mirage-arcane",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "2,6 km² es la milla cuadrada."
+  },
+  {
+   "id": "mirror-image",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "«tira 1d6» por cada duplicado es el «roll a d6»; misma regla."
+  },
+  {
+   "id": "mirror-image",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«mit einem 1W6» por cada duplicado es el «roll a d6»; misma regla."
+  },
+  {
+   "id": "mirror-image",
+   "idioma": "it",
+   "donde": "bloques[1]",
+   "por_que": "El d6 por duplicado, el 3 o más y los tres duplicados coinciden."
+  },
+  {
+   "id": "pass-without-trace",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "El francés repite el radio de 9 m al nombrar a las criaturas elegidas; es la misma aura."
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "20 km/h es la conversión redondeada de 13 millas por hora; los 30 m son los 100 pies."
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "20,8 km son 13 millas a 1,6 km por milla."
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "19,5 km son 13 millas a 1,5 km por milla."
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "it",
+   "donde": "bloques[1]",
+   "por_que": "20 km es la conversión redondeada de 13 millas."
+  },
+  {
+   "id": "plant-growth",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "«4 m por cada metro» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "plant-growth",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«vier Meter für jeden Meter» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "plant-growth",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "0,8 km es la media milla a 1,6 km por milla."
+  },
+  {
+   "id": "plant-growth",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "«le quadruple de déplacement» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "es",
+   "donde": "bloques[4]",
+   "por_que": "Es Limpiar o ensuciar, en otro orden, y 0,03 m³ es el pie cúbico."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "es",
+   "donde": "bloques[5]",
+   "por_que": "Es Sensación menor, en otro orden; 0,03 m³ es el pie cúbico y dura 1 hora."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "de",
+   "donde": "bloques[3]",
+   "por_que": "Es la sensación menor, en otro orden; el cubo de 30 cm de arista es el pie cúbico y dura una hora."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "de",
+   "donde": "bloques[4]",
+   "por_que": "Es Sauber oder schmutzig, en otro orden; el cubo de 30 cm de arista es el pie cúbico."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "fr",
+   "donde": "bloques[3]",
+   "por_que": "Es Sensation mineure, en otro orden; 30 litros (0,03 m³) es el pie cúbico y dura 1 hora."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "fr",
+   "donde": "bloques[4]",
+   "por_que": "Es Nettoyage ou maculage, en otro orden; 30 litros (0,03 m³) es el pie cúbico."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "it",
+   "donde": "bloques[3]",
+   "por_que": "Es Lieve sensazione, en otro orden; el cubo de 30 cm de arista es el pie cúbico y dura 1 hora."
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "it",
+   "donde": "bloques[4]",
+   "por_que": "Es Pulire o sporcare, en otro orden; el cubo de 30 cm de arista es el pie cúbico."
+  },
+  {
+   "id": "prismatic-spray",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "«1/2 dégâts» es «Half as much damage»; las demás cifras coinciden."
+  },
+  {
+   "id": "prismatic-wall",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "La esfera de radio 4,5 m es el diámetro de 30 pies, y «neun Meter» y 2,5 cm son los 30 pies y la pulgada."
+  },
+  {
+   "id": "prismatic-wall",
+   "idioma": "fr",
+   "donde": "bloques[4]",
+   "por_que": "«1/2 dégâts» es la mitad del daño; los umbrales de 25 y 60 coinciden."
+  },
+  {
+   "id": "project-image",
+   "idioma": "de",
+   "donde": "alcance",
+   "por_que": "800 km son 500 millas a 1,6 km por milla."
+  },
+  {
+   "id": "project-image",
+   "idioma": "it",
+   "donde": "alcance",
+   "por_que": "800 km son 500 millas a 1,6 km por milla."
+  },
+  {
+   "id": "raise-dead",
+   "idioma": "es",
+   "donde": "bloques[3]",
+   "por_que": "«hasta desaparecer» es el «until it becomes 0»."
+  },
+  {
+   "id": "resurrection",
+   "idioma": "es",
+   "donde": "bloques[2]",
+   "por_que": "«hasta desaparecer» es el «until it becomes 0»."
+  },
+  {
+   "id": "rope-trick",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "«einen Meter mal 1,5 Meter» es el portal de 3 por 5 pies."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "0,34 m³ son los 12 pies cúbicos (90 × 60 × 60 cm)."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "de",
+   "donde": "comp",
+   "por_que": "90 × 60 × 60 cm son los 3 × 2 × 2 pies."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "324 litros son 90 × 60 × 60 cm, los 12 pies cúbicos."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "«fünf Prozent» es el 5 %."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "fr",
+   "donde": "comp",
+   "por_que": "«90 cm par 60 et 60» son los 3 × 2 × 2 pies."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "0,3 m³ son los 12 pies cúbicos (90 × 60 × 60 cm)."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "it",
+   "donde": "comp",
+   "por_que": "90 × 60 × 60 cm son los 3 × 2 × 2 pies."
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "«12 cubi con spigolo di 30 centimetri» son los 12 pies cúbicos."
+  },
+  {
+   "id": "sending",
+   "idioma": "de",
+   "donde": "bloques[1]",
+   "por_que": "«fünf Prozent» es el 5 %."
+  },
+  {
+   "id": "sequester",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "1,6 km es la conversión alemana de 1 milla."
+  },
+  {
+   "id": "sorcerous-burst",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "«en lancer un autre» es el «roll another d8»; el 8 en el d8 está."
+  },
+  {
+   "id": "speak-with-plants",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "«depuis un jour» es el «within the past day»."
+  },
+  {
+   "id": "storm-of-vengeance",
+   "idioma": "de",
+   "donde": "alcance",
+   "por_que": "1,6 km es la conversión alemana de 1 milla."
+  },
+  {
+   "id": "summon-dragon",
+   "idioma": "de",
+   "donde": "bloques[3]",
+   "por_que": "«ab dem 6.» equivale a «above 5»."
+  },
+  {
+   "id": "summon-dragon",
+   "idioma": "fr",
+   "donde": "bloques[3]",
+   "por_que": "«1/2 dégâts» es el «Half damage»; el resto del perfil coincide."
+  },
+  {
+   "id": "symbol",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Un radio de 1,5 m es el diámetro de 10 pies, y «drei Meter» son los 10 pies del traslado."
+  },
+  {
+   "id": "teleport",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "«1-100» es el «01-00» del d100; las franjas coinciden."
+  },
+  {
+   "id": "teleport",
+   "idioma": "de",
+   "donde": "bloques[12]",
+   "por_que": "«2W12 mal 1,6 Kilometern» son las 2d12 millas."
+  },
+  {
+   "id": "tsunami",
+   "idioma": "de",
+   "donde": "alcance",
+   "por_que": "1,6 km es la conversión alemana de 1 milla."
+  },
+  {
+   "id": "vitriolic-sphere",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Una bola de 15 cm de radio es el pie de diámetro, y «sechs Metern» son los 20 pies."
+  },
+  {
+   "id": "wall-of-fire",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Un radio de 3 m es el diámetro de 20 pies; altura y grosor (6 m y 30 cm) se dicen una vez para las dos formas."
+  },
+  {
+   "id": "wall-of-fire",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "Altura y grosor se dicen una vez para las dos formas; las cifras cuadran."
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "Los 10 paneles son los «ten panels» y 6 mm es el cuarto de pulgada."
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "«zehn Platten mit je drei Metern» son los diez paneles de 10 × 10 pies y «einen halben Zentimeter» redondea el cuarto de pulgada."
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "«dix pans de 3 m sur 3» son los diez paneles de 10 × 10 pies y 6 mm es el cuarto de pulgada."
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "«dieci pannelli quadrati con lato di 3 metri» y 0,6 cm cuadran con el inglés."
+  },
+  {
+   "id": "wall-of-ice",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "Los 10 paneles son los «ten panels»."
+  },
+  {
+   "id": "wall-of-ice",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "«dix pans de 3 m sur 3» son los diez paneles de 10 pies de lado."
+  },
+  {
+   "id": "wall-of-stone",
+   "idioma": "es",
+   "donde": "bloques[0]",
+   "por_que": "Los 10 paneles son los «ten panels»; las demás medidas cuadran."
+  },
+  {
+   "id": "wall-of-stone",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "«drei Meter mal sechs Meter» son los paneles de 10 × 20 pies; el resto cuadra."
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "es",
+   "donde": "bloques[2]",
+   "por_que": "«4 m por cada metro» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "Un radio de 3 m es el diámetro de 20 pies, y «sechs Meter» son los 20 pies de alto."
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "de",
+   "donde": "bloques[2]",
+   "por_que": "«vier Meter für jeden Meter» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "Las cifras (18 m, 3 m, 1,50 m y 6 m) cuadran; la frase dice una vez el grosor común a las dos formas."
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "fr",
+   "donde": "bloques[2]",
+   "por_que": "«le quadruple en termes de déplacement» es la proporción de 4 pies por pie."
+  },
+  {
+   "id": "wind-walk",
+   "idioma": "es",
+   "donde": "bloques[1]",
+   "por_que": "El segundo minuto se dice «ese minuto»; la regla es la misma."
+  },
+  {
+   "id": "wind-walk",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "«zehn», «eine Minute» y «einminütigen» son las cifras del inglés con letra, y 90 m son los 300 pies."
+  },
+  {
+   "id": "wind-walk",
+   "idioma": "fr",
+   "donde": "bloques[1]",
+   "por_que": "El segundo «1 minute» se dice «cette minute»; la regla es la misma."
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "ya corregida (cualquier forma); 40.000 pies cuadrados pasados a 3.600 m2"
+  },
+  {
+   "id": "guards-and-wards",
+   "idioma": "fr",
+   "donde": "bloques[0]",
+   "por_que": "ya corregida (contigus); 2.500 pies cuadrados pasados a 225 m2"
+  },
+  {
+   "id": "thaumaturgy",
+   "idioma": "de",
+   "donde": "bloques[0]",
+   "por_que": "ya corregida; einminütigen (de un minuto) con letra"
+  },
+  {
+   "id": "wall-of-stone",
+   "idioma": "it",
+   "donde": "bloques[0]",
+   "por_que": "ya corregida (dieci); 3 pulgadas redondeadas a 8 cm"
+  }
+ ]
+}

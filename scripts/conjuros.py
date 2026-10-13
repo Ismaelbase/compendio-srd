@@ -53,9 +53,9 @@ def es_nombre(r):
            (r["font"] == "GillSans-SemiBold-SC700" and r["size"] > 8)
 
 
-def cortar(lang):
-    """Entradas de conjuro: nombre en GillSans-SemiBold 12 seguido de la linea en Cambria-Italic."""
-    p0, p1 = rango(lang, "conjuros")
+def cortar(lang, cap="conjuros"):
+    """Entradas de conjuro (u objeto magico): nombre en GillSans-SemiBold 12 seguido de la linea en Cambria-Italic."""
+    p0, p1 = rango(lang, cap)
     rows = en_paginas(lang, p0, p1)
     out, cur, i = [], None, 0
     while i < len(rows):
@@ -133,14 +133,30 @@ def celdas_tabla(lineas):
         else:
             grupos.append([x])
     anclas = [g[0] for g in grupos] or [0]
+    # columnas de la cabecera (una fila por celda): si el cuerpo da mas columnas que la cabecera, las celdas
+    # van centradas (la tabla del pergamino de conjuro inglesa: "Cantrip" y "1" no empiezan en la misma x) y
+    # cada celda se lleva a la columna de cabecera mas cercana
+    rangos = []
+    for r in sorted(cab, key=lambda r: r["x"]):
+        a, b = dx(r), r["x1"] - BASE_X[r["col"]]
+        for rg in rangos:
+            if a <= rg[1] and b >= rg[0]:
+                rg[0], rg[1] = min(rg[0], a), max(rg[1], b)
+                break
+        else:
+            rangos.append([a, b])
+    por_cabecera = cab and 1 < len(rangos) < len(anclas)
 
-    def col(x):
+    def col(x, x1=None):
+        if por_cabecera:
+            c = (x + (x1 if x1 is not None else x)) / 2
+            return min(range(len(rangos)), key=lambda k: abs((rangos[k][0] + rangos[k][1]) / 2 - c))
         for k, g in enumerate(grupos):
             if g[0] - 0.5 <= x <= g[-1] + 0.5:
                 return k
         return min(range(len(anclas)), key=lambda k: abs(anclas[k] - x))
 
-    ncol = len(anclas)
+    ncol = len(rangos) if por_cabecera else len(anclas)
     piezas = []
     for r in cab:
         for sp in r["spans"]:
@@ -162,7 +178,7 @@ def celdas_tabla(lineas):
         visuales[key].append(r)
     for key in orden:
         vs = visuales[key]
-        cols = [col(dx(r)) for r in vs]
+        cols = [col(dx(r), r["x1"] - BASE_X[r["col"]]) for r in vs]
         nueva = 0 in cols and (not filas_t or prev is None or key[:2] != prev[:2] or key[2] - prev[2] > 13.5)
         if nueva or not filas_t:
             filas_t.append([[] for _ in range(ncol)])
@@ -292,8 +308,14 @@ def cuerpo(lang, fs):
     def cerrar_ficha():
         nonlocal ficha
         if ficha:
-            bloques.append(estructurar_ficha(lang, ficha["nombre"], ficha["filas"]))
+            bloques.append(dict(estructurar_ficha(lang, ficha["nombre"], ficha["filas"]), _filas=ficha["filas"]))
         ficha = None
+
+    def es_de_ficha(r):
+        return r["font"].startswith("Optima") or (r["font"] == "GillSans" and abs(r["size"] - 12.0) < 0.05) or \
+            (r["font"].startswith("GillSans") and (abs(r["size"] - 6.0) < 0.05 or abs(r["size"] - 9.8) < 0.1))
+
+    nota = []
 
     for r in fs:
         f, sz, t = r["font"], r["size"], r["t"]
@@ -354,8 +376,29 @@ def cuerpo(lang, fs):
             sigue_rotulo = "Cambria-BoldItalic" in spf
             continue
         cerrar_par()
+        previa = next((b for b in reversed(bloques) if b["t"] == "ficha"), None)
+        if previa is not None and es_de_ficha(r):
+            # el resto de una ficha que la maqueta puso despues de otros parrafos (el avatar de la muerte de la
+            # baraja italiana): se junta con su ficha
+            previa["_filas"].append(r)
+            previa["_rehacer"] = True
+            continue
+        if f.startswith("GillSans") and abs(sz - 8.0) < 0.05:
+            # nota al pie de una tabla ("*Stat blocks for these creatures...")
+            if bloques and bloques[-1]["t"] == "nota":
+                bloques[-1]["_lineas"].append(t)
+            else:
+                bloques.append({"t": "nota", "_lineas": [t]})
+            continue
         bloques.append({"t": "otro", "txt": limpia(t), "font": f, "size": sz})
     cerrar_par(); cerrar_tabla(); cerrar_ficha()
+    for k, b in enumerate(bloques):
+        if b["t"] == "ficha":
+            filas_f = b.pop("_filas")
+            if b.pop("_rehacer", False):
+                bloques[k] = estructurar_ficha(lang, b["nombre"], filas_f)
+        elif b["t"] == "nota":
+            b["txt"] = une(b.pop("_lineas"))
     juntos = []
     for b in bloques:
         if b["t"] == "tabla" and juntos and juntos[-1]["t"] == "tabla" and juntos[-1]["filas"] and b["filas"] \

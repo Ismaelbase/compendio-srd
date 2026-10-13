@@ -115,11 +115,51 @@ def filas(lang):
                 if r["size"] == 11.0 and r["font"].startswith("GillSans"):
                     continue
                 rows.append(r)
+        _tablas_anchas(rows)
         rows.sort(key=lambda r: (r["p"], r["col"], r["yb"], r["x"]))
         for i, r in enumerate(rows):
             r["i"] = i
         _cache[lang] = rows
     return _cache[lang]
+
+
+def _es_tabla(r):
+    return r["font"].startswith("GillSans") and (abs(r["size"] - 9.2) < 0.05 or abs(r["size"] - 9.5) < 0.05)
+
+
+def _tablas_anchas(rows):
+    """Tablas que ocupan las dos columnas (la de palancas del aparato del crustaceo): sus celdas de la derecha
+    caen en la columna 1 y el orden de lectura las separaria de su fila. Si una fila de cabecera de tabla de la
+    columna 1 esta a la misma altura que otra de la columna 0, las filas de tabla de la columna 1 que siguen a
+    la misma altura que las de la izquierda pasan a la columna 0."""
+    por_pagina = {}
+    for r in rows:
+        por_pagina.setdefault(r["p"], []).append(r)
+    for p, rs in por_pagina.items():
+        cab0 = [r for r in rs if r["col"] == 0 and r["font"] == "GillSans-SemiBold" and abs(r["size"] - 9.2) < 0.05]
+        cab1 = [r for r in rs if r["col"] == 1 and r["font"] == "GillSans-SemiBold" and abs(r["size"] - 9.2) < 0.05]
+        for c1 in cab1:
+            c0 = next((c for c in cab0 if abs(c["yb"] - c1["yb"]) < 1.0), None)
+            if c0 is None:
+                continue
+            # alto de la tabla en la columna 0: filas de tabla seguidas desde la cabecera
+            izq = sorted((r for r in rs if r["col"] == 0 and _es_tabla(r) and r["yb"] >= c0["yb"] - 0.5),
+                         key=lambda r: r["yb"])
+            fin, prev = c0["yb"], c0["yb"]
+            for r in izq:
+                if r["yb"] - prev > 30:
+                    break
+                fin = prev = r["yb"]
+            # una tabla ancha de verdad pasa el margen de la columna izquierda (el texto normal acaba hacia x=299);
+            # dos tablas distintas, una en cada columna y a la misma altura, no
+            if max((r["x1"] for r in izq if r["yb"] <= fin + 0.5), default=0) <= 302:
+                continue
+            alturas = {round(r["yb"]) for r in izq if r["yb"] <= fin + 0.5}
+            for r in rs:
+                if r["col"] == 1 and _es_tabla(r) and c1["yb"] - 0.5 <= r["yb"] <= fin + 13 and \
+                        (round(r["yb"]) in alturas or any(abs(r["yb"] - a) < 14 for a in alturas)):
+                    r["col"] = 0
+                    r["_ancha"] = True
 
 
 def limpia(t):

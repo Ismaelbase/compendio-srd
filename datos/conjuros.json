@@ -7066,12 +7066,20 @@
     },
     {
      "t": "p",
-     "txt": "<b>Utilizzo di uno slot incantesimo di livello superiore.</b> I danni aumentano di 1d8 per ogni slot di livello superiore al 4º.",
+     "txt": "<b>Utilizzo di uno slot incantesimo di livello superiore.</b> I danni aumentano di 1d8 per ogni slot di livello superiore al 5º.",
      "lead": "Utilizzo di uno slot incantesimo di livello superiore",
      "sup": "nivel"
     }
    ]
-  }
+  },
+  "correcciones": [
+   {
+    "idioma": "it",
+    "antes": "slot di livello superiore al 4º",
+    "despues": "slot di livello superiore al 5º",
+    "por_que": "Nube mortale es de nivel 5 y el italiano suma 1d8 por cada nivel por encima del 4º, así que ya daría el dado extra con un espacio de nivel 5; el PDF oficial trae el mismo fallo."
+   }
+  ]
  },
  {
   "id": "color-spray",
@@ -8929,7 +8937,7 @@
     },
     {
      "t": "p",
-     "txt": "<b>Utilizzo di uno slot incantesimo di livello superiore.</b> I danni aumentano di 1d8 per ogni slot di livello superiore al 4º.",
+     "txt": "<b>Utilizzo di uno slot incantesimo di livello superiore.</b> I danni aumentano di 1d8 per ogni slot di livello superiore al 5º.",
      "lead": "Utilizzo di uno slot incantesimo di livello superiore",
      "sup": "nivel"
     }
@@ -8941,6 +8949,12 @@
     "antes": "On failed save,",
     "despues": "On a failed save,",
     "por_que": "Falta el articulo: la errata esta tambien en el SRD 5.2.1 EN (pag. 118, unica vez que aparece On failed save); la formula del SRD es On a failed save, como dos frases despues en el mismo parrafo."
+   },
+   {
+    "idioma": "it",
+    "antes": "slot di livello superiore al 4º",
+    "despues": "slot di livello superiore al 5º",
+    "por_que": "Evoca elementale es de nivel 5 y el italiano suma 1d8 por cada nivel por encima del 4º, así que ya daría el dado extra con un espacio de nivel 5; el PDF oficial trae el mismo fallo."
    }
   ]
  },
@@ -19511,7 +19525,7 @@
    "bloques": [
     {
      "t": "p",
-     "txt": "Una tormenta de llamas aparece dentro del alcance. El área de la tormenta consta de hasta diez cubos de 3 m de lado que puedes disponer según desees, cada uno de los cuales debe estar adyacente al menos a otro. Todas las criaturas situadas en la zona de 4,5 m deberán realizar una tirada de salvación de Destreza; sufrirán 7d10 de daño de fuego si la fallan o la mitad del daño si la superan."
+     "txt": "Una tormenta de llamas aparece dentro del alcance. El área de la tormenta consta de hasta diez cubos de 3 m de lado que puedes disponer según desees, cada uno de los cuales debe estar adyacente al menos a otro. Todas las criaturas situadas en la zona deberán realizar una tirada de salvación de Destreza; sufrirán 7d10 de daño de fuego si la fallan o la mitad del daño si la superan."
     },
     {
      "t": "p",
@@ -19594,7 +19608,15 @@
      "txt": "Gli oggetti infiammabili nell'area che non sono indossati o trasportati iniziano a bruciare."
     }
    ]
-  }
+  },
+  "correcciones": [
+   {
+    "idioma": "es",
+    "antes": "situadas en la zona de 4,5 m",
+    "despues": "situadas en la zona",
+    "por_que": "El español añade «la zona de 4,5 m», una medida que no existe en el conjuro: en inglés salvan todas las criaturas del área formada por los cubos; el PDF oficial trae el mismo fallo."
+   }
+  ]
  },
  {
   "id": "flame-blade",
@@ -20732,7 +20754,7 @@
    "bloques": [
     {
      "t": "p",
-     "txt": "L'incantatore crea una difesa contro i viaggi magici che protegge un'area quadrata di terreno con lato di 60 metri e un'altezza di massimo 9 metri. Per la durata dell'incantesimo, per entrare in tale area le creature non possono utilizzare teletrasporto o portali, come quelli creati dall'incantesimo <i>portale</i>. L'incantesimo protegge l'area dai viaggi planari, impedendo perciò alle creature di accedervi tramite il Piano Astrale, il Piano Etereo, la Selva Fatata, la Coltre Oscura e l'incantesimo <i>spostamento planare</i>."
+     "txt": "L'incantatore crea una difesa contro i viaggi magici che protegge un'area di terreno di massimo 3.600 metri quadrati e un'altezza di massimo 9 metri. Per la durata dell'incantesimo, per entrare in tale area le creature non possono utilizzare teletrasporto o portali, come quelli creati dall'incantesimo <i>portale</i>. L'incantesimo protegge l'area dai viaggi planari, impedendo perciò alle creature di accedervi tramite il Piano Astrale, il Piano Etereo, la Selva Fatata, la Coltre Oscura e l'incantesimo <i>spostamento planare</i>."
     },
     {
      "t": "p",
@@ -20760,6 +20782,12 @@
     "antes": "bis zu 3.700 Quadratmetern",
     "despues": "bis zu 3.600 Quadratmetern",
     "por_que": "40.000 pies cuadrados son 200 por 200 pies, que en la escala alemana son 60 por 60 metros: 3.600 metros cuadrados, no 3.700. La carta alemana protege unos 100 metros cuadrados más, casi una sala entera; Wächter und Hüter sí usa la escala (2.500 pies cuadrados = 225 metros cuadrados)."
+   },
+   {
+    "idioma": "it",
+    "antes": "protegge un'area quadrata di terreno con lato di 60 metri",
+    "despues": "protegge un'area di terreno di massimo 3.600 metri quadrati",
+    "por_que": "El italiano obliga a un cuadrado de 60 m de lado, cuando el inglés deja dar cualquier forma a hasta 40.000 pies² de suelo (3.600 m²); el PDF oficial lo trae así."
    }
   ]
  },
@@ -24020,7 +24048,7 @@
    "bloques": [
     {
      "t": "p",
-     "txt": "Vous créez une barrière qui protège un espace au sol d’une surface maximale de 225 mètres carrés. La zone protégée peut atteindre 6 m de haut et se présenter comme une zone carrée de 15 m de côté, cent carrés de 1,50 m de côté ou vingt-cinq carrés contigus de 3 m de côté."
+     "txt": "Vous créez une barrière qui protège un espace au sol d’une surface maximale de 225 mètres carrés. La zone protégée peut atteindre 6 m de haut et se présenter comme une zone carrée de 15 m de côté, cent carrés contigus de 1,50 m de côté ou vingt-cinq carrés contigus de 3 m de côté."
     },
     {
      "t": "p",
@@ -24141,6 +24169,12 @@
     "antes": "<i>Netz</i>",
     "despues": "<i>Spinnennetz</i>",
     "por_que": "El conjuro Web se llama \"Spinnennetz\" en su propia carta (web) y en el titulo y las listas de clase del SRD DE; \"Netz\" solo aparece en este parrafo del SRD (pag. 193), que es incoherente con su propio titulo (y \"Netz\" es ademas el arma de ese nombre)."
+   },
+   {
+    "idioma": "fr",
+    "antes": "cent carrés de 1,50 m de côté",
+    "despues": "cent carrés contigus de 1,50 m de côté",
+    "por_que": "Los 225 m² cuadran, pero el francés no exige que los cien cuadrados de 1,50 m sean contiguos y el inglés sí; el PDF oficial lo trae así."
    }
   ]
  },
@@ -45695,7 +45729,7 @@
       ],
       [
        "Sensi",
-       "Percezione passiva 30; scurovisione 18 m, vista cieca 3 m"
+       "Percezione passiva 12; scurovisione 18 m, vista cieca 9 m"
       ],
       [
        "Lingue",
@@ -45736,7 +45770,15 @@
      ]
     }
    ]
-  }
+  },
+  "correcciones": [
+   {
+    "idioma": "it",
+    "antes": "Percezione passiva 30; scurovisione 18 m, vista cieca 3 m",
+    "despues": "Percezione passiva 12; scurovisione 18 m, vista cieca 9 m",
+    "por_que": "Los sentidos dicen Percezione passiva 30 y vista cieca 3 m, cuando el inglés da Percepción pasiva 12 y vista ciega 30 pies (9 m); el PDF oficial trae el mismo fallo."
+   }
+  ]
  },
  {
   "id": "sunbeam",
@@ -47302,7 +47344,7 @@
     },
     {
      "t": "p",
-     "txt": "<b>Fuori bersaglio.</b> L'incantatore e il suo gruppo (o l'oggetto bersaglio) compaiono a una distanza di 2d12 chilometri dalla destinazione in una direzione casuale. Tira 1d8 per la direzione: 1, est; 2, sud-est; 3, sud; 4, sud-ovest; 5, ovest; 6, nord-ovest; 7, nord; oppure 8, nord-est.",
+     "txt": "<b>Fuori bersaglio.</b> L'incantatore e il suo gruppo (o l'oggetto bersaglio) compaiono a una distanza di 2d12 × 1,5 chilometri dalla destinazione in una direzione casuale. Tira 1d8 per la direzione: 1, est; 2, sud-est; 3, sud; 4, sud-ovest; 5, ovest; 6, nord-ovest; 7, nord; oppure 8, nord-est.",
      "lead": "Fuori bersaglio"
     },
     {
@@ -47318,6 +47360,12 @@
     "antes": "dich ein einen Ort zu teleportieren",
     "despues": "dich an einen Ort zu teleportieren",
     "por_que": "Letra bailada: \"ein einen\" por \"an einen\" (sich an einen Ort teleportieren). El SRD aleman trae la misma errata (linea 24078 del .txt)."
+   },
+   {
+    "idioma": "it",
+    "antes": "a una distanza di 2d12 chilometri",
+    "despues": "a una distanza di 2d12 × 1,5 chilometri",
+    "por_que": "El italiano pone 2d12 kilómetros, cuando son 2d12 millas (2d12 × 1,5 km en la escala del SRD italiano); el PDF oficial lo trae así."
    }
   ]
  },
@@ -47594,7 +47642,7 @@
    "bloques": [
     {
      "t": "p",
-     "txt": "Du manifestierst in Reichweite ein kleines Wunder. Du bewirkst in Reichweite einen der unten beschriebenen Effekte. Wenn du diesen Zauber mehrmals wirkst, können bis zu drei seiner einminütigen Effekte gleichzeitig wirken. Du kannst einen solchen Effekt verwerfen (keine Aktion erforderlich)."
+     "txt": "Du manifestierst in Reichweite ein kleines Wunder. Du bewirkst in Reichweite einen der unten beschriebenen Effekte. Wenn du diesen Zauber mehrmals wirkst, können bis zu drei seiner einminütigen Effekte gleichzeitig wirken."
     },
     {
      "t": "p",
@@ -47717,7 +47765,15 @@
      "lead": "Voce tonante"
     }
    ]
-  }
+  },
+  "correcciones": [
+   {
+    "idioma": "de",
+    "antes": "gleichzeitig wirken. Du kannst einen solchen Effekt verwerfen (keine Aktion erforderlich).",
+    "despues": "gleichzeitig wirken.",
+    "por_que": "El «einminütigen» cuadra con el minuto, pero el alemán añade que puedes descartar un efecto sin gastar acción, regla que el inglés 5.2.1 no tiene; el PDF oficial la trae."
+   }
+  ]
  },
  {
   "id": "thunderwave",
@@ -50441,7 +50497,7 @@
    "bloques": [
     {
      "t": "p",
-     "txt": "Un muro non magico di solida pietra si materializza in un punto a scelta dell'incantatore situato entro gittata. Il muro è spesso 15 cm ed è composto da pannelli con lato di 3 metri, Ogni pannello dev'essere contiguo a un altro pannello. In alternativa, l'incantatore può creare pannelli di 3 metri per 6 metri spessi solo 8 centimetri."
+     "txt": "Un muro non magico di solida pietra si materializza in un punto a scelta dell'incantatore situato entro gittata. Il muro è spesso 15 cm ed è composto da dieci pannelli con lato di 3 metri, Ogni pannello dev'essere contiguo a un altro pannello. In alternativa, l'incantatore può creare pannelli di 3 metri per 6 metri spessi solo 8 centimetri."
     },
     {
      "t": "p",
@@ -50477,6 +50533,12 @@
     "antes": "10-footby-20-foot panels",
     "despues": "10-foot-by-20-foot panels",
     "por_que": "Falta el guion entre foot y by, tambien por el salto de linea del PDF; el SRD EN escribe 10-foot-by-20-foot (lineas 23041-23042 del .txt)."
+   },
+   {
+    "idioma": "it",
+    "antes": "è composto da pannelli con lato di 3 metri",
+    "despues": "è composto da dieci pannelli con lato di 3 metri",
+    "por_que": "Falta el número de paneles: el inglés limita el muro a diez paneles y el italiano no pone tope; los 8 cm por 3 pulgadas son solo redondeo."
    }
   ]
  },
