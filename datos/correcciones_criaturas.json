@@ -1,0 +1,25 @@
+{
+ "_que_es": "Erratas de traduccion de las fichas de criatura: donde una traduccion oficial da una cifra distinta del SRD ingles, manda el ingles (decision 34 de T-0111, 29/09/2026). Cada una sale de comprobar_criaturas.py y esta revisada a mano el 13/10/2026 contra los otros cuatro idiomas. 'antes' tiene que aparecer una sola vez en la ficha de ese idioma. El espanol no tiene ninguna.",
+ "correcciones": [
+  {"id": "balor", "idioma": "de", "antes": "287 (23W12+161)", "despues": "287 (23W12+138)", "por_que": "EN 23d12 + 138 (Kon +6 x 23); los PG medios 287 solo salen con +138"},
+  {"id": "vampire-familiar", "idioma": "de", "antes": "65 (10W8+30)", "despues": "65 (10W8+20)", "por_que": "EN 10d8 + 20 (Kon +2 x 10); los PG medios 65 solo salen con +20"},
+  {"id": "clay-golem", "idioma": "de", "antes": "+9, Reichweite 4,5 m.", "despues": "+9, Reichweite 1,5 m.", "por_que": "EN reach 5 ft.; ES, FR e IT 1,5 m"},
+  {"id": "guardian-naga", "idioma": "de", "antes": "+8, Reichweite 1,5 m. <i>Treffer:</i> 17", "despues": "+8, Reichweite 3 m. <i>Treffer:</i> 17", "por_que": "EN reach 10 ft.; ES, FR e IT 3 m"},
+  {"id": "hydra", "idioma": "de", "antes": "Die Hydra erhält zwölf Trefferpunkte zurück", "despues": "Die Hydra erhält 20 Trefferpunkte zurück", "por_que": "EN regains 20 Hit Points; ES, FR e IT 20"},
+  {"id": "kraken", "idioma": "de", "antes": "+17, Reichweite 4,5 m.", "despues": "+17, Reichweite 9 m.", "por_que": "EN reach 30 ft.; ES, FR e IT 9 m"},
+  {"id": "night-hag", "idioma": "de", "antes": "13 (2W8+5)", "despues": "13 (2W8+4)", "por_que": "EN 2d8 + 4; el dano medio 13 solo sale con +4"},
+  {"id": "noble", "idioma": "de", "antes": "5 (1W8+4)", "despues": "5 (1W8+1)", "por_que": "EN 1d8 + 1; el dano medio 5 solo sale con +1"},
+  {"id": "ochre-jelly", "idioma": "de", "antes": "Blindsicht 36 m", "despues": "Blindsicht 18 m", "por_que": "EN Blindsight 60 ft.; ES, FR e IT 18 m"},
+  {"id": "young-red-dragon", "idioma": "de", "antes": "Blindsicht 3 m, Dunkelsicht 18 m", "despues": "Blindsicht 9 m, Dunkelsicht 36 m", "por_que": "EN Blindsight 30 ft., Darkvision 120 ft.; ES, FR e IT 9 m y 36 m"},
+  {"id": "young-silver-dragon", "idioma": "de", "antes": "Blindsicht 3 m, Dunkelsicht 18 m", "despues": "Blindsicht 9 m, Dunkelsicht 36 m", "por_que": "EN Blindsight 30 ft., Darkvision 120 ft.; ES, FR e IT 9 m y 36 m"},
+  {"id": "boar", "idioma": "de", "antes": "4 (1W6+2)", "despues": "4 (1W6+1)", "por_que": "EN 1d6 + 1; el dano medio 4 solo sale con +1"},
+  {"id": "giant-boar", "idioma": "de", "antes": "10 (2W6+4) Stichschaden", "despues": "10 (2W6+3) Stichschaden", "por_que": "EN 2d6 + 3; el dano medio 10 solo sale con +3"},
+  {"id": "giant-hyena", "idioma": "de", "antes": "10 (2W6+4)", "despues": "10 (2W6+3)", "por_que": "EN 2d6 + 3; el dano medio 10 solo sale con +3"},
+  {"id": "mastiff", "idioma": "de", "antes": "4 (1W6+2)", "despues": "4 (1W6+1)", "por_que": "EN 1d6 + 1; el dano medio 4 solo sale con +1"},
+  {"id": "ancient-green-dragon", "idioma": "it", "antes": "17 (2d6 + 8)", "despues": "17 (2d8 + 8)", "por_que": "EN 2d8 + 8; el dano medio 17 solo sale con 2d8"},
+  {"id": "marilith", "idioma": "it", "antes": "10 (1d8 + 5)", "despues": "10 (1d10 + 5)", "por_que": "EN 1d10 + 5; el dano medio 10 solo sale con 1d10"},
+  {"id": "rakshasa", "idioma": "it", "antes": "vista pura 36 m", "despues": "vista pura 18 m", "por_que": "EN Truesight 60 ft.; ES, DE y FR 18 m"},
+  {"id": "giant-wolf-spider", "idioma": "it", "antes": "Percezione passiva 10", "despues": "Percezione passiva 13", "por_que": "EN Passive Perception 13 (Percepcion +3); ES, DE y FR 13"},
+  {"id": "sphinx-of-valor", "idioma": "fr", "antes": "chaque ennemi dans une Émanation de 90 m", "despues": "chaque ennemi dans une Émanation de 150 m", "por_que": "EN 500-foot Emanation en el tercer rugido; ES, DE e IT 150 m"}
+ ]
+}

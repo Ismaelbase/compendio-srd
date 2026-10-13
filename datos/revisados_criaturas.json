@@ -1,0 +1,22 @@
+{
+ "_que_es": "Diferencias de cifras con el ingles revisadas a mano el 13/10/2026 que NO son errata: la traduccion dice lo mismo con otras palabras o con otra unidad. comprobar_criaturas.py no las vuelve a avisar mientras el texto no cambie.",
+ "revisados": [
+  {"id": "aboleth", "idioma": "de", "elemento": "Schleimwolke", "por_que": "repite 'zehn Minuten' donde el ingles dice 'those minutes'"},
+  {"id": "aboleth", "idioma": "de", "elemento": "Gedanken beherrschen (2-mal täglich)", "por_que": "1 mile pasado a 1,6 km en vez de 1,5 km: misma distancia"},
+  {"id": "aboleth", "idioma": "it", "elemento": "Nube di muco", "por_que": "repite 'i 10 minuti' donde el ingles dice 'those minutes'"},
+  {"id": "fire-elemental", "idioma": "es", "elemento": "Susceptibilidad al agua", "por_que": "1 galon pasado a 4 litros"},
+  {"id": "fire-elemental", "idioma": "fr", "elemento": "Vulnérabilité à l’eau", "por_que": "1 galon pasado a 4 litros"},
+  {"id": "fire-elemental", "idioma": "it", "elemento": "Suscettibilità all'acqua", "por_que": "1 galon pasado a 4 litros"},
+  {"id": "flesh-golem", "idioma": "fr", "elemento": "Folie furieuse", "por_que": "'jets de 1d6 du trait' donde el ingles dice 'rolling for the Berserk trait'"},
+  {"id": "gray-ooze", "idioma": "fr", "elemento": "Masse corrosive", "por_que": "'par round' donde el ingles dice 'in 1 round'"},
+  {"id": "silver-dragon-wyrmling", "idioma": "fr", "elemento": "Souffle glacial (recharge 5–6)", "por_que": "'1/2 dégâts' donde el ingles dice 'Half damage'"},
+  {"id": "young-silver-dragon", "idioma": "fr", "elemento": "Souffle glacial (recharge 5–6)", "por_que": "'1/2 dégâts' donde el ingles dice 'Half damage'"},
+  {"id": "solar", "idioma": "fr", "elemento": "Téléportation radiante", "por_que": "'1/2 dégâts' donde el ingles dice 'Half damage'"},
+  {"id": "sphinx-of-valor", "idioma": "es", "elemento": "Peso de los años", "por_que": "'al menos 1 nivel' donde el ingles dice 'any Exhaustion levels'"},
+  {"id": "sphinx-of-lore", "idioma": "es", "elemento": "Peso de los años", "por_que": "'al menos 1 nivel' donde el ingles dice 'any Exhaustion levels'"},
+  {"id": "sphinx-of-lore", "idioma": "de", "elemento": "Gewicht der Jahre", "por_que": "'eine Erschöpfungsstufe' con letra"},
+  {"id": "sphinx-of-valor", "idioma": "de", "elemento": "Gewicht der Jahre", "por_que": "'eine Erschöpfungsstufe' con letra"},
+  {"id": "troll", "idioma": "de", "elemento": "Grässliche Gliedmaßen (4-mal täglich)", "por_que": "'eine Erschöpfungsstufe' con letra"},
+  {"id": "vampire", "idioma": "fr", "elemento": "Échappatoire brumeuse", "por_que": "'au moins 1 point de vie' donde el ingles dice 'any Hit Points'"}
+ ]
+}

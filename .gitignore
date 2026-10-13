@@ -1,0 +1,11 @@
+# dependencias y compilado
+node_modules/
+main.js
+*.map
+# ajustes de la boveda de prueba
+data.json
+# intermedios de Python
+__pycache__/
+*.pyc
+# intermedios de los scripts de datos
+datos/_*.json
