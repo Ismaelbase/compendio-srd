@@ -37,7 +37,7 @@ Importing again updates the notes that are still as the plugin left them. Notes 
 
 ## License
 
-The plugin code is under the MIT license (see `LICENSE`).
+The plugin code is under the MIT license (see `LICENSE`). The SRD text is under CC-BY 4.0 (see `NOTICE.md`).
 
 The notes contain text from the SRD 5.2.1. Each language's credits note carries the attribution of its SRD:
 
@@ -84,7 +84,7 @@ Volver a importar actualiza las notas que siguen como las dejó el plugin. Las q
 
 ### Licencia
 
-El código del plugin va con licencia MIT (ver `LICENSE`).
+El código del plugin va con licencia MIT (ver `LICENSE`). El texto del SRD va con CC-BY 4.0 (ver `NOTICE.md`).
 
 Las notas llevan texto del SRD 5.2.1. La nota de créditos de cada idioma lleva la atribución de su SRD:
 
