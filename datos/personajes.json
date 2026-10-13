@@ -29571,11 +29571,7 @@
     },
     {
      "t": "li",
-     "txt": "Martial Melee weapons that have the Light property"
-    },
-    {
-     "t": "p",
-     "txt": "You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren’t wearing armor or wielding a Shield."
+     "txt": "Martial Melee weapons that have the Light property You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren’t wearing armor or wielding a Shield."
     },
     {
      "t": "p",
@@ -30136,11 +30132,7 @@
     },
     {
      "t": "li",
-     "txt": "Nahkampf-Kriegswaffen mit der Eigenschaft Leicht"
-    },
-    {
-     "t": "p",
-     "txt": "Du erhältst folgende Vorzüge, wenn du unbewaffnet bist oder nur Mönchswaffen verwendest und weder Rüstung noch Schild trägst:"
+     "txt": "Nahkampf-Kriegswaffen mit der Eigenschaft Leicht Du erhältst folgende Vorzüge, wenn du unbewaffnet bist oder nur Mönchswaffen verwendest und weder Rüstung noch Schild trägst:"
     },
     {
      "t": "p",
@@ -30441,9 +30433,9 @@
     "bloques.1.filas.18.5": "+30 Fuß",
     "bloques.1.filas.19.5": "+30 Fuß",
     "bloques.1.filas.20.5": "+30 Fuß",
-    "bloques.30.txt": "Deine Bewegungsrate erhöht sich um 10 Fuß, sofern du weder Rüstung noch Schild trägst. Dieser Bonus erhöht sich, wenn du bestimmte Mönchsstufen erreichst, wie in der Tabelle „Mönchsmerkmale“ angegeben.",
-    "bloques.36.txt": "Wird der Schaden auf 0 verringert, so kannst du 1 Fokuspunkt verbrauchen, um einen Teil der Angriffsenergie umzuleiten. Wenn der Angriff ein Nahkampfangriff war, wähle dazu eine Kreatur im Abstand von bis zu 5 Fuß von dir aus, die du sehen kannst. Wenn der Angriff ein Fernkampfangriff war, wähle eine Kreatur im Abstand von bis zu 60 Fuß von dir aus, die du sehen kannst und die nicht über vollständige Deckung verfügt. Diese Kreatur muss einen Geschicklichkeitsrettungswurf bestehen, oder sie erleidet Schaden in Höhe von zwei Würfen mit deinem Kampfkünste-Würfel plus deinem Geschicklichkeitsmodifikator. Die Schadensart entspricht der des Angriffs.",
-    "bloques.58.txt": "<b>Windschritt:</b> Wenn du einen Fokuspunkt verbrauchst, um Windschritt einzusetzen, kannst du eine bereitwillige Kreatur im Abstand von bis zu 5 Fuß von dir und von höchstens großer Größe auswählen. Diese Kreatur bewegt sich bis zum Ende deines Zugs mit dir. Die Bewegung der Kreatur provoziert keine Gelegenheitsangriffe."
+    "bloques.29.txt": "Deine Bewegungsrate erhöht sich um 10 Fuß, sofern du weder Rüstung noch Schild trägst. Dieser Bonus erhöht sich, wenn du bestimmte Mönchsstufen erreichst, wie in der Tabelle „Mönchsmerkmale“ angegeben.",
+    "bloques.35.txt": "Wird der Schaden auf 0 verringert, so kannst du 1 Fokuspunkt verbrauchen, um einen Teil der Angriffsenergie umzuleiten. Wenn der Angriff ein Nahkampfangriff war, wähle dazu eine Kreatur im Abstand von bis zu 5 Fuß von dir aus, die du sehen kannst. Wenn der Angriff ein Fernkampfangriff war, wähle eine Kreatur im Abstand von bis zu 60 Fuß von dir aus, die du sehen kannst und die nicht über vollständige Deckung verfügt. Diese Kreatur muss einen Geschicklichkeitsrettungswurf bestehen, oder sie erleidet Schaden in Höhe von zwei Würfen mit deinem Kampfkünste-Würfel plus deinem Geschicklichkeitsmodifikator. Die Schadensart entspricht der des Angriffs.",
+    "bloques.57.txt": "<b>Windschritt:</b> Wenn du einen Fokuspunkt verbrauchst, um Windschritt einzusetzen, kannst du eine bereitwillige Kreatur im Abstand von bis zu 5 Fuß von dir und von höchstens großer Größe auswählen. Diese Kreatur bewegt sich bis zum Ende deines Zugs mit dir. Die Bewegung der Kreatur provoziert keine Gelegenheitsangriffe."
    }
   },
   "fr": {
@@ -30725,11 +30717,7 @@
     },
     {
      "t": "li",
-     "txt": "Les armes de guerre de corps à corps dotées de la propriété Légère"
-    },
-    {
-     "t": "p",
-     "txt": "Tant que vous combattez à mains nues ou avec des armes de Moine et que vous ne portez ni armure ni bouclier, vous recevez les bénéfices suivants."
+     "txt": "Les armes de guerre de corps à corps dotées de la propriété Légère Tant que vous combattez à mains nues ou avec des armes de Moine et que vous ne portez ni armure ni bouclier, vous recevez les bénéfices suivants."
     },
     {
      "t": "p",
@@ -31030,9 +31018,9 @@
     "bloques.1.filas.18.5": "+30 pieds",
     "bloques.1.filas.19.5": "+30 pieds",
     "bloques.1.filas.20.5": "+30 pieds",
-    "bloques.30.txt": "Votre Vitesse augmente de 10 pieds tant que vous ne portez ni armure ni bouclier. Ce bonus évolue à mesure que vous gagnez des niveaux de Moine, comme indiqué dans la table « Aptitudes du Moine ».",
-    "bloques.36.txt": "Si vous réduisez ainsi les dégâts à 0, vous pouvez dépenser 1 point de Credo pour dévier une partie de l’impact à votre guise. Dans ce cas, choisissez une créature que vous voyez dans un rayon de 5 pieds si l’attaque était de corps à corps, ou une créature que vous voyez dans un rayon de 60 pieds et qui ne bénéficie pas d’un Abri total si l’attaque était à distance. Cette créature doit réussir un jet de sauvegarde de Dextérité sous peine de subir des dégâts égaux à deux jets de votre dé d’Arts martiaux plus votre modificateur de Dextérité. Les dégâts sont du même type que ceux infligés par l’attaque.",
-    "bloques.58.txt": "<b>Porté par le vent.</b> Lorsque vous dépensez un point de Credo pour recourir à Porté par le vent, vous pouvez choisir une créature consentante dans un rayon de 5 pieds, de taille G ou inférieure. Vous déplacez la créature avec vous jusqu’à la fin de votre tour. Le déplacement de cette créature ne provoque pas d’attaques d’Opportunité."
+    "bloques.29.txt": "Votre Vitesse augmente de 10 pieds tant que vous ne portez ni armure ni bouclier. Ce bonus évolue à mesure que vous gagnez des niveaux de Moine, comme indiqué dans la table « Aptitudes du Moine ».",
+    "bloques.35.txt": "Si vous réduisez ainsi les dégâts à 0, vous pouvez dépenser 1 point de Credo pour dévier une partie de l’impact à votre guise. Dans ce cas, choisissez une créature que vous voyez dans un rayon de 5 pieds si l’attaque était de corps à corps, ou une créature que vous voyez dans un rayon de 60 pieds et qui ne bénéficie pas d’un Abri total si l’attaque était à distance. Cette créature doit réussir un jet de sauvegarde de Dextérité sous peine de subir des dégâts égaux à deux jets de votre dé d’Arts martiaux plus votre modificateur de Dextérité. Les dégâts sont du même type que ceux infligés par l’attaque.",
+    "bloques.57.txt": "<b>Porté par le vent.</b> Lorsque vous dépensez un point de Credo pour recourir à Porté par le vent, vous pouvez choisir une créature consentante dans un rayon de 5 pieds, de taille G ou inférieure. Vous déplacez la créature avec vous jusqu’à la fin de votre tour. Le déplacement de cette créature ne provoque pas d’attaques d’Opportunité."
    }
   },
   "it": {
@@ -31314,11 +31302,7 @@
     },
     {
      "t": "li",
-     "txt": "Armi da mischia da guerra con la proprietà leggera"
-    },
-    {
-     "t": "p",
-     "txt": "Un monaco ottiene i benefici seguenti fintantoché è senz'armi o impugna soltanto armi da monaco, non indossa alcuna armatura e non impugna uno scudo:"
+     "txt": "Armi da mischia da guerra con la proprietà leggera Un monaco ottiene i benefici seguenti fintantoché è senz'armi o impugna soltanto armi da monaco, non indossa alcuna armatura e non impugna uno scudo:"
     },
     {
      "t": "p",
@@ -31619,9 +31603,9 @@
     "bloques.1.filas.18.5": "+30 piedi",
     "bloques.1.filas.19.5": "+30 piedi",
     "bloques.1.filas.20.5": "+30 piedi",
-    "bloques.30.txt": "La velocità del monaco aumenta di 10 piedi, purché non indossi un'armatura o impugni uno scudo. Questo bonus aumenta man mano che il personaggio acquisisce altri livelli da monaco, come indicato nella tabella Privilegi del monaco.",
-    "bloques.36.txt": "Se i danni vengono ridotti a 0, il monaco può spendere 1 punto concentrazione per deviare parte della forza dell'attacco. Se lo fa, deve scegliere una creatura nel suo campo visivo entro 5 piedi da sé se l'attacco era in mischia; se l'attacco era a distanza, deve scegliere una creatura nel suo campo visivo entro 60 piedi da sé che non sia dietro copertura totale. Quella creatura deve superare un tiro salvezza su Destrezza o subire danni pari a due tiri del dado di Arti marziali più il modificatore di Destrezza del monaco. I danni sono dello stesso tipo di danni inflitti dall'attacco.",
-    "bloques.58.txt": "<b>Passo del vento.</b> Quando il monaco spende un punto concentrazione per utilizzare Passo del vento, può scegliere una creatura consenziente entro 5 piedi da sé di taglia Grande o inferiore. Il monaco muove la creatura con sé fino al termine del suo turno. Questo movimento non provoca attacchi di opportunità."
+    "bloques.29.txt": "La velocità del monaco aumenta di 10 piedi, purché non indossi un'armatura o impugni uno scudo. Questo bonus aumenta man mano che il personaggio acquisisce altri livelli da monaco, come indicato nella tabella Privilegi del monaco.",
+    "bloques.35.txt": "Se i danni vengono ridotti a 0, il monaco può spendere 1 punto concentrazione per deviare parte della forza dell'attacco. Se lo fa, deve scegliere una creatura nel suo campo visivo entro 5 piedi da sé se l'attacco era in mischia; se l'attacco era a distanza, deve scegliere una creatura nel suo campo visivo entro 60 piedi da sé che non sia dietro copertura totale. Quella creatura deve superare un tiro salvezza su Destrezza o subire danni pari a due tiri del dado di Arti marziali più il modificatore di Destrezza del monaco. I danni sono dello stesso tipo di danni inflitti dall'attacco.",
+    "bloques.57.txt": "<b>Passo del vento.</b> Quando il monaco spende un punto concentrazione per utilizzare Passo del vento, può scegliere una creatura consenziente entro 5 piedi da sé di taglia Grande o inferiore. Il monaco muove la creatura con sé fino al termine del suo turno. Questo movimento non provoca attacchi di opportunità."
    }
   }
  },

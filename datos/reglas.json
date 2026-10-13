@@ -17612,11 +17612,7 @@
     },
     {
      "t": "li",
-     "txt": "Half your levels (round up) in the Paladin and Ranger classes"
-    },
-    {
-     "t": "p",
-     "txt": "Then look up this total level in the Level column of the Multiclass Spellcaster table. You use the slots for that level to cast spells of an appropriate level from any class whose Spellcasting feature you have."
+     "txt": "Half your levels (round up) in the Paladin and Ranger classes Then look up this total level in the Level column of the Multiclass Spellcaster table. You use the slots for that level to cast spells of an appropriate level from any class whose Spellcasting feature you have."
     },
     {
      "t": "p",
@@ -18847,11 +18843,7 @@
     },
     {
      "t": "li",
-     "txt": "Metà dei suoi livelli (arrotondati per eccesso) nelle classi del paladino e del ranger"
-    },
-    {
-     "t": "p",
-     "txt": "Cercherà poi questo totale nella colonna Livello della tabella Incantatore multiclasse. Il personaggio utilizza gli slot di quel livello per lanciare incantesimi del livello appropriato da qualsiasi classe di cui possiede il privilegio Incantesimi."
+     "txt": "Metà dei suoi livelli (arrotondati per eccesso) nelle classi del paladino e del ranger Cercherà poi questo totale nella colonna Livello della tabella Incantatore multiclasse. Il personaggio utilizza gli slot di quel livello per lanciare incantesimi del livello appropriato da qualsiasi classe di cui possiede il privilegio Incantesimi."
     },
     {
      "t": "p",
@@ -46515,11 +46507,7 @@
     },
     {
      "t": "li",
-     "txt": "1 hour of walking or other physical exertion"
-    },
-    {
-     "t": "p",
-     "txt": "If you rested at least 1 hour before the interruption, you gain the benefits of a Short Rest. <i>See also</i> “Short Rest.”"
+     "txt": "1 hour of walking or other physical exertion If you rested at least 1 hour before the interruption, you gain the benefits of a Short Rest. <i>See also</i> “Short Rest.”"
     },
     {
      "t": "p",
@@ -46579,11 +46567,7 @@
     },
     {
      "t": "li",
-     "txt": "Eine Stunde lang gehen oder andere körperliche Anstrengungen unternehmen"
-    },
-    {
-     "t": "p",
-     "txt": "Wenn du vor der Unterbrechung mindestens eine Stunde lang gerastet hast, erhältst du die Vorzüge einer kurzen Rast. <i>Siehe auch</i> „Kurze Rast“."
+     "txt": "Eine Stunde lang gehen oder andere körperliche Anstrengungen unternehmen Wenn du vor der Unterbrechung mindestens eine Stunde lang gerastet hast, erhältst du die Vorzüge einer kurzen Rast. <i>Siehe auch</i> „Kurze Rast“."
     },
     {
      "t": "p",
@@ -46644,11 +46628,7 @@
     },
     {
      "t": "li",
-     "txt": "1 heure de marche ou autre effort physique comparable"
-    },
-    {
-     "t": "p",
-     "txt": "Si vous vous êtes reposé au moins 1 heure avant l’interruption, vous recevez les bénéfices d’un Repos court. <i>Lire aussi</i> « Repos court »."
+     "txt": "1 heure de marche ou autre effort physique comparable Si vous vous êtes reposé au moins 1 heure avant l’interruption, vous recevez les bénéfices d’un Repos court. <i>Lire aussi</i> « Repos court »."
     },
     {
      "t": "p",
@@ -46709,11 +46689,7 @@
     },
     {
      "t": "li",
-     "txt": "1 ora di camminata o di un altro tipo di sforzo fisico"
-    },
-    {
-     "t": "p",
-     "txt": "Se il personaggio si è riposato per almeno 1 ora prima dell'interruzione, riceve i benefici di un riposo breve. <i>Vedi anche</i> \"Riposo breve\"."
+     "txt": "1 ora di camminata o di un altro tipo di sforzo fisico Se il personaggio si è riposato per almeno 1 ora prima dell'interruzione, riceve i benefici di un riposo breve. <i>Vedi anche</i> \"Riposo breve\"."
     },
     {
      "t": "p",
@@ -48848,11 +48824,7 @@
     },
     {
      "t": "li",
-     "txt": "Taking any damage"
-    },
-    {
-     "t": "p",
-     "txt": "An interrupted Short Rest confers no benefits."
+     "txt": "Taking any damage An interrupted Short Rest confers no benefits."
     }
    ],
    "nombre_corto": "Short Rest",
@@ -48892,11 +48864,7 @@
     },
     {
      "t": "li",
-     "txt": "Schaden erleiden"
-    },
-    {
-     "t": "p",
-     "txt": "Eine unterbrochene kurze Rast gewährt keine Vorzüge."
+     "txt": "Schaden erleiden Eine unterbrochene kurze Rast gewährt keine Vorzüge."
     }
    ],
    "nombre_corto": "Kurze Rast",
@@ -48937,11 +48905,7 @@
     },
     {
      "t": "li",
-     "txt": "Subir des dégâts"
-    },
-    {
-     "t": "p",
-     "txt": "Un Repos court interrompu n’octroie aucun bénéfice."
+     "txt": "Subir des dégâts Un Repos court interrompu n’octroie aucun bénéfice."
     }
    ],
    "nombre_corto": "Repos court",
@@ -48982,11 +48946,7 @@
     },
     {
      "t": "li",
-     "txt": "Subire danni"
-    },
-    {
-     "t": "p",
-     "txt": "Un riposo breve interrotto non conferisce alcun beneficio."
+     "txt": "Subire danni Un riposo breve interrotto non conferisce alcun beneficio."
     }
    ],
    "nombre_corto": "Riposo breve",

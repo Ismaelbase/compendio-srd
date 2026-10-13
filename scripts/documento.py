@@ -129,6 +129,10 @@ class Parrafos:
             return (not self.colgante), "p"
         if d >= 10:
             return False, self.tipo
+        if self.tipo == "li" and self.par and not re.search(r"[.:;!?]\W*$", re.sub(r"<[^>]+>", "", self.par[-1]).strip()):
+            # punto de lista que sigue en la linea de abajo sin sangria (los ejemplos de encuentros del ingles:
+            # "and 9 Stirges (25 XP" + "each), for 1,125 XP total"): la frase no ha acabado
+            return False, "li"
         return (self.tipo == "li" or self.colgante), "p"
 
     def linea(self, r, base=None, marcas=None):
