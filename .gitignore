@@ -9,3 +9,4 @@ __pycache__/
 *.pyc
 # intermedios de los scripts de datos
 datos/_*.json
+.test/

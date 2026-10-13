@@ -1,0 +1,10 @@
+{
+	"id": "compendio-srd",
+	"name": "Compendio SRD 2024",
+	"version": "0.1.0",
+	"minAppVersion": "1.8.7",
+	"description": "Import the official SRD 5.2.1 as linked notes in five languages, with 2024 stat blocks and an encounter budget you can send to Initiative Tracker.",
+	"author": "Ismael Sevilla",
+	"authorUrl": "https://theobsidiandie.com",
+	"isDesktopOnly": false
+}
