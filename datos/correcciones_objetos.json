@@ -1,9 +1,184 @@
 {
  "_que_es": "Erratas de traduccion de los objetos magicos. Manda el ingles (decision 34 de T-0111). Las de cifras salen de comprobar_objetos.py y se revisan contra los otros cuatro idiomas.",
  "correcciones": [
-  {"id": "staff-of-charming", "idioma": "it",
+  {
+   "id": "staff-of-charming",
+   "idioma": "it",
    "tras": "<b>Riflettere l'ammaliamento.</b>",
-   "insertar": {"t": "p", "txt": "<b>Resistere all'ammaliamento.</b> Se il personaggio fallisce un tiro salvezza contro un incantesimo di ammaliamento che ha solo lui come bersaglio, può trasformare il tiro salvezza fallito in un successo. Non può usare di nuovo questa proprietà del bastone fino all'alba successiva.", "lead": "Resistere all'ammaliamento"},
-   "por_que": "El SRD italiano no trae la propiedad Resist Enchantment, que esta en los otros cuatro idiomas; va traducida con las formulas del propio SRD italiano (el parrafo de Riflettere l'ammaliamento, 'trasformare il tiro salvezza fallito in un successo' del escarabajo de proteccion y 'fino all'alba successiva')."}
+   "insertar": {
+    "t": "p",
+    "txt": "<b>Resistere all'ammaliamento.</b> Se il personaggio fallisce un tiro salvezza contro un incantesimo di ammaliamento che ha solo lui come bersaglio, può trasformare il tiro salvezza fallito in un successo. Non può usare di nuovo questa proprietà del bastone fino all'alba successiva.",
+    "lead": "Resistere all'ammaliamento"
+   },
+   "por_que": "El SRD italiano no trae la propiedad Resist Enchantment, que esta en los otros cuatro idiomas; va traducida con las formulas del propio SRD italiano (el parrafo de Riflettere l'ammaliamento, 'trasformare il tiro salvezza fallito in un successo' del escarabajo de proteccion y 'fino all'alba successiva')."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "it",
+   "antes": "46–50",
+   "despues": "46–55",
+   "por_que": "Folletti (feéricos) tiene 46–50 y Giganti 51–60, con lo que se intercambian las probabilidades del inglés (Fey 10 %, Giants 5 %); así viene en el PDF italiano."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "it",
+   "antes": "51–60",
+   "despues": "56–60",
+   "por_que": "Folletti (feéricos) tiene 46–50 y Giganti 51–60, con lo que se intercambian las probabilidades del inglés (Fey 10 %, Giants 5 %); así viene en el PDF italiano."
+  },
+  {
+   "id": "dancing-sword",
+   "idioma": "it",
+   "antes": "per farla volare in un altro punto entro 9 metri da sé",
+   "despues": "per farla volare fino a una distanza di 9 metri verso un altro punto entro 9 metri da sé",
+   "por_que": "Falta el límite de \"fly up to 30 feet\" en el movimiento con acción adicional: solo dice que vuela a otro punto a 9 metros o menos, así que podría recorrer más de 9 m; así viene en el PDF italiano."
+  },
+  {
+   "id": "feather-token",
+   "idioma": "de",
+   "antes": "die Krone erreicht einen Durchmesser von sechs Metern",
+   "despues": "die Krone erreicht einen Durchmesser von zwölf Metern",
+   "por_que": "Las cifras marcadas son conversiones y la tabla está ordenada alfabéticamente con las mismas probabilidades, pero la copa del árbol tiene un diámetro de seis metros cuando el inglés da 20 pies de radio (12 m de diámetro); así viene en el PDF alemán."
+  },
+  {
+   "id": "ioun-stone",
+   "idioma": "it",
+   "antes": "a una distanza di 1d3 metri",
+   "despues": "a una distanza di 1d3 x 30 centimetri",
+   "por_que": "La piedra orbita a 1d3 metros cuando el inglés dice 1d3 pies (1d3 × 30 cm en las otras traducciones); así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "de",
+   "antes": "82–92",
+   "despues": "85–92",
+   "por_que": "En la columna de 13 cartas Thron tiene 82–92, que se solapa con Stern (77–84) y le da 11 resultados; debe ser 85–92 (8, como Throne 89–96 en inglés); así viene en el PDF alemán."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "01–03",
+   "despues": "01–04",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "04–08",
+   "despues": "05–09",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "09–13",
+   "despues": "10–14",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "14–18",
+   "despues": "15–19",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "19–23",
+   "despues": "20–24",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "24–27",
+   "despues": "25–29",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "28–31",
+   "despues": "30–33",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "32–35",
+   "despues": "34–37",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "36–40",
+   "despues": "38–42",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "41–45",
+   "despues": "43–47",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "antes": "46–52",
+   "despues": "48–52",
+   "por_que": "En la columna de 22 cartas Artigli tiene 3 resultados (Talons 4), Destino 4 (Fates 5) y Luna 7 (Moon 5), así que hay que correr los rangos de 01 a 52; así viene en el PDF italiano."
+  },
+  {
+   "id": "staff-of-the-woodlands",
+   "idioma": "de",
+   "antes": "die Krone erreicht einen Durchmesser von sechs Metern",
+   "despues": "die Krone erreicht einen Durchmesser von zwölf Metern",
+   "por_que": "Las cargas marcadas van en letra, pero la copa del árbol tiene un diámetro de seis metros cuando el inglés da 20 pies de radio (12 m de diámetro); así viene en el PDF alemán."
+  },
+  {
+   "id": "staff-of-withering",
+   "idioma": "de",
+   "antes": "Zauberstab, selten",
+   "despues": "Stab, selten",
+   "por_que": "Las cifras marcadas van en letra, pero la cabecera clasifica el objeto como \"Zauberstab\" (varita) cuando el inglés dice \"Staff\" (bastón, \"Stab\" en el resto del SRD alemán); así viene en el PDF alemán."
+  },
+  {
+   "id": "well-of-many-worlds",
+   "idioma": "de",
+   "antes": "mit einem Durchmesser von drei Metern",
+   "despues": "mit einem Durchmesser von 1,8 Metern",
+   "por_que": "El paño mide bien 1,8 m, pero el portal tiene un diámetro de tres metros cuando el inglés dice 6 pies (1,8 m en las otras traducciones); así viene en el PDF alemán."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "de",
+   "antes": "91–100Untote",
+   "despues": "91–100 Untote",
+   "por_que": "Falta el espacio entre el intervalo y el nombre en la tabla."
+  },
+  {
+   "id": "candle-of-invocation",
+   "idioma": "de",
+   "antes": "96–100Ysgard",
+   "despues": "96–100 Ysgard",
+   "por_que": "Falta el espacio entre el intervalo y el nombre en la tabla."
+  },
+  {
+   "id": "necklace-of-prayer-beads",
+   "idioma": "it",
+   "antes": "<i>Guardiano d</i>ella fede",
+   "despues": "<i>Guardiano della fede</i>",
+   "por_que": "La cursiva del conjuro citado se cierra a mitad de palabra."
+  },
+  {
+   "id": "manual-of-golems",
+   "idioma": "de",
+   "antes": "Der SL wählt die Schadensart aus oder bestimmt sie zufällig",
+   "despues": "Der SL wählt den Typ aus oder bestimmt ihn zufällig",
+   "por_que": "Se elige el tipo de gólem, no un tipo de daño (el ingles dice The DM chooses the type)."
+  }
  ]
 }

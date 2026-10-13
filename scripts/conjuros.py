@@ -116,7 +116,7 @@ def dx(r):
     return r["x"] - BASE_X[r["col"]]
 
 
-def celdas_tabla(lineas):
+def celdas_tabla(lineas, desplegar=True):
     """Tabla a partir de sus lineas del PDF (ver la explicacion en el lector de T-0108).
 
     Columnas: las x de arranque de las lineas del cuerpo, agrupadas (mas de 12 pt de separacion = otra columna).
@@ -187,7 +187,7 @@ def celdas_tabla(lineas):
         prev = key
     filas_txt = [[unir_html(c) if c else "" for c in f] for f in filas_t]
     out = ([cabecera] if cabecera else []) + filas_txt
-    if cabecera and len(cabecera) % 2 == 0 and len(cabecera) >= 4:
+    if desplegar and cabecera and len(cabecera) % 2 == 0 and len(cabecera) >= 4:
         m = len(cabecera) // 2
         if cabecera[:m] == cabecera[m:]:
             izq = [f[:m] for f in filas_txt]
@@ -301,7 +301,14 @@ def cuerpo(lang, fs):
 
     def cerrar_tabla():
         nonlocal tabla, tabla_titulo
-        if tabla:
+        if tabla and isinstance(tabla_titulo, list):
+            # dos tablas gemelas, una al lado de la otra y cada una con su titulo (Temperatura y Viento de
+            # Controlar el clima): la mitad izquierda es la primera y la derecha la segunda
+            filas_t = celdas_tabla(tabla, desplegar=False)
+            m = len(filas_t[0]) // 2
+            for titulo, parte in ((tabla_titulo[0], [f[:m] for f in filas_t]), (tabla_titulo[1], [f[m:] for f in filas_t])):
+                bloques.append({"t": "tabla", "titulo": titulo, "filas": [f for f in parte if any(x.strip() for x in f)]})
+        elif tabla:
             bloques.append({"t": "tabla", "titulo": tabla_titulo, "filas": celdas_tabla(tabla)})
         tabla, tabla_titulo = None, None
 
@@ -315,7 +322,7 @@ def cuerpo(lang, fs):
         return r["font"].startswith("Optima") or (r["font"] == "GillSans" and abs(r["size"] - 12.0) < 0.05) or \
             (r["font"].startswith("GillSans") and (abs(r["size"] - 6.0) < 0.05 or abs(r["size"] - 9.8) < 0.1))
 
-    nota = []
+    titulo_fila = None
 
     for r in fs:
         f, sz, t = r["font"], r["size"], r["t"]
@@ -330,8 +337,13 @@ def cuerpo(lang, fs):
                 ficha["filas"].append(r)
                 continue
         if f == "GillSans-SemiBold" and abs(sz - 10.5) < 0.05:
+            if titulo_fila is not None and tabla is None and (titulo_fila["p"], titulo_fila["col"]) == (r["p"], r["col"])                     and abs(titulo_fila["yb"] - r["yb"]) < 1.0:
+                tabla_titulo = [tabla_titulo, limpia(t)]  # segundo titulo a la misma altura: tablas gemelas
+                titulo_fila = None
+                continue
             cerrar_par(); cerrar_tabla()
             tabla_titulo = limpia(t)
+            titulo_fila = r
             continue
         if f.startswith("GillSans") and (abs(sz - 9.2) < 0.05 or abs(sz - 9.5) < 0.05):
             cerrar_par()
@@ -402,7 +414,7 @@ def cuerpo(lang, fs):
     juntos = []
     for b in bloques:
         if b["t"] == "tabla" and juntos and juntos[-1]["t"] == "tabla" and juntos[-1]["filas"] and b["filas"] \
-                and juntos[-1]["filas"][0] == b["filas"][0]:
+                and juntos[-1]["filas"][0] == b["filas"][0] and not b.get("titulo"):
             juntos[-1]["filas"].extend(b["filas"][1:])
         else:
             juntos.append(b)

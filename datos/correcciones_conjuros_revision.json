@@ -71,6 +71,20 @@
    "antes": "è composto da pannelli con lato di 3 metri",
    "despues": "è composto da dieci pannelli con lato di 3 metri",
    "por_que": "Falta el número de paneles: el inglés limita el muro a diez paneles y el italiano no pone tope; los 8 cm por 3 pulgadas son solo redondeo."
+  },
+  {
+   "id": "daylight",
+   "idioma": "es",
+   "antes": "una emanación de 18 m metros",
+   "despues": "una emanación de 18 m",
+   "por_que": "Errata del SRD espanol (la unidad dos veces); el ingles dice 60-foot Emanation."
+  },
+  {
+   "id": "arcane-hand",
+   "idioma": "it",
+   "antes": "più un numero di metri pari a cinque volte",
+   "despues": "più un numero di metri pari a 1,5 volte",
+   "por_que": "El italiano copia el cinco de los pies ingleses (five times, en pies) pero lo aplica a metros; en metros es 1,5 veces, como el espanol, el aleman y el frances."
   }
  ]
 }

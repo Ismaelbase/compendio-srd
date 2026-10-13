@@ -31,7 +31,51 @@ def lineas_criatura(r, l):
                 yield s["clave"] + "/" + it["nombre"], b["txt"]
 
 
-GENERADORES = {"criaturas": lineas_criatura}
+def lineas_bloques(bloques, donde="bloques"):
+    for k, b in enumerate(bloques):
+        if b["t"] in ("p", "li", "nota"):
+            yield f"{donde}[{k}]", b["txt"]
+        elif b["t"] == "tabla":
+            if b.get("titulo"):
+                yield f"{donde}[{k}].titulo", b["titulo"]
+            for fila in b["filas"]:
+                for celda in fila:
+                    yield f"{donde}[{k}].celda", celda
+        elif b["t"] == "ficha":
+            yield f"{donde}[{k}].nombre", b["nombre"]
+            yield f"{donde}[{k}].tipo", b["tipo"]
+            for c in ("ca", "pg", "vel"):
+                if b.get(c):
+                    yield f"{donde}[{k}].{c}", b[c]
+            for rot, v in b.get("rasgos", []):
+                yield f"{donde}[{k}].rasgo", f"{rot}: {v}"
+            for s in b.get("secciones", []):
+                yield f"{donde}[{k}].seccion", s["titulo"]
+                for n, t in s["items"]:
+                    yield f"{donde}[{k}].item", f"{n}. {t}"
+
+
+def lineas_conjuro(r, l):
+    x = r[l]
+    for c in ("nombre", "cabecera", "tiempo", "alcance", "comp", "dur"):
+        yield c, x[c]
+    yield from lineas_bloques(x["bloques"])
+
+
+def lineas_objeto(r, l):
+    x = r[l]
+    yield "nombre", x["nombre"]
+    yield "cabecera", x["cabecera"]
+    yield from lineas_bloques(x["bloques"])
+
+
+def lineas_estado(r, l):
+    yield "nombre", r[l]["nombre"]
+    yield from lineas_bloques(r[l]["bloques"])
+
+
+GENERADORES = {"criaturas": lineas_criatura, "conjuros": lineas_conjuro, "objetos": lineas_objeto,
+               "estados": lineas_estado}
 
 
 def main():

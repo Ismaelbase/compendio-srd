@@ -26,18 +26,6 @@
    "por_que": "40 y 80 km son 25 y 50 millas a 1,6 km por milla, «null» es el 0 y las 25 Worte son las veinticinco palabras."
   },
   {
-   "id": "arcane-hand",
-   "idioma": "es",
-   "donde": "bloques[4]",
-   "por_que": "«1,5 m × tu modificador» equivale a cinco pies por punto de modificador."
-  },
-  {
-   "id": "arcane-hand",
-   "idioma": "fr",
-   "donde": "bloques[4]",
-   "por_que": "«1,50 m multiplié par votre modificateur» equivale a cinco pies por punto de modificador."
-  },
-  {
    "id": "awaken",
    "idioma": "fr",
    "donde": "bloques[0]",

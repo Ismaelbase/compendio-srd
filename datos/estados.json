@@ -1,0 +1,2093 @@
+[
+ {
+  "id": "blinded",
+  "en": {
+   "nombre": "Blinded",
+   "p": 177,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Blinded condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Can’t See.</b> You can’t see and automatically fail any ability check that requires sight.",
+     "lead": "Can’t See"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage, and your attack rolls have Disadvantage.",
+     "lead": "Attacks Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Cegado",
+   "p": 197,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Cegado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>No puedes ver.</b> No puedes ver y fallas automáticamente todas las pruebas de característica que requieran la vista.",
+     "lead": "No puedes ver"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja y tus tiradas de ataque tienen desventaja.",
+     "lead": "Ataques afectados"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Blind",
+   "p": 205,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Blind hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Nicht sehfähig:</b> Eine blinde Kreatur kann nicht sehen, und jeder Attributswurf, der Sicht erfordert, misslingt automatisch.",
+     "lead": "Nicht sehfähig"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil, und deine Angriffswürfe sind im Nachteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Aveuglé",
+   "p": 189,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Aveuglé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapable de voir.</b> Vous ne voyez rien et ratez automatiquement tout test de caractéristique reposant sur la vue.",
+     "lead": "Incapable de voir"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage, et vos jets d’attaque subissent le Désavantage.",
+     "lead": "Effet sur les attaques"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Accecato",
+   "p": 202,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"accecato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Non è in grado di vedere.</b> Il personaggio non è in grado di vedere e fallisce automaticamente qualsiasi prova di caratteristica che richieda l'uso della vista.",
+     "lead": "Non è in grado di vedere"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio, mentre i suoi tiri per colpire subiscono svantaggio.",
+     "lead": "Influenza sugli attacchi"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "charmed",
+  "en": {
+   "nombre": "Charmed",
+   "p": 178,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Charmed condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Can’t Harm the Charmer.</b> You can’t attack the charmer or target the charmer with damaging abilities or magical effects.",
+     "lead": "Can’t Harm the Charmer"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Social Advantage.</b> The charmer has Advantage on any ability check to interact with you socially.",
+     "lead": "Social Advantage"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Hechizado",
+   "p": 202,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Hechizado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>No puedes dañar a quien te haya hechizado.</b> No puedes atacar ni elegir como objetivo de efectos dañinos o mágicos a quien te haya hechizado.",
+     "lead": "No puedes dañar a quien te haya hechizado"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ventaja social.</b> Quien te haya hechizado tiene ventaja en las pruebas de característica para interactuar socialmente contigo.",
+     "lead": "Ventaja social"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Bezaubert",
+   "p": 205,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Bezaubert hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Kein Schaden am Zauberwirker:</b> Du kannst den Zauberwirker weder angreifen noch als Ziel schädigender Fähigkeiten und magischer Effekte auswählen.",
+     "lead": "Kein Schaden am Zauberwirker"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sozialer Vorteil:</b> Der Zauberwirker ist bei Attributswürfen, die soziale Interaktionen mit dir betreffen, im Vorteil.",
+     "lead": "Sozialer Vorteil"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Charmé",
+   "p": 190,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Charmé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ne pas nuire au charmeur.</b> Vous ne pouvez pas attaquer votre « charmeur » ni le cibler avec des aptitudes ou effets magiques qui infligent des dégâts.",
+     "lead": "Ne pas nuire au charmeur"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Interaction avec Avantage.</b> Le charmeur a l’Avantage aux tests de caractéristique d’interaction sociale avec vous.",
+     "lead": "Interaction avec Avantage"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Affascinato",
+   "p": 202,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"affascinato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Non può attaccare chi lo ha affascinato.</b> Il personaggio non può attaccare chi lo ha affascinato né bersagliarlo con abilità o effetti magici dannosi.",
+     "lead": "Non può attaccare chi lo ha affascinato"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vantaggio sociale.</b> Chi ha affascinato il personaggio dispone di vantaggio a qualsiasi prova di caratteristica effettuata per interagire socialmente con il personaggio.",
+     "lead": "Vantaggio sociale"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "deafened",
+  "en": {
+   "nombre": "Deafened",
+   "p": 181,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Deafened condition, you experience the following effect."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Can’t Hear.</b> You can’t hear and automatically fail any ability check that requires hearing.",
+     "lead": "Can’t Hear"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Ensordecido",
+   "p": 200,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Ensordecido, experimentarás el siguiente efecto:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>No puedes oír.</b> No puedes oír y fallas automáticamente las pruebas de característica que requieran el oído.",
+     "lead": "No puedes oír"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Taub",
+   "p": 216,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Taub hast, wirkt folgender Effekt auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Nicht hörfähig:</b> Du kannst nicht hören, und jeder Attributswurf, der Hörvermögen erfordert, misslingt automatisch.",
+     "lead": "Nicht hörfähig"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Assourdi",
+   "p": 188,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Assourdi, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapable d’entendre.</b> Vous n’entendez rien et ratez automatiquement tous les tests de caractéristique qui reposent sur l’ouïe.",
+     "lead": "Incapable d’entendre"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Assordato",
+   "p": 204,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il personaggio ha la condizione \"assordato\", subisce il seguente effetto:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Non è in grado di sentire.</b> Il personaggio non è in grado di sentire e fallisce automaticamente qualsiasi prova di caratteristica che richieda l'uso dell'udito.",
+     "lead": "Non è in grado di sentire"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "exhaustion",
+  "en": {
+   "nombre": "Exhaustion",
+   "p": 181,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Exhaustion condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Exhaustion Levels.</b> This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6.",
+     "lead": "Exhaustion Levels"
+    },
+    {
+     "t": "p",
+     "txt": "<b>D20 Tests Affected.</b> When you make a D20 Test, the roll is reduced by 2 times your Exhaustion level.",
+     "lead": "D20 Tests Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed Reduced.</b> Your Speed is reduced by a number of feet equal to 5 times your Exhaustion level.",
+     "lead": "Speed Reduced"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Removing Exhaustion Levels.</b> Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends.",
+     "lead": "Removing Exhaustion Levels"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Cansancio",
+   "p": 197,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Cansancio, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Niveles de cansancio.</b> Este estado es acumulativo. Cada vez que lo recibas, sumas 1 nivel de cansancio. Morirás si tu nivel de cansancio es 6.",
+     "lead": "Niveles de cansancio"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Pruebas con d20 afectadas.</b> Cuando hagas una prueba con d20, el resultado se reduce en 2 × tu nivel de cansancio.",
+     "lead": "Pruebas con d20 afectadas"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad reducida.</b> Tu velocidad se reduce en 1,5 m × tu nivel de cansancio.",
+     "lead": "Velocidad reducida"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Eliminar niveles de cansancio.</b> Tras finalizar un descanso largo, resta 1 nivel de cansancio. Cuando tus niveles de cansancio se reduzcan a 0, el estado terminará.",
+     "lead": "Eliminar niveles de cansancio"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Velocidad reducida.</b> Tu velocidad se reduce en 5 pies × tu nivel de cansancio."
+   }
+  },
+  "de": {
+   "nombre": "Erschöpfung",
+   "p": 206,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Erschöpft hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Erschöpfungsstufen:</b> Dieser Zustand ist kumulativ. Wann immer er auf dich wirkt, erhältst du 1 Erschöpfungsstufe hinzu. Wenn du sechs Erschöpfungsstufen hast, stirbst du.",
+     "lead": "Erschöpfungsstufen"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte W20-Prüfungen:</b> Wenn du eine W20-Prüfung ausführst, ist das Ergebnis um einen Betrag in doppelter Höhe deiner Erschöpfungsstufen verringert.",
+     "lead": "Beeinträchtigte W20-Prüfungen"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Verringerte Bewegungsrate:</b> Deine Bewegungsrate ist um eine Anzahl von Metern in Höhe des 1,5-Fachen deiner Erschöpfungsstufe verringert.",
+     "lead": "Verringerte Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Erschöpfungsstufen entfernen:</b> Wenn du eine lange Rast abschließt, wird eine deiner Erschöpfungsstufen entfernt. Sobald du keine Erschöpfungsstufen mehr hast, endet der Zustand.",
+     "lead": "Erschöpfungsstufen entfernen"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Verringerte Bewegungsrate:</b> Deine Bewegungsrate ist um eine Anzahl von Fuß in Höhe des Fünffachen deiner Erschöpfungsstufe verringert."
+   }
+  },
+  "fr": {
+   "nombre": "Épuisement",
+   "p": 192,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Épuisement, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Niveaux d’Épuisement.</b> Cet état est cumulatif. Chaque fois que vous le recevez, vous subissez 1 niveau d’Épuisement. Vous mourez quand votre niveau d’Épuisement atteint 6.",
+     "lead": "Niveaux d’Épuisement"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tests d20 affectés.</b> Lorsque vous effectuez un Test d20, le résultat est réduit de 2 fois votre niveau actuel d’Épuisement.",
+     "lead": "Tests d20 affectés"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse réduite.</b> Votre Vitesse est réduite de 1,50 m x votre niveau actuel d’Épuisement.",
+     "lead": "Vitesse réduite"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Suppression des niveaux d’Épuisement.</b> Terminer un Repos long dissipe 1 niveau d’Épuisement. Lorsque votre niveau d’Épuisement atteint 0, l’état prend fin pour vous.",
+     "lead": "Suppression des niveaux d’Épuisement"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Vitesse réduite.</b> Votre Vitesse est réduite de 5 pieds x votre niveau actuel d’Épuisement."
+   }
+  },
+  "it": {
+   "nombre": "Indebolimento",
+   "p": 208,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"indebolimento\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Livelli di indebolimento.</b> Questa condizione è cumulativa. Ogni volta che il personaggio la riceve, ottiene 1 livello di indebolimento. Il personaggio muore se il suo livello di indebolimento è pari a 6.",
+     "lead": "Livelli di indebolimento"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sulle prove con d20.</b> Quando effettui una prova con d20, il risultato ottenuto è ridotto del doppio del livello di indebolimento del personaggio.",
+     "lead": "Influenza sulle prove con d20"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità ridotta.</b> La velocità del personaggio è ridotta di una quantità di metri pari a 1,5 × il suo livello di indebolimento.",
+     "lead": "Velocità ridotta"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Rimozione dei livelli di indebolimento.</b> Terminando un riposo lungo, il personaggio perde 1 livello di indebolimento. Quando l'indebolimento raggiunge il livello 0, la condizione termina.",
+     "lead": "Rimozione dei livelli di indebolimento"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Velocità ridotta.</b> La velocità del personaggio è ridotta di una quantità di piedi pari a 5 × il suo livello di indebolimento."
+   }
+  }
+ },
+ {
+  "id": "frightened",
+  "en": {
+   "nombre": "Frightened",
+   "p": 182,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Frightened condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ability Checks and Attacks Affected.</b> You have Disadvantage on ability checks and attack rolls while the source of fear is within line of sight.",
+     "lead": "Ability Checks and Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Can’t Approach.</b> You can’t willingly move closer to the source of fear.",
+     "lead": "Can’t Approach"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Asustado",
+   "p": 196,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Asustado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Pruebas de característica y ataques afectados.</b> Tienes desventaja en las pruebas de característica y las tiradas de ataque mientras la fuente de tu miedo esté en tu línea de visión.",
+     "lead": "Pruebas de característica y ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>No puedes acercarte.</b> No puedes acercarte voluntariamente a la fuente de tu miedo.",
+     "lead": "No puedes acercarte"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Verängstigt",
+   "p": 217,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Verängstigt hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Attributs- und Angriffswürfe:</b> Du bist bei Attributs- und Angriffswürfen im Nachteil, solange du dich in der Sichtlinie der Quelle deiner Furcht befindest.",
+     "lead": "Beeinträchtigte Attributs- und Angriffswürfe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Annäherung möglich:</b> Du kannst dich nicht willentlich auf die Quelle deiner Furcht zubewegen.",
+     "lead": "Keine Annäherung möglich"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Effrayé",
+   "p": 191,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Effrayé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques et les tests de caractéristique.</b> Vous subissez le Désavantage aux tests de caractéristique et aux jets d’attaque tant que la source de votre effroi est dans votre champ de vision.",
+     "lead": "Effet sur les attaques et les tests de caractéristique"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Impossible d’approcher.</b> Vous ne pouvez pas vous rapprocher volontairement de la source de votre effroi.",
+     "lead": "Impossible d’approcher"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Spaventato",
+   "p": 216,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"spaventato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sulle prove di caratteristica e sugli attacchi.</b> Il personaggio subisce svantaggio alle prove di caratteristica e ai tiri per colpire finché la fonte della sua paura è nel suo campo visivo.",
+     "lead": "Influenza sulle prove di caratteristica e sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Non è in grado di avvicinarsi.</b> Il personaggio non è in grado di avvicinarsi volontariamente alla fonte della sua paura.",
+     "lead": "Non è in grado di avvicinarsi"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "grappled",
+  "en": {
+   "nombre": "Grappled",
+   "p": 182,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Grappled condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed 0.</b> Your Speed is 0 and can’t increase.",
+     "lead": "Speed 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> You have Disadvantage on attack rolls against any target other than the grappler.",
+     "lead": "Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Movable.</b> The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it.",
+     "lead": "Movable"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Agarrado",
+   "p": 194,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Agarrado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad 0.</b> Tu velocidad es 0 y no puede aumentar.",
+     "lead": "Velocidad 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Tienes desventaja en las tiradas de ataque contra cualquier objetivo que no sea quien te agarra.",
+     "lead": "Ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Desplazable.</b> Quien te agarra puede arrastrarte o transportarte al moverse, pero cada metro de movimiento le cuesta 1 m adicional, salvo que seas Diminuto o tu tamaño sea dos o más categorías inferior al suyo.",
+     "lead": "Desplazable"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Desplazable.</b> Quien te agarra puede arrastrarte o transportarte al moverse, pero cada pie de movimiento le cuesta 1 pie adicional, salvo que seas Diminuto o tu tamaño sea dos o más categorías inferior al suyo."
+   }
+  },
+  "de": {
+   "nombre": "Gepackt",
+   "p": 208,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Gepackt hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Bewegungsrate:</b> Deine Bewegungsrate beträgt 0 und kann nicht erhöht werden.",
+     "lead": "Keine Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Du bist bei Angriffswürfen gegen alle Ziele außer der Kreatur, die dich gepackt hält, im Nachteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beweglich:</b> Die Kreatur, die dich gepackt hält, kann dich ziehen oder tragen, wenn sie sich bewegt. Allerdings kostet sie dies doppelt so viel Bewegung, sofern du nicht winzig oder um mindestens zwei Kategorien kleiner als sie bist.",
+     "lead": "Beweglich"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Agrippé",
+   "p": 187,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Agrippé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse 0.</b> Votre Vitesse est de 0 et ne peut pas augmenter.",
+     "lead": "Vitesse 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Vous subissez le Désavantage aux jets d’attaque contre toute cible hormis l’agrippeur.",
+     "lead": "Effet sur les attaques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Déplaçable.</b> L’agrippeur peut vous tirer ou vous porter lorsqu’il se déplace, mais ses coûts de déplacement sont doublés, sauf si vous êtes de taille TP ou que votre catégorie de taille est inférieure d’au moins deux crans à la sienne.",
+     "lead": "Déplaçable"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Afferrato",
+   "p": 203,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"afferrato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità 0.</b> La velocità del personaggio è pari a 0 e non può aumentare.",
+     "lead": "Velocità 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> Il personaggio subisce svantaggio ai tiri per colpire contro qualsiasi bersaglio che non sia chi lo ha afferrato.",
+     "lead": "Influenza sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Movibile.</b> Chi ha afferrato il personaggio, muovendosi, può trascinarlo o spostarlo, ma ogni 30 centimetri di movimento costano 30 centimetri extra, a meno che il personaggio non sia Minuscolo o più piccolo di due taglie o più rispetto a chi lo ha afferrato.",
+     "lead": "Movibile"
+    }
+   ],
+   "pies": {
+    "bloques.3.txt": "<b>Movibile.</b> Chi ha afferrato il personaggio, muovendosi, può trascinarlo o spostarlo, ma ogni 1 piede di movimento costano 1 piede extra, a meno che il personaggio non sia Minuscolo o più piccolo di due taglie o più rispetto a chi lo ha afferrato."
+   }
+  }
+ },
+ {
+  "id": "incapacitated",
+  "en": {
+   "nombre": "Incapacitated",
+   "p": 184,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Incapacitated condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inactive.</b> You can’t take any action, Bonus Action, or Reaction.",
+     "lead": "Inactive"
+    },
+    {
+     "t": "p",
+     "txt": "<b>No Concentration.</b> Your Concentration is broken.",
+     "lead": "No Concentration"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speechless.</b> You can’t speak.",
+     "lead": "Speechless"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Surprised.</b> If you’re Incapacitated when you roll Initiative, you have Disadvantage on the roll.",
+     "lead": "Surprised"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Incapacitado",
+   "p": 202,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Incapacitado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inactivo.</b> No puedes llevar a cabo ninguna acción, acción adicional o reacción.",
+     "lead": "Inactivo"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Pérdida de concentración.</b> Pierdes la concentración.",
+     "lead": "Pérdida de concentración"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Mudo.</b> No puedes hablar.",
+     "lead": "Mudo"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sorprendido.</b> Si tienes el estado de Incapacitado cuando tiras iniciativa, tendrás desventaja en la tirada.",
+     "lead": "Sorprendido"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Kampfunfähig",
+   "p": 210,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Kampfunfähig hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inaktiv:</b> Du kannst keine Aktionen, Bonusaktionen oder Reaktionen ausführen.",
+     "lead": "Inaktiv"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Konzentration:</b> Deine Konzentration ist unterbrochen.",
+     "lead": "Keine Konzentration"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Stumm:</b> Du kannst nicht sprechen.",
+     "lead": "Stumm"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Überrascht:</b> Wenn du beim Auswürfeln der Initiative kampfunfähig bist, so bist du bei diesem Wurf im Nachteil.",
+     "lead": "Überrascht"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Neutralisé",
+   "p": 196,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Neutralisé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inactif.</b> Vous ne pouvez entreprendre ni action, ni action Bonus ni Réaction.",
+     "lead": "Inactif"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Concentration brisée.</b> Votre Concentration est brisée.",
+     "lead": "Concentration brisée"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sans voix.</b> Vous ne pouvez pas parler.",
+     "lead": "Sans voix"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Surpris.</b> Si vous êtes Neutralisé au moment de jouer l’Initiative, vous subissez le Désavantage à ce jet.",
+     "lead": "Surpris"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Incapacitato",
+   "p": 208,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"paralizzato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inattività.</b> Il personaggio non è in grado di effettuare azioni, azioni bonus o reazioni.",
+     "lead": "Inattività"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Nessuna concentrazione.</b> La concentrazione del personaggio è interrotta.",
+     "lead": "Nessuna concentrazione"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Senza parole.</b> Il personaggio non è in grado di parlare.",
+     "lead": "Senza parole"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sorpresa.</b> Se il personaggio è incapacitato quando tira per l'iniziativa, subisce svantaggio al tiro.",
+     "lead": "Sorpresa"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "invisible",
+  "en": {
+   "nombre": "Invisible",
+   "p": 184,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Invisible condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Surprise.</b> If you’re Invisible when you roll Initiative, you have Advantage on the roll.",
+     "lead": "Surprise"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Concealed.</b> You aren’t affected by any effect that requires its target to be seen unless the effect’s creator can somehow see you. Any equipment you are wearing or carrying is also concealed.",
+     "lead": "Concealed"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don’t gain this benefit against that creature.",
+     "lead": "Attacks Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Invisible",
+   "p": 203,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Invisible, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sorpresa.</b> Si tienes el estado de Invisible cuando tiras iniciativa, tendrás ventaja en la tirada.",
+     "lead": "Sorpresa"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Oculto.</b> No te afecta ningún efecto que requiera ver a su objetivo, salvo que el creador del efecto pueda verte de alguna forma. Cualquier equipo que vistas o lleves contigo también se oculta.",
+     "lead": "Oculto"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen desventaja y tus tiradas de ataque tienen ventaja. Si una criatura puede verte de alguna forma, no obtienes este beneficio contra esa criatura.",
+     "lead": "Ataques afectados"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Unsichtbar",
+   "p": 217,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Unsichtbar hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Überraschung:</b> Wenn du beim Auswürfeln der Initiative unsichtbar bist, so bist du bei diesem Wurf im Vorteil.",
+     "lead": "Überraschung"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Verborgen:</b> Du bist nicht von Effekten betroffen, die erfordern, dass du gesehen wirst, sofern der Effektwirker keine Möglichkeiten hat, dich trotz deiner Unsichtbarkeit zu sehen. Ausrüstung, die du trägst oder hältst, ist ebenfalls verborgen.",
+     "lead": "Verborgen"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Nachteil, und du bist bei deinen Angriffswürfen im Vorteil. Wenn eine Kreatur Möglichkeiten hat, dich trotz deiner Unsichtbarkeit zu sehen, erhältst du diesen Vorzug gegen diese Kreatur nicht.",
+     "lead": "Beeinträchtigte Angriffe"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Invisible",
+   "p": 195,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Invisible, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Surprise.</b> Si vous êtes Invisible au moment de jouer l’Initiative, vous avez l’Avantage à ce jet.",
+     "lead": "Surprise"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Dissimulé.</b> Vous n’êtes pas affecté par les effets qui exigent que la cible soit vue, sauf si le créateur de l’effet vous « voit » par un biais ou un autre. Tout l’équipement que vous portez est lui aussi dissimulé.",
+     "lead": "Dissimulé"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous subissent le Désavantage, et vos jets d’attaque ont l’Avantage. Si une créature vous voit par un biais ou un autre, vous ne recevez pas ce bénéfice contre elle.",
+     "lead": "Effet sur les attaques"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Invisibile",
+   "p": 209,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"invisibile\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Sorpresa.</b> Se il personaggio è invisibile quando tira per l'iniziativa, dispone di vantaggio al tiro.",
+     "lead": "Sorpresa"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Occultamento.</b> Il personaggio non è influenzato da alcun effetto che richieda la vista del bersaglio, a meno che il creatore dell'effetto non riesca in qualche modo a vederlo. Anche l'equipaggiamento che il personaggio indossa o trasporta è occultato.",
+     "lead": "Occultamento"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio subiscono svantaggio, mentre i suoi tiri per colpire dispongono di vantaggio. Se una creatura è in grado di vederlo, il personaggio non ottiene questo beneficio in relazione a quella creatura.",
+     "lead": "Influenza sugli attacchi"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "paralyzed",
+  "en": {
+   "nombre": "Paralyzed",
+   "p": 186,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Paralyzed condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitated.</b> You have the Incapacitated condition.",
+     "lead": "Incapacitated"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed 0.</b> Your Speed is 0 and can’t increase.",
+     "lead": "Speed 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Saving Throws Affected.</b> You automatically fail Strength and Dexterity saving throws.",
+     "lead": "Saving Throws Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage.",
+     "lead": "Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Automatic Critical Hits.</b> Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.",
+     "lead": "Automatic Critical Hits"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Paralizado",
+   "p": 204,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Paralizado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitado.</b> Tienes el estado de Incapacitado.",
+     "lead": "Incapacitado"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad 0.</b> Tu velocidad es 0 y no puede aumentar.",
+     "lead": "Velocidad 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tiradas de salvación afectadas.</b> Fallas automáticamente las tiradas de salvación de Fuerza y Destreza.",
+     "lead": "Tiradas de salvación afectadas"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja.",
+     "lead": "Ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Críticos automáticos.</b> Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 1,5 m o menos de ti.",
+     "lead": "Críticos automáticos"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Críticos automáticos.</b> Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 5 pies o menos de ti."
+   }
+  },
+  "de": {
+   "nombre": "Gelähmt",
+   "p": 208,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Gelähmt hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Kampfunfähig:</b> Du hast den Zustand Kampfunfähig.",
+     "lead": "Kampfunfähig"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Bewegungsrate:</b> Deine Bewegungsrate beträgt 0 und kann nicht erhöht werden.",
+     "lead": "Keine Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Rettungswürfe:</b> Du scheiterst bei Stärke- und Geschicklichkeitsrettungswürfen automatisch.",
+     "lead": "Beeinträchtigte Rettungswürfe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Automatische kritische Treffer:</b> Jeder Angriffswurf, der dich trifft, ist ein kritischer Treffer, sofern der Angreifer sich im Abstand von bis zu 1,5 Metern von dir befindet.",
+     "lead": "Automatische kritische Treffer"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Automatische kritische Treffer:</b> Jeder Angriffswurf, der dich trifft, ist ein kritischer Treffer, sofern der Angreifer sich im Abstand von bis zu 5 Fuß von dir befindet."
+   }
+  },
+  "fr": {
+   "nombre": "Paralysé",
+   "p": 196,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Paralysé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Neutralisé.</b> Vous subissez l’état Neutralisé.",
+     "lead": "Neutralisé"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse 0.</b> Votre Vitesse est de 0 et ne peut pas augmenter.",
+     "lead": "Vitesse 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les jets de sauvegarde.</b> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dextérité.",
+     "lead": "Effet sur les jets de sauvegarde"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage.",
+     "lead": "Effet sur les attaques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Coups critiques automatiques.</b> Tout jet d’attaque qui vous touche est un Coup critique si l’assaillant qui la porte se trouve dans un rayon de 1,50 m.",
+     "lead": "Coups critiques automatiques"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Coups critiques automatiques.</b> Tout jet d’attaque qui vous touche est un Coup critique si l’assaillant qui la porte se trouve dans un rayon de 5 pieds."
+   }
+  },
+  "it": {
+   "nombre": "Paralizzato",
+   "p": 210,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"paralizzato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitato.</b> Il personaggio ha la condizione \"incapacitato\".",
+     "lead": "Incapacitato"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità 0.</b> La velocità del personaggio è pari a 0 e non può aumentare.",
+     "lead": "Velocità 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sui tiri salvezza.</b> Il personaggio fallisce automaticamente i tiri salvezza su Forza e Destrezza.",
+     "lead": "Influenza sui tiri salvezza"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio.",
+     "lead": "Influenza sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Colpi critici automatici.</b> Ogni tiro per colpire che colpisce il personaggio è un colpo critico se l'attaccante si trova entro 1,5 metri dal personaggio.",
+     "lead": "Colpi critici automatici"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Colpi critici automatici.</b> Ogni tiro per colpire che colpisce il personaggio è un colpo critico se l'attaccante si trova entro 5 piedi dal personaggio."
+   }
+  }
+ },
+ {
+  "id": "petrified",
+  "en": {
+   "nombre": "Petrified",
+   "p": 186,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Petrified condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Turned to Inanimate Substance.</b> You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid inanimate substance (usually stone). Your weight increases by a factor of ten, and you cease aging.",
+     "lead": "Turned to Inanimate Substance"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitated.</b> You have the Incapacitated condition.",
+     "lead": "Incapacitated"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed 0.</b> Your Speed is 0 and can’t increase.",
+     "lead": "Speed 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage.",
+     "lead": "Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Saving Throws Affected.</b> You automatically fail Strength and Dexterity saving throws.",
+     "lead": "Saving Throws Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Resist Damage.</b> You have Resistance to all damage.",
+     "lead": "Resist Damage"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Poison Immunity.</b> You have Immunity to the Poisoned condition.",
+     "lead": "Poison Immunity"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Petrificado",
+   "p": 205,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Petrificado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Transformación en sustancia inanimada.</b> Te transformas, junto con cualquier objeto no mágico que vistas o lleves contigo, en una sustancia sólida e inanimada (normalmente piedra). Tu peso se multiplica por diez y dejas de envejecer.",
+     "lead": "Transformación en sustancia inanimada"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitado.</b> Tienes el estado de Incapacitado.",
+     "lead": "Incapacitado"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad 0.</b> Tu velocidad es 0 y no puede aumentar.",
+     "lead": "Velocidad 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja.",
+     "lead": "Ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tiradas de salvación afectadas.</b> Fallas automáticamente las tiradas de salvación de Fuerza y Destreza.",
+     "lead": "Tiradas de salvación afectadas"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Resistencia al daño.</b> Tienes resistencia a todo el daño.",
+     "lead": "Resistencia al daño"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inmunidad al veneno.</b> Tienes inmunidad al estado de Envenenado.",
+     "lead": "Inmunidad al veneno"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Versteinert",
+   "p": 218,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Versteinert hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>In unbelebte Substanz verwandelt:</b> Du wirst mit allen nichtmagischen Gegenständen, die du trägst oder hältst, in eine massive unbelebte Substanz (normalerweise Stein) verwandelt. Dein Gewicht erhöht sich auf das Zehnfache, und du hörst auf zu altern.",
+     "lead": "In unbelebte Substanz verwandelt"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Kampfunfähig:</b> Du hast den Zustand Kampfunfähig.",
+     "lead": "Kampfunfähig"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Bewegungsrate:</b> Deine Bewegungsrate beträgt 0 und kann nicht erhöht werden.",
+     "lead": "Keine Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Rettungswürfe:</b> Du scheiterst bei Stärke- und Geschicklichkeitsrettungswürfen automatisch.",
+     "lead": "Beeinträchtigte Rettungswürfe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Resistenz gegen Schaden:</b> Du bist gegen alle Schadensarten resistent.",
+     "lead": "Resistenz gegen Schaden"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Immunität gegen Gift:</b> Du bist gegen den Zustand Vergiftet immun.",
+     "lead": "Immunität gegen Gift"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Pétrifié",
+   "p": 197,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Pétrifié, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Transformé en substance inanimée.</b> Vous êtes transformé, ainsi que les objets non magiques que vous portez, en une substance inanimée et dense (généralement de la pierre). Votre poids est décuplé et vous n’êtes plus soumis au vieillissement.",
+     "lead": "Transformé en substance inanimée"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Neutralisé.</b> Vous subissez l’état Neutralisé.",
+     "lead": "Neutralisé"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse 0.</b> Votre Vitesse est de 0 et ne peut pas augmenter.",
+     "lead": "Vitesse 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage.",
+     "lead": "Effet sur les attaques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les jets de sauvegarde.</b> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dextérité.",
+     "lead": "Effet sur les jets de sauvegarde"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Résistance aux dégâts.</b> Vous avez la Résistance à tous les dégâts.",
+     "lead": "Résistance aux dégâts"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Immunité contre le poison.</b> Vous avez l’Immunité contre l’état Empoisonné.",
+     "lead": "Immunité contre le poison"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Pietrificato",
+   "p": 211,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"pietrificato\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Trasformazione in sostanza inanimata.</b> Il personaggio viene trasformato, insieme a tutti gli oggetti non magici che indossa e trasporta, in una sostanza solida inanimata (solitamente in pietra). Il personaggio cessa di invecchiare e il suo peso viene decuplicato.",
+     "lead": "Trasformazione in sostanza inanimata"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitato.</b> Il personaggio ha la condizione \"incapacitato\".",
+     "lead": "Incapacitato"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità 0.</b> La velocità del personaggio è pari a 0 e non può aumentare.",
+     "lead": "Velocità 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio.",
+     "lead": "Influenza sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sui tiri salvezza.</b> Il personaggio fallisce automaticamente i tiri salvezza su Forza e Destrezza.",
+     "lead": "Influenza sui tiri salvezza"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Resistenza ai danni.</b> Il personaggio è resistente a tutti i danni.",
+     "lead": "Resistenza ai danni"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Immunità ai veleni.</b> Il personaggio è immune alla condizione \"avvelenato\".",
+     "lead": "Immunità ai veleni"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "poisoned",
+  "en": {
+   "nombre": "Poisoned",
+   "p": 186,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Poisoned condition, you experience the following effect."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ability Checks and Attacks Affected.</b> You have Disadvantage on attack rolls and ability checks.",
+     "lead": "Ability Checks and Attacks Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Envenenado",
+   "p": 201,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Envenenado, experimentarás el siguiente efecto:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Pruebas de característica y ataques afectados.</b> Tienes desventaja en las tiradas de ataque y las pruebas de característica.",
+     "lead": "Pruebas de característica y ataques afectados"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Vergiftet",
+   "p": 218,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Vergiftet hast, wirkt folgender Effekt auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Attributs- und Angriffswürfe:</b> Du bist bei Angriffs- und Attributswürfen im Nachteil.",
+     "lead": "Beeinträchtigte Attributs- und Angriffswürfe"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Empoisonné",
+   "p": 192,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Empoisonné, vous subissez l’effet suivant."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques et les tests de caractéristique.</b> Vous subissez le Désavantage aux jets d’attaque et aux tests de caractéristique.",
+     "lead": "Effet sur les attaques et les tests de caractéristique"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Avvelenato",
+   "p": 204,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il personaggio ha la condizione \"avvelenato\", subisce il seguente effetto:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sulle prove di caratteristica e sugli attacchi.</b> Il personaggio subisce svantaggio ai tiri per colpire e alle prove di caratteristica.",
+     "lead": "Influenza sulle prove di caratteristica e sugli attacchi"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "prone",
+  "en": {
+   "nombre": "Prone",
+   "p": 186,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Prone condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Restricted Movement.</b> Your only movement options are to crawl or to spend an amount of movement equal to half your Speed (round down) to right yourself and thereby end the condition. If your Speed is 0, you can’t right yourself.",
+     "lead": "Restricted Movement"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage.",
+     "lead": "Attacks Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Derribado",
+   "p": 199,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Derribado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Movimiento restringido.</b> Tus únicas opciones de movimiento son arrastrarte o gastar una cantidad de movimiento igual a la mitad de tu velocidad (redondeando hacia abajo) para levantarte y, por tanto, poner fin a este estado. Si tu velocidad es 0, no puedes levantarte.",
+     "lead": "Movimiento restringido"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Tienes desventaja en las tiradas de ataque. Las tiradas de ataque contra ti tienen ventaja si el atacante está a 1,5 m o menos de ti. De lo contrario, las tiradas de ataque tienen desventaja.",
+     "lead": "Ataques afectados"
+    }
+   ],
+   "pies": {
+    "bloques.2.txt": "<b>Ataques afectados.</b> Tienes desventaja en las tiradas de ataque. Las tiradas de ataque contra ti tienen ventaja si el atacante está a 5 pies o menos de ti. De lo contrario, las tiradas de ataque tienen desventaja."
+   }
+  },
+  "de": {
+   "nombre": "Liegend",
+   "p": 212,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Liegend hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Eingeschränkte Bewegung:</b> Deine einzigen Bewegungsmöglichkeiten bestehen darin, entweder zu kriechen oder Bewegung in Höhe der Hälfte deiner Bewegungsrate (abgerundet) zu verbrauchen, um aufzustehen und den Zustand damit zu beenden. Wenn deine Bewegungsrate 0 beträgt, kannst du nicht aufstehen.",
+     "lead": "Eingeschränkte Bewegung"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Du bist bei Angriffswürfen im Nachteil. Angriffswürfe gegen dich sind im Vorteil, wenn der Angreifer sich im Abstand von bis zu 1,5 Metern von dir befindet. Anderenfalls sind Angriffswürfe gegen dich im Nachteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    }
+   ],
+   "pies": {
+    "bloques.2.txt": "<b>Beeinträchtigte Angriffe:</b> Du bist bei Angriffswürfen im Nachteil. Angriffswürfe gegen dich sind im Vorteil, wenn der Angreifer sich im Abstand von bis zu 5 Fuß von dir befindet. Anderenfalls sind Angriffswürfe gegen dich im Nachteil."
+   }
+  },
+  "fr": {
+   "nombre": "À terre",
+   "p": 187,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état À terre, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Déplacement limité.</b> Vos seules possibilités de déplacement sont ramper ou vous relever en dépensant la moitié de votre Vitesse (arrondie à l’inférieur), ce qui met un terme à l’état. Si votre Vitesse est de 0, vous ne pouvez pas vous relever.",
+     "lead": "Déplacement limité"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Vous subissez le Désavantage aux jets d’attaque. Un jet d’attaque contre vous reçoit l’Avantage si l’assaillant se trouve dans un rayon de 1,50 m de vous. Sans cela, ce jet d’attaque subit le Désavantage.",
+     "lead": "Effet sur les attaques"
+    }
+   ],
+   "pies": {
+    "bloques.2.txt": "<b>Effet sur les attaques.</b> Vous subissez le Désavantage aux jets d’attaque. Un jet d’attaque contre vous reçoit l’Avantage si l’assaillant se trouve dans un rayon de 5 pieds de vous. Sans cela, ce jet d’attaque subit le Désavantage."
+   }
+  },
+  "it": {
+   "nombre": "Prono",
+   "p": 212,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"prono\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Movimento limitato.</b> Le uniche possibilità di movimento del personaggio sono strisciare o spendere una quantità di movimento pari alla metà della sua velocità (arrotondata per difetto) per rialzarsi e, quindi, porre fine alla condizione. Se la sua velocità è pari a 0, il personaggio non può rialzarsi.",
+     "lead": "Movimento limitato"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> Il personaggio subisce svantaggio ai tiri per colpire. Un tiro per colpire contro il personaggio dispone di vantaggio se l'attaccante si trova entro 1,5 metri dal personaggio. Altrimenti, il tiro per colpire subisce svantaggio.",
+     "lead": "Influenza sugli attacchi"
+    }
+   ],
+   "pies": {
+    "bloques.2.txt": "<b>Influenza sugli attacchi.</b> Il personaggio subisce svantaggio ai tiri per colpire. Un tiro per colpire contro il personaggio dispone di vantaggio se l'attaccante si trova entro 5 piedi dal personaggio. Altrimenti, il tiro per colpire subisce svantaggio."
+   }
+  }
+ },
+ {
+  "id": "restrained",
+  "en": {
+   "nombre": "Restrained",
+   "p": 187,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Restrained condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed 0.</b> Your Speed is 0 and can’t increase.",
+     "lead": "Speed 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage, and your attack rolls have Disadvantage.",
+     "lead": "Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Saving Throws Affected.</b> You have Disadvantage on Dexterity saving throws.",
+     "lead": "Saving Throws Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Apresado",
+   "p": 195,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Apresado, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad 0.</b> Tu velocidad es 0 y no puede aumentar.",
+     "lead": "Velocidad 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja y tus tiradas de ataque tienen desventaja.",
+     "lead": "Ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tiradas de salvación afectadas.</b> Tienes desventaja en las tiradas de salvación de Destreza.",
+     "lead": "Tiradas de salvación afectadas"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Festgesetzt",
+   "p": 207,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Festgesetzt hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Bewegungsrate:</b> Deine Bewegungsrate beträgt 0 und kann nicht erhöht werden.",
+     "lead": "Keine Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil, und deine Angriffswürfe sind im Nachteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Rettungswürfe:</b> Du bist bei Geschicklichkeitsrettungswürfen im Nachteil.",
+     "lead": "Beeinträchtigte Rettungswürfe"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Entravé",
+   "p": 192,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Entravé, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse 0.</b> Votre Vitesse est de 0 et ne peut pas augmenter.",
+     "lead": "Vitesse 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage, et vos jets d’attaque subissent le Désavantage.",
+     "lead": "Effet sur les attaques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les jets de sauvegarde.</b> Vous subissez le Désavantage aux jets de sauvegarde de Dextérité.",
+     "lead": "Effet sur les jets de sauvegarde"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Trattenuto",
+   "p": 218,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"trattenuto\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità 0.</b> La velocità del personaggio è pari a 0 e non può aumentare.",
+     "lead": "Velocità 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio, mentre i suoi tiri per colpire subiscono svantaggio.",
+     "lead": "Influenza sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sui tiri salvezza.</b> Il personaggio subisce svantaggio ai tiri salvezza su Destrezza.",
+     "lead": "Influenza sui tiri salvezza"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "stunned",
+  "en": {
+   "nombre": "Stunned",
+   "p": 189,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Stunned condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitated.</b> You have the Incapacitated condition.",
+     "lead": "Incapacitated"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Saving Throws Affected.</b> You automatically fail Strength and Dexterity saving throws.",
+     "lead": "Saving Throws Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage.",
+     "lead": "Attacks Affected"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Aturdido",
+   "p": 196,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Aturdido, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitado.</b> Tienes el estado de Incapacitado.",
+     "lead": "Incapacitado"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tiradas de salvación afectadas.</b> Fallas automáticamente las tiradas de salvación de Fuerza y Destreza.",
+     "lead": "Tiradas de salvación afectadas"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja.",
+     "lead": "Ataques afectados"
+    }
+   ],
+   "pies": {}
+  },
+  "de": {
+   "nombre": "Betäubt",
+   "p": 205,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Betäubt hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Kampfunfähig:</b> Du hast den Zustand Kampfunfähig.",
+     "lead": "Kampfunfähig"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Rettungswürfe:</b> Du scheiterst bei Stärke- und Geschicklichkeitsrettungswürfen automatisch.",
+     "lead": "Beeinträchtigte Rettungswürfe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    }
+   ],
+   "pies": {}
+  },
+  "fr": {
+   "nombre": "Étourdi",
+   "p": 192,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Étourdi, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Neutralisé.</b> Vous subissez l’état Neutralisé.",
+     "lead": "Neutralisé"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les jets de sauvegarde.</b> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dextérité.",
+     "lead": "Effet sur les jets de sauvegarde"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage.",
+     "lead": "Effet sur les attaques"
+    }
+   ],
+   "pies": {}
+  },
+  "it": {
+   "nombre": "Stordito",
+   "p": 216,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"stordito\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Incapacitato.</b> Il personaggio ha la condizione \"incapacitato\".",
+     "lead": "Incapacitato"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sui tiri salvezza.</b> Il personaggio fallisce automaticamente i tiri salvezza su Forza e Destrezza.",
+     "lead": "Influenza sui tiri salvezza"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio.",
+     "lead": "Influenza sugli attacchi"
+    }
+   ],
+   "pies": {}
+  }
+ },
+ {
+  "id": "unconscious",
+  "en": {
+   "nombre": "Unconscious",
+   "p": 191,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "While you have the Unconscious condition, you experience the following effects."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inert.</b> You have the Incapacitated and Prone conditions, and you drop whatever you’re holding. When this condition ends, you remain Prone.",
+     "lead": "Inert"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Speed 0.</b> Your Speed is 0 and can’t increase.",
+     "lead": "Speed 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Attacks Affected.</b> Attack rolls against you have Advantage.",
+     "lead": "Attacks Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Saving Throws Affected.</b> You automatically fail Strength and Dexterity saving throws.",
+     "lead": "Saving Throws Affected"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Automatic Critical Hits.</b> Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.",
+     "lead": "Automatic Critical Hits"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Unaware.</b> You’re unaware of your surroundings.",
+     "lead": "Unaware"
+    }
+   ]
+  },
+  "es": {
+   "nombre": "Inconsciente",
+   "p": 202,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Mientras tengas el estado de Inconsciente, experimentarás los siguientes efectos:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inerte.</b> Tienes los estados de Derribado e incapacitado y sueltas lo que estés sujetando. Cuando concluya este estado, permanecerás derribado.",
+     "lead": "Inerte"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocidad 0.</b> Tu velocidad es 0 y no puede aumentar.",
+     "lead": "Velocidad 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ataques afectados.</b> Las tiradas de ataque contra ti tienen ventaja.",
+     "lead": "Ataques afectados"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Tiradas de salvación afectadas.</b> Fallas automáticamente las tiradas de salvación de Fuerza y Destreza.",
+     "lead": "Tiradas de salvación afectadas"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Críticos automáticos.</b> Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 1,5 m o menos de ti.",
+     "lead": "Críticos automáticos"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ignorante.</b> No eres consciente de tu entorno.",
+     "lead": "Ignorante"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Críticos automáticos.</b> Cualquier tirada de ataque que te acierte es un crítico si el atacante está a 5 pies o menos de ti."
+   }
+  },
+  "de": {
+   "nombre": "Bewusstlos",
+   "p": 205,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Wenn du den Zustand Bewusstlos hast, wirken folgende Effekte auf dich:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inert:</b> Du hast die Zustände Kampfunfähig und Liegend, und du lässt fallen, was immer du gehalten hast. Wenn dieser Zustand endet, bist du weiterhin liegend.",
+     "lead": "Inert"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Keine Bewegungsrate:</b> Deine Bewegungsrate beträgt 0 und kann nicht erhöht werden.",
+     "lead": "Keine Bewegungsrate"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Angriffe:</b> Angriffswürfe gegen dich sind im Vorteil.",
+     "lead": "Beeinträchtigte Angriffe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Beeinträchtigte Rettungswürfe:</b> Du scheiterst bei Stärke- und Geschicklichkeitsrettungswürfen automatisch.",
+     "lead": "Beeinträchtigte Rettungswürfe"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Automatische kritische Treffer:</b> Jeder Angriffswurf, der dich trifft, ist ein kritischer Treffer, sofern der Angreifer sich im Abstand von bis zu 1,5 Metern von dir befindet.",
+     "lead": "Automatische kritische Treffer"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ohne Bewusstsein:</b> Du nimmst deine Umgebung nicht wahr.",
+     "lead": "Ohne Bewusstsein"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Automatische kritische Treffer:</b> Jeder Angriffswurf, der dich trifft, ist ein kritischer Treffer, sofern der Angreifer sich im Abstand von bis zu 5 Fuß von dir befindet."
+   }
+  },
+  "fr": {
+   "nombre": "Inconscient",
+   "p": 194,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Tant que vous avez l’état Inconscient, vous subissez les effets suivants."
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inerte.</b> Vous subissez les états À terre et Neutralisé, et laissez choir tout ce que vous teniez. Lorsque cet état prend fin, vous êtes toujours À terre.",
+     "lead": "Inerte"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Vitesse 0.</b> Votre Vitesse est de 0 et ne peut pas augmenter.",
+     "lead": "Vitesse 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les attaques.</b> Les jets d’attaque contre vous ont l’Avantage.",
+     "lead": "Effet sur les attaques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Effet sur les jets de sauvegarde.</b> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dextérité.",
+     "lead": "Effet sur les jets de sauvegarde"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Coups critiques automatiques.</b> Tout jet d’attaque qui vous touche est un Coup critique si l’assaillant qui la porte se trouve dans un rayon de 1,50 m.",
+     "lead": "Coups critiques automatiques"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Dénué de conscience.</b> Vous n’avez pas conscience de ce qui vous entoure.",
+     "lead": "Dénué de conscience"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Coups critiques automatiques.</b> Tout jet d’attaque qui vous touche est un Coup critique si l’assaillant qui la porte se trouve dans un rayon de 5 pieds."
+   }
+  },
+  "it": {
+   "nombre": "Privo di sensi",
+   "p": 212,
+   "bloques": [
+    {
+     "t": "p",
+     "txt": "Quando il tuo personaggio ha la condizione \"privo di sensi\", subisce i seguenti effetti:"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Inerte.</b> Il personaggio ha le condizioni \"incapacitato\" e \"prono\", e lascia cadere qualsiasi cosa stia impugnando. Quando la condizione termina, il personaggio resta prono.",
+     "lead": "Inerte"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Velocità 0.</b> La velocità del personaggio è pari a 0 e non può aumentare.",
+     "lead": "Velocità 0"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sugli attacchi.</b> I tiri per colpire contro il personaggio dispongono di vantaggio.",
+     "lead": "Influenza sugli attacchi"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Influenza sui tiri salvezza.</b> Il personaggio fallisce automaticamente i tiri salvezza su Forza e Destrezza.",
+     "lead": "Influenza sui tiri salvezza"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Colpi critici automatici.</b> Ogni tiro per colpire che colpisce il personaggio è un colpo critico se l'attaccante si trova entro 1,5 metri dal personaggio.",
+     "lead": "Colpi critici automatici"
+    },
+    {
+     "t": "p",
+     "txt": "<b>Ignaro.</b> Il personaggio non è consapevole di ciò che lo circonda.",
+     "lead": "Ignaro"
+    }
+   ],
+   "pies": {
+    "bloques.5.txt": "<b>Colpi critici automatici.</b> Ogni tiro per colpire che colpisce il personaggio è un colpo critico se l'attaccante si trova entro 5 piedi dal personaggio."
+   }
+  }
+ }
+]

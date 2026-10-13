@@ -1,0 +1,775 @@
+{
+ "_que_es": "Diferencias de cifras de los objetos con el ingles revisadas el 13/10/2026 que NO son errata (numeros con letra, conversiones de unidades, tablas en otro orden). comprobar_objetos.py no las vuelve a avisar.",
+ "revisados": [
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "es",
+   "por_que": "La tabla en español está ordenada alfabéticamente; cada tipo de criatura conserva el mismo rango de probabilidad que en inglés."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "de",
+   "por_que": "La tabla alemana viene en dos mitades, en orden alfabético y con 1–10 y 91–100 en lugar de 01–10 y 91–00; cada tipo conserva su probabilidad (en los datos cada celda junta rango y nombre, y falta el espacio en \"91–100Untote\")."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "fr",
+   "por_que": "La tabla francesa está ordenada alfabéticamente; cada tipo de criatura conserva el mismo rango de probabilidad que en inglés."
+  },
+  {
+   "id": "amulet-of-the-planes",
+   "idioma": "de",
+   "por_que": "Solo cambia la notación 91–100 frente a 91–00."
+  },
+  {
+   "id": "bag-of-beans",
+   "idioma": "es",
+   "por_que": "Los 250 g son la media libra que el inglés escribe en letra (\"half a pound\")."
+  },
+  {
+   "id": "bag-of-beans",
+   "idioma": "de",
+   "por_que": "Los 250 Gramm son la media libra del inglés y la tabla usa 1 y 96–100 en lugar de 01 y 96–00."
+  },
+  {
+   "id": "bag-of-beans",
+   "idioma": "fr",
+   "por_que": "Los 250 g son la media libra que el inglés escribe en letra (\"half a pound\")."
+  },
+  {
+   "id": "bag-of-beans",
+   "idioma": "it",
+   "por_que": "Los 250 grammi son la media libra y los 1 y 3 de más son \"1 treant\", \"3 boleti\", \"1 bulette\" o \"1 mummia\", que el inglés escribe con artículo o en letra."
+  },
+  {
+   "id": "bag-of-devouring",
+   "idioma": "es",
+   "por_que": "Los 0,03 m3 son la conversión del pie cúbico del inglés."
+  },
+  {
+   "id": "bag-of-devouring",
+   "idioma": "de",
+   "por_que": "Los 28 Liter son la conversión del pie cúbico del inglés."
+  },
+  {
+   "id": "bag-of-devouring",
+   "idioma": "fr",
+   "por_que": "Los 30 litres son la conversión del pie cúbico del inglés."
+  },
+  {
+   "id": "bag-of-devouring",
+   "idioma": "it",
+   "por_que": "El cubo de 30 centímetros de arista es el pie cúbico del inglés."
+  },
+  {
+   "id": "bag-of-holding",
+   "idioma": "es",
+   "por_que": "Los 2 m3 redondean los 64 pies cúbicos (1,8 m3) y el 3 sale del superíndice de m3."
+  },
+  {
+   "id": "bag-of-holding",
+   "idioma": "de",
+   "por_que": "Los 1.800 Liter son la conversión de los 64 pies cúbicos."
+  },
+  {
+   "id": "bag-of-holding",
+   "idioma": "fr",
+   "por_que": "Los 1800 litres son la conversión de los 64 pies cúbicos."
+  },
+  {
+   "id": "bag-of-holding",
+   "idioma": "it",
+   "por_que": "Los 64 cubos de 30 centímetros de arista son los 64 pies cúbicos del inglés."
+  },
+  {
+   "id": "bead-of-force",
+   "idioma": "es",
+   "por_que": "Los 2 cm y 30 g son la conversión de 3/4 de pulgada y una onza."
+  },
+  {
+   "id": "bead-of-force",
+   "idioma": "de",
+   "por_que": "Los dos centímetros y 30 Gramm son la conversión de 3/4 de pulgada y una onza."
+  },
+  {
+   "id": "bead-of-force",
+   "idioma": "fr",
+   "por_que": "Los 2 cm, 30 g y 500 g son la conversión de 3/4 de pulgada, una onza y una libra."
+  },
+  {
+   "id": "bead-of-force",
+   "idioma": "it",
+   "por_que": "Los 1,8 cm y 30 grammi son la conversión de 3/4 de pulgada y una onza."
+  },
+  {
+   "id": "bead-of-nourishment",
+   "idioma": "de",
+   "por_que": "\"Eine Tagesration\" equivale a \"1 day of Rations\"."
+  },
+  {
+   "id": "boots-of-the-winterlands",
+   "idioma": "it",
+   "por_que": "Los −17 °C son la conversión de 0 °F."
+  },
+  {
+   "id": "bowl-of-commanding-water-elementals",
+   "idioma": "es",
+   "por_que": "Los 12 l son la conversión aproximada de 3 galones."
+  },
+  {
+   "id": "bowl-of-commanding-water-elementals",
+   "idioma": "de",
+   "por_que": "Los 3 galones aparecen como \"zwölf Liter\", en letra."
+  },
+  {
+   "id": "bowl-of-commanding-water-elementals",
+   "idioma": "fr",
+   "por_que": "Los 15 cm de hondo son la mitad de los 30 cm de diámetro y los 12 litres convierten los 3 galones."
+  },
+  {
+   "id": "bowl-of-commanding-water-elementals",
+   "idioma": "it",
+   "por_que": "Los 15 cm de hondo son la mitad de los 30 cm de diámetro y los 12 litri convierten los 3 galones."
+  },
+  {
+   "id": "broom-of-flying",
+   "idioma": "de",
+   "por_que": "La milla se convierte en 1,6 km."
+  },
+  {
+   "id": "candle-of-invocation",
+   "idioma": "es",
+   "por_que": "La tabla está ordenada alfabéticamente; cada plano conserva el mismo número de resultados que en inglés."
+  },
+  {
+   "id": "candle-of-invocation",
+   "idioma": "de",
+   "por_que": "La tabla alemana viene en dos mitades y en orden alfabético con 1–100; cada plano conserva su probabilidad (en los datos cada celda junta rango y nombre)."
+  },
+  {
+   "id": "candle-of-invocation",
+   "idioma": "fr",
+   "por_que": "La tabla está ordenada alfabéticamente; cada plano conserva el mismo número de resultados que en inglés."
+  },
+  {
+   "id": "candle-of-invocation",
+   "idioma": "it",
+   "por_que": "La tabla está ordenada alfabéticamente; cada plano conserva el mismo número de resultados que en inglés."
+  },
+  {
+   "id": "carpet-of-flying",
+   "idioma": "de",
+   "por_que": "Solo cambia la notación 81–100 frente a 81–00; tamaños, cargas y velocidades están bien convertidos."
+  },
+  {
+   "id": "carpet-of-flying",
+   "idioma": "it",
+   "por_que": "Las medidas en centímetros, kilos y metros equivalen a las del inglés; los 551.2 y 801.5 son un artefacto del comparador al juntar el rango con la medida siguiente."
+  },
+  {
+   "id": "chime-of-opening",
+   "idioma": "de",
+   "por_que": "Las 10 veces aparecen como \"zehn Mal\", en letra."
+  },
+  {
+   "id": "chime-of-opening",
+   "idioma": "fr",
+   "por_que": "Los 500 g son la conversión de una libra."
+  },
+  {
+   "id": "cloak-of-invisibility",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"drei Ladungen\", \"eine Ladung\", \"eine Stunde\")."
+  },
+  {
+   "id": "cloak-of-invisibility",
+   "idioma": "it",
+   "por_que": "La carga va en letra (\"una carica\")."
+  },
+  {
+   "id": "cube-of-force",
+   "idioma": "es",
+   "por_que": "Los 2,5 cm son la pulgada del inglés."
+  },
+  {
+   "id": "cube-of-force",
+   "idioma": "de",
+   "por_que": "Los 2,5 cm son la pulgada y las 10 cargas van en letra (\"zehn Ladungen\")."
+  },
+  {
+   "id": "cube-of-force",
+   "idioma": "fr",
+   "por_que": "\"2 à 3 centimètres\" traduce \"about an inch\" y la tabla de cargas coincide."
+  },
+  {
+   "id": "cube-of-force",
+   "idioma": "it",
+   "por_que": "Los 2,5 cm son la pulgada del inglés."
+  },
+  {
+   "id": "cubic-gate",
+   "idioma": "de",
+   "por_que": "Las 3 pulgadas son 7,5 cm y las cargas van en letra (\"drei Ladungen\", \"eine der Ladungen\")."
+  },
+  {
+   "id": "decanter-of-endless-water",
+   "idioma": "de",
+   "por_que": "Los galones pasan a litros (\"vier\", 20 y 120 Liter) y las 2 libras a \"ein Kilogramm\"."
+  },
+  {
+   "id": "deck-of-illusions",
+   "idioma": "es",
+   "por_que": "\"Las otras 2\" traduce \"two\" en letra."
+  },
+  {
+   "id": "deck-of-illusions",
+   "idioma": "de",
+   "por_que": "La tabla está ordenada alfabéticamente con 3 resultados por criatura y 97–100 para el que roba, igual que en inglés."
+  },
+  {
+   "id": "dragon-orb",
+   "idioma": "de",
+   "por_que": "Los 50 cm y 65 km convierten 20 pulgadas y 40 millas, las 7 cargas van en letra y la tabla de conjuros solo cambia de orden."
+  },
+  {
+   "id": "dragon-scale-mail",
+   "idioma": "de",
+   "por_que": "Los 48 km son la conversión de 30 millas."
+  },
+  {
+   "id": "efficient-quiver",
+   "idioma": "de",
+   "por_que": "Los 6 objetos largos aparecen como \"sechs\", en letra."
+  },
+  {
+   "id": "efreeti-bottle",
+   "idioma": "de",
+   "por_que": "Los 5 asaltos aparecen como \"fünf Kampfrunden\", en letra."
+  },
+  {
+   "id": "eyes-of-charming",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"drei Ladungen\", \"eine Ladung\") y el nivel 1 como \"1. Grad\"."
+  },
+  {
+   "id": "feather-token",
+   "idioma": "es",
+   "por_que": "La tabla está ordenada alfabéticamente y cada pluma conserva su probabilidad; el resto son conversiones (15 m, 6 m, 1,5 m)."
+  },
+  {
+   "id": "feather-token",
+   "idioma": "fr",
+   "por_que": "La tabla está ordenada alfabéticamente y cada pluma conserva su probabilidad."
+  },
+  {
+   "id": "feather-token",
+   "idioma": "it",
+   "por_que": "La tabla está ordenada alfabéticamente y cada pluma conserva su probabilidad."
+  },
+  {
+   "id": "figurine-of-wondrous-power",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"zehn Prozent\", \"eine Stunde\", \"eine Minute\") y la Lanze +1 conserva el bono."
+  },
+  {
+   "id": "folding-boat",
+   "idioma": "es",
+   "por_que": "Los 0,3 m son la conversión de 12 pulgadas."
+  },
+  {
+   "id": "folding-boat",
+   "idioma": "de",
+   "por_que": "Los 30 cm son la conversión de 12 pulgadas."
+  },
+  {
+   "id": "folding-boat",
+   "idioma": "fr",
+   "por_que": "Las dos medidas de 6 pulgadas se juntan en \"largeur et hauteur de 15 cm\"."
+  },
+  {
+   "id": "folding-boat",
+   "idioma": "it",
+   "por_que": "Las dos medidas de 6 pulgadas se juntan en \"larga e profonda 15 centimetri\"."
+  },
+  {
+   "id": "gem-of-brightness",
+   "idioma": "de",
+   "por_que": "Las cargas y la duración van en letra (\"eine Ladung\", \"fünf Ladungen\", \"eine Minute\")."
+  },
+  {
+   "id": "gem-of-seeing",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "hammer-of-thunderbolts",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"fünf Ladungen\", \"eine Ladung\") y \"eine 20 würfelst\" traduce \"roll a 20 on the d20\"."
+  },
+  {
+   "id": "handy-haversack",
+   "idioma": "es",
+   "por_que": "Los 750 l y 1900 l son redondeos al alza de 25 y 64 pies cúbicos (708 y 1812 l), sin efecto práctico."
+  },
+  {
+   "id": "handy-haversack",
+   "idioma": "de",
+   "por_que": "Los 700 y 1.800 Liter son la conversión de 25 y 64 pies cúbicos."
+  },
+  {
+   "id": "handy-haversack",
+   "idioma": "fr",
+   "por_que": "Los 700 y 1800 litres son la conversión de 25 y 64 pies cúbicos."
+  },
+  {
+   "id": "handy-haversack",
+   "idioma": "it",
+   "por_que": "Los cubos de 30 centímetros de arista son los pies cúbicos del inglés."
+  },
+  {
+   "id": "hat-of-many-spells",
+   "idioma": "de",
+   "por_que": "Solo cambia la notación 1–50 y 96–100 frente a 01–50 y 96–00."
+  },
+  {
+   "id": "helm-of-teleportation",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "horn-of-valhalla",
+   "idioma": "de",
+   "por_que": "Solo cambia la notación 1–40 y 91–100 frente a 01–40 y 91–00."
+  },
+  {
+   "id": "immovable-rod",
+   "idioma": "it",
+   "por_que": "Las 4 tonnellate son las 8000 libras del inglés."
+  },
+  {
+   "id": "ioun-stone",
+   "idioma": "de",
+   "por_que": "\"1W3 × 0,3 Metern\" convierte los 1d3 pies y los niveles van en letra o como \"4. Grades\"."
+  },
+  {
+   "id": "iron-bands",
+   "idioma": "fr",
+   "por_que": "Los 500 g son la conversión de una libra."
+  },
+  {
+   "id": "lantern-of-revealing",
+   "idioma": "fr",
+   "por_que": "Los 50 cl son la conversión aproximada de una pinta."
+  },
+  {
+   "id": "luck-blade",
+   "idioma": "de",
+   "por_que": "La carga va en letra (\"eine Ladung\")."
+  },
+  {
+   "id": "mace-of-terror",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"drei Ladungen\", \"eine Ladung\", \"eine Minute\")."
+  },
+  {
+   "id": "manual-of-golems",
+   "idioma": "de",
+   "por_que": "La tabla está ordenada alfabéticamente y cada gólem conserva su probabilidad, tiempo y coste."
+  },
+  {
+   "id": "marvelous-pigments",
+   "idioma": "de",
+   "por_que": "El bote va en letra (\"einen Farbtopf\")."
+  },
+  {
+   "id": "marvelous-pigments",
+   "idioma": "fr",
+   "por_que": "Los 500 g son la conversión de una libra."
+  },
+  {
+   "id": "marvelous-pigments",
+   "idioma": "it",
+   "por_que": "El bote va en letra (\"un vasetto\")."
+  },
+  {
+   "id": "medallion-of-thoughts",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"fünf Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "mirror-of-life-trapping",
+   "idioma": "it",
+   "por_que": "Los 0,5 m de ancho redondean a la baja los 2 pies (0,6 m) de una medida descriptiva sin efecto en las reglas."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "es",
+   "por_que": "La tabla está ordenada alfabéticamente; cada carta conserva su probabilidad en las barajas de 13 y 22 cartas y los efectos coinciden."
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "fr",
+   "por_que": "La tabla está ordenada alfabéticamente; cada carta conserva su probabilidad en las barajas de 13 y 22 cartas y los efectos coinciden."
+  },
+  {
+   "id": "necklace-of-prayer-beads",
+   "idioma": "es",
+   "por_que": "La tabla está ordenada alfabéticamente y cada cuenta conserva su probabilidad."
+  },
+  {
+   "id": "necklace-of-prayer-beads",
+   "idioma": "de",
+   "por_que": "La tabla está ordenada alfabéticamente y cada perla conserva su probabilidad."
+  },
+  {
+   "id": "necklace-of-prayer-beads",
+   "idioma": "fr",
+   "por_que": "La tabla está ordenada alfabéticamente y cada perla conserva su probabilidad."
+  },
+  {
+   "id": "necklace-of-prayer-beads",
+   "idioma": "it",
+   "por_que": "La tabla está ordenada alfabéticamente y cada perla conserva su probabilidad (la cursiva de \"Guardiano della fede\" está mal cerrada)."
+  },
+  {
+   "id": "nine-lives-stealer",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"eine Ladung\") y \"eine 20 würfelst\" traduce \"roll a 20 on the d20\"."
+  },
+  {
+   "id": "oathbow",
+   "idioma": "it",
+   "por_que": "\"All'alba del settimo giorno\" equivale a \"dawn 7 days later\"."
+  },
+  {
+   "id": "oil-of-sharpness",
+   "idioma": "it",
+   "por_que": "Las 20 munizioni coinciden con \"twenty pieces of ammunition\", que el inglés escribe en letra."
+  },
+  {
+   "id": "pipes-of-haunting",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"drei Ladungen\", \"eine Ladung\", \"eine Minute\")."
+  },
+  {
+   "id": "pipes-of-the-sewers",
+   "idioma": "de",
+   "por_que": "Los 800 m son la media milla y las cargas van en letra (\"drei\", \"eine bis drei Ladungen\")."
+  },
+  {
+   "id": "potion-of-longevity",
+   "idioma": "de",
+   "por_que": "El 10 % aparece como \"zehn Prozent\", en letra."
+  },
+  {
+   "id": "quarterstaff-of-the-acrobat",
+   "idioma": "de",
+   "por_que": "La vara de 10 pies aparece como \"drei Meter\" y \"Drei-Meter-Stange\"."
+  },
+  {
+   "id": "ring-of-animal-influence",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "ring-of-elemental-command",
+   "idioma": "de",
+   "por_que": "Las 5 cargas aparecen como \"fünf Ladungen\" y la tabla de conjuros solo cambia de orden."
+  },
+  {
+   "id": "ring-of-evasion",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "ring-of-shooting-stars",
+   "idioma": "de",
+   "por_que": "Las esferas de 3 pies son \"einem Meter\", las cargas van en letra y la tabla de daño coincide."
+  },
+  {
+   "id": "ring-of-spell-storing",
+   "idioma": "de",
+   "por_que": "Los niveles van en letra (\"fünf Zaubergraden\") o como \"1. bis 5. Grades\"."
+  },
+  {
+   "id": "ring-of-the-ram",
+   "idioma": "de",
+   "por_que": "\"Bis zu drei Ladungen\" equivale a gastar de 1 a 3 cargas."
+  },
+  {
+   "id": "ring-of-three-wishes",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"eine seiner drei Ladungen\")."
+  },
+  {
+   "id": "ring-of-x-ray-vision",
+   "idioma": "de",
+   "por_que": "Los 3 pies de madera aparecen como \"einen Meter\"."
+  },
+  {
+   "id": "ring-of-x-ray-vision",
+   "idioma": "fr",
+   "por_que": "Las medidas de 1 pie y 1 pulgada se convierten en 30 cm y 2,5 cm."
+  },
+  {
+   "id": "robe-of-scintillating-colors",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "robe-of-useful-items",
+   "idioma": "de",
+   "por_que": "Las medidas van en letra (\"drei Meter\", \"sieben Meter\" por 24 pies) y solo cambia la notación 1–8 y 97–100."
+  },
+  {
+   "id": "robe-of-useful-items",
+   "idioma": "it",
+   "por_que": "La ventana de 2 por 4 pies y 2 de fondo es \"60 per 120 centimetri, profonda fino a 60 centimetri\"."
+  },
+  {
+   "id": "rod-of-absorption",
+   "idioma": "de",
+   "por_que": "Los 3 niveles aparecen como \"drei ... Zauberenergiegrade\"."
+  },
+  {
+   "id": "rod-of-resurrection",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"fünf Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "rope-of-entanglement",
+   "idioma": "de",
+   "por_que": "La CD 15 se repite porque el alemán desdobla la prueba de Fuerza o Destreza en dos frases."
+  },
+  {
+   "id": "scarab-of-protection",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"zwölf Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "sovereign-glue",
+   "idioma": "es",
+   "por_que": "\"30 g + 1d6 × 30 g\" equivale a 1d6 + 1 onzas y los 30 cm al pie."
+  },
+  {
+   "id": "sovereign-glue",
+   "idioma": "de",
+   "por_que": "\"(1W6+1) × 30 Milliliter\" equivale a 1d6 + 1 onzas."
+  },
+  {
+   "id": "sovereign-glue",
+   "idioma": "fr",
+   "por_que": "\"1d6 + 1 doses de 30 grammes\" equivale a 1d6 + 1 onzas."
+  },
+  {
+   "id": "sovereign-glue",
+   "idioma": "it",
+   "por_que": "\"(1d6 + 1) x 30 grammi\" equivale a 1d6 + 1 onzas."
+  },
+  {
+   "id": "sphere-of-annihilation",
+   "idioma": "de",
+   "por_que": "\"1,5-Fachen deines Intelligenzmodifikators in Metern (mindestens 1,5 Meter)\" convierte 5 veces el modificador en pies, y la tabla usa 1–100."
+  },
+  {
+   "id": "staff-of-charming",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"zehn Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "staff-of-fire",
+   "idioma": "de",
+   "por_que": "Las 10 cargas aparecen como \"zehn Ladungen\"."
+  },
+  {
+   "id": "staff-of-frost",
+   "idioma": "de",
+   "por_que": "Las 10 cargas aparecen como \"zehn Ladungen\"."
+  },
+  {
+   "id": "staff-of-healing",
+   "idioma": "de",
+   "por_que": "Las 10 cargas aparecen como \"zehn Ladungen\"."
+  },
+  {
+   "id": "staff-of-striking",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"zehn Ladungen\", \"bis zu drei Ladungen\")."
+  },
+  {
+   "id": "staff-of-swarming-insects",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"zehn Ladungen\", \"zehn Minuten\", \"eine Ladung\")."
+  },
+  {
+   "id": "sword-of-life-stealing",
+   "idioma": "de",
+   "por_que": "\"Eine 20 würfelst\" traduce \"roll a 20 on the d20\"."
+  },
+  {
+   "id": "sword-of-sharpness",
+   "idioma": "de",
+   "por_que": "\"Eine 20 würfelst\" traduce \"roll a 20 on the d20\" y el nivel de cansancio va en letra."
+  },
+  {
+   "id": "talisman-of-pure-good",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"sieben Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "talisman-of-the-sphere",
+   "idioma": "es",
+   "por_que": "\"3 m más 3 × tu modificador\" en metros equivale a 10 pies más 10 × el modificador en pies."
+  },
+  {
+   "id": "talisman-of-the-sphere",
+   "idioma": "de",
+   "por_que": "\"Drei Meter plus ... Dreifachen\" equivale a 10 pies más 10 × el modificador en pies."
+  },
+  {
+   "id": "talisman-of-the-sphere",
+   "idioma": "fr",
+   "por_que": "\"3 plus le triple\" en metros equivale a 10 pies más 10 × el modificador en pies."
+  },
+  {
+   "id": "talisman-of-the-sphere",
+   "idioma": "it",
+   "por_que": "\"3 metri più ... 3 metri ×\" el modificador equivale a 10 pies más 10 × el modificador en pies."
+  },
+  {
+   "id": "talisman-of-ultimate-evil",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"sechs Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "thunderous-greatclub",
+   "idioma": "de",
+   "por_que": "El 20 de más sale de repetir la Fuerza 20 (\"sofern er nicht ohnehin 20 oder mehr beträgt\")."
+  },
+  {
+   "id": "trident-of-fish-command",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "universal-solvent",
+   "idioma": "es",
+   "por_que": "\"30 g + 1d6 × 30 g\" equivale a 1d6 + 1 onzas y 0,1 m2 al pie cuadrado."
+  },
+  {
+   "id": "vorpal-sword",
+   "idioma": "de",
+   "por_que": "\"Eine 20 würfelst\" traduce \"roll a 20 on the d20\"."
+  },
+  {
+   "id": "wand-of-binding",
+   "idioma": "de",
+   "por_que": "Las 7 cargas aparecen como \"sieben Ladungen\"."
+  },
+  {
+   "id": "wand-of-enemy-detection",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben Ladungen\", \"eine Ladung\", \"eine Minute\")."
+  },
+  {
+   "id": "wand-of-fear",
+   "idioma": "de",
+   "por_que": "Las 7 cargas aparecen como \"sieben Ladungen\"."
+  },
+  {
+   "id": "wand-of-fireballs",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben\", \"bis zu drei\", \"einer Ladung\", \"um eins\")."
+  },
+  {
+   "id": "wand-of-fireballs",
+   "idioma": "fr",
+   "por_que": "\"D'un cran\" traduce \"by 1\"."
+  },
+  {
+   "id": "wand-of-lightning-bolts",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben\", \"bis zu drei\", \"einer Ladung\", \"um eins\")."
+  },
+  {
+   "id": "wand-of-lightning-bolts",
+   "idioma": "fr",
+   "por_que": "\"D'un cran\" traduce \"by 1\"."
+  },
+  {
+   "id": "wand-of-magic-detection",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "wand-of-magic-missiles",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben\", \"bis zu drei\", \"einer Ladung\", \"um eins\")."
+  },
+  {
+   "id": "wand-of-magic-missiles",
+   "idioma": "fr",
+   "por_que": "\"D'un cran\" traduce \"by 1\"."
+  },
+  {
+   "id": "wand-of-paralysis",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben Ladungen\", \"eine Ladung\", \"eine Minute\")."
+  },
+  {
+   "id": "wand-of-polymorph",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"sieben Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "wand-of-secrets",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"drei Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "wand-of-web",
+   "idioma": "de",
+   "por_que": "Las cargas van en letra (\"sieben Ladungen\", \"eine Ladung\")."
+  },
+  {
+   "id": "wand-of-wonder",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"sieben Ladungen\", \"eine Ladung\") y la tabla usa 1–20 y 98–100."
+  },
+  {
+   "id": "winged-boots",
+   "idioma": "de",
+   "por_que": "Las cifras van en letra (\"vier Ladungen\", \"eine Ladung\", \"eine Stunde\")."
+  },
+  {
+   "id": "ammunition-of-slaying",
+   "idioma": "it",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  },
+  {
+   "id": "feather-token",
+   "idioma": "de",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "de",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  },
+  {
+   "id": "mysterious-deck",
+   "idioma": "it",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  },
+  {
+   "id": "staff-of-the-woodlands",
+   "idioma": "de",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  },
+  {
+   "id": "staff-of-withering",
+   "idioma": "de",
+   "por_que": "ya corregida; lo que queda son filas de tabla en el orden alfabetico de su idioma o cifras con letra"
+  }
+ ]
+}

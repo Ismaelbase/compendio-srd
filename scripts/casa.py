@@ -37,6 +37,37 @@ RAYAS_EN = {
         "one nonmagical metal object (armor or a weapon) worn or carried",
     "Piercing damage—or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied—plus":
         "Piercing damage, or 6 (1d4 + 4) Piercing damage if the swarm is Bloodied, plus",
+    # objetos magicos
+    "its outside dimensions—roughly 2 feet square and 4 feet deep on the inside.":
+        "its outside dimensions: roughly 2 feet square and 4 feet deep on the inside.",
+    "You decide what it looks like—including color, style, and accessories—but":
+        "You decide what it looks like (including color, style, and accessories), but",
+    "the spell’s energy—not the spell itself—is stored": "the spell’s energy (not the spell itself) is stored",
+    # conjuros: la lista de las cartas de hechizos (T-0108, generador\paso1_base.py)
+    "If the cord is cut—which happens only when an effect states that it does so—the target’s":
+        "If the cord is cut (which happens only when an effect states that it does so), the target’s",
+    "You cast that spell—called the contingent spell—as part of": "You cast that spell (called the contingent spell) as part of",
+    "within range—both useful in fending off": "within range, both useful in fending off",
+    "You make yourself—including your clothing, armor, weapons, and other belongings on your person— look different":
+        "You make yourself (including your clothing, armor, weapons, and other belongings on your person) look different",
+    "by one category—from Medium to": "by one category, from Medium to",
+    "high degree of skill—such as weapons and armor—unless": "high degree of skill (such as weapons and armor) unless",
+    "creature type—Celestial, Fey, or Fiend— which determines": "creature type (Celestial, Fey, or Fiend), which determines",
+    "divination tools—such as cards or runes—worth": "divination tools (such as cards or runes) worth",
+    "up close—within 30 feet—at least once": "up close (within 30 feet) at least once",
+    "within an object in range—a message that is uttered": "within an object in range: a message that is uttered",
+    "course of activity—described in no more than 25 words—to": "course of activity (described in no more than 25 words) to",
+    "no spell—not even <i>Wish</i>—can gather": "no spell (not even <i>Wish</i>) can gather",
+    "an object—such as a chair, muddy footprints, or a small chest—it must be":
+        "an object (such as a chair, muddy footprints, or a small chest), it must be",
+    "opaque wall—up to 90 feet long, 30 feet high, and 1 inch thick—centered":
+        "opaque wall (up to 90 feet long, 30 feet high, and 1 inch thick) centered",
+    "integral for its survival— its head, for instance—the spell": "integral for its survival (its head, for instance), the spell",
+    "Nothing—not physical objects, energy, or other spell effects—can pass":
+        "Nothing (not physical objects, energy, or other spell effects) can pass",
+    "unique sigil sequence—a string of runes": "unique sigil sequence: a string of runes",
+    "liquid surface—such as water, acid, mud, snow, quicksand, or lava—as if":
+        "liquid surface (such as water, acid, mud, snow, quicksand, or lava) as if",
 }
 
 
@@ -72,7 +103,15 @@ def _estados_es(t):
             return mm.group(0)  # «el arma queda envenenada»: un objeto no tiene estados
         e = mm.group(3)
         return mm.group(1) + mm.group(2) + e[0].upper() + e[1:]
-    return rx.sub(sub, t)
+    t = rx.sub(sub, t)
+    # en plural y en lista: "los estados de agarrada, apresada o incapacitada"
+    est = m.RX_ESTADO_ES
+    rx2 = re.compile(r"\bestados (?:de )?((?:" + est + r")(?:, (?:" + est + r"))*(?: [yo] (?:" + est + r"))?)\b")
+
+    def sub2(mm):
+        lista = re.sub(r"\b(" + est + r")\b", lambda x: x.group(1)[0].upper() + x.group(1)[1:], mm.group(1))
+        return mm.group(0).replace(mm.group(1), lista)
+    return rx2.sub(sub2, t)
 
 
 def _inmunidades_es(v):
@@ -99,8 +138,9 @@ def aplicar_casa(registros, contar=None):
                 cuenta["GM a DM"] += n != t
                 if l == "es":
                     n2 = _estados_es(n)
-                    if k == "inm" and isinstance(o, dict):
-                        n2 = _inmunidades_es(n2)
+                    if (k == "inm" and isinstance(o, dict)) or \
+                            (isinstance(o, list) and k == 1 and len(o) == 2 and o[0] == "Inmunidades"):
+                        n2 = _inmunidades_es(n2)  # cabecera de criatura o ficha dentro de un conjuro
                     cuenta["estados con mayuscula"] += n2 != n
                     n = n2
                 else:
