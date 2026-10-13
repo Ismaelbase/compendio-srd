@@ -1,10 +1,16 @@
 /* Compendio SRD 2024 */
 
-/* Fichas, conjuros, objetos y recuadros: callouts propios (sin el plugin se ven como un callout normal) */
+/* Fichas, conjuros, objetos y recuadros: callouts propios (sin el plugin se ven como un callout normal).
+   Los colores van enteros y aplicados aqui mismo: hasta Obsidian 1.8 --callout-color eran tres numeros
+   ("128, 38, 22") y desde las versiones nuevas es un color; asi se ve igual en las dos. */
 .callout[data-callout="srd-ficha"],
 .callout[data-callout="srd-conjuro"],
 .callout[data-callout="srd-objeto"] {
-	--callout-color: 128, 38, 22;
+	--srd-color: rgb(128, 38, 22);
+	--srd-fondo: rgba(128, 38, 22, 0.06);
+	--srd-borde: rgba(128, 38, 22, 0.35);
+	--srd-banda1: rgba(128, 38, 22, 0.07);
+	--srd-banda2: rgba(128, 38, 22, 0.14);
 	--callout-icon: lucide-skull;
 	--callout-padding: 12px 16px;
 	--callout-title-size: 1.15em;
@@ -20,7 +26,9 @@
 }
 
 .callout[data-callout="srd-recuadro"] {
-	--callout-color: 112, 98, 72;
+	--srd-color: rgb(112, 98, 72);
+	--srd-fondo: rgba(112, 98, 72, 0.07);
+	--srd-borde: rgba(112, 98, 72, 0.35);
 	--callout-icon: lucide-book-open;
 	--callout-padding: 12px 16px;
 }
@@ -28,11 +36,30 @@
 .theme-dark .callout[data-callout="srd-ficha"],
 .theme-dark .callout[data-callout="srd-conjuro"],
 .theme-dark .callout[data-callout="srd-objeto"] {
-	--callout-color: 224, 134, 108;
+	--srd-color: rgb(224, 134, 108);
+	--srd-fondo: rgba(224, 134, 108, 0.07);
+	--srd-borde: rgba(224, 134, 108, 0.3);
+	--srd-banda1: rgba(224, 134, 108, 0.08);
+	--srd-banda2: rgba(224, 134, 108, 0.16);
 }
 
 .theme-dark .callout[data-callout="srd-recuadro"] {
-	--callout-color: 196, 178, 146;
+	--srd-color: rgb(196, 178, 146);
+	--srd-fondo: rgba(196, 178, 146, 0.07);
+	--srd-borde: rgba(196, 178, 146, 0.3);
+}
+
+.callout[data-callout^="srd-"] {
+	--callout-color: var(--srd-color);
+	background-color: var(--srd-fondo);
+	border: 1px solid var(--srd-borde);
+	border-left-width: 4px;
+	mix-blend-mode: normal;
+}
+
+.callout[data-callout^="srd-"] .callout-title,
+.callout[data-callout^="srd-"] .callout-icon .svg-icon {
+	color: var(--srd-color);
 }
 
 .callout[data-callout^="srd-"] .callout-title-inner {
@@ -70,11 +97,11 @@
 
 .callout[data-callout="srd-ficha"] td:nth-child(-n + 4),
 .callout[data-callout="srd-ficha"] td:nth-child(n + 9) {
-	background-color: rgba(var(--callout-color), 0.08);
+	background-color: var(--srd-banda1);
 }
 
 .callout[data-callout="srd-ficha"] td:nth-child(n + 5):nth-child(-n + 8) {
-	background-color: rgba(var(--callout-color), 0.15);
+	background-color: var(--srd-banda2);
 }
 
 /* Vista del encuentro */
