@@ -12,7 +12,7 @@ Import the official System Reference Document 5.2.1 (the 2024 rules of the fifth
 - **Index notes** for each section: creatures by challenge rating, spells by level, magic items by rarity, rules in the order of the SRD.
 - **Encounter builder** with the 2024 rules: XP budget per character (Low, Moderate, High), no multipliers, and the troubleshooting tips of the SRD (many creatures, CR 0 creatures, number of stat blocks, powerful creatures).
 - **Initiative Tracker**: send the encounter to the [Initiative Tracker](https://github.com/Obsidian-TTRPG-Community/initiative-tracker) plugin, or copy an `encounter` block for it.
-- **Fantasy Statblocks** (optional): adds the stat block to each creature's properties so [Fantasy Statblocks](https://github.com/Obsidian-TTRPG-Community/fantasy-statblocks) can read it.
+- **Fantasy Statblocks** (optional): adds the stat block to each creature's properties so [Fantasy Statblocks](https://github.com/Obsidian-TTRPG-Community/fantasy-statblocks) can read it, and saves a 2024 stat block layout for it in each language folder (`Compendio SRD 2024 (English).json` and so on). Import that file in Fantasy Statblocks, Layouts, Import From JSON, and turn on its option to parse frontmatter for creatures: the creatures then show with the 2024 layout in your language, also in Initiative Tracker.
 - **Units**: feet and pounds, or the meters and kilograms of the SRD in Spanish, German, French and Italian.
 
 The text is the official translation of each SRD. Where a translation says something different from the English SRD (a wrong number, a missing word), it has been corrected to match the English one; every correction is listed in the credits note of each language.
@@ -59,7 +59,7 @@ Importa el documento de referencia del sistema 5.2.1 oficial (las reglas de 2024
 - **Índices** de cada sección: criaturas por VD, conjuros por nivel, objetos mágicos por rareza, reglas en el orden del SRD.
 - **Encuentros** con las reglas de 2024: presupuesto de PX por personaje (baja, moderada, alta), sin multiplicadores, y los consejos de "Solución de problemas" del SRD.
 - **Initiative Tracker**: manda el encuentro al plugin [Initiative Tracker](https://github.com/Obsidian-TTRPG-Community/initiative-tracker) o copia un bloque `encounter` para él.
-- **Fantasy Statblocks** (opcional): añade la ficha a las propiedades de cada criatura para que [Fantasy Statblocks](https://github.com/Obsidian-TTRPG-Community/fantasy-statblocks) la lea.
+- **Fantasy Statblocks** (opcional): añade la ficha a las propiedades de cada criatura para que [Fantasy Statblocks](https://github.com/Obsidian-TTRPG-Community/fantasy-statblocks) la lea, y guarda en la carpeta de cada idioma un diseño de ficha 2024 para él (`Compendio SRD 2024 (Español).json`, etc.). Importa ese fichero en Fantasy Statblocks, Layouts, Import From JSON, y activa en él la lectura de las propiedades de las criaturas: las criaturas salen con la ficha de 2024 en tu idioma, también en Initiative Tracker.
 - **Unidades**: pies y libras, o los metros y kilos del SRD en español, alemán, francés e italiano.
 
 El texto es la traducción oficial de cada SRD. Donde una traducción no dice lo mismo que el SRD en inglés (una cifra equivocada, una palabra que falta), se ha corregido con el inglés; cada corrección está en la nota de créditos de su idioma.
