@@ -105,8 +105,8 @@ def recortes(lang, filas):
         y0 = min(r["y"] for r in rs) - 6
         y1 = max(r["yb"] for r in rs) + 6
         x1 = max(x1, x0 + 250)
-        pix = page.get_pixmap(clip=fitz.Rect(x0, y0, x1, y1), matrix=fitz.Matrix(2, 2))
-        jpg = pix.tobytes("jpeg", jpg_quality=82)
+        pix = page.get_pixmap(clip=fitz.Rect(x0, y0, x1, y1), matrix=fitz.Matrix(1.7, 1.7))
+        jpg = pix.tobytes("jpeg", jpg_quality=78)
         out.append((p, base64.b64encode(jpg).decode()))
     return out
 
@@ -178,6 +178,23 @@ def extraido_html(tipo, x, lang):
     return bloques_html(x["bloques"])
 
 
+def con_pies(x):
+    """Copia de la entrada con los textos de su version en pies puestos."""
+    import copy
+    y = copy.deepcopy(x)
+    for ruta, texto in x.get("pies", {}).items():
+        o = y
+        partes = ruta.split(".")
+        for p in partes[:-1]:
+            o = o[int(p)] if isinstance(o, list) else o[p]
+        ultima = partes[-1]
+        if isinstance(o, list):
+            o[int(ultima)] = texto
+        else:
+            o[ultima] = texto
+    return y
+
+
 def main():
     salida = sys.argv[1]
     datos = {t: {r["id"]: r for r in json.load(open(os.path.join(DATOS, f"{t}.json"), encoding="utf-8"))}
@@ -193,9 +210,10 @@ def main():
                             f"<span class='despues'>{html.escape(re.sub(r'<[^>]+>', '', c['despues']))}</span>. "
                             f"{html.escape(c['por_que'])}</li>" for c in corr)
         paginas = sorted({p for p, _ in imgs})
+        html_pies = extraido_html(tipo, con_pies(x), lang) if x.get("pies") else None
         tarjetas.append({"tipo": tipo, "id": i, "lang": lang, "nombre": x["nombre"], "en": r["en"]["nombre"],
-                         "porque": porque, "imgs": imgs, "html": extraido_html(tipo, x, lang), "corr": corr_html,
-                         "paginas": paginas})
+                         "porque": porque, "imgs": imgs, "html": extraido_html(tipo, x, lang), "html_pies": html_pies,
+                         "corr": corr_html, "paginas": paginas})
     json.dump([{k: v for k, v in t.items() if k != "imgs"} | {"imgs": [p for p, _ in t["imgs"]]} for t in tarjetas],
               open(salida + ".json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     import pickle
