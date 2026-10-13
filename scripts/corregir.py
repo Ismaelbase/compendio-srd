@@ -7,6 +7,7 @@ La entrada guarda la lista de lo cambiado en "correcciones", para el credito de 
 """
 import json
 import os
+import re
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DATOS = os.path.join(os.path.dirname(AQUI), "datos")
@@ -33,6 +34,31 @@ def _textos(x):
     return out
 
 
+def resolver(x, donde):
+    """'bloques[3].txt' -> (contenedor, clave) dentro de la entrada x, o None."""
+    o = x
+    partes = re.findall(r"([^.\[\]]+)|\[(\d+)\]", donde)
+    pasos = [int(i) if i else n for n, i in partes]
+    try:
+        for p in pasos[:-1]:
+            o = o[p]
+        o[pasos[-1]]
+    except (KeyError, IndexError, TypeError):
+        return None
+    return o, pasos[-1]
+
+
+def sitios_de(x, antes, donde=None):
+    """Sitios donde sale 'antes' (solo en 'donde' si se da) y cuantas veces en total."""
+    if donde:
+        r = resolver(x, donde)
+        candidatos = [r] if r else []
+    else:
+        candidatos = list(_textos(x))
+    sitios = [(o, k) for o, k in candidatos if isinstance(o[k], str) and antes in o[k]]
+    return sitios, sum(o[k].count(antes) for o, k in sitios)
+
+
 def aplicar(registros, fichero):
     ruta = os.path.join(DATOS, fichero)
     if not os.path.exists(ruta):
@@ -45,8 +71,7 @@ def aplicar(registros, fichero):
         if r is None or c["idioma"] not in r:
             errores.append(f"{c['id']} ({c['idioma']}): no existe")
             continue
-        sitios = [(o, k) for o, k in _textos(r[c["idioma"]]) if c["antes"] in o[k]]
-        veces = sum(o[k].count(c["antes"]) for o, k in sitios)
+        sitios, veces = sitios_de(r[c["idioma"]], c["antes"], c.get("donde"))
         if veces != 1:
             errores.append(f"{c['id']} ({c['idioma']}): '{c['antes']}' sale {veces} veces")
             continue

@@ -1,0 +1,1068 @@
+{
+ "_que_es": "Erratas de traduccion de los conjuros, traidas de las cartas de hechizos (T-0108) por importar_erratas_cartas.py. Manda el ingles (decision 34 de T-0111).",
+ "correcciones": [
+  {
+   "id": "light",
+   "idioma": "es",
+   "antes": "Tocas un objeto Grande o más pequeño que nadie lleve o vista.",
+   "despues": "Tocas un objeto Grande o más pequeño que no lleve ni vista otra criatura.",
+   "por_que": "Con la carta española no puedes lanzar Luz sobre tu propia arma, tu escudo ni nada que lleves encima; con la inglesa sí, porque solo excluye lo que lleve o vista otra criatura.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "guidance",
+   "idioma": "es",
+   "antes": "la criatura añade 1d4 a una prueba de característica con la habilidad elegida.",
+   "despues": "la criatura añade 1d4 a cualquier prueba de característica que utilice la habilidad elegida.",
+   "por_que": "La carta española se lee como un solo 1d4 en una prueba y el conjuro gastado; la inglesa suma 1d4 a todas las pruebas con esa habilidad durante el minuto de concentración.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "de",
+   "antes": "einen Gegenstand, der nicht größer als ein Würfel mit 30 Zentimetern Metern Kantenlänge ist",
+   "despues": "einen Gegenstand, der nicht größer als ein Würfel mit 30 Zentimetern Kantenlänge ist",
+   "por_que": "La medida alemana lleva dos unidades pegadas (“30 Zentimetern Metern”) y no dice qué cubo es; el inglés dice 1 pie cúbico, que en la escala alemana son 30 cm de lado, no 30 m.",
+   "tipo": "unidad",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "prestidigitation",
+   "idioma": "de",
+   "antes": "unbelebtes Material, das nicht größer als ein Würfel mit 30 Zentimetern Metern Kantenlänge ist",
+   "despues": "unbelebtes Material, das nicht größer als ein Würfel mit 30 Zentimetern Kantenlänge ist",
+   "por_que": "Misma medida rota que en Sauber oder schmutzig: el inglés limita el material a 1 pie cúbico y la carta alemana no deja claro el tamaño.",
+   "tipo": "unidad",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "mage-hand",
+   "idioma": "de",
+   "antes": "Gegenstände in einem Behälter verstauen oder daraus hervorholen",
+   "despues": "Gegenstände in einem offenen Behälter verstauen oder daraus hervorholen",
+   "por_que": "El inglés pide que el recipiente esté abierto; con la carta alemana una mesa deja sacar algo de un cofre cerrado sin abrirlo antes.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "elementalism",
+   "idioma": "de",
+   "antes": "Alternativ erzeugst du eine Tasse sauberen Wassers entweder in einem Behälter oder auf einer Oberfläche.",
+   "despues": "Alternativ erzeugst du eine Tasse sauberen Wassers entweder in einem offenen Behälter oder auf einer Oberfläche.",
+   "por_que": "El inglés solo deja crear el agua en un recipiente abierto o sobre una superficie; con la carta alemana vale un recipiente cerrado.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "starry-wisp",
+   "idioma": "de",
+   "antes": "und kann nicht unsichtbar werden.",
+   "despues": "und kann nicht von Unsichtbarkeit profitieren.",
+   "por_que": "Con la carta alemana, un objetivo que ya tenia el estado Invisible cuando le acierta el truco lo conserva entero, porque solo se le impide volverse invisible; con la inglesa deja de beneficiarse de ese estado y quien le ataque ya no tira con desventaja.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "comprehend-languages",
+   "idioma": "de",
+   "antes": "jeder Sprache, die du hörst oder liest",
+   "despues": "jeder gesprochenen Sprache oder Gebärdensprache, die du hörst oder siehst",
+   "por_que": "Con la carta inglesa el conjuro entiende también a quien habla por señas; con la alemana solo lo oído y lo leído, así que una criatura que se comunica en lengua de signos queda fuera del conjuro (y lo leído ya lo cubre la frase siguiente).",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "grease",
+   "idioma": "de",
+   "antes": "oder ihren Zug darin beginnen",
+   "despues": "oder ihren Zug darin beenden",
+   "por_que": "Con la carta alemana la criatura tira la salvacion al empezar su turno en la grasa y con la inglesa al terminarlo, asi que quien entra y sale en el mismo turno tira en una mesa y no en la otra.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "jump",
+   "idioma": "de",
+   "antes": "kann diese Kreatur in jedem ihrer Züge bis zu neun Meter weit springen",
+   "despues": "kann diese Kreatur einmal in jedem ihrer Züge bis zu neun Meter weit springen",
+   "por_que": "La carta alemana no pone el limite de un salto por turno, asi que la criatura puede saltar varias veces gastando 3 m de movimiento cada vez; con la inglesa solo salta una vez por turno.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "silent-image",
+   "idioma": "es",
+   "antes": "Si la criatura descubre que la imagen es una ilusión, no se dejará engañar por ella.",
+   "despues": "Si la criatura descubre que la imagen es una ilusión, podrá ver a través de ella.",
+   "por_que": "Con la carta inglesa (y la alemana), quien descubre la ilusión ve a través de ella y puede ver lo que hay detrás; con la española solo se dice que no se deja engañar, y la mesa tiene que decidir si la imagen le sigue tapando la vista.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "sanctuary",
+   "idioma": "es",
+   "antes": "cualquier criatura que haga objetivo a la criatura protegida con un ataque o un conjuro que inflija daño",
+   "despues": "con una tirada de ataque o un conjuro que inflija daño",
+   "por_que": "El inglés (y el alemán, “Angriffswurf”) solo obliga a la tirada de salvación cuando hay una tirada de ataque o un conjuro que inflige daño; con “un ataque” a secas, un agarre o un empujón, que en 2024 se resuelven con tirada de salvación y sin tirada de ataque, entran o no entran en el conjuro según la mesa.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "blindness-deafness",
+   "idioma": "de",
+   "antes": "Bei einem Erfolg endet der Zauber.",
+   "despues": "Bei einem Erfolg endet der Zauber bei ihm.",
+   "por_que": "Con varios objetivos (espacio de nivel superior), con la carta alemana el exito de uno termina el conjuro para todos; con la inglesa solo se libra la criatura que supera la tirada. El mismo texto aleman si lo dice en Krone des Wahnsinns: „Bei einem Erfolg endet der Zauber bei ihm“.",
+   "tipo": "falta",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "flaming-sphere",
+   "idioma": "de",
+   "antes": "eine flammende Kugel mit einem Radius von 1,5 Metern",
+   "despues": "eine flammende Kugel mit einem Durchmesser von 1,5 Metern",
+   "por_que": "En alemán la esfera mide 1,5 m de radio, o sea 3 m de ancho: el doble que en inglés, y quema a criaturas que la carta inglesa no alcanza.",
+   "tipo": "area",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "heat-metal",
+   "idioma": "de",
+   "antes": "so muss sie einen Konstitutionsrettungswurf bestehen, um den Gegenstand fallenzulassen, falls möglich.",
+   "despues": "so muss sie einen Konstitutionsrettungswurf bestehen, oder sie lässt den Gegenstand fallen, falls möglich.",
+   "por_que": "El alemán invierte la salvación: suelta el arma quien la supera, cuando en inglés la suelta quien la falla.",
+   "tipo": "salvacion",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "hold-person",
+   "idioma": "de",
+   "antes": "Bei einem Erfolg endet der Zauber.",
+   "despues": "Bei einem Erfolg endet der Zauber bei ihm.",
+   "por_que": "Con varios humanoides afectados por un espacio de nivel superior, en alemán el primero que supera la salvación termina el conjuro para todos; en inglés solo se libra él.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "levitate",
+   "idioma": "de",
+   "antes": "steigt senkrecht sechs Meter empor",
+   "despues": "steigt senkrecht bis zu sechs Meter empor",
+   "por_que": "En inglés se elige cuánto sube el objetivo, hasta 20 pies; en alemán sube siempre seis metros, así que cambia si cabe bajo un techo bajo y a qué altura queda.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "magic-mouth",
+   "idioma": "es",
+   "antes": "Elige un objeto que puedas ver y que no lleve ni vista nadie.",
+   "despues": "Elige un objeto que puedas ver y que no lleve ni vista ninguna otra criatura.",
+   "por_que": "En inglés puedes implantar el mensaje en algo que lleves tú; en español queda prohibido, porque el objeto no lo puede llevar nadie.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "mirror-image",
+   "idioma": "de",
+   "antes": "Würfelst du jeweils mindestens eine 3, wird statt dir das entsprechende Duplikat getroffen und dabei zerstört.",
+   "despues": "Würfelst du mit einem der Würfel mindestens eine 3, wird statt dir eines der Duplikate getroffen und dabei zerstört.",
+   "por_que": "El alemán se lee como que cada dado de 3 o más destruye su propio duplicado, así que un solo ataque puede llevarse dos o tres; en inglés se pierde uno como máximo.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "web",
+   "idioma": "es",
+   "antes": "La primera vez que una criatura entre en las telarañas o empiece su turno allí",
+   "despues": "Cuando una criatura entre en las telarañas por primera vez en un turno o empiece su turno allí",
+   "por_que": "Con la carta española la criatura solo tira la salvación una vez en todo el conjuro; con la inglesa vuelve a tirarla la primera vez que entra en las telarañas en cada turno.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "shining-smite",
+   "idioma": "de",
+   "antes": "und es kann nicht unsichtbar werden",
+   "despues": "und es kann nicht von Unsichtbarkeit profitieren",
+   "por_que": "Una criatura que ya era Invisible antes del castigo sigue aprovechando ese estado con la carta alemana, mientras que con la inglesa pierde su beneficio.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "suggestion",
+   "idioma": "de",
+   "antes": "darf nichts enthalten, was dem Ziel oder seinen Verbündeten Schaden zufügen würde",
+   "despues": "darf nichts enthalten, was dem Ziel oder seinen Verbündeten offensichtlich Schaden zufügen würde",
+   "por_que": "Con la carta alemana se cae cualquier sugerencia que pueda acabar en daño; con la inglesa solo se cae la que es dañina de forma evidente.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "silence",
+   "idioma": "es",
+   "antes": "y las criaturas tienen el estado de Ensordecidas en su interior",
+   "despues": "y las criaturas tienen el estado de Ensordecidas mientras se hallen completamente dentro de ella",
+   "por_que": "Una criatura Grande con medio cuerpo dentro de la esfera queda Ensordecida con la carta española y no con la inglesa, que exige estar entera dentro.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "hypnotic-pattern",
+   "idioma": "es",
+   "antes": "V, S, M (una pizca de confeti)",
+   "despues": "S, M (una pizca de confeti)",
+   "por_que": "Con la carta espanola el conjuro pide componente verbal, asi que no se puede lanzar dentro de una zona de silencio ni amordazado; con la inglesa si, porque solo pide componentes somatico y material.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "hypnotic-pattern",
+   "idioma": "de",
+   "antes": "V, G, M (eine Prise Konfetti)",
+   "despues": "G, M (eine Prise Konfetti)",
+   "por_que": "Con la carta alemana el conjuro pide componente verbal, asi que no se puede lanzar dentro de una zona de silencio ni amordazado; con la inglesa si.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "de",
+   "antes": "In einem freien Bereich deiner Wahl in Reichweite, den du sehen kannst, erscheint eine große, quasi reale, pferdeartige Kreatur.",
+   "despues": "Eine große, quasi reale, pferdeartige Kreatur erscheint auf dem Boden in einem freien Bereich deiner Wahl in Reichweite.",
+   "por_que": "Con la carta alemana hace falta ver el espacio para invocar el corcel, asi que no se puede sacar al otro lado de una esquina o a oscuras, y no dice que aparezca en el suelo; con la inglesa basta con que el espacio este libre y dentro del alcance.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "major-image",
+   "idioma": "es",
+   "antes": "no se dejará engañar por ella",
+   "despues": "podrá ver a través de ella",
+   "por_que": "Con la carta inglesa la criatura que descubre la ilusion ve lo que hay detras, asi que la imagen no le tapa la linea de vision ni le da cobertura al enemigo; con la espanola solo se dice que no se deja enganar y la mesa tiene que decidirlo.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "nondetection",
+   "idioma": "de",
+   "antes": "Das Ziel kann eine bereitwillige Kreatur, ein Ort oder ein Gegenstand sein. Es darf in keiner Abmessung größer als drei Meter sein.",
+   "despues": "Das Ziel kann eine bereitwillige Kreatur sein oder ein Ort oder ein Gegenstand, der in keiner Abmessung größer als drei Meter ist.",
+   "por_que": "Con la carta alemana el limite de tres metros parece valer tambien para la criatura voluntaria, asi que no se podria esconder a una criatura Enorme o Gargantuesca; con la inglesa el limite es solo para el lugar o el objeto.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "wind-wall",
+   "idioma": "es",
+   "antes": "Las criaturas voladoras de tamaño Pequeño o menor no pueden atravesar el muro.",
+   "despues": "Las criaturas y los objetos voladores de tamaño Pequeño o menor no pueden atravesar el muro.",
+   "por_que": "Con la carta española un objeto volador de tamaño Pequeño o menor (una espada voladora, un enjambre de trastos animados, un objeto lanzado por otro conjuro) atraviesa el muro, y con la inglesa no.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "giant-insect",
+   "idioma": "de",
+   "antes": "und die Bewegungsrate des Ziels ist bis zum Beginn seines nächsten Zugs auf 0 verringert",
+   "despues": "und die Bewegungsrate des Ziels ist bis zum Beginn des nächsten Zugs des Insekts auf 0 verringert",
+   "por_que": "El «sein» alemán se lee como el turno del objetivo, así que la velocidad 0 dura hasta que le toca al objetivo; en inglés dura hasta el turno del insecto, que va justo después del tuyo, y el objetivo puede recuperar el movimiento antes o después según quién actúe primero.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "phantasmal-killer",
+   "idioma": "de",
+   "antes": "Für die Wirkungsdauer kann das Ziel am Ende jedes seiner Züge einen Weisheitsrettungswurf ausführen.",
+   "despues": "Für die Wirkungsdauer führt das Ziel am Ende jedes seiner Züge einen Weisheitsrettungswurf aus.",
+   "por_que": "Con la carta alemana el objetivo elige si repite la salvación y puede negarse para no arriesgar el daño; con la inglesa la tirada es obligatoria cada turno.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "private-sanctum",
+   "idioma": "de",
+   "antes": "wird der Effekt dauerhaft.",
+   "despues": "bleibt der Effekt bestehen, bis er gebannt wird.",
+   "por_que": "Con la carta alemana el efecto queda permanente y la mesa puede entender que no se puede quitar; con la inglesa sigue ahí hasta que alguien lo disipe, así que Disipar magia funciona.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "awaken",
+   "idioma": "de",
+   "antes": "Beim Ziel muss es sich um ein Tier, um eine Pflanzenkreatur mit einem Intelligenzwert von höchstens 3 oder um eine natürliche Pflanze handeln, die keine Kreatur ist.",
+   "despues": "Beim Ziel muss es sich um ein Tier oder eine Pflanzenkreatur mit einem Intelligenzwert von höchstens 3 oder um eine natürliche Pflanze handeln, die keine Kreatur ist.",
+   "por_que": "Con la carta alemana el límite de Inteligencia 3 solo afecta a las plantas, así que se puede despertar cualquier bestia por lista que sea; con la inglesa la bestia también tiene que tener Inteligencia 3 o menos.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "hold-monster",
+   "idioma": "de",
+   "antes": "Bei einem Erfolg endet der Zauber.",
+   "despues": "Bei einem Erfolg endet der Zauber bei ihm.",
+   "por_que": "Con varios objetivos (espacio de nivel superior), en aleman el primer exito termina el conjuro para todos; en ingles solo libra a quien supera la tirada.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "commune-with-nature",
+   "idioma": "de",
+   "antes": "Orte von Portalen oder anderen Existenzebenen",
+   "despues": "Orte von Portalen zu anderen Existenzebenen",
+   "por_que": "En aleman la opcion parece dar tambien la ubicacion de otros planos; en ingles lo que se aprende es donde estan los portales que llevan a ellos.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "greater-restoration",
+   "idioma": "de",
+   "antes": "Einen Fluch oder die Einstimmung des Ziels auf einen verfluchten magischen Gegenstand",
+   "despues": "Einen Fluch, einschließlich der Einstimmung des Ziels auf einen verfluchten magischen Gegenstand",
+   "por_que": "En ingles levantar la maldicion rompe además la sintonizacion con el objeto maldito; en aleman hay que elegir entre una cosa y la otra.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "hallow",
+   "idioma": "de",
+   "antes": "können nicht mittels Teleportation oder auf extradimensionale oder interplanare Art in den Bereich oder aus ihm heraus gelangen",
+   "despues": "können nicht mittels Teleportation oder auf interplanare Art in den Bereich oder aus ihm heraus gelangen",
+   "por_que": "El aleman cierra tambien el viaje extradimensional (por ejemplo, salir a un espacio extradimensional), que el ingles no impide.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "legend-lore",
+   "idioma": "es",
+   "antes": "cuatro tiras de marfil que valgan al menos 50 po",
+   "despues": "cuatro tiras de marfil que valgan al menos 50 po cada una",
+   "por_que": "Con la carta inglesa el conjuro gasta 200 po de marfil, 50 por tira; con la espanola se puede leer que las cuatro tiras juntas valgan 50 po.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "mass-cure-wounds",
+   "idioma": "de",
+   "antes": "Von einem Punkt deiner Wahl in Reichweite geht eine Woge heilender Energie aus.",
+   "despues": "Von einem Punkt in Reichweite, den du sehen kannst, geht eine Woge heilender Energie aus.",
+   "por_que": "El ingles exige ver el punto de origen; con la carta alemana se puede curar a un grupo al otro lado de una puerta o en la oscuridad sin verlo.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "modify-memory",
+   "idioma": "de",
+   "antes": "Das Ziel muss deine Sprache sprechen, damit die veränderten Erinnerungen Fuß fassen können.",
+   "despues": "Das Ziel muss deine Sprache verstehen, damit die veränderten Erinnerungen Fuß fassen können.",
+   "por_que": "Una criatura que entiende tu idioma pero no lo habla es objetivo valido con la carta inglesa y no con la alemana.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "planar-binding",
+   "idioma": "de",
+   "antes": "Die Kreatur muss sich für die gesamte Wirkungsdauer in Reichweite befinden.",
+   "despues": "Die Kreatur muss sich während des gesamten Zeitaufwands in Reichweite befinden.",
+   "por_que": "Con la carta alemana la criatura atada tendria que quedarse a 18 m del lanzador las 24 horas de duracion, asi que no podria cumplir ninguna orden lejos de el; el ingles solo lo pide durante la hora de lanzamiento.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "es",
+   "antes": "compuesta por hasta 10 paneles de 3 m por 3 m",
+   "despues": "compuesta por 10 paneles de 3 m por 3 m",
+   "por_que": "Con la carta espanola el muro plano puede tener menos de diez paneles, por ejemplo tres para tapar un pasillo; con la inglesa el muro plano son siempre los diez paneles.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "de",
+   "antes": "Aberrationen, celestische Wesen, Feenwesen, Unholde und Untote",
+   "despues": "Aberrationen, celestische Wesen, Elementare, Feenwesen, Unholde und Untote",
+   "por_que": "En la carta alemana no se puede elegir el tipo elemental, así que un elemental cruza la zona sin sufrir los 5W10 de daño que sí sufre con la carta inglesa.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "forbiddance",
+   "idioma": "de",
+   "antes": "bis zu 3.700 Quadratmetern",
+   "despues": "bis zu 3.600 Quadratmetern",
+   "por_que": "40.000 pies cuadrados son 200 por 200 pies, que en la escala alemana son 60 por 60 metros: 3.600 metros cuadrados, no 3.700. La carta alemana protege unos 100 metros cuadrados más, casi una sala entera; Wächter und Hüter sí usa la escala (2.500 pies cuadrados = 225 metros cuadrados).",
+   "tipo": "unidad",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "find-the-path",
+   "idioma": "es",
+   "antes": "el camino físico más corto",
+   "despues": "el camino físico más directo",
+   "por_que": "El conjuro no informa de lo mismo: con la carta inglesa el DM señala la ruta más directa y con la española la más corta, que en un laberinto o en un paso de montaña pueden ser dos caminos distintos.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "mass-suggestion",
+   "idioma": "de",
+   "antes": "darf nichts enthalten, was den Zielen oder ihren Verbündeten Schaden zufügen würde",
+   "despues": "darf nichts enthalten, was den Zielen oder ihren Verbündeten offensichtlich Schaden zufügen würde",
+   "por_que": "Con la carta inglesa solo se rechaza la sugerencia cuyo daño es evidente; con la alemana se rechaza cualquiera que acabe causando daño, aunque el objetivo no pueda saberlo.",
+   "tipo": "falta",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "programmed-illusion",
+   "idioma": "es",
+   "antes": "no se dejará engañar por ella",
+   "despues": "podrá ver a través de ella",
+   "por_que": "En inglés la criatura ve a través de la imagen, así que la ilusión deja de taparle lo que hay detrás; en español solo dice que no se deja engañar, y la mesa puede seguir bloqueándole la visión.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "wall-of-ice",
+   "idioma": "es",
+   "antes": "compuesta por hasta 10 paneles cuadrados de 3 m de lado",
+   "despues": "compuesta por 10 paneles cuadrados de 3 m de lado",
+   "por_que": "Con la carta española se puede levantar un muro plano de menos paneles (por ejemplo 30 pies de largo); con la inglesa siempre son los diez, y eso cambia cuánto pasillo tapa el muro.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "word-of-recall",
+   "idioma": "de",
+   "antes": "als Zuflucht benennen, um diesen Zauber dort zu wirken",
+   "despues": "als Zuflucht benennen, indem du diesen Zauber dort wirkst",
+   "por_que": "En inglés designar el santuario cuesta lanzar el conjuro en ese sitio; el alemán dice lo contrario, que hay que designarlo para poder lanzarlo allí, y la mesa se queda sin saber qué cuesta preparar el santuario.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "arcane-sword",
+   "idioma": "de",
+   "antes": "Die Kugel bleibt für die Wirkungsdauer bestehen.",
+   "despues": "Das Schwert bleibt für die Wirkungsdauer bestehen.",
+   "por_que": "La carta alemana dice que lo que dura hasta el final del conjuro es una esfera que el conjuro no crea, así que nunca dice cuánto aguanta la espada; en inglés la espada dura lo que el conjuro.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "earthquake",
+   "idioma": "es",
+   "antes": "que pueden estar debajo de estructuras",
+   "despues": "que no pueden estar debajo de estructuras",
+   "por_que": "Con la carta espanola el lanzador puede abrir las grietas justo debajo de un edificio y hundirlo; con la inglesa eso esta prohibido.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "incendiary-cloud",
+   "idioma": "de",
+   "antes": "Eine Kreatur muss den Konstitutionsrettungswurf auch dann ausführen",
+   "despues": "Eine Kreatur muss den Geschicklichkeitsrettungswurf auch dann ausführen",
+   "por_que": "La carta alemana pide un salvacion de Constitucion en las repeticiones y la inglesa la misma de Destreza del principio, asi que se tira con otro atributo cada vez que la nube alcanza a alguien.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "sunburst",
+   "idioma": "de",
+   "antes": "Jede Kreatur in der Linie führt einen Konstitutionsrettungswurf aus.",
+   "despues": "Jede Kreatur in der Kugel führt einen Konstitutionsrettungswurf aus.",
+   "por_que": "La carta alemana dice que salvan las criaturas de una linea cuando el area del conjuro es una esfera de 18 m de radio, asi que cambia a quien alcanza el conjuro.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "gate",
+   "idioma": "de",
+   "antes": "mit einem Radius von 1,5 bis sechs Metern",
+   "despues": "mit einem Durchmesser von 1,5 bis sechs Metern",
+   "por_que": "Las cifras son las del diametro ingles, asi que leerlas como radio duplica la boca del portal (hasta 12 m en vez de 6) y con ella cuanta gente o cuanta criatura grande pasa a la vez.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "imprisonment",
+   "idioma": "de",
+   "antes": "Wenn du den Zauber wirkst, kannst du einen Auslöser festlegen, der ihn beendet.",
+   "despues": "Wenn du den Zauber wirkst, legst du einen Auslöser fest, der ihn beendet.",
+   "por_que": "En ingles el detonante que libera al preso es obligatorio; la carta alemana lo deja opcional, asi que permite una prision sin salida salvo disipar magia de nivel 9.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "prismatic-wall",
+   "idioma": "es",
+   "antes": "se acerca a 6 m o menos de él, deberá superar",
+   "despues": "se acerca a 6 m o menos de él o empieza su turno allí, deberá superar",
+   "por_que": "Con la carta inglesa, la criatura que empieza su turno a 20 pies o menos del muro tira otra vez y puede quedar Cegada; con la española solo tira quien se acerca, así que quien se queda parado junto al muro no vuelve a tirar nunca.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "storm-of-vengeance",
+   "idioma": "de",
+   "antes": "und es fegen starke Stürme hindurch",
+   "despues": "und es fegt starker Wind hindurch",
+   "por_que": "\"Strong wind\" es el término de reglas (el SRD alemán lo llama \"starker Wind\" en las otras once veces que sale), y disipa nubes y niebla y apaga el fuego descubierto; con \"starke Stürme\" la mesa alemana no tiene ninguna regla que aplicar.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "telekinesis",
+   "idioma": "en",
+   "antes": "such as manipulating a simple tool,",
+   "despues": "such as manipulating a simple tool.",
+   "por_que": "El SRD 5.2.1 EN corta la frase a media lista y la deja acabada en coma, asi que la carta inglesa imprime una frase sin terminar. El SRD 5.2.1 ES y DE cierran la frase ahi mismo con punto, y el SRD 5.1 (2014) tenia la lista entera (abrir una puerta o un contenedor, guardar o sacar un objeto, verter un vial). Se cierra como hicieron las dos traducciones: no anade ni quita reglas y la carta no sale con una coma colgando.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "animal-shapes",
+   "idioma": "de",
+   "antes": "die der Anzahl von Trefferpunkten der neuen Gestalt entspricht",
+   "despues": "die der Anzahl von Trefferpunkten der ersten Gestalt entspricht, die es annimmt",
+   "por_que": "Con la carta alemana, cada vez que el lanzador vuelve a transformar a los objetivos con una accion de magia estos reciben puntos de golpe temporales nuevos segun la forma nueva; con la inglesa solo los da la primera forma y no se recargan.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "antimagic-field",
+   "idioma": "de",
+   "antes": "<i>Magie bannen</i> hat innerhalb der Aura keinen Effekt.",
+   "despues": "<i>Magie bannen</i> hat keinen Effekt auf die Aura.",
+   "por_que": "La carta alemana solo dice que disipar magia no funciona dentro del aura, asi que una mesa puede permitir disipar el campo desde fuera; la inglesa deja el aura inmune a disipar magia.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "etherealness",
+   "idioma": "de",
+   "antes": "erleidest Energieschaden in sechsfacher Höhe der Anzahl an Metern, die du bewegt wurdest",
+   "despues": "erleidest 10 Energieschaden für je 1,5 Meter, die du bewegt wurdest",
+   "por_que": "Por cada 1,5 m (5 pies) de desplazamiento la carta alemana hace 9 de dano y la inglesa 10, y la diferencia crece con la distancia.",
+   "tipo": "unidad",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "giant-insect",
+   "idioma": "de",
+   "antes": "30 + 10 für jeden Zaubergrad ab dem 4.",
+   "despues": "30 + 10 für jeden Zaubergrad ab dem 5.",
+   "por_que": "El SRD aleman escribe estos puntos de golpe como \"ab dem (nivel del conjuro + 1).\": Invocar bestia (nivel 2) dice \"ab dem 3.\", Invocar feerico y no muerto (3) dicen \"ab dem 4.\", Invocar aberracion, constructo y elemental (4) dicen \"ab dem 5.\". Insecto gigante es de nivel 4 y decia \"ab dem 4.\", asi que una mesa alemana le daba 40 puntos de golpe con un espacio de nivel 4 donde el ingles (\"above 4\") da 30. Es justo la linea que las erratas oficiales del Manual del Jugador 2024 corrigieron en ingles.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "find-the-path",
+   "idioma": "es",
+   "antes": "identificarás qué camino es el más corto",
+   "despues": "identificarás qué camino es el más directo",
+   "por_que": "El ingles dice \"most direct\" en los dos parrafos. Al corregir el primero, el segundo se quedaba diciendo \"el mas corto\" y la carta se contradecia: en un laberinto o un paso de montana el camino mas corto y el mas directo no son el mismo.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_2_mecanica.json"
+  },
+  {
+   "id": "mage-armor",
+   "idioma": "de",
+   "antes": "plus ihrem Geschicklichkeitsmodifikator",
+   "despues": "plus seinem Geschicklichkeitsmodifikator",
+   "por_que": "El sujeto de la frase es \"das Ziel\" (neutro) y el posesivo va en femenino (\"ihrem\"); el SRD DE (pag. 158) trae la misma falta de concordancia. Va en media porque cabe leer \"ihrem\" como referido a \"Kreatur\" de la frase anterior.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "sleep",
+   "idioma": "de",
+   "antes": "oder es ist bis zum Ende seines nächsten Zugs kampfunfähig",
+   "despues": "oder sie ist bis zum Ende ihres nächsten Zugs kampfunfähig",
+   "por_que": "El antecedente es \"Jede Kreatur\" (femenino) y no hay ningun sustantivo neutro antes; \"es\" y \"seines\" no concuerdan. El SRD DE (pag. 169) trae la misma errata. Las frases siguientes ya hablan de \"das Ziel ... es\", que si es correcto.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "calm-emotions",
+   "idioma": "de",
+   "antes": "denen es feindlich gesinnt war",
+   "despues": "denen sie feindlich gesinnt war",
+   "por_que": "El antecedente es \"Die Kreatur\" (femenino); \"es\" no concuerda con nada en la frase. El SRD DE (pag. 145) trae la misma errata.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "detect-thoughts",
+   "idioma": "de",
+   "antes": "Liebe oder Hass) Bei einem",
+   "despues": "Liebe oder Hass). Bei einem",
+   "por_que": "Falta el punto que cierra la frase tras el parentesis; la siguiente empieza con mayuscula. El SRD DE (pag. 144) trae la misma errata.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "enhance-ability",
+   "idioma": "de",
+   "antes": "ein anders Attribut",
+   "despues": "ein anderes Attribut",
+   "por_que": "Falta la e: el adjetivo declinado en acusativo neutro es \"anderes\". El SRD DE (pag. 125) trae la misma errata.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "flaming-sphere",
+   "idioma": "de",
+   "antes": "die ihren Zug in im Abstand von bis zu 1,5 Metern um die Kugel beendet",
+   "despues": "die ihren Zug im Abstand von bis zu 1,5 Metern um die Kugel beendet",
+   "por_que": "Preposicion doblada (\"in im\"). El SRD aleman trae la misma errata en Flammenkugel (pag. 141: \"Zug in im Abstand von bis zu 1,5 Metern um die Kugel\"); la formula del SRD en el resto de conjuros es \"ihren Zug im Abstand von bis zu ... Metern ... beendet\".",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "locate-object",
+   "idioma": "de",
+   "antes": "einen bestimmtem dir bekannten Gegenstand",
+   "despues": "einen bestimmten dir bekannten Gegenstand",
+   "por_que": "Concordancia: acusativo masculino singular tras \"einen\" es \"bestimmten\", no \"bestimmtem\" (dativo). El SRD aleman trae la misma errata en Gegenstand aufspüren (pag. 145).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "locate-object",
+   "idioma": "de",
+   "antes": "welche Dicke das Blei hat es hat.",
+   "despues": "welche Dicke das Blei hat.",
+   "por_que": "Sobra \"es hat\": el verbo esta repetido y la frase no es gramatical. El SRD aleman trae la misma errata en Gegenstand aufspüren (pag. 145: \"Dicke das Blei hat es hat.\"). El ingles dice \"if any thickness of lead blocks a direct path\".",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "magic-mouth",
+   "idioma": "de",
+   "antes": "Beispielweise könntest du",
+   "despues": "Beispielsweise könntest du",
+   "por_que": "Falta la s de \"Beispielsweise\" (asi lo escribe el propio SRD aleman en el mismo conjuro, en la frase anterior: \"beispielsweise den Mund einer Statue\"). El SRD trae la errata en Magischer Mund (pag. 159).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "moonbeam",
+   "idioma": "de",
+   "antes": "mit einem Radius von bis zu 1,5 Metern",
+   "despues": "mit einem Radius von 1,5 Metern",
+   "por_que": "El ingles fija el radio: \"in a 5-foot-radius, 40-foot-high Cylinder\". El \"bis zu\" del SRD aleman (Mondstrahl, pag. 162) deja elegir un radio menor, cosa que el ingles no permite; la altura, en la misma frase, si va sin \"bis zu\".",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "call-lightning",
+   "idioma": "de",
+   "antes": "um diesem Punkt",
+   "despues": "um diesen Punkt",
+   "por_que": "La preposicion um rige acusativo (um diesen Punkt); la carta copia una errata del propio SRD aleman (pag. 128), que en Feuerball, Pflanzenwachstum y los bloques de criatura escribe siempre um diesen Punkt.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "speak-with-dead",
+   "idioma": "de",
+   "antes": "Du erfüllst einem Leichnam",
+   "despues": "Du erfüllst einen Leichnam",
+   "por_que": "Fallo de caso: \"jemanden mit etwas erfüllen\" rige acusativo (einen Leichnam), no dativo (einem). El SRD 5.2.1 DE (pág. 161) trae el mismo error y se imprime tal cual.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "control-water",
+   "idioma": "de",
+   "antes": "dass es kentert.",
+   "despues": "dass es kentert. Der Wasserspiegel bleibt erhöht, bis der Zauber endet oder du einen anderen Effekt auswählst. Wenn dieser Effekt eine Welle erzeugt, wiederholt sich diese zu Beginn deines nächsten Zugs, solange der Flut-Effekt anhält.",
+   "por_que": "En inglés el párrafo \"The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.\" va justo detrás de Flood (bloques[2] EN). En la carta alemana (y en el SRD DE, pág. 195, que reordenó los efectos por orden alfabético) ese párrafo quedó suelto en bloques[1], antes de Fluss umlenken, y \"dieser Effekt\" no se refiere a nada. Va al final de Flut; el bloque bloques[1] se quita (otra entrada).",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "control-water",
+   "idioma": "de",
+   "antes": "Der Wasserspiegel bleibt erhöht, bis der Zauber endet oder du einen anderen Effekt auswählst. Wenn dieser Effekt eine Welle erzeugt, wiederholt sich diese zu Beginn deines nächsten Zugs, solange der Flut-Effekt anhält.",
+   "despues": "",
+   "donde": "bloques[1].txt",
+   "por_que": "Es la continuación de Flut (EN: \"The water level remains elevated... while the flood effect lasts\", bloques[2] EN, detrás de Flood) y aquí, antes de Fluss umlenken, se lee como regla general del conjuro y \"dieser Effekt\" no tiene referente. El texto se añade al final de bloques[3] (Flut) en la otra entrada y este bloque sobra entero: si el aplicador deja un párrafo vacío, borrar el bloque bloques[1] a mano.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "tiny-hut",
+   "idioma": "de",
+   "antes": "durch die Aura hindurch gewirkt werden, und ihre Effekte können sich nicht bis in die Aura erstrecken",
+   "despues": "durch die Ausströmung hindurch gewirkt werden, und ihre Effekte können sich nicht bis in die Ausströmung erstrecken",
+   "por_que": "El inglés dice Emanation las tres veces y el término del glosario y del SRD DE es Ausströmung, que es como la propia carta llama al área en las otras cinco menciones; \"Aura\" no es término de reglas. El SRD DE (pág. 198) trae el mismo Aura, y no hay ninguna aura en el conjuro.",
+   "tipo": "termino",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "water-walk",
+   "idioma": "de",
+   "antes": "Wenn das Ziel jedoch in den Bereich fällt",
+   "despues": "Wenn das Ziel jedoch in die Flüssigkeit fällt",
+   "por_que": "EN: \"if the target falls into the liquid, the target passes through the surface into the liquid below\". El conjuro no tiene ningún Bereich (área), así que \"in den Bereich fällt\" no señala nada; el SRD DE (pág. 195) trae la misma frase.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "secret-chest",
+   "idioma": "de",
+   "antes": "324 Liter anorganischen Materials",
+   "despues": "324 Liter unbelebten Materials",
+   "por_que": "El ingles dice \"up to 12 cubic feet of nonliving material\": material no vivo, no material inorganico. \"anorganisch\" deja fuera madera, cuero, tela o papel, que si caben segun el ingles (el ES dice \"material inerte\"). El SRD aleman traduce ese mismo \"nonliving material\" como \"unbelebtes Material\" en Fingerfertigkeit (Einfache Sinneswahrnehmung, pag. 180) y define Gegenstand como \"unbelebtes Ding\"; en Geheime Truhe (pag. 146) pone \"anorganischen\", errata del propio SRD.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "animate-objects",
+   "idioma": "de",
+   "antes": "ihre Gegenstandgestalt an",
+   "despues": "ihre Gegenstandsgestalt an",
+   "por_que": "Los compuestos con Gegenstand llevan s de union: el propio SRD aleman escribe \"Gegenstandskategorie\" y \"Gegenstandspaare\", y el Duden registra Gegenstandsbereich, gegenstandslos. \"Gegenstandgestalt\" sin s esta asi en el SRD (pag. 145 y en la ficha del Mimik), pero es forma no estandar y se lee como errata.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "awaken",
+   "idioma": "de",
+   "antes": "im Monsterhandbuch",
+   "despues": "unter „Monster“",
+   "por_que": "El ingles remite a la seccion del SRD (\"in “Monsters.”\") y el ES dice \"del capitulo Monstruos\". Las otras cartas alemanas que citan fichas remiten a \"unter „Monster“\" o \"siehe „Monster“\" (create-undead, animate-dead, finger-of-death, polymorph: \"unter „Monster“\"). \"Monsterhandbuch\" es el titulo de un producto de Wizards, no una seccion del SRD; lo pone asi el SRD aleman (pag. 138), errata suya, y ademas choca con la norma de la casa de no meter nombres protegidos en lo que se vende.",
+   "tipo": "coherencia",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "antilife-shell",
+   "idioma": "de",
+   "antes": "mit Fernkampfwaffen oder Waffen mit Reichweite",
+   "despues": "mit Fernkampfwaffen oder Waffen mit der Eigenschaft Weitreichend",
+   "por_que": "El ingles dice \"Ranged or Reach weapons\". La propiedad Reach se llama \"Weitreichend\" en el SRD aleman (tabla de armas pag. 102 y \"Bei Waffen mit der Eigenschaft Weitreichend\", pag. 103); \"Waffen mit Reichweite\" se lee como armas con alcance, o sea, de nuevo armas a distancia, y se pierde la regla. Lo trae asi el SRD aleman (pag. 171). El ES dice \"armas a distancia o de gran alcance\".",
+   "tipo": "termino",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "tree-stride",
+   "idioma": "de",
+   "antes": "wechseln und oder aus dem Baum",
+   "despues": "wechseln oder aus dem Baum",
+   "por_que": "Sobra \"und\": la frase es una disyuntiva (\"entweder in einen dieser Bäume wechseln oder aus dem Baum heraustreten\"; EN \"can either pass into one of those trees or step out\"). El SRD DE (pag. 127) trae la misma errata.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "contingency",
+   "idioma": "de",
+   "antes": "<i>Notfall</i>- Zaubers",
+   "despues": "<i>Notfall</i>-Zaubers",
+   "por_que": "Espacio despues del guion, resto de un corte de linea del PDF (el SRD DE, pag. 163, parte \"Notfall-\" y \"Zaubers\" en dos lineas); en el mismo parrafo va \"<i>Notfall</i>-Zauber\" sin espacio.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "reincarnate",
+   "idioma": "de",
+   "antes": "Halblingisch",
+   "despues": "Halbling",
+   "por_que": "Es una tabla de especies y \"Halblingisch\" es el nombre del idioma (tabla de idiomas del SRD DE, pag. 24); la especie se titula \"Halbling\" en el SRD DE y las demas filas llevan el sustantivo (Elf, Gnom, Mensch, Zwerg). El SRD DE (pag. 197) trae la misma errata.",
+   "tipo": "termino",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "reincarnate",
+   "idioma": "de",
+   "antes": "Orkisch",
+   "despues": "Ork",
+   "por_que": "Es una tabla de especies y \"Orkisch\" es el nombre del idioma (tabla de idiomas del SRD DE, pag. 24); la especie se titula \"Ork\" en el SRD DE y las demas filas llevan el sustantivo (Elf, Gnom, Mensch, Zwerg). El SRD DE (pag. 197) trae la misma errata.",
+   "tipo": "termino",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "guards-and-wards",
+   "idioma": "de",
+   "antes": "<i>Netz</i>",
+   "despues": "<i>Spinnennetz</i>",
+   "por_que": "El conjuro Web se llama \"Spinnennetz\" en su propia carta (web) y en el titulo y las listas de clase del SRD DE; \"Netz\" solo aparece en este parrafo del SRD (pag. 193), que es incoherente con su propio titulo (y \"Netz\" es ademas el arma de ese nombre).",
+   "tipo": "coherencia",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "planar-binding",
+   "idioma": "de",
+   "antes": "Wirkungsdauer von Bindung der Ebenen",
+   "despues": "Wirkungsdauer von <i>Bindung der Ebenen</i>",
+   "por_que": "Nombre de conjuro citado sin cursiva; en las demas cartas del lote las autocitas van en <i> (<i>Notfall</i>, <i>Zutritt verwehren</i>, <i>Wächter und Hüter</i>) y en este mismo parrafo <i>Schutzkreis</i> la lleva. El .txt del SRD pierde las cursivas, asi que no se puede comprobar ahi.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "teleport",
+   "idioma": "de",
+   "antes": "dich ein einen Ort zu teleportieren",
+   "despues": "dich an einen Ort zu teleportieren",
+   "por_que": "Letra bailada: \"ein einen\" por \"an einen\" (sich an einen Ort teleportieren). El SRD aleman trae la misma errata (linea 24078 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "plane-shift",
+   "idioma": "de",
+   "antes": "Zielort bestimmten, beispielsweise",
+   "despues": "Zielort bestimmen, beispielsweise",
+   "por_que": "Sobra una t: el infinitivo tras \"kannst\" es \"bestimmen\", no \"bestimmten\". El SRD aleman trae la misma errata (linea 18707 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "plane-shift",
+   "idioma": "de",
+   "antes": "für alle transportieren Kreaturen",
+   "despues": "für alle transportierten Kreaturen",
+   "por_que": "Falta la t del participio: \"die transportierten Kreaturen\" (las criaturas transportadas), no \"transportieren\". El SRD aleman trae la misma errata (linea 18717 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "etherealness",
+   "idioma": "de",
+   "antes": "die du verlassen hast und erscheinst",
+   "despues": "die du verlassen hast, und erscheinst",
+   "por_que": "Falta la coma que cierra la oracion de relativo \"die du verlassen hast\" antes de seguir la principal (\"kehrst du ... zurück ... und erscheinst\"); en aleman esa coma es obligatoria. El SRD aleman tambien la omite (linea 17825 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "instant-summons",
+   "idioma": "de",
+   "antes": "höchstens 4,5 Kilogramm wiegt",
+   "despues": "höchstens fünf Kilogramm wiegt",
+   "por_que": "El ingles dice \"10 pounds or less\" y la escala oficial alemana es 1 libra = 0,5 kg (el propio SRD aleman convierte las 10 libras de Magierhand en \"fünf Kilogramm\", linea 21511, y las 45 libras de Nahrung erschaffen en \"22,5 Kilogramm\"); 4,5 kg es la conversion real, fuera de la escala del juego. El SRD aleman trae este 4,5 (linea 23332 del .txt).",
+   "tipo": "unidad",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "true-resurrection",
+   "idioma": "de",
+   "antes": "Diamanten im Wert von 25.000 GM",
+   "despues": "Diamanten im Wert von mindestens 25.000 GM",
+   "por_que": "El ingles dice \"diamonds worth 25,000+ GP\" (valor minimo) y todas las demas cartas alemanas con \"+ GP\" lo escriben \"im Wert von mindestens X GM\" (raise-dead 500, revivify 300, resurrection 1.000, reincarnate 1.000, clone, gate, imprisonment...); esta es la unica sin \"mindestens\". El SRD aleman (pag. 193) tambien lo omite: es errata suya.",
+   "tipo": "coherencia",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "animal-friendship",
+   "idioma": "en",
+   "antes": "the spells ends.",
+   "despues": "the spell ends.",
+   "por_que": "Sobra la s de spells: el sujeto es the spell. La errata viene del SRD 5.2.1 EN (pag. 108, linea que dice \"the spells ends\"); el resto de cartas escribe \"the spell ends\".",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "black-tentacles",
+   "idioma": "en",
+   "antes": "or ends it turn there",
+   "despues": "or ends its turn there",
+   "por_que": "Falta la s del posesivo: 'ends its turn' es la formula del SRD ('ends its turn there' en Spirit Guardians, Conjure Woodland Beings...). El SRD 5.2.1 EN trae la misma errata en Black Tentacles (y en Wall of Fire), asi que la carta la ha heredado.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "contact-other-plane",
+   "idioma": "en",
+   "antes": "longdead",
+   "despues": "long-dead",
+   "por_que": "Falta el guion: en el SRD 5.2.1 EN (pag. 119) la palabra es long-dead, partida a final de linea (long-/dead) y el guion se perdio al extraer el texto.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "flame-strike",
+   "idioma": "en",
+   "antes": "40-foothigh",
+   "despues": "40-foot-high",
+   "por_que": "Falta el guion: el SRD 5.2.1 EN (pag. 132) escribe 40-foot-high, partido a final de linea (40-foot-/high) y el guion se perdio al extraer el texto; el mismo SRD lo escribe 40-foot-high en Conjure Celestial, Ice Storm y Moonbeam.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "conjure-elemental",
+   "idioma": "en",
+   "antes": "On failed save,",
+   "despues": "On a failed save,",
+   "por_que": "Falta el articulo: la errata esta tambien en el SRD 5.2.1 EN (pag. 118, unica vez que aparece On failed save); la formula del SRD es On a failed save, como dos frases despues en el mismo parrafo.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "wall-of-stone",
+   "idioma": "en",
+   "antes": "ten 10-foot-by- 10-foot panels",
+   "despues": "ten 10-foot-by-10-foot panels",
+   "por_que": "Espacio suelto tras el guion, arrastrado del salto de linea del PDF; el SRD EN escribe 10-foot-by-10-foot (linea 23039 del .txt, cortada en el guion).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "wall-of-stone",
+   "idioma": "en",
+   "antes": "10-footby-20-foot panels",
+   "despues": "10-foot-by-20-foot panels",
+   "por_que": "Falta el guion entre foot y by, tambien por el salto de linea del PDF; el SRD EN escribe 10-foot-by-20-foot (lineas 23041-23042 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "blade-barrier",
+   "idioma": "en",
+   "antes": "ends it turn there",
+   "despues": "ends its turn there",
+   "por_que": "Falta la s del posesivo (its turn). El SRD EN trae la misma errata en Blade Barrier y en Black Tentacles; en el resto de conjuros escribe ends its turn there.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "freezing-sphere",
+   "idioma": "en",
+   "antes": "on failed save or half as much",
+   "despues": "on a failed save or half as much",
+   "por_que": "Falta el articulo: la formula del SRD es taking X damage on a failed save or half as much damage on a successful one. El SRD EN trae la misma errata en Freezing Sphere (linea 18774 del .txt).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "wall-of-force",
+   "idioma": "en",
+   "antes": "<i>Dispel Magic.</i>",
+   "despues": "<i>Dispel Magic</i>.",
+   "por_que": "El punto final va dentro de la cursiva; en las otras 12 citas de conjuro con puntuacion del ingles el signo queda fuera (</i>.), y solo esta y la de Disintegrate lo meten dentro.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "disintegrate",
+   "idioma": "en",
+   "antes": "<i>Wall of Force.</i>",
+   "despues": "<i>Wall of Force</i>.",
+   "por_que": "El punto final va dentro de la cursiva; en las otras 12 citas de conjuro con puntuacion del ingles el signo queda fuera (</i>.), y solo esta y la de Wall of Force lo meten dentro.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "magnificent-mansion",
+   "idioma": "en",
+   "antes": "ninecourse",
+   "despues": "nine-course",
+   "por_que": "Palabra pegada: el PDF del SRD corta nine-course en un salto de linea y la extraccion perdio el guion; el Manual del Jugador 2024 escribe nine-course.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "antimagic-field",
+   "idioma": "en",
+   "antes": "surrounds you in 10-foot Emanation",
+   "despues": "surrounds you in a 10-foot Emanation",
+   "por_que": "Falta el articulo; el SRD 5.2.1 EN trae la misma errata (surrounds you in 10-foot Em-anation), el Manual del Jugador 2024 dice in a 10-foot Emanation y es la formula del SRD en el resto (in a 15-foot Emanation originating from).",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "imprisonment",
+   "idioma": "en",
+   "antes": "<b>Minimus Containment.</b>The target",
+   "despues": "<b>Minimus Containment.</b> The target",
+   "por_que": "Falta el espacio entre el rotulo en negrita y el texto; las otras cinco opciones del mismo conjuro (Burial, Chaining, Hedged Prison, Slumber, Ending the Spell) lo llevan y el SRD EN (pag. 142) escribe \"Minimus Containment. The target becomes 1 inch tall\".",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "prismatic-wall",
+   "idioma": "en",
+   "antes": "<i>Additional Effects</i>: Nonmagical",
+   "despues": "<i>Additional Effects:</i> Nonmagical",
+   "por_que": "En la fila 1 (Red) los dos puntos quedan fuera de la cursiva; en las filas 2 a 7 de la misma tabla y en toda la tabla de Prismatic Spray el rotulo va <i>Additional Effects:</i> y <i>Failed Save:</i> con los dos puntos dentro. Una fila con formato distinto de sus hermanas.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "sanctuary",
+   "idioma": "es",
+   "antes": "Hasta que el conjuro termine, con una tirada de ataque",
+   "despues": "Hasta que el conjuro termine, cualquier criatura que haga objetivo a la criatura protegida con una tirada de ataque",
+   "por_que": "La frase se ha quedado sin sujeto: al cambiar 'un ataque' por 'una tirada de ataque' en la pasada del 29/09 se borro 'cualquier criatura que haga objetivo a la criatura protegida' (el SRD ES, pag. 184, lo trae, y el ingles dice 'any creature who targets the warded creature with an attack roll'); tal como esta, no se sabe quien hace la tirada de salvacion de Sabiduria.",
+   "tipo": "errata",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "phantom-steed",
+   "idioma": "es",
+   "antes": "aparece en un espacio sin ocupar de tu elección dentro del alcance",
+   "despues": "aparece en el suelo, en un espacio sin ocupar de tu elección dentro del alcance",
+   "por_que": "El ingles dice \"appears on the ground in an unoccupied space of your choice within range\"; la traduccion oficial del SRD ES omite \"on the ground\", que limita donde puede aparecer el corcel.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "project-image",
+   "idioma": "es",
+   "antes": "no se dejará engañar por ella",
+   "despues": "podrá ver a través de ella",
+   "por_que": "La misma frase inglesa (\"the creature can see through the image, and any noise it makes sounds hollow\") esta en Ilusion programada (bloques[3]), Imagen silenciosa e Imagen mayor como \"podrá ver a través de ella\"; solo Proyectar imagen conserva el \"no se dejará engañar por ella\" del SRD ES (pag. 177; el SRD ES tambien lo dice asi en Ilusion programada, pag. 157, pero la carta ya lo cambio). Que las cuatro digan lo mismo.",
+   "tipo": "coherencia",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "planar-ally",
+   "idioma": "es",
+   "antes": "10 000 po",
+   "despues": "10 000 po",
+   "por_que": "Entre 10 y 000 hay un espacio normal, que puede partir la cifra en dos lineas; el SRD ES (pag. 119) usa espacio de no separacion (U+00A0) y el manual (6) pide espacio fino desde cinco cifras. Lo mismo pasa en Prohibicion (40 000), Resurreccion verdadera (25 000) y Deseo (25 000), que no son de este lote.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "wall-of-thorns",
+   "idioma": "es",
+   "antes": "un círculo de arbustos de hasta 6 m de diámetro, 6 m de altura y 1,5 m de grosor",
+   "despues": "un círculo de arbustos de 6 m de diámetro y hasta 6 m de altura y 1,5 m de grosor",
+   "por_que": "El ingles fija el diametro y deja variables la altura y el grosor: \"a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick\"; el SRD ES (pag. 167) pone el \"hasta\" delante del diametro. Diferencia minima en mesa.",
+   "tipo": "mecanica",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "true-resurrection",
+   "idioma": "es",
+   "antes": "25 000 po",
+   "despues": "25 000 po",
+   "por_que": "El separador de miles es un espacio normal y en una columna de tarot puede partirse en 25 / 000 po; el SRD ES escribe 25 000 con espacio de no separacion (U+00A0, comprobado en el .txt) y el manual pide espacio fino como el SRD desde cinco cifras.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "wish",
+   "idioma": "es",
+   "antes": "25 000 po",
+   "despues": "25 000 po",
+   "por_que": "Igual que en Resurreccion verdadera: espacio normal como separador de miles, que puede partirse al final de linea; el SRD ES usa espacio de no separacion (U+00A0) en 25 000 y el manual pide espacio fino desde cinco cifras.",
+   "tipo": "formato",
+   "origen": "T-0108 correcciones_3_final.json"
+  },
+  {
+   "id": "tiny-hut",
+   "idioma": "de",
+   "antes": "innerhalb der Aura dämmriges Licht",
+   "despues": "innerhalb der Ausströmung dämmriges Licht",
+   "por_que": "Mismo patron que el bloque 1 de esta carta (aceptado): la carta llama Ausströmung al area en las otras seis menciones; con el bloque 1 cambiado, esta era la unica Aura que quedaba.",
+   "tipo": "termino",
+   "origen": "T-0108 correcciones_3_final.json"
+  }
+ ]
+}
