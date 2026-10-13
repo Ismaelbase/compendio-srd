@@ -729,26 +729,27 @@ export class Generador {
 		return out;
 	}
 
-	inicio(secciones: ReadonlySet<Seccion>): Nota {
+	/** Lista todas las secciones que habra en la boveda (las de esta importacion y las que ya estaban), no solo las
+	 * que se importan ahora: importar solo las criaturas no puede dejar el inicio sin el resto. */
+	inicio(_secciones: ReadonlySet<Seccion>): Nota {
 		const T = this.T;
 		const raiz = carpetaIdioma(this.op.raiz, this.idioma);
 		const lineas: string[] = [];
 		const item = (carpeta: string, cuantas: number) => {
-			if (cuantas) lineas.push(`- ${enlace(rutaIndice(this.op.raiz, this.idioma, carpeta), carpeta.split("/").pop() ?? carpeta)} (${cuantas})`);
+			const indice = rutaIndice(this.op.raiz, this.idioma, carpeta);
+			if (cuantas && this.existe(indice)) lineas.push(`- ${enlace(indice, carpeta.split("/").pop() ?? carpeta)} (${cuantas})`);
 		};
 		const cuenta = (...ks: Clase[]) => ks.reduce((n, k) => n + this.entradasDe(k).length, 0);
-		if (secciones.has("criaturas")) item(T.carpetas.criatura, cuenta("criatura"));
-		if (secciones.has("conjuros")) item(T.carpetas.conjuro, cuenta("conjuro"));
-		if (secciones.has("objetos")) item(T.carpetas.objeto, cuenta("objeto"));
-		if (secciones.has("estados")) item(T.carpetas.estado, cuenta("estado"));
-		if (secciones.has("reglas")) {
-			item(T.carpetas.regla, cuenta("regla"));
-			item(T.carpetas.glosario, cuenta("glosario"));
-			item(T.carpetas.veneno, cuenta("veneno"));
-			item(T.carpetas.trampa, cuenta("trampa"));
-		}
-		if (secciones.has("personajes")) item(T.grupos.personajes, cuenta("clase", "subclase", "especie", "trasfondo", "dote"));
-		if (secciones.has("equipo")) item(T.grupos.equipo, cuenta("arma", "armadura", "herramienta", "equipo"));
+		item(T.carpetas.criatura, cuenta("criatura"));
+		item(T.carpetas.conjuro, cuenta("conjuro"));
+		item(T.carpetas.objeto, cuenta("objeto"));
+		item(T.carpetas.estado, cuenta("estado"));
+		item(T.carpetas.regla, cuenta("regla"));
+		item(T.carpetas.glosario, cuenta("glosario"));
+		item(T.carpetas.veneno, cuenta("veneno"));
+		item(T.carpetas.trampa, cuenta("trampa"));
+		item(T.grupos.personajes, cuenta("clase", "subclase", "especie", "trasfondo", "dote"));
+		item(T.grupos.equipo, cuenta("arma", "armadura", "herramienta", "equipo"));
 		const otros = this.otros
 			.filter((o) => this.existe(`${carpetaIdioma(this.op.raiz, o.idioma)}/${TEXTOS[o.idioma].inicio}`))
 			.map((o) => enlace(`${carpetaIdioma(this.op.raiz, o.idioma)}/${TEXTOS[o.idioma].inicio}`, TEXTOS[o.idioma].idioma));

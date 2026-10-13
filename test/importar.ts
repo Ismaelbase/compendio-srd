@@ -48,6 +48,11 @@ export async function pruebasImportar(): Promise<number> {
 	r = await importar(["es"], true);
 	if (app.vault.ficheros.get(aboleth)?.includes("Mi aboleth")) mal("sobrescribir no sobrescribe");
 
+	// importar luego solo las criaturas no quita las otras secciones del inicio
+	const inicioAntes = app.vault.ficheros.get("Compendio SRD/Español/Inicio.md") ?? "";
+	await importar(["es"], false, new Set<Seccion>(["criaturas"]));
+	if (app.vault.ficheros.get("Compendio SRD/Español/Inicio.md") !== inicioAntes) mal("importar solo criaturas cambia el inicio");
+
 	// otro idioma despues: sus notas enlazan a las del primero
 	r = await importar(["de"]);
 	const de = app.vault.ficheros.get("Compendio SRD/Deutsch/Kreaturen/Aboleth.md") ?? "";
