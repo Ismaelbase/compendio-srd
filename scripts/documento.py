@@ -434,7 +434,8 @@ def rejilla(pz):
     for t in sorted(cab, key=lambda t: (t["yb"], t["a"])):
         ks = _col_de(cols, t["a"], t["b"])
         if len(ks) == 1 or not multi:
-            cabecera[ks[0]].append(limpia(sin_marcas(t["html"])))
+            # sin limpiar: une() necesita ver el guion blando del final ("Übungs­" + "bonus")
+            cabecera[ks[0]].append(sin_marcas(t["html"]))
         else:
             grupos.append([limpia(sin_marcas(t["html"])), ks[0], ks[-1], t["yb"]])
     # un grupo partido en dos lineas ("Espacios de conjuro por cada nivel" + "de conjuro") es uno solo

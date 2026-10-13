@@ -1132,7 +1132,7 @@
        "Klassenmerkmale",
        "Kampfrausch-Anzahl",
        "Kampfrausch-Schaden",
-       "Waffen beherrschung"
+       "Waffenbeherrschung"
       ],
       [
        "1",
@@ -5942,10 +5942,10 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
-       "Barden würfel",
-       "Zauber tricks",
+       "Bardenwürfel",
+       "Zaubertricks",
        "Vorbereitete Zauber",
        "1",
        "2",
@@ -13209,7 +13209,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Göttliche Macht fokussieren",
        "Zaubertricks",
@@ -20721,7 +20721,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Tiergestalt",
        "Zaubertricks",
@@ -29903,7 +29903,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Kampfkünste",
        "Fokuspunkte",
@@ -33803,10 +33803,10 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Göttliche Macht fokussieren",
-       "Vorbe reitete Zauber",
+       "Vorbereitete Zauber",
        "1",
        "2",
        "3",
@@ -38925,7 +38925,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Erzfeind",
        "Vorbereitete Zauber",
@@ -42971,7 +42971,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Hinterhältiger Angriff"
       ],
@@ -48185,7 +48185,7 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Zaubereipunkte",
        "Zaubertricks",
@@ -48716,7 +48716,7 @@
      "filas": [
       [
        "Zauberplatzgrad",
-       "Zaubereipunkte kosten",
+       "Zaubereipunktekosten",
        "Min. Zaubererstufe"
       ],
       [
@@ -56653,12 +56653,12 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
        "Schauerliche Anrufungen",
-       "Zauber tricks",
+       "Zaubertricks",
        "Vorbereitete Zauber",
-       "Zauber plätze",
+       "Zauberplätze",
        "Grad der Plätze"
       ],
       [
@@ -65219,9 +65219,9 @@
      "filas": [
       [
        "Stufe",
-       "Übungs bonus",
+       "Übungsbonus",
        "Klassenmerkmale",
-       "Zauber tricks",
+       "Zaubertricks",
        "Vorbereitete Zauber",
        "1",
        "2",
