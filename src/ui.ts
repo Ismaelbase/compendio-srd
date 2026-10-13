@@ -9,6 +9,12 @@ interface Ui {
 	cmdEncuentro: string;
 	cmdAnadir: string;
 	cmdQuitar: string;
+	cmdEnviar: string;
+	cmdCopiar: string;
+	cmdInsertar: string;
+	usarIT: string;
+	sinNivel: string;
+	jugadoresIT: string;
 	importarTitulo: string;
 	importarIntro: string;
 	idiomas: string;
@@ -76,6 +82,12 @@ interface Ui {
 }
 
 const EN: Ui = {
+	usarIT: "Use the Initiative Tracker players",
+	sinNivel: "no level",
+	jugadoresIT: "Change them in the Initiative Tracker settings.",
+	cmdEnviar: "Send the encounter to Initiative Tracker",
+	cmdCopiar: "Copy the encounter block",
+	cmdInsertar: "Insert the encounter block",
 	cmdImportar: "Import the SRD",
 	bienvenida: "Compendio SRD 2024 is ready. The notes are created when you import the SRD.",
 	cmdBuscar: "Search the compendium",
@@ -157,6 +169,12 @@ const EN: Ui = {
 };
 
 const ES: Ui = {
+	usarIT: "Usar los jugadores de Initiative Tracker",
+	sinNivel: "sin nivel",
+	jugadoresIT: "Se cambian en los ajustes de Initiative Tracker.",
+	cmdEnviar: "Mandar el encuentro a Initiative Tracker",
+	cmdCopiar: "Copiar el bloque encounter",
+	cmdInsertar: "Insertar el bloque encounter",
 	cmdImportar: "Importar el SRD",
 	bienvenida: "Compendio SRD 2024 está listo. Las notas se crean al importar el SRD.",
 	cmdBuscar: "Buscar en el compendio",
@@ -238,6 +256,12 @@ const ES: Ui = {
 };
 
 const DE: Ui = {
+	usarIT: "Die Spieler aus Initiative Tracker verwenden",
+	sinNivel: "ohne Stufe",
+	jugadoresIT: "Sie werden in den Einstellungen von Initiative Tracker geändert.",
+	cmdEnviar: "Begegnung an Initiative Tracker senden",
+	cmdCopiar: "Encounter-Block kopieren",
+	cmdInsertar: "Encounter-Block einfügen",
 	cmdImportar: "SRD importieren",
 	bienvenida: "Compendio SRD 2024 ist bereit. Die Notizen entstehen, wenn du das SRD importierst.",
 	cmdBuscar: "Im Kompendium suchen",
@@ -319,6 +343,12 @@ const DE: Ui = {
 };
 
 const FR: Ui = {
+	usarIT: "Utiliser les joueurs d’Initiative Tracker",
+	sinNivel: "sans niveau",
+	jugadoresIT: "Ils se modifient dans les réglages d’Initiative Tracker.",
+	cmdEnviar: "Envoyer la rencontre à Initiative Tracker",
+	cmdCopiar: "Copier le bloc encounter",
+	cmdInsertar: "Insérer le bloc encounter",
 	cmdImportar: "Importer le SRD",
 	bienvenida: "Compendio SRD 2024 est prêt. Les notes sont créées quand vous importez le SRD.",
 	cmdBuscar: "Rechercher dans le compendium",
@@ -400,6 +430,12 @@ const FR: Ui = {
 };
 
 const IT: Ui = {
+	usarIT: "Usa i giocatori di Initiative Tracker",
+	sinNivel: "senza livello",
+	jugadoresIT: "Si cambiano nelle impostazioni di Initiative Tracker.",
+	cmdEnviar: "Invia l'incontro a Initiative Tracker",
+	cmdCopiar: "Copia il blocco encounter",
+	cmdInsertar: "Inserisci il blocco encounter",
 	cmdImportar: "Importa l'SRD",
 	bienvenida: "Compendio SRD 2024 è pronto. Le note vengono create quando importi l'SRD.",
 	cmdBuscar: "Cerca nel compendio",

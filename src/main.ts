@@ -3,6 +3,7 @@ import { PestanaAjustes, porDefecto, raizDe, type Ajustes } from "./ajustes";
 import { ModalBuscar } from "./buscar";
 import { comunDe, datosIdioma, liberarDatos } from "./datos";
 import { ModalImportar, ModalQuitar, sinCambiar } from "./importar";
+import { copiarBloque, enviarIT, insertarBloque } from "./it";
 import { IDIOMAS } from "./tipos";
 import { t } from "./ui";
 import { VISTA_ENCUENTRO, VistaEncuentro } from "./vista";
@@ -27,6 +28,13 @@ export default class CompendioSrd extends Plugin {
 				if (clave) this.anadirCriatura(clave);
 				return true;
 			},
+		});
+		this.addCommand({ id: "enviar-encuentro", name: ui.cmdEnviar, callback: () => void enviarIT(this.app, this) });
+		this.addCommand({ id: "copiar-bloque", name: ui.cmdCopiar, callback: () => copiarBloque(this.app, this) });
+		this.addCommand({
+			id: "insertar-bloque",
+			name: ui.cmdInsertar,
+			editorCallback: (editor) => insertarBloque(this.app, this, editor),
 		});
 		this.addCommand({
 			id: "quitar-notas",
@@ -66,6 +74,7 @@ export default class CompendioSrd extends Plugin {
 		const guardado = (await this.loadData()) as Partial<Ajustes> | null;
 		const base = porDefecto();
 		this.ajustes = { ...base, ...guardado, encuentro: { ...base.encuentro, ...guardado?.encuentro } };
+		if (typeof this.ajustes.encuentro.usarIT !== "boolean") this.ajustes.encuentro.usarIT = true;
 		if (!IDIOMAS.includes(this.ajustes.idioma)) this.ajustes.idioma = base.idioma;
 		this.ajustes.carpeta = raizDe(this.ajustes.carpeta);
 	}
@@ -82,7 +91,8 @@ export default class CompendioSrd extends Plugin {
 		const { workspace } = this.app;
 		let hoja: WorkspaceLeaf | null = workspace.getLeavesOfType(VISTA_ENCUENTRO)[0] ?? null;
 		if (!hoja) {
-			hoja = workspace.getRightLeaf(false);
+			// en su propio hueco de la barra derecha: asi se ve a la vez que Initiative Tracker
+			hoja = workspace.getRightLeaf(true);
 			await hoja?.setViewState({ type: VISTA_ENCUENTRO, active: true });
 		}
 		if (hoja) await workspace.revealLeaf(hoja);

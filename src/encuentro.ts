@@ -121,9 +121,11 @@ export function criaturasIT(lista: EnEncuentro[], idioma: Idioma): CriaturaIT[] 
 }
 
 /** El bloque ```encounter de Initiative Tracker, por si su API no esta (forma de objeto: creature, hp, ac, mod, xp). */
-export function bloqueEncounter(nombre: string, lista: EnEncuentro[], idioma: Idioma): string {
+export function bloqueEncounter(nombre: string, lista: EnEncuentro[], idioma: Idioma, jugadores: string[] = []): string {
 	const d = datosIdioma(idioma);
-	const lineas = ["```encounter", `name: ${JSON.stringify(nombre)}`, "creatures:"];
+	const lineas = ["```encounter", `name: ${JSON.stringify(nombre)}`];
+	if (jugadores.length) lineas.push(`players: ${JSON.stringify(jugadores)}`);
+	lineas.push("creatures:");
 	for (const x of lista) {
 		const c = comunDe(x.clave)?.c as ComunCriatura | undefined;
 		const e = d.entradas[x.clave];

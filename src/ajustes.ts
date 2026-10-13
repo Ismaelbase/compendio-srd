@@ -14,7 +14,8 @@ export interface Ajustes {
 	enlazarEstados: boolean;
 	/** ruta de cada nota escrita por el plugin -> huella de lo que escribio (para no pisar lo que cambie el usuario) */
 	huellas: Record<string, string>;
-	encuentro: { grupo: Personajes[]; criaturas: EnEncuentro[] };
+	/** usarIT: el grupo son los jugadores de Initiative Tracker, si tiene */
+	encuentro: { grupo: Personajes[]; criaturas: EnEncuentro[]; usarIT: boolean };
 	/** ya se le dijo como crear las notas */
 	avisado: boolean;
 }
@@ -29,7 +30,7 @@ export function porDefecto(): Ajustes {
 		fantasy: false,
 		enlazarEstados: true,
 		huellas: {},
-		encuentro: { grupo: [{ n: 4, nivel: 1 }], criaturas: [] },
+		encuentro: { grupo: [{ n: 4, nivel: 1 }], criaturas: [], usarIT: true },
 		avisado: false,
 	};
 }

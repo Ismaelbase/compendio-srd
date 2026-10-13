@@ -126,6 +126,15 @@
 	min-width: 0;
 }
 
+.srd-usar-it {
+	cursor: pointer;
+	margin-bottom: 4px;
+}
+
+.srd-jugadores .srd-nombre {
+	flex-direction: row;
+}
+
 .srd-numero {
 	width: 4em;
 }

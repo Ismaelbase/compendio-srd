@@ -1,8 +1,9 @@
-import { ItemView, MarkdownView, Notice, normalizePath, setIcon, TFile, type WorkspaceLeaf } from "obsidian";
+import { ItemView, normalizePath, setIcon, TFile, type WorkspaceLeaf } from "obsidian";
 import { raizDe } from "./ajustes";
 import { abrirEntrada, ModalBuscar } from "./buscar";
 import { comunDe, datosIdioma } from "./datos";
-import { bloqueEncounter, calcular, criaturasIT, tablaPresupuesto, type Aviso } from "./encuentro";
+import { calcular, tablaPresupuesto, type Aviso } from "./encuentro";
+import { copiarBloque, enviarIT, grupoDelEncuentro, insertarBloque, jugadoresIT } from "./it";
 import type CompendioSrd from "./main";
 import { rutasDe } from "./notas";
 import { TEXTOS } from "./textos";
@@ -10,16 +11,6 @@ import type { ComunCriatura } from "./tipos";
 import { t } from "./ui";
 
 export const VISTA_ENCUENTRO = "compendio-srd-encuentro";
-const VISTA_IT = "initiative-tracker-view";
-
-interface ApiIT {
-	newEncounter(estado: { name?: string; creatures: unknown[]; roll?: boolean }): void;
-}
-
-function apiIT(): ApiIT | null {
-	const api = (window as unknown as { InitiativeTracker?: ApiIT }).InitiativeTracker;
-	return api && typeof api.newEncounter === "function" ? api : null;
-}
 
 export class VistaEncuentro extends ItemView {
 	constructor(leaf: WorkspaceLeaf, private readonly plugin: CompendioSrd) {
@@ -71,36 +62,61 @@ export class VistaEncuentro extends ItemView {
 		el.empty();
 		el.addClass("srd-encuentro");
 
-		// grupo
+		// grupo: los jugadores de Initiative Tracker (si tiene y se usan) o un grupo propio
 		el.createEl("h4", { text: ui.grupo });
-		const grupo = el.createDiv({ cls: "srd-filas" });
-		enc.grupo.forEach((p, i) => {
-			const fila = grupo.createDiv({ cls: "srd-fila" });
-			const n = fila.createEl("input", { type: "number", cls: "srd-numero", attr: { min: "1", max: "20", "aria-label": ui.personajes } });
-			n.value = String(p.n);
-			n.addEventListener("change", () => {
-				p.n = Math.max(1, Math.min(20, Math.round(Number(n.value)) || 1));
+		const { jugadores } = jugadoresIT(this.app);
+		if (jugadores.length) {
+			const fila = el.createEl("label", { cls: "srd-fila srd-usar-it" });
+			const marca = fila.createEl("input", { type: "checkbox" });
+			marca.checked = enc.usarIT;
+			marca.addEventListener("change", () => {
+				enc.usarIT = marca.checked;
 				void this.cambiar();
 			});
-			fila.createSpan({ text: ui.personajes.toLowerCase(), cls: "srd-texto" });
-			const nivel = fila.createEl("select", { cls: "dropdown", attr: { "aria-label": ui.nivel } });
-			for (let l = 1; l <= 20; l++) nivel.createEl("option", { text: `${ui.nivel} ${l}`, value: String(l) });
-			nivel.value = String(p.nivel);
-			nivel.addEventListener("change", () => {
-				p.nivel = Number(nivel.value);
+			fila.createSpan({ text: ui.usarIT });
+		}
+		if (jugadores.length && enc.usarIT) {
+			const lista = el.createDiv({ cls: "srd-filas srd-jugadores" });
+			for (const j of jugadores) {
+				const nivel = Number(j.level);
+				const fila = lista.createDiv({ cls: "srd-fila" });
+				fila.createSpan({ text: j.name, cls: "srd-nombre" });
+				fila.createSpan({
+					text: Number.isInteger(nivel) && nivel >= 1 ? `${ui.nivel} ${nivel}` : ui.sinNivel,
+					cls: "srd-texto",
+				});
+			}
+			el.createEl("p", { text: ui.jugadoresIT, cls: "srd-vacio" });
+		} else {
+			const grupo = el.createDiv({ cls: "srd-filas" });
+			enc.grupo.forEach((p, i) => {
+				const fila = grupo.createDiv({ cls: "srd-fila" });
+				const n = fila.createEl("input", { type: "number", cls: "srd-numero", attr: { min: "1", max: "20", "aria-label": ui.personajes } });
+				n.value = String(p.n);
+				n.addEventListener("change", () => {
+					p.n = Math.max(1, Math.min(20, Math.round(Number(n.value)) || 1));
+					void this.cambiar();
+				});
+				fila.createSpan({ text: ui.personajes.toLowerCase(), cls: "srd-texto" });
+				const nivel = fila.createEl("select", { cls: "dropdown", attr: { "aria-label": ui.nivel } });
+				for (let l = 1; l <= 20; l++) nivel.createEl("option", { text: `${ui.nivel} ${l}`, value: String(l) });
+				nivel.value = String(p.nivel);
+				nivel.addEventListener("change", () => {
+					p.nivel = Number(nivel.value);
+					void this.cambiar();
+				});
+				if (enc.grupo.length > 1) this.botonIcono(fila, "x", ui.quitar, () => {
+					enc.grupo.splice(i, 1);
+					void this.cambiar();
+				});
+			});
+			const masGrupo = el.createEl("button", { text: ui.anadirPersonajes, cls: "srd-boton-texto" });
+			masGrupo.addEventListener("click", () => {
+				const ultimo = enc.grupo[enc.grupo.length - 1];
+				enc.grupo.push({ n: 1, nivel: Math.min(20, (ultimo?.nivel ?? 0) + 1) });
 				void this.cambiar();
 			});
-			if (enc.grupo.length > 1) this.botonIcono(fila, "x", ui.quitar, () => {
-				enc.grupo.splice(i, 1);
-				void this.cambiar();
-			});
-		});
-		const masGrupo = el.createEl("button", { text: ui.anadirPersonajes, cls: "srd-boton-texto" });
-		masGrupo.addEventListener("click", () => {
-			const ultimo = enc.grupo[enc.grupo.length - 1];
-			enc.grupo.push({ n: 1, nivel: Math.min(20, (ultimo?.nivel ?? 0) + 1) });
-			void this.cambiar();
-		});
+		}
 
 		// criaturas
 		el.createEl("h4", { text: ui.criaturas });
@@ -141,7 +157,7 @@ export class VistaEncuentro extends ItemView {
 		});
 
 		// presupuesto
-		const r = calcular(enc.grupo, enc.criaturas, tabla);
+		const r = calcular(grupoDelEncuentro(this.app, this.plugin).grupo, enc.criaturas, tabla);
 		el.createEl("h4", { text: ui.presupuesto });
 		const pres = el.createDiv({ cls: "srd-presupuesto" });
 		tabla.etiquetas.forEach((etq, i) => {
@@ -194,12 +210,9 @@ export class VistaEncuentro extends ItemView {
 			b.disabled = !enc.criaturas.length;
 			b.addEventListener("click", fn);
 		};
-		boton(ui.enviarIT, true, () => void this.enviarIT());
-		boton(ui.copiarBloque, false, () => {
-			const texto = bloqueEncounter(ui.nombreEncuentro, enc.criaturas, idioma);
-			navigator.clipboard.writeText(texto).then(() => new Notice(ui.copiado), () => new Notice(texto));
-		});
-		boton(ui.insertarBloque, false, () => this.insertar());
+		boton(ui.enviarIT, true, () => void enviarIT(this.app, this.plugin));
+		boton(ui.copiarBloque, false, () => copiarBloque(this.app, this.plugin));
+		boton(ui.insertarBloque, false, () => insertarBloque(this.app, this.plugin));
 		boton(ui.vaciar, false, () => {
 			enc.criaturas = [];
 			void this.cambiar();
@@ -210,35 +223,5 @@ export class VistaEncuentro extends ItemView {
 		const b = padre.createEl("button", { cls: "clickable-icon srd-icono", attr: { "aria-label": etiqueta } });
 		setIcon(b, icono);
 		b.addEventListener("click", fn);
-	}
-
-	private async enviarIT(): Promise<void> {
-		const ui = t();
-		const api = apiIT();
-		if (!api) {
-			new Notice(ui.itNoEsta);
-			return;
-		}
-		const criaturas = criaturasIT(this.plugin.ajustes.encuentro.criaturas, this.plugin.ajustes.idioma);
-		api.newEncounter({ name: ui.nombreEncuentro, creatures: criaturas, roll: true });
-		let hoja = this.app.workspace.getLeavesOfType(VISTA_IT)[0] ?? null;
-		if (!hoja) {
-			hoja = this.app.workspace.getRightLeaf(false);
-			await hoja?.setViewState({ type: VISTA_IT, active: true });
-		}
-		if (hoja) await this.app.workspace.revealLeaf(hoja);
-		new Notice(ui.enviado(criaturas.length));
-	}
-
-	private insertar(): void {
-		const ui = t();
-		const hoja = this.app.workspace.getMostRecentLeaf();
-		const vista = hoja?.view;
-		if (!(vista instanceof MarkdownView) || vista.getMode() !== "source") {
-			new Notice(ui.sinNota);
-			return;
-		}
-		const texto = bloqueEncounter(ui.nombreEncuentro, this.plugin.ajustes.encuentro.criaturas, this.plugin.ajustes.idioma);
-		vista.editor.replaceSelection(`${texto}\n`);
 	}
 }
