@@ -104,6 +104,42 @@
 	background-color: var(--srd-banda2);
 }
 
+/* Fantasy Statblocks con el diseño del compendio: la tabla de caracteristicas cabe en su tarjeta (siempre de
+   fondo claro, por eso los colores van fijos) */
+.statblock .srd-caracteristicas table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 0 2px;
+	margin: 0.2em 0;
+	font-size: 0.8em;
+	font-variant-numeric: tabular-nums;
+}
+
+.statblock .srd-caracteristicas th,
+.statblock .srd-caracteristicas td {
+	padding: 1px 2px;
+	border: none;
+	text-align: center;
+	background: transparent;
+	color: inherit;
+}
+
+.statblock .srd-caracteristicas th {
+	font-size: 0.8em;
+	font-weight: 600;
+	opacity: 0.75;
+}
+
+.statblock .srd-caracteristicas td:nth-child(-n + 4),
+.statblock .srd-caracteristicas td:nth-child(n + 9) {
+	background-color: rgba(128, 38, 22, 0.07);
+}
+
+.statblock .srd-caracteristicas td:nth-child(n + 5):nth-child(-n + 8) {
+	background-color: rgba(128, 38, 22, 0.14);
+}
+
 /* Vista del encuentro */
 .srd-encuentro h4 {
 	margin: 1.2em 0 0.4em;

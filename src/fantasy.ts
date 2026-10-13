@@ -60,7 +60,11 @@ export function disenoFS(idioma: Idioma): { name: string; id: string; blocks: Bl
 				linea("speed", T.ficha.vel),
 			],
 		},
-		{ type: "text", id: id(), properties: ["stats_table"], text: null, conditioned: true, markdown: true, hasRule: true },
+		{
+			// en un grupo con clase propia: styles.css la encoge para que las doce columnas quepan en la tarjeta
+			type: "group", id: id(), properties: ["stats_table"], conditioned: true, hasRule: true, cls: "srd-caracteristicas",
+			nested: [{ type: "text", id: id(), properties: ["stats_table"], text: null, conditioned: true, markdown: true }],
+		},
 		{
 			type: "group", id: id(), conditioned: true, hasRule: true,
 			properties: ["skills_text", "damage_vulnerabilities", "damage_resistances", "immunities_text", "gear", "senses", "languages", "cr_text"],
