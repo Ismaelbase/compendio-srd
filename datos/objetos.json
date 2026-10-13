@@ -4849,7 +4849,9 @@
      "lead": "Resistencia al frío"
     }
    ],
-   "pies": {}
+   "pies": {
+    "bloques.2.txt": "<b>Resistencia al frío.</b> Tienes resistencia al daño de frío y puedes aguantar temperaturas de 0 °F o menos sin más protección."
+   }
   },
   "en": {
    "nombre": "Boots of the Winterlands",
@@ -4914,7 +4916,9 @@
      "lead": "Résistance au froid"
     }
    ],
-   "pies": {}
+   "pies": {
+    "bloques.2.txt": "<b>Résistance au froid.</b> Vous bénéficiez de la Résistance aux dégâts de froid et tolérez les températures inférieures à 0 °F sans protection supplémentaire."
+   }
   },
   "it": {
    "nombre": "Stivali dell'inverno",
@@ -11994,12 +11998,12 @@
     }
    ],
    "pies": {
-    "bloques.1.txt": "<b>Abanico (infrecuente).</b> Si te encuentras en un bote o barco, puedes emplear una acción de magia para tirar la ficha al aire hasta 10 pies de altura. La ficha desaparecerá y un abanico gigante en movimiento ocupará su lugar. El abanico flotará y creará un viento fuerte, que podrá henchir las velas de un barco y aumentar su velocidad en 5 millas/h durante 8 horas. Puedes desconvocar el abanico como acción de magia.",
+    "bloques.1.txt": "<b>Abanico (infrecuente).</b> Si te encuentras en un bote o barco, puedes emplear una acción de magia para tirar la ficha al aire hasta 10 pies de altura. La ficha desaparecerá y un abanico gigante en movimiento ocupará su lugar. El abanico flotará y creará un viento fuerte, que podrá henchir las velas de un barco y aumentar su velocidad en 5 millas por hora durante 8 horas. Puedes desconvocar el abanico como acción de magia.",
     "bloques.3.txt": "<b>Árbol (infrecuente).</b> Debes estar al aire libre para poder usar esta ficha. Puedes emplear una acción de magia para tocar con la ficha un espacio sin ocupar del suelo. La ficha desaparecerá y un roble no mágico ocupará su lugar. El árbol mide 60 pies de alto, el diámetro de su tronco es de 5 pies y las ramas de su copa cubren un radio de 20 pies.",
-    "bloques.4.txt": "<b>Bote cisne (rara).</b> Puedes emplear una acción de magia para tocar con la ficha una masa de agua de al menos 60 pies de diámetro. La ficha desaparecerá y un bote de 50 pies de largo y 20 pies de ancho con la forma de un cisne ocupará su lugar. El bote se autopropulsa y se desplaza por el agua a una velocidad de 6 millas/h. Puedes emplear una acción de magia mientras te encuentres en el bote para ordenarle moverse o girar hasta 90 grados. El bote permanece durante 24 horas y después desaparece. Puedes desconvocar el bote como acción de magia.",
+    "bloques.4.txt": "<b>Bote cisne (rara).</b> Puedes emplear una acción de magia para tocar con la ficha una masa de agua de al menos 60 pies de diámetro. La ficha desaparecerá y un bote de 50 pies de largo y 20 pies de ancho con la forma de un cisne ocupará su lugar. El bote se autopropulsa y se desplaza por el agua a una velocidad de 6 millas por hora. Puedes emplear una acción de magia mientras te encuentres en el bote para ordenarle moverse o girar hasta 90 grados. El bote permanece durante 24 horas y después desaparece. Puedes desconvocar el bote como acción de magia.",
     "bloques.5.txt": "<b>Látigo (rara).</b> Puedes emplear una acción de magia para tirar la ficha a 10 pies o menos de ti. La ficha desaparecerá y un látigo flotante ocupará su lugar. A continuación, podrás utilizar una acción adicional para realizar un ataque de conjuro cuerpo a cuerpo contra una criatura que esté a 10 pies o menos del látigo, con un bonificador de ataque de +9. Si acierta, el objetivo recibe 1d6 + 5 de daño de fuerza.",
     "bloques.6.txt": "Como acción adicional, puedes mover el látigo hasta 20 pies y repetir el ataque contra una criatura que se encuentre a 10 pies o menos de él. El látigo desaparecerá tras 1 hora, cuando emplees una acción de magia para desconvocarlo, cuando mueras o cuando tengas el estado de Incapacitado.",
-    "bloques.7.txt": "<b>Pájaro (rara).</b> Puedes emplear una acción de magia para tirar la ficha al aire a 5 pies de altura. La ficha desaparecerá y un enorme pájaro multicolor ocupará su lugar. El pájaro tiene el perfil de un <strong>roc</strong>, pero no puede atacar. Obedece tus órdenes sencillas y puede transportar hasta 500 libras mientras vuela a su velocidad máxima (16 millas/h y, como máximo, 144 millas al día, con descansos de una hora cada 3 horas de vuelo) o 1000 libras a la mitad de esa velocidad. El ave desaparece tras volar su distancia máxima durante un día o si sus puntos de golpe se reducen a 0. Puedes desconvocar al pájaro como acción de magia."
+    "bloques.7.txt": "<b>Pájaro (rara).</b> Puedes emplear una acción de magia para tirar la ficha al aire a 5 pies de altura. La ficha desaparecerá y un enorme pájaro multicolor ocupará su lugar. El pájaro tiene el perfil de un <strong>roc</strong>, pero no puede atacar. Obedece tus órdenes sencillas y puede transportar hasta 500 libras mientras vuela a su velocidad máxima (16 millas por hora y, como máximo, 144 millas al día, con descansos de una hora cada 3 horas de vuelo) o 1000 libras a la mitad de esa velocidad. El ave desaparece tras volar su distancia máxima durante un día o si sus puntos de golpe se reducen a 0. Puedes desconvocar al pájaro como acción de magia."
    }
   },
   "en": {
@@ -12270,7 +12274,7 @@
    "pies": {
     "bloques.2.txt": "<b>Arbre (peu courant).</b> Vous devez être en extérieur pour utiliser cette plume. Vous pouvez entreprendre l’action Magie pour mettre la plume en contact avec un espace inoccupé au sol. La plume disparaît ; à sa place pousse un chêne non magique. L’arbre mesure 60 pieds de haut et son tronc 5 pieds de diamètre, la ramure au sommet atteignant 20 pieds de rayon.",
     "bloques.3.txt": "<b>Bateau-cygne (rare).</b> Vous pouvez consacrer l’action Magie à mettre la plume en contact avec une étendue d’eau dont le diamètre est supérieur ou égal à 60 pieds. La plume disparaît, remplacée par un bateau de 50 pieds de long et 20 pieds de large en forme de cygne géant. Ce bateau est autopropulsé et se déplace sur l’eau à une vitesse de 6 miles par heure. Tant que vous êtes à bord, vous pouvez entreprendre l’action Magie pour lui ordonner de se déplacer ou de virer d’un maximum de 90 degrés. Le bateau persiste pendant 24 heures puis disparaît. Vous pouvez révoquer l’embarcation au prix de l’action Magie.",
-    "bloques.4.txt": "<b>Éventail (peu courant).</b> Si vous êtes à bord d’un bateau à voile, vous pouvez consacrer l’action Magie à lancer cette plume en l’air, à une hauteur maximale de 10 pieds. La plume disparaît, remplacée par un éventail géant qui s’agite spontanément. L’éventail flotte et crée un vent fort. Ce vent gonfle les voiles du navire, augmentant sa vitesse de 5 miles/h pendant 8 heures. Vous pouvez révoquer l’éventail au prix de l’action Magie.",
+    "bloques.4.txt": "<b>Éventail (peu courant).</b> Si vous êtes à bord d’un bateau à voile, vous pouvez consacrer l’action Magie à lancer cette plume en l’air, à une hauteur maximale de 10 pieds. La plume disparaît, remplacée par un éventail géant qui s’agite spontanément. L’éventail flotte et crée un vent fort. Ce vent gonfle les voiles du navire, augmentant sa vitesse de 5 miles par heure pendant 8 heures. Vous pouvez révoquer l’éventail au prix de l’action Magie.",
     "bloques.5.txt": "<b>Fouet (rare).</b> Vous pouvez consacrer l’action Magie à lancer la plume à une distance maximale de 10 pieds. La plume disparaît, remplacée par un fouet flottant. Vous pouvez ensuite, par une action Bonus, effectuer une attaque de sort au corps à corps contre une créature située dans un rayon de 10 pieds du fouet avec un bonus à l’attaque de +9. Si l’attaque touche, la cible subit 1d6 + 5 dégâts de force.",
     "bloques.6.txt": "Par une action Bonus, vous pouvez déplacer le fouet flottant d’un maximum de 20 pieds et réitérer l’attaque contre une créature située dans un rayon de 10 pieds de l’arme. Le fouet disparaît au bout de 1 heure, lorsque vous entreprenez une action Magie pour le révoquer, ou lorsque vous mourez ou subissez l’état Neutralisé.",
     "bloques.7.txt": "<b>Oiseau (rare).</b> Vous pouvez consacrer l’action Magie à lancer cette plume en l’air, à une hauteur de 5 pieds. La plume disparaît, remplacée par un énorme oiseau multicolore. L’oiseau, qui reprend le profil du <strong>rukh</strong>, ne peut pas porter d’attaque. Il obéit à vos ordres et peut transporter jusqu’à 500 livres en vol à sa vitesse maximale (16 miles/heure, pour un maximum de 144 miles par jour avec 1 heure de repos toutes les 3 heures de vol), ou 1000 livres à la moitié de cette vitesse. L’oiseau disparaît après avoir volé sur sa distance maximale pour la journée (même chose s’il tombe à 0 point de vie). Vous pouvez révoquer l’oiseau au prix de l’action Magie."
@@ -27811,7 +27815,9 @@
      "txt": "Además, las temperaturas de −18 °C o menos no os afectarán ni a ti ni a nada de lo que vistas o lleves."
     }
    ],
-   "pies": {}
+   "pies": {
+    "bloques.1.txt": "Además, las temperaturas de 0 °F o menos no os afectarán ni a ti ni a nada de lo que vistas o lleves."
+   }
   },
   "en": {
    "nombre": "Ring of Warmth",
@@ -27858,7 +27864,9 @@
      "txt": "En outre et tant que vous portez cet anneau, vous-même et tout ce que vous portez êtes insensibles aux effets délétères des températures inférieures ou égales à –18 °C."
     }
    ],
-   "pies": {}
+   "pies": {
+    "bloques.1.txt": "En outre et tant que vous portez cet anneau, vous-même et tout ce que vous portez êtes insensibles aux effets délétères des températures inférieures ou égales à 0 °F."
+   }
   },
   "it": {
    "nombre": "Anello del calore",
@@ -29119,7 +29127,7 @@
     "bloques.9.filas.5.1": "Una scala a pioli di legno (lunga 24 piedi)",
     "bloques.9.filas.7.1": "Una fossa aperta (cubo con spigolo di 10 piedi) posizionabile a terra entro 10 piedi dal personaggio",
     "bloques.9.filas.9.1": "Una barca a remi (lunga 12 piedi)",
-    "bloques.9.filas.12.1": "Una finestra (60 per 4 piedi, profonda fino a 2 piedi) che il personaggio può collocare su una superficie verticale entro la sua portata"
+    "bloques.9.filas.12.1": "Una finestra (2 per 4 piedi, profonda fino a 2 piedi) che il personaggio può collocare su una superficie verticale entro la sua portata"
    }
   }
  },
@@ -36476,7 +36484,7 @@
    ],
    "pies": {
     "bloques.0.txt": "Ce tube contient un liquide laiteux qui dégage une forte odeur d’alcool. Lorsqu’on le découvre, un tel récipient contient 1d6 + 1 doses de 1 once.",
-    "bloques.1.txt": "Vous pouvez entreprendre l’action Utilisation pour verser une ou plusieurs doses sur une surface à portée d’allonge. Le liquide dissout instantanément jusqu’à 30 x 1 pied d’adhésif qu’il touche, y compris de la <i>colle universelle</i>."
+    "bloques.1.txt": "Vous pouvez entreprendre l’action Utilisation pour verser une ou plusieurs doses sur une surface à portée d’allonge. Le liquide dissout instantanément jusqu’à 1 x 1 pied d’adhésif qu’il touche, y compris de la <i>colle universelle</i>."
    }
   },
   "it": {

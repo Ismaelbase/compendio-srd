@@ -389,7 +389,32 @@ def construir():
             rec[l] = x
         salida.append(rec)
     salida += armas_y_armaduras(salida, problemas)
+    alinear_recuadros(salida, problemas)
     return salida, problemas
+
+
+def alinear_recuadros(salida, problemas):
+    """Los recuadros flotan y, en la frontera entre dos secciones, cada maqueta los deja en una ("Lanzar conjuros con
+    armadura" va al final de "Obtener conjuros" en aleman e italiano y al principio de "Lanzar conjuros" en los
+    demas). Se ponen en la nota en que los pone el ingles, por orden dentro de cada capitulo."""
+    por_cap = collections.defaultdict(list)
+    for r in salida:
+        por_cap[r["cap"]].append(r)
+    for cap, recs in por_cap.items():
+        sec_en = [(r, k) for r in recs for k, b in enumerate(r["en"]["bloques"]) if b["t"] == "recuadro"]
+        for l in LANGS:
+            if l == "en":
+                continue
+            sec_l = [(r, b) for r in recs if l in r for b in r[l]["bloques"] if b["t"] == "recuadro"]
+            if len(sec_l) != len(sec_en):
+                problemas.append(f"{l}, {cap}: {len(sec_l)} recuadros y {len(sec_en)} en ingles")
+                continue
+            for (re_, k), (rl, b) in zip(sec_en, sec_l):
+                if re_ is rl:
+                    continue
+                rl[l]["bloques"].remove(b)
+                destino = re_[l]["bloques"]
+                destino.insert(0 if k == 0 else len(destino), b)
 
 
 def armas_y_armaduras(salida, problemas):

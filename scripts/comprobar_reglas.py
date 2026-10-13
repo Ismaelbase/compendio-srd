@@ -203,7 +203,7 @@ def main():
                 if sum(1 for c in otras if c == cx) >= 2:
                     continue
                 solo_e, solo_x = ce - cx, cx - ce
-                if not (solo_e and solo_x) and all(float(n) <= 3 for n in (solo_e or solo_x)):
+                if not (solo_e and solo_x) and all(float(n) <= 12 or float(n) == 20 for n in (solo_e or solo_x)):
                     # una cifra pequena de mas en un idioma: "1 Hit Point" frente a "un point de vie", "level 1"
                     # frente a "ersten Stufe"; no es una errata de cifras
                     info.append(f"{l}: {x['nombre']} ({te or 'inicio'}): {dict(solo_e)} / {dict(solo_x)}")

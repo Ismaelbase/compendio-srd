@@ -34,9 +34,28 @@ def _fmt(x, coma=False):
 
 NUM_EN = r"(\d+(?:/\d+)?[½¼¾⅓⅔]?|[½¼¾])"
 
+# Numeros con letra (del 2 al 12 y el 20): "10 Candles" frente a "zehn Kerzen", "Choose 2" frente a "Elige dos".
+# El 1 no, porque es tambien el articulo; "sei" italiano tampoco ("se sei..."), ni "neuf" frances ("nuevo").
+LETRAS = {
+    "en": "two three four five six seven eight nine ten eleven twelve twenty",
+    "es": "dos tres cuatro cinco seis siete ocho nueve diez once doce veinte",
+    "de": "zwei drei vier fünf sechs sieben acht neun zehn elf zwölf zwanzig",
+    "fr": "deux trois quatre cinq six sept huit - dix onze douze vingt",
+    "it": "due tre quattro cinque - sette otto nove dieci undici dodici venti",
+}
+VALOR = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20]
+
+
+def letras_a_cifras(t, lang):
+    for w, v in zip(LETRAS[lang].split(), VALOR):
+        if w != "-":
+            t = re.sub(rf"\b{w}\b", str(v), t, flags=re.IGNORECASE if lang != "de" else 0)
+    return t
+
 
 def prepara_en(t):
-    t = sin_marcas(t)
+    t = letras_a_cifras(sin_marcas(t), "en")
+    t = re.sub(r"\bD(\d+) per\b", r"1d\1 per", t)  # "D12 per Barbarian level"
     t = re.sub(r"\b(Range|range) (\d+)/(\d+)(?!\s*(?:feet|ft))", r"\1 \2/\3 ft.", t)
     t = re.sub(r"(\d+) extra (feet|foot)", r"\1 \2 extra", t)
     t = re.sub(r"(\d+)\s*[–-]\s*(\d+)(\s*)(feet|foot|ft\.?|miles?|pounds?|lb\.?)(?!\w)", r"\1 \4–\2\3\4", t)
@@ -52,11 +71,16 @@ def prepara_en(t):
     return t
 
 
-def prepara_otro(t):
-    t = sin_marcas(t)
+CM_PAL = r"(cm|centimetri|centimètres|centímetros|Zentimeter)\b"
+
+
+def prepara_otro(t, lang):
+    t = letras_a_cifras(sin_marcas(t), lang)
     t = re.sub(r"(\d+(?:[.,]\d+)?)\s?(?:g|Gramm|gramos?|grammes?|grammi)\b",
                lambda m: _fmt(_num(m.group(1)) / 1000, coma=True) + " kg", t)
-    t = re.sub(r"(\d+)\s*[–-]\s*(\d+)\s?cm\b", r"\1 cm–\2 cm", t)
+    t = re.sub(r"(\d+)\s*(?:[–-]|y|e|et|und|bis)\s*(\d+)\s?" + CM_PAL, r"\1 \3–\2 \3", t)
+    t = re.sub(r"(\d+(?:[.,]\d+)?)\s?(?:m³|m3|metri cubi|mètres? cubes?|metros cúbicos|Kubikmeter)",
+               lambda m: _fmt(_num(m.group(1)) * 1000, coma=True) + " l", t)
     t = re.sub(r"(\d+)([½¼¾])", lambda m: _fmt(_num(m.group(0)), coma=True), t)
     t = re.sub(r"−\s?(\d)", r"\1", t)  # "−18 °C"
     return t
@@ -67,4 +91,4 @@ def cifras_r_en(t):
 
 
 def cifras_r(t, lang):
-    return cifras(prepara_otro(t), lang)
+    return cifras(prepara_otro(t, lang), lang)

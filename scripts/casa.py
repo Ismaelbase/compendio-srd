@@ -86,7 +86,22 @@ def _textos(o):
                 yield from _textos(v)
 
 
+def _rayas_genericas(t):
+    """Las rayas que quedan tras la lista de arriba (los capitulos de reglas traen mas de cien): un par encierra
+    un inciso y pasa a parentesis ("In certain situations—particularly combat—the action" -> "In certain
+    situations (particularly combat) the action"); una suelta presenta una explicacion y pasa a dos puntos. Una celda
+    de tabla que es solo una raya (sin valor) se queda."""
+    if "—" not in t or t.strip() == "—":
+        return t
+    t = re.sub(r"\s?—\s?([^—.;]+?)\s?—\s?", lambda m: " (" + m.group(1).strip() + ") ", t)
+    t = re.sub(r"(?<=\w)\s?—\s?(?=[\w<“(])", ": ", t)
+    t = re.sub(r"\s+([,.;:)])", r"\1", t)
+    t = re.sub(r"\(\s+", "(", t)
+    return re.sub(r"  +", " ", t)
+
+
 def _gm(t):
+    t = re.sub(r"\bGame Master\b", "Dungeon Master", t)  # "El Game Master describe una situacion" (como jugar)
     return re.sub(r"(?<![\w-])GM(?![\w-])", "DM", t)
 
 
@@ -147,6 +162,7 @@ def aplicar_casa(registros, contar=None):
                     n2 = n
                     for a, b in RAYAS_EN.items():
                         n2 = n2.replace(a, b)
+                    n2 = _rayas_genericas(n2)
                     cuenta["raya"] += n2 != n
                     n3 = re.sub(r"(\dd\d+) – (\d)", "\\1 \u2212 \\2", n2)
                     cuenta["signo menos"] += n3 != n2

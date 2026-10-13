@@ -12,7 +12,7 @@ import os
 import sys
 
 from cifras import cifras, cifras_en
-from pies import LANGS_M, recorrer
+from pies import LANGS_M, TIPOS, recorrer
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DATOS = os.path.join(os.path.dirname(AQUI), "datos")
@@ -28,7 +28,14 @@ def texto(x, pies=False):
 # revisadas a mano el 13/10/2026: en pies dicen lo mismo que el ingles, con una cifra que el ingles pone con letra
 # ("je 1 Gallone" por "every gallon", "per ogni piede" por "every 1 foot", "einem halben Zoll" por "1/2 inch")
 ACEPTADAS = {("criaturas", "fire-elemental", "de"), ("conjuros", "forcecage", "de"), ("conjuros", "gust-of-wind", "it"),
-             ("conjuros", "wall-of-thorns", "it")}
+             ("conjuros", "wall-of-thorns", "it"),
+             # fase 1b, revisadas a mano el 13/10/2026: en pies dicen lo mismo que el ingles. "ein Pfund" y "una libbra"
+             # por "a pound"; "100 Quadratfuß" por "10-foot-square"; "1/4 gallone"; la tabla de las fosas, donde el
+             # ingles junta "17–20" y "120" al leerlo seguido; el 1,5 de "1,5-fachen Körpergröße" por "1½ times"
+             ("reglas", "coins", "de"), ("reglas", "coins", "it"), ("reglas", "magic-items", "es"),
+             ("reglas", "magic-items", "de"), ("reglas", "magic-items", "fr"), ("reglas", "magic-items", "it"),
+             ("reglas", "dehydration", "it"), ("reglas", "high-jump", "de"), ("reglas", "falling-net", "de"),
+             ("reglas", "hidden-pit", "it"), ("reglas", "spiked-pit", "it"), ("equipo", "ball-bearings", "de")}
 
 
 def distancia(a, b):
@@ -37,7 +44,7 @@ def distancia(a, b):
 
 def main():
     peores, total = [], collections.Counter()
-    for tipo in ("criaturas", "conjuros", "objetos", "estados"):
+    for tipo in TIPOS:
         for r in json.load(open(os.path.join(DATOS, f"{tipo}.json"), encoding="utf-8")):
             en = texto(r["en"])
             # el ingles tal cual, con sus millares con coma ("XP 1,800") y "a foot" como 1

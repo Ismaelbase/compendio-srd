@@ -228,6 +228,34 @@ def _texto(bl):
     return _plano(" ".join(partes))
 
 
+def normalizar(ns):
+    """Lo que un SRD compone de otra manera que los demas se lleva a la misma forma:
+    - las lineas "Activador:" y "Duracion:" de las trampas, que el ingles pone como parrafos con rotulo, son campos;
+    - las formulas que el ingles pone en el texto ("<strong>Miles per hour</strong> = Speed ÷ 10 <strong>Miles per
+      day</strong> = ..."), una formula por rotulo."""
+    for n in ns:
+        bl = n["bloques"]
+        if n["tipo"] == "trampa":
+            k = 1 if bl and bl[0].get("sub") else 0
+            filas = []
+            while k < len(bl) and bl[k]["t"] == "p" and re.match(r"<b>[^<]+:</b>", bl[k]["txt"]):
+                m = re.match(r"<b>([^<]+):</b>\s*(.*)", bl[k]["txt"])
+                filas.append([m.group(1).strip(), m.group(2).strip()])
+                del bl[k]
+            if filas:
+                bl.insert(1 if bl and bl[0].get("sub") else 0, {"t": "campos", "filas": filas})
+        out = []
+        for b in bl:
+            partes = re.split(r"(?=<strong>[^<]+</strong>(?:\s*\([^)]*\))?\s*=)", b.get("txt", "")) if b["t"] == "p" else []
+            partes = [x.strip() for x in partes if x.strip()]
+            if len(partes) >= 2 and all(re.match(r"<strong>[^<]+</strong>", x) for x in partes):
+                out.extend({"t": "formula", "txt": re.sub(r"</?strong>", lambda m: m.group(0).replace("strong", "b"), x)}
+                           for x in partes)
+            else:
+                out.append(b)
+        n["bloques"] = out
+
+
 def recolocar_tablas(ns, avisos):
     """Las tablas flotan en la maqueta y pueden caer dentro de la nota de al lado (la tabla de equipo de
     aventureros en la nota de los abrojos; la de legados infernales en la del humano). Una tabla con titulo que su
@@ -255,6 +283,7 @@ def main():
         ns = notas(l)
         avisos = []
         recolocar_tablas(ns, avisos)
+        normalizar(ns)
         for a in avisos:
             print(f"   {l}: {a}")
         cuenta = {}

@@ -1,0 +1,479 @@
+{
+ "_que_es": "Diferencias de cifras de los capitulos de reglas con el ingles revisadas el 13/10/2026 que NO son errata (conversiones propias de cada traduccion, cifras con letra, reglas dichas de otra forma). comprobar_reglas.py no las vuelve a avisar.",
+ "revisados": [
+  {
+   "id": "d20-tests",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El inglés numera los pasos 4, 5 y 6 porque sigue la cuenta de «El ritmo de juego»; el español los numera 1, 2 y 3 y los pasos son los mismos."
+  },
+  {
+   "id": "d20-tests",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El inglés numera los pasos 4, 5 y 6 porque sigue la cuenta de «El ritmo de juego»; el alemán los numera 1, 2 y 3 y los pasos son los mismos."
+  },
+  {
+   "id": "exploration",
+   "idioma": "de",
+   "apartado": "tabla Travel Pace",
+   "por_que": "El alemán pasa las millas a 1,6 km (4 millas son 6,4 km, 24 son 38,4) en toda la tabla; es su conversión, no una errata."
+  },
+  {
+   "id": "combat",
+   "idioma": "es",
+   "apartado": "Your Turn",
+   "por_que": "Es el recuadro de la cuadrícula: dividir la velocidad entre 5 en pies es dividirla entre 1,5 en metros, que es lo que pone el español."
+  },
+  {
+   "id": "combat",
+   "idioma": "es",
+   "apartado": "Difficult Terrain",
+   "por_que": "El español dice que cada metro en terreno difícil cuesta 1 m adicional, que es la misma regla que cada pie cuesta 1 pie adicional."
+  },
+  {
+   "id": "combat",
+   "idioma": "de",
+   "apartado": "Your Turn",
+   "por_que": "Es el recuadro de la cuadrícula: dividir entre 5 en pies es dividir entre 1,5 en metros, y el alemán escribe en letra el resto de cifras (ein Quadrat)."
+  },
+  {
+   "id": "damage-and-healing",
+   "idioma": "de",
+   "apartado": "Death Saving Throws",
+   "por_que": "El alemán escribe 0 en cifra donde el inglés dice zero y el resto de valores coinciden."
+  },
+  {
+   "id": "casting-spells",
+   "idioma": "es",
+   "apartado": "Targets",
+   "por_que": "El español mete aquí el recuadro de identificar un conjuro activo (CD 15), que en el inglés va en otro apartado con la misma CD."
+  },
+  {
+   "id": "casting-spells",
+   "idioma": "de",
+   "apartado": "Attack Rolls",
+   "por_que": "El alemán mete aquí el recuadro de identificar un conjuro activo (SG 15), que en el inglés va en otro apartado con la misma CD."
+  },
+  {
+   "id": "coins",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "Un tercio de onza son unos 10 g y una libra son 0,5 kg, que es lo que pone el español."
+  },
+  {
+   "id": "mounts-and-vehicles",
+   "idioma": "de",
+   "apartado": "Speed",
+   "por_que": "El alemán pasa las 3 millas por hora de la corriente a 4,8 km/h porque usa 1,6 km por milla; es su conversión."
+  },
+  {
+   "id": "mounts-and-vehicles",
+   "idioma": "de",
+   "apartado": "tabla Airborne and Waterborne Vehicles",
+   "por_que": "El alemán pasa todas las velocidades de la tabla con 1,6 km por milla (8 mph son 12,8 km/h, 2½ son 4 km/h); es su conversión y la mantiene en toda la tabla."
+  },
+  {
+   "id": "climbing",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El español dice que cada metro trepando cuesta 1 m adicional (2 m en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "climbing",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán dice que cada metro trepando cuesta un metro adicional (dos en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "crawling",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El español dice que cada metro arrastrándose cuesta 1 m adicional (2 m en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "crawling",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán dice que cada metro arrastrándose cuesta un metro adicional (dos en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "difficult-terrain",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El español dice que cada metro en terreno difícil cuesta 1 m adicional (1,5 m cuestan 3 m), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "high-jump",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El español pone 90 cm + 30 cm por el modificador de Fuerza, que es 3 + el modificador en pies pasado a metros, con el mínimo de 0."
+  },
+  {
+   "id": "swimming",
+   "idioma": "es",
+   "apartado": "(inicio)",
+   "por_que": "El español dice que cada metro nadando cuesta 1 m adicional (2 m en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "swimming",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán dice que cada metro nadando cuesta un metro adicional (dos en terreno difícil), que es la misma regla que la del inglés en pies."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "de",
+   "apartado": "Cackle Fever",
+   "por_que": "El alemán ordena las tres enfermedades por orden alfabético y la comparación emparejó la fiebre carcajeante con la vista podrida; con su apartado (Gackerfieber) las cifras coinciden."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "de",
+   "apartado": "Sewer Plague",
+   "por_que": "El alemán ordena las tres enfermedades por orden alfabético y la comparación emparejó la plaga de las alcantarillas con otra; con su apartado (Kanalpest) las cifras coinciden."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "de",
+   "apartado": "Sight Rot",
+   "por_que": "El alemán ordena las tres enfermedades por orden alfabético y la comparación emparejó la vista podrida con otra; con su apartado (Augenfäule) las cifras coinciden."
+  },
+  {
+   "id": "environmental-effects",
+   "idioma": "de",
+   "apartado": "Thin Ice",
+   "por_que": "Nueve metros cuadrados son el cuadrado de 3 m de lado que corresponde a los 10 pies, y 3d10 × 5 kg es el 3d10 × 10 libras."
+  },
+  {
+   "id": "falling-net",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "Nueve metros cuadrados son el cuadrado de 3 m de lado que corresponde a los 10 pies de la red; el resto de cifras coinciden."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "es",
+   "apartado": "Rods",
+   "por_que": "De 2 a 5 libras son de 1 a 2,5 kg, que es lo que pone el español."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "es",
+   "apartado": "Wands",
+   "por_que": "El español ordena las categorías por orden alfabético y la comparación emparejó las varitas con los objetos maravillosos; en su apartado las varitas miden de 30 a 37,5 cm, que son las 12 a 15 pulgadas."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "es",
+   "apartado": "Wondrous Items",
+   "por_que": "El español ordena las categorías por orden alfabético y la comparación emparejó los objetos maravillosos con las varitas (30 a 37,5 cm, correcto)."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "de",
+   "apartado": "Wands",
+   "por_que": "El alemán redondea las 15 pulgadas (38 cm) a 40 cm, igual que el francés, en una medida que el inglés da como típica; es redondeo de la conversión."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "de",
+   "apartado": "tabla Potion Miscibility",
+   "por_que": "El alemán numera la última fila 100 donde el inglés pone 00; es la misma fila del d100."
+  },
+  {
+   "id": "sentient-magic-items",
+   "idioma": "de",
+   "apartado": "tabla Sentient Item’s Alignment",
+   "por_que": "El alemán numera la última fila 97 a 100 donde el inglés pone 97 a 00; es la misma fila del d100."
+  },
+  {
+   "id": "wizard",
+   "idioma": "es",
+   "apartado": "Level 18: Spell Mastery",
+   "por_que": "El español mete aquí el recuadro de ampliar y sustituir el libro de conjuros, que en el inglés va en otro apartado con las mismas cifras (2 horas y 50 po, 1 hora y 10 po por nivel)."
+  },
+  {
+   "id": "wizard",
+   "idioma": "de",
+   "apartado": "Level 1: Arcane Recovery",
+   "por_que": "El alemán mete aquí el recuadro de ampliar y sustituir el libro de conjuros, que en el inglés va en otro apartado con las mismas cifras (zwei Stunden und 50 GM, eine Stunde und 10 GM por grado)."
+  },
+  {
+   "id": "backpack",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán pasa el pie cúbico a 28 litros, que es su conversión para los recipientes."
+  },
+  {
+   "id": "basket",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán pasa los 2 pies cúbicos a 56 litros (28 por pie cúbico), que es su conversión para los recipientes."
+  },
+  {
+   "id": "bucket",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán pasa el medio pie cúbico a 14 litros (28 por pie cúbico), que es su conversión para los recipientes."
+  },
+  {
+   "id": "caltrops",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El cuadrado de 5 pies de lado son 1,5 m por 1,5 m, 2,25 metros cuadrados, y el alemán lo redondea a 2,3."
+  },
+  {
+   "id": "chest",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán pasa los 12 pies cúbicos a 324 litros contando el pie como 30 cm (27 litros por pie cúbico); es una conversión válida aunque no sea la de 28 que usa en otros recipientes."
+  },
+  {
+   "id": "hunting-trap",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán redondea los 3 pies de la cadena (0,9 m) a un metro; es redondeo de la conversión en una medida que el inglés da como típica."
+  },
+  {
+   "id": "oil",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El cuadrado de 5 pies de lado son 1,5 m por 1,5 m, 2,25 metros cuadrados, y el alemán lo redondea a 2,3; el resto de cifras coinciden."
+  },
+  {
+   "id": "sack",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "El alemán pasa el pie cúbico a 28 litros, que es su conversión para los recipientes."
+  },
+  {
+   "id": "d20-tests",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "El inglés numera los pasos 4, 5 y 6 porque la lista sigue la numeración de la anterior; las cuatro traducciones los numeran 1, 2 y 3, que es lo correcto."
+  },
+  {
+   "id": "d20-tests",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "El inglés numera los pasos 4, 5 y 6 porque la lista sigue la numeración de la anterior; las cuatro traducciones los numeran 1, 2 y 3, que es lo correcto."
+  },
+  {
+   "id": "combat",
+   "idioma": "fr",
+   "apartado": "Your Turn",
+   "por_que": "El francés dice dividir la velocidad entre 3 y doblar, que en metros es lo mismo que dividir entre 1,5 (los 5 pies del inglés); el ejemplo da las mismas 6 casillas para 9 m."
+  },
+  {
+   "id": "combat",
+   "idioma": "it",
+   "apartado": "tabla Creature Size and Space",
+   "por_que": "75 cm es lo mismo que 0,75 m; solo cambia la unidad."
+  },
+  {
+   "id": "casting-spells",
+   "idioma": "fr",
+   "apartado": "Attack Rolls",
+   "por_que": "Es el recuadro de identificar un conjuro activo, que en inglés va al final del capítulo; la CD 15 coincide."
+  },
+  {
+   "id": "casting-spells",
+   "idioma": "it",
+   "apartado": "Targets",
+   "por_que": "Es el recuadro de identificar un conjuro activo, que en inglés va al final del capítulo; la CD 15 coincide."
+  },
+  {
+   "id": "adventuring-gear",
+   "idioma": "fr",
+   "apartado": "tabla Adventuring Gear",
+   "por_que": "58,5 lb son 29,25 kg y el francés redondea a 29 kg, igual que el italiano; es redondeo de la conversión, y el resto de paquetes coincide."
+  },
+  {
+   "id": "alignment",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "El francés escribe las nueve combinaciones en letra (neuf); el 2 que detecta la herramienta es el de los dos factores, que también están en inglés."
+  },
+  {
+   "id": "high-jump",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "El italiano da la misma regla en centímetros: (3 + Fuerza) × 30 cm con mínimo 0, cada 30 cm de salto cuestan 30 cm de movimiento y se alcanza 1,5 veces la altura."
+  },
+  {
+   "id": "travel-pace",
+   "idioma": "fr",
+   "apartado": "Special Movement",
+   "por_que": "Velocidad en metros entre 2 da km/h igual que pies entre 10 da millas por hora (9 m dan 4,5 km/h, que son 3 millas), como en español e italiano; el 4/3 del francés es el 1⅓ del inglés."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "it",
+   "apartado": "Cackle Fever",
+   "por_que": "El italiano pone la plaga de las alcantarillas antes que la fiebre de la risa y la herramienta empareja los apartados cruzados; las cifras de cada enfermedad coinciden con el inglés."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "it",
+   "apartado": "Sewer Plague",
+   "por_que": "El italiano pone la plaga de las alcantarillas antes que la fiebre de la risa y la herramienta empareja los apartados cruzados; las cifras de cada enfermedad coinciden con el inglés."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "fr",
+   "apartado": "Wands",
+   "por_que": "12 a 15 pulgadas son 30 a 38 cm y el francés redondea a 30 a 40 cm, igual que el alemán; es redondeo de la conversión."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "it",
+   "apartado": "Rods",
+   "por_que": "2 a 5 libras son 1 a 2,5 kg, que es lo que pone el italiano; la herramienta no convierte aquí las libras del inglés."
+  },
+  {
+   "id": "magic-item-categories",
+   "idioma": "it",
+   "apartado": "Wands",
+   "por_que": "El italiano pone 30 a 37,5 cm, que es la conversión de 12 a 15 pulgadas, igual que el español; la herramienta lee mal los centímetros."
+  },
+  {
+   "id": "barbarian",
+   "idioma": "fr",
+   "apartado": "tabla Core Barbarian Traits",
+   "por_que": "Las cifras (2 habilidades, d12, 4 hachas de mano, 15 po o 75 po) coinciden con el inglés; solo cambia cómo se escriben el dado y el número."
+  },
+  {
+   "id": "fighter",
+   "idioma": "fr",
+   "apartado": "tabla Core Fighter Traits",
+   "por_que": "Las cifras (2 habilidades, d10, 8 jabalinas, 4, 11 o 155 po) coinciden con el inglés; solo cambia cómo se escriben el dado y el número."
+  },
+  {
+   "id": "champion",
+   "idioma": "fr",
+   "apartado": "Level 15: Superior Critical",
+   "por_que": "18, 19 o 20 es lo mismo que 18 a 20."
+  },
+  {
+   "id": "champion",
+   "idioma": "fr",
+   "apartado": "Level 18: Survivor",
+   "por_que": "El francés dice que con 18 o 19 se obtiene el beneficio de un 20; con un 20 ya se tiene, así que equivale al 18 a 20 del inglés."
+  },
+  {
+   "id": "monk",
+   "idioma": "fr",
+   "apartado": "Level 15: Perfect Focus",
+   "por_que": "Menos de 4 es lo mismo que 3 o menos."
+  },
+  {
+   "id": "wizard",
+   "idioma": "fr",
+   "apartado": "Level 1: Arcane Recovery",
+   "por_que": "Es el recuadro de ampliar y sustituir el libro de conjuros, maquetado en otro apartado; las 2 horas y 50 po y la 1 hora y 10 po por nivel coinciden con el inglés."
+  },
+  {
+   "id": "wizard",
+   "idioma": "it",
+   "apartado": "Level 5: Memorize Spell",
+   "por_que": "Es el recuadro de ampliar y sustituir el libro de conjuros, maquetado en otro apartado; las 2 horas y 50 po y la 1 hora y 10 po por nivel coinciden con el inglés."
+  },
+  {
+   "id": "backpack",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "30 litros o 0,03 m3 es el pie cúbico del inglés, igual que en español."
+  },
+  {
+   "id": "backpack",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Un cubo de 30 cm de arista es el pie cúbico del inglés."
+  },
+  {
+   "id": "basket",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "60 litros o 0,06 m3 son los 2 pies cúbicos del inglés, igual que en español."
+  },
+  {
+   "id": "basket",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Dos cubos de 30 cm de arista son los 2 pies cúbicos del inglés."
+  },
+  {
+   "id": "bottle-glass",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "1½ pintas son 0,75 l, que el francés escribe 75 cl."
+  },
+  {
+   "id": "bucket",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "Medio pie cúbico son 15 l, igual que en español; el francés añade el equivalente en m3."
+  },
+  {
+   "id": "bucket",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Medio pie cúbico son unos 14 l, lo mismo que pone el alemán; es redondeo de la conversión."
+  },
+  {
+   "id": "chest",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Doce cubos de 30 cm de arista son los 12 pies cúbicos del inglés."
+  },
+  {
+   "id": "sack",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Un cubo de 30 cm de arista es el pie cúbico del inglés."
+  },
+  {
+   "id": "barrel",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "Corregida la cifra de líquido (160 l); los 112 l de mercancía seca son la conversión alemana de 4 pies cúbicos a 28 l por pie cúbico, la misma que usa en todo el equipo."
+  },
+  {
+   "id": "trinkets",
+   "idioma": "de",
+   "apartado": "tabla Trinkets",
+   "por_que": "Corregido «Hunderten von kleinen Taschen». El resto son conversiones propias (2,5 cm por pulgada, 30 g por onza), números con letra y la tabla numerada de 1 a 100 en lugar de 01 a 00."
+  },
+  {
+   "id": "adventuring-gear",
+   "idioma": "it",
+   "apartado": "tabla Adventuring Gear",
+   "por_que": "Corregidos los pesos de los paquetes de ladrón y de sacerdote; los 29 kg del paquete de artista son 58½ libras redondeadas, como hace también el francés."
+  },
+  {
+   "id": "high-jump",
+   "idioma": "fr",
+   "apartado": "(inicio)",
+   "por_que": "Añadido el mínimo de 0 m; el francés da la fórmula en centímetros (90 cm + 30 cm por punto de modificador), que es la misma regla que 3 pies más el modificador."
+  },
+  {
+   "id": "warlock",
+   "idioma": "de",
+   "apartado": "Eldritch Spear",
+   "por_que": "Corregido el factor a «Neunfache» (30 pies = 9 m por nivel); el alemán lo escribe con letra y el comparador no lo lee como cifra."
+  },
+  {
+   "id": "ball-bearings",
+   "idioma": "de",
+   "apartado": "(inicio)",
+   "por_que": "Corregida la superficie a nueve metros cuadrados; el alemán la da en metros cuadrados (3 m × 3 m) y el inglés como un cuadrado de 10 pies de lado, que es la misma zona."
+  },
+  {
+   "id": "barrel",
+   "idioma": "it",
+   "apartado": "(inicio)",
+   "por_que": "Corregidos los 160 litros de líquido; los 4 pies cúbicos de mercancía seca el italiano los da como 4 cubos de 30 cm de lado, que es la misma medida."
+  }
+ ]
+}

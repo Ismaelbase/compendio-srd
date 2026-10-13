@@ -1,7 +1,40 @@
 {
- "_que_es": "Hallazgos de revisar_estilo.py (T-0111) que se aceptan porque el texto es el del SRD tal cual: el SRD aleman usa en estos objetos una forma distinta de la de su glosario. construir_datos.py --estilo no los cuenta como error.",
+ "_que_es": "Hallazgos de revisar_estilo.py (T-0111) que se aceptan porque el texto es el del SRD tal cual: el SRD aleman usa una forma distinta de la de su glosario. construir_datos.py --estilo no los cuenta como error.",
  "aceptados": [
-  {"tipo": "objetos", "idioma": "de", "regla": "forma-no-srd-de", "encontrado": "Verwundbarkeit", "por_que": "nombre oficial del objeto: Rüstung der Verwundbarkeit"},
-  {"tipo": "objetos", "idioma": "de", "regla": "forma-no-srd-de", "encontrado": "Sphäre", "por_que": "texto del SRD aleman (Talisman der Sphäre y la esfera de aniquilacion)"}
+  {
+   "tipo": "objetos",
+   "idioma": "de",
+   "regla": "forma-no-srd-de",
+   "encontrado": "Verwundbarkeit",
+   "por_que": "nombre oficial del objeto: Rüstung der Verwundbarkeit"
+  },
+  {
+   "tipo": "objetos",
+   "idioma": "de",
+   "regla": "forma-no-srd-de",
+   "encontrado": "Sphäre",
+   "por_que": "texto del SRD aleman (Talisman der Sphäre y la esfera de aniquilacion)"
+  },
+  {
+   "tipo": "reglas",
+   "idioma": "de",
+   "regla": "forma-no-srd-de",
+   "encontrado": "Angreifen",
+   "por_que": "texto del SRD aleman: «zum Angreifen von weiter entfernten Zielen» es el verbo sustantivado, no la accion Angriff"
+  },
+  {
+   "tipo": "personajes",
+   "idioma": "de",
+   "regla": "forma-no-srd-de",
+   "encontrado": "Archetyp",
+   "por_que": "texto del SRD aleman en el juramento de entrega: «dem Archetypen des Ritters», no un termino de reglas"
+  },
+  {
+   "tipo": "equipo",
+   "idioma": "de",
+   "regla": "forma-no-srd-de",
+   "encontrado": "GM",
+   "por_que": "en el SRD aleman GM son las piezas de oro (Goldmünzen): «Drachenschach (1 GM)»"
+  }
  ]
 }

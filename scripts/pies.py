@@ -9,8 +9,9 @@ La cifra no se calcula a ojo: cada medida pasada se busca entre las medidas del 
 (que mide en pies). Si esta, va esa cifra; si no esta, va la conversion de la tabla (1,5 m = 5 pies, 1,5 km =
 1 milla, 2,5 cm = 1 pulgada, 0,5 kg = 1 libra, 4 l = 1 galon) y sale como aviso para revisarla.
 
-Uso: py -3.14 pies.py [--json F]   (escribe "pies" en datos\\criaturas.json, conjuros.json, objetos.json y
-estados.json; sale con 1 si queda alguna medida sin pasar o sin respaldo en el ingles)
+Uso: py -3.14 pies.py [tipo ...] [--json F]   (escribe "pies" en datos\\criaturas.json, conjuros.json, objetos.json,
+estados.json, reglas.json, personajes.json y equipo.json; sale con 1 si queda alguna medida sin pasar o sin
+respaldo en el ingles)
 """
 import collections
 import json
@@ -23,6 +24,7 @@ from marcas import sin_marcas
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DATOS = os.path.join(os.path.dirname(AQUI), "datos")
 LANGS_M = ("es", "de", "fr", "it")
+TIPOS = ("criaturas", "conjuros", "objetos", "estados", "reglas", "personajes", "equipo")
 
 PALABRAS = {
     "es": {"un": 1, "una": 1, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7,
@@ -89,11 +91,24 @@ def medidas_en(texto):
     t = sin_marcas(texto)
     t = re.sub(r"foot(wide|long|high|tall|deep|square|radius)", r"foot-\1", t)  # erratas "5-footwide"
     t = re.sub(r"\b(\d+) (additional|extra|more) (gallons|feet|pounds|miles)", r"\1 \3", t)
-    t = re.sub(r"\bhalf a (mile|inch|foot|pound)\b", r"0.5 \1", t)  # antes que "a mile"
+    t = re.sub(r"\bhalf a (cubic foot|mile|inch|foot|pound)\b", r"0.5 \1", t)  # antes que "a mile"
+    t = re.sub(r"\bone-(fifth|quarter|third) of an? (cubic foot|gallon|pint|mile|inch|foot|pound)\b",
+               lambda m: {"fifth": "0.2", "quarter": "0.25", "third": "0.33"}[m.group(1)] + " " + m.group(2), t)
+    t = re.sub(r"\b(\d+)/(\d+)[- ](cubic foot|cubic feet|gallons?|pints?)",
+               lambda m: f"{int(m.group(1)) / int(m.group(2)):g} {m.group(3)}", t)  # "1/5 cubic foot"
     t = re.sub(r"\b(a|an|one) (cubic foot|square foot|foot|inch|mile|pound|gallon|pint|ounce)\b", r"1 \2", t)
     t = re.sub(r"\bhalf[- ](mile|inch|foot)\b", r"0.5 \1", t)
-    t = re.sub(r"\b1/2[- ](inch|foot|mile)\b", r"0.5 \1", t)
-    t = re.sub(r"\b1/4[- ](inch|foot|mile)\b", r"0.25 \1", t)
+    t = re.sub(r"\b1/2[- ](inch|foot|mile|lb\.|pound)", r"0.5 \1", t)
+    t = re.sub(r"\b1/4[- ](inch|foot|mile|lb\.|pound)", r"0.25 \1", t)
+    t = re.sub(r"(\d+)½", lambda m: m.group(1) + ".5", t)  # "58½ lb.", "2½ by 2½ feet"
+    t = re.sub(r"(\d+(?:\.\d+)?) by (\d+(?:\.\d+)?) (feet|foot)", r"\1 \3 by \2 \3", t)
+    for m in re.finditer(r"\bRange (\d+)/(\d+)(?!\s*(?:feet|ft))", t):  # tabla de armas: "Range 20/60", en pies
+        out["ft"][float(m.group(1))] += 1
+        out["ft"][float(m.group(2))] += 1
+    for m in re.finditer(r"(\d+(?:\.\d+)?) (?:mph|miles per hour|miles in an hour)\b", t):
+        out["mph"][float(m.group(1))] += 1
+    for m in re.finditer(r"(-?\d+) degrees Fahrenheit", t):
+        out["F"][float(m.group(1))] += 1
     for m in re.finditer(r"(\d+)/(\d+)(?:[- ]| )(?:feet|ft\.?)", t):  # alcance "20/60 ft."
         out["ft"][float(m.group(1))] += 1
         out["ft"][float(m.group(2))] += 1
@@ -144,7 +159,32 @@ def clase_de(lang, unidad):
 
 
 ESPECIALES = {  # frases en las que no basta con multiplicar (cada una mirada contra el ingles)
-    "es": [("cada metro de movimiento te cuesta 1 m adicional", "cada pie de movimiento te cuesta 1 pie adicional"),
+    "es": [  # capitulos de reglas (fase 1b): las frases que dicen "en metros" o "cada metro" pasan a pies, como el ingles
+           ("cada metro de movimiento te cuesta 1 m adicional (2 m adicionales",
+            "cada pie de movimiento te cuesta 1 pie adicional (2 pies adicionales"),
+           ("Cada metro de movimiento en terreno difícil cuesta 1 m adicional",
+            "Cada pie de movimiento en terreno difícil cuesta 1 pie adicional"),
+           ("cada metro de movimiento en ese espacio cuesta 1 m adicional",
+            "cada pie de movimiento en ese espacio cuesta 1 pie adicional"),
+           ("Espacio (metros)", "Espacio (pies)"),
+           ("El alcance se expresa en metros.", "El alcance se expresa en pies."),
+           ("ambos indicados en metros", "ambos indicados en pies"),
+           ("1 o 2 pc por kilómetro", "1 o 2 pc por milla"),
+           ("una distancia de 90 cm + 30 cm × tu modificador por Fuerza (como mínimo 0 m)",
+            "una distancia en pies de 3 + tu modificador por Fuerza (como mínimo 0 pies)"),
+           ("una distancia de hasta 30 cm × tu puntuación de Fuerza",
+            "una distancia en pies de hasta tu puntuación de Fuerza"),
+           ("cada metro que saltes te costará un metro de tu movimiento",
+            "cada pie que saltes te costará un pie de tu movimiento"),
+           ("cada metro que saltes te costará 1 m de tu movimiento", "cada pie que saltes te costará 1 pie de tu movimiento"),
+           ("la distancia en metros que pueden recorrer", "la distancia en pies que pueden recorrer"),
+           ("Si te quedan 0 metros o menos", "Si te quedan 0 pies o menos"),
+           ("la velocidad del mismo en kilómetros por hora", "la velocidad del mismo en millas por hora"),
+           ("su alcance aumenta una cantidad de metros igual a 9 veces tu nivel de brujo",
+            "su alcance aumenta una cantidad de pies igual a 30 veces tu nivel de brujo"),
+           ("Una moneda pesa aproximadamente 10 g, por lo que 50 monedas pesan 0,5 kg.",
+            "Una moneda pesa aproximadamente un tercio de onza, por lo que 50 monedas pesan 1 libra."),
+           ("cada metro de movimiento te cuesta 1 m adicional", "cada pie de movimiento te cuesta 1 pie adicional"),
            ("cada metro de movimiento le cuesta 1 m adicional", "cada pie de movimiento le cuesta 1 pie adicional"),
            ("cada metro de movimiento cuesta 1 m adicional", "cada pie de movimiento cuesta 1 pie adicional"),
            ("gastar 2 m de movimiento por cada metro", "gastar 2 pies de movimiento por cada pie"),
@@ -161,8 +201,47 @@ ESPECIALES = {  # frases en las que no basta con multiplicar (cada una mirada co
            ("a 750 m o menos de ti", "a media milla o menos de ti"),
            ("3 m de ancho y 3 de alto", "10 pies de ancho y 10 de alto"),
            ("30 g de pegamento pueden", "1 onza de pegamento puede"),
-           ("a unos centímetros del suelo", "a unas pulgadas del suelo")],
-    "de": [("für jeden Meter, den sie sich auf dich zubewegt, zwei Meter",
+           ("a unos centímetros del suelo", "a unas pulgadas del suelo"),
+           # formulas del ritmo de viaje: en pies son las del ingles (millas por hora = velocidad ÷ 10)
+           ("<b>Kilómetros por hora</b> = velocidad ÷ 2", "<b>Millas por hora</b> = velocidad ÷ 10"),
+           ("<b>Kilómetros al día</b> (ritmo normal) = kilómetros por hora ×",
+            "<b>Millas al día</b> (ritmo normal) = millas por hora ×"),
+           ("= kilómetros al día ×", "= millas al día ×")],
+    "de": [("<b>Kilometer pro Stunde</b> = Bewegungsrate ÷ 2", "<b>Meilen pro Stunde</b> = Bewegungsrate ÷ 10"),
+           ("<b>Kilometer pro Tag</b> (normale Geschwindigkeit) = Kilometer pro Stunde ×",
+            "<b>Meilen pro Tag</b> (normale Geschwindigkeit) = Meilen pro Stunde ×"),
+           ("= Kilometer pro Tag ×", "= Meilen pro Tag ×"),
+           ("jeder Meter an Bewegung einen zusätzlichen Meter Bewegungsrate",
+            "jeder Fuß an Bewegung einen zusätzlichen Fuß Bewegungsrate"),
+           ("jeder Meter, den du zurücklegst, einen zusätzlichen Meter Bewegungsrate",
+            "jeder Fuß, den du zurücklegst, einen zusätzlichen Fuß Bewegungsrate"),
+           ("(zwei zusätzliche Meter in schwierigem Gelände)", "(zwei zusätzliche Fuß in schwierigem Gelände)"),
+           ("jeder Meter Bewegung in diesem Bereich einen zusätzlichen Meter Bewegungsrate",
+            "jeder Fuß Bewegung in diesem Bereich einen zusätzlichen Fuß Bewegungsrate"),
+           ("Bereich (Meter)", "Bereich (Fuß)"),
+           ("Die Reichweite ist in Metern angegeben.", "Die Reichweite ist in Fuß angegeben."),
+           ("die Grundreichweite der Waffe in Metern", "die Grundreichweite der Waffe in Fuß"),
+           ("2 KM pro 1,6 km", "2 KM pro Meile"),
+           ("springst du eine Anzahl von Metern empor. Sie entspricht einem Drittel der Summe aus deinem "
+            "Stärkemodifikator + 3 (mindestens 0 Meter)",
+            "springst du eine Anzahl von Fuß empor. Sie entspricht der Summe aus deinem Stärkemodifikator + 3 "
+            "(mindestens 0 Fuß)"),
+           ("bis zu einer Anzahl von Metern, die einem Drittel deines Stärkewerts entspricht",
+            "bis zu einer Anzahl von Fuß, die deinem Stärkewert entspricht"),
+           ("kostet dich jeder gesprungene Meter einen Meter deiner Bewegungsrate",
+            "kostet dich jeder gesprungene Fuß einen Fuß deiner Bewegungsrate"),
+           ("die Strecke in Metern, die", "die Strecke in Fuß, die"),
+           ("dessen Bewegungsrate in Kilometern pro Stunde", "dessen Bewegungsrate in Meilen pro Stunde"),
+           ("um das Neunfache deiner Hexenmeisterstufe in Metern erhöht",
+            "um das Dreißigfache deiner Hexenmeisterstufe in Fuß erhöht"),
+           ("Eine Münze wiegt acht bis zehn Gramm. Fünfzig Münzen wiegen daher etwa ein halbes Kilo.",
+            "Eine Münze wiegt etwa eine Drittelunze. Fünfzig Münzen wiegen daher etwa ein Pfund."),
+           # cuadrados de 10 y de 5 pies de lado, que el aleman da en metros cuadrados
+           ("einen neun Quadratmeter großen", "einen 10 mal 10 Fuß großen"),
+           ("neun Quadratmeter großes Netz", "10 mal 10 Fuß großes Netz"),
+           ("pro neun Quadratmeter großem Bereich", "pro 10 mal 10 Fuß großem Bereich"),
+           ("einen Bereich von 2,3 Quadratmetern", "einen 5 mal 5 Fuß großen Bereich"),
+           ("für jeden Meter, den sie sich auf dich zubewegt, zwei Meter",
             "für jeden Fuß, den sie sich auf dich zubewegt, zwei Fuß"),
            ("für jeden Meter, den sie sich bewegt, vier Meter", "für jeden Fuß, den sie sich bewegt, vier Fuß"),
            ("Für jeden Meter, den sie sich durch die Wand bewegt, muss sie vier Meter",
@@ -184,7 +263,20 @@ ESPECIALES = {  # frases en las que no basta con multiplicar (cada una mirada co
            ("eine Anzahl von Metern in Höhe des Dreifachen", "eine Anzahl von Fuß in Höhe des Zehnfachen"),
            ("Drei-Meter-Stange", "Zehn-Fuß-Stange"),
            ("im Abstand von bis zu 800 Metern", "im Abstand von bis zu einer halben Meile")],
-    "fr": [("2d12 x 1,5 km", "2d12 miles"),
+    "fr": [("<b>Km par heure</b> = Vitesse ÷ 2", "<b>Miles par heure</b> = Vitesse ÷ 10"),
+           ("<b>Km/jour</b> (allure normale) = km/h ×", "<b>Miles/jour</b> (allure normale) = miles/h ×"),
+           ("= km/jour ×", "= miles/jour ×"),
+           ("mètre par mètre ou pas à pas", "pied par pied ou pas à pas"),
+           ("Espace (mètres)", "Espace (pieds)"),
+           ("La portée est exprimée en mètres.", "La portée est exprimée en pieds."),
+           ("la portée normale exprimée en mètres", "la portée normale exprimée en pieds"),
+           ("la distance en mètres qu’elle peut parcourir", "la distance en pieds qu’elle peut parcourir"),
+           ("Une pièce pèse environ 10 grammes, si bien que cent pièces font un kilogramme.",
+            "Une pièce pèse environ un tiers d’once, si bien que cinquante pièces font une livre."),
+           ("Un seau contient 15 litres de liquide ou 0,015 m3.", "Un seau contient un demi-pied cube."),
+           ("pour un volume de 30 litres ou 0,03 m3", "pour un volume de 1 pied cube"),
+           ("pour un volume de 60 litres ou 0,06 m3", "pour un volume de 2 pieds cubes"),
+           ("2d12 x 1,5 km", "2d12 miles"),
            ("un rayon de 750 m", "un rayon d’un demi-mile"),
            ("barreaux de 1,25 cm de diamètre", "barreaux d’un demi-pouce de diamètre"),
            ("chaque tranche de 30 cm de ce transfert forcé", "chaque pied de ce transfert forcé"),
@@ -199,7 +291,29 @@ ESPECIALES = {  # frases en las que no basta con multiplicar (cada una mirada co
            ("(30 cm de long, 15 de large et de profondeur)", "(1 pied de long, 6 pouces de large et de profondeur)"),
            ("pans de 3 m sur 6", "pans de 10 pieds sur 20"),
            ("3 m sur 3", "10 pieds sur 10")],
-    "it": [("per ogni 30 centimetri", "per ogni piede"),
+    "it": [("<b>Chilometri all'ora</b> = Velocità ÷ 2", "<b>Miglia all'ora</b> = Velocità ÷ 10"),
+           ("<b>Chilometri al giorno</b> (Passo normale) = Chilometri all'ora ×",
+            "<b>Miglia al giorno</b> (Passo normale) = Miglia all'ora ×"),
+           ("= Chilometri al giorno ×", "= Miglia al giorno ×"),
+           ("Anziché muoversi con distanze in metri", "Anziché muoversi con distanze in piedi"),
+           ("Spazio (metri)", "Spazio (piedi)"),
+           ("La gittata è espressa in metri.", "La gittata è espressa in piedi."),
+           ("la gittata normale dell'arma in metri", "la gittata normale dell'arma in piedi"),
+           ("la distanza in metri che la creatura può percorrere", "la distanza in piedi che la creatura può percorrere"),
+           ("la velocità del veicolo in chilometri orari", "la velocità del veicolo in miglia orarie"),
+           ("ogni 30 centimetri di movimento costano 30 centimetri extra (60 centimetri extra",
+            "ogni piede di movimento costa un piede extra (due piedi extra"),
+           ("ogni 30 centimetri di movimento in quello spazio costano 30 centimetri extra",
+            "ogni piede di movimento in quello spazio costa un piede extra"),
+           ("Ogni 30 centimetri di movimento su terreno difficile costano 30 centimetri extra",
+            "Ogni piede di movimento su terreno difficile costa un piede extra"),
+           ("un'altezza pari a 3 + il suo modificatore di Forza moltiplicato per 30 centimetri (minimo 0 centimetri)",
+            "un'altezza in piedi pari a 3 + il suo modificatore di Forza (minimo 0 piedi)"),
+           ("una distanza pari al suo punteggio di Forza moltiplicato per 30 centimetri",
+            "una distanza in piedi pari al suo punteggio di Forza"),
+           ("Una moneta pesa circa dieci grammi, quindi cinquanta monete pesano circa mezzo chilogrammo.",
+            "Una moneta pesa circa un terzo di oncia, quindi cinquanta monete pesano circa una libbra."),
+           ("per ogni 30 centimetri", "per ogni piede"),
            ("un raggio di 750 metri", "un raggio di mezzo miglio"),
            ("2d12 × 1,5 chilometri", "2d12 miglia"),
            ("sbarre di 1,25 centimetri di diametro disposte a 1,25 centimetri di distanza",
@@ -213,11 +327,29 @@ ESPECIALES = {  # frases en las que no basta con multiplicar (cada una mirada co
            ("1d3 x 30 centimetri", "1d3 piedi")],
 }
 # "entre 1,5 y 6 m", "zwischen 1,5 und 30 Metern": las dos cifras llevan la unidad del final
-DOS = {l: re.compile(r"(?<![\d,])(\d+(?:,\d+)?) (y|o|und|oder|et|ou|e) (\d+(?:,\d+)?) (" +
+# (y "0,75 por 0,75 m", "75 x 75 cm": el espacio de las criaturas por tamano)
+DOS = {l: re.compile(r"(?<![\w,])(\d+(?:,\d+)?) (y|o|und|oder|et|ou|e|por|x|×|per|mal) (\d+(?:,\d+)?) (" +
                      "|".join(u for u, c in UNIDADES[l] if c in ("m", "cm", "km")) + r")(?![\wäöüßàèéìòù²³’'])")
        for l in ("es", "de", "fr", "it")}
+# "150–210 cm" (alturas de las especies): igual, con guion
+GUION = {l: re.compile(r"(?<![\d,])(\d+(?:,\d+)?)\s?([–-])\s?(\d+(?:,\d+)?)\s?(" +
+                       "|".join(u for u, c in UNIDADES[l] if c in ("m", "cm", "km")) + r")(?![\wäöüßàèéìòù²³’'])")
+         for l in ("es", "de", "fr", "it")}
 # "90 x 60 x 60 cm": cada cifra lleva la unidad del final
-TRES = re.compile(r"(\d+(?:,\d+)?)\s?([x×])\s?(\d+(?:,\d+)?)\s?\2\s?(\d+(?:,\d+)?)\s?(cm|m|centimetri|metri|Zentimeter|Metern?)\b")
+TRES = re.compile(r"(?<![\w,])(\d+(?:,\d+)?)\s?([x×]|mal)\s?(\d+(?:,\d+)?)\s?\2\s?(\d+(?:,\d+)?)\s?(cm|m|centimetri|metri|Zentimetern?|Metern?)\b")
+
+
+ALCANCE = {"es": "alcance", "de": "Reichweite", "fr": "portée", "it": "gittata"}
+POR_HORA = {"es": "millas por hora", "de": "Meilen pro Stunde", "fr": "miles par heure", "it": "miglia orarie"}
+
+
+def _de_ingles(v, clase, en_medidas, tol=0.1):
+    """La cifra inglesa de esa clase que casa con v (y se gasta), o None."""
+    for c in sorted(en_medidas.get(clase, {}), key=lambda x: abs(x - v)):
+        if en_medidas[clase][c] > 0 and abs(c - v) <= max(0.5, abs(v) * tol):
+            en_medidas[clase][c] -= 1
+            return c
+    return None
 
 
 def pasar(texto, lang, en_medidas, avisos, donde):
@@ -227,6 +359,39 @@ def pasar(texto, lang, en_medidas, avisos, donde):
     t = texto
     for a, b in ESPECIALES[lang]:
         t = t.replace(a, b)
+
+    def alcance(m):
+        # "alcance 6/18" de la tabla de armas, sin unidad (metros): "alcance 20/60" como el ingles
+        out = []
+        for txt in (m.group(2), m.group(3)):
+            v = _num(txt, lang) / 0.3
+            c = _de_ingles(v, "ft", en_medidas)
+            if c is None:
+                c = round(v)
+                avisos.append({"donde": donde, "medida": m.group(0), "pies": str(c), "motivo": "alcance sin cifra igual"})
+            out.append(_fmt(c, lang))
+        return f"{m.group(1)} {out[0]}/{out[1]}"
+    t = re.sub(rf"\b({ALCANCE[lang]}) (\d+(?:,\d+)?)/(\d+(?:,\d+)?)(?![\d,])(?!\s?(?:m|metri|metros|Meter|Metern|mètres)\b)",
+               alcance, t, flags=re.IGNORECASE)
+
+    def por_hora(m):
+        v = _num(m.group(1), lang) / 1.5
+        c = _de_ingles(v, "mph", en_medidas, tol=0.15)
+        if c is None:
+            c = round(v, 2)
+            avisos.append({"donde": donde, "medida": m.group(0), "pies": str(c), "motivo": "km/h sin cifra igual"})
+        return f"{_fmt(c, lang)} {POR_HORA[lang]}"
+    t = re.sub(r"(\d+(?:,\d+)?)\s?km/h\b", por_hora, t)
+
+    def grados(m):
+        v = -float(m.group(2)) if m.group(1) else float(m.group(2))
+        f = v * 9 / 5 + 32
+        c = _de_ingles(f, "F", en_medidas, tol=0.05)
+        if c is None:
+            c = round(f)
+            avisos.append({"donde": donde, "medida": m.group(0), "pies": str(c), "motivo": "grados sin cifra igual"})
+        return f"{_fmt(c, lang)} °F"
+    t = re.sub(r"([−–-])?(\d+)\s?°C", grados, t)  # el frances escribe "–18 °C" con guion medio
 
     def tres(m):
         u = m.group(5)
@@ -242,6 +407,13 @@ def pasar(texto, lang, en_medidas, avisos, donde):
         b = pasar(f"{m.group(3)} {u}", lang, en_medidas, avisos, donde)
         return re.match(r"[\d,/]+", a).group(0) + f" {m.group(2)} " + b
     t = DOS[lang].sub(dos, t)
+
+    def guion(m):
+        u = m.group(4)
+        a = pasar(f"{m.group(1)} {u}", lang, en_medidas, avisos, donde)
+        b = pasar(f"{m.group(3)} {u}", lang, en_medidas, avisos, donde)
+        return re.match(r"[\d,/]+", a).group(0) + m.group(2) + b
+    t = GUION[lang].sub(guion, t)
 
     def uno(m):
         clase = clase_de(lang, m.group(3))
@@ -281,9 +453,11 @@ def pasar(texto, lang, en_medidas, avisos, donde):
                                    "motivo": "sin cifra igual en el ingles"})
             salida.append((elegido, clase_en))
         sing, plur = SALIDA[lang][salida[-1][1]]
-        # pulgadas en fraccion, como el ingles ("1/4 inch", "1/2 inch")
-        fracciones = {0.25: "1/4", 0.5: "1/2", 0.75: "3/4"}
-        numeros = "/".join(fracciones[v] if c in ("in", "lb", "mi") and v in fracciones else _fmt(v, lang) for v, c in salida)
+        # pulgadas, libras, millas, galones y pies cubicos en fraccion, como el ingles ("1/4 inch", "1/4 gallon",
+        # "one-fifth of a cubic foot")
+        fracciones = {0.25: "1/4", 0.5: "1/2", 0.75: "3/4", 0.2: "1/5"}
+        numeros = "/".join(fracciones[v] if c in ("in", "lb", "mi", "gal", "cuft") and v in fracciones else _fmt(v, lang)
+                           for v, c in salida)
         palabra = sing if len(salida) == 1 and salida[0][0] <= 1 else plur
         return f"{numeros} {palabra}"
 
@@ -316,7 +490,7 @@ def main():
     salida_json = sys.argv[sys.argv.index("--json") + 1] if "--json" in sys.argv else None
     informe = {"avisos": [], "sin_pasar": []}
     resumen = collections.Counter()
-    tipos = [a for a in sys.argv[1:] if a in ("criaturas", "conjuros", "objetos", "estados")] or         ["criaturas", "conjuros", "objetos", "estados"]
+    tipos = [a for a in sys.argv[1:] if a in TIPOS] or list(TIPOS)
     for tipo in tipos:
         ruta = os.path.join(DATOS, f"{tipo}.json")
         datos = json.load(open(ruta, encoding="utf-8"))
@@ -335,7 +509,8 @@ def main():
                         pies[donde] = n
                         resumen[(tipo, l)] += 1
                     # unidades que se quedan sin pasar
-                    resto = re.findall(r"\b(\d+(?:,\d+)?\s?(?:m|km|cm|kg))\b|\b(" + RESTO[l] + r")\b", sin_marcas(n))
+                    limpio = sin_marcas(n).replace("metro di paragone", "")  # "termino de comparacion", no una medida
+                    resto = re.findall(r"\b(\d+(?:,\d+)?\s?(?:m|km|cm|kg))\b|\b(" + RESTO[l] + r")\b", limpio)
                     for a, b in resto:
                         informe["sin_pasar"].append({"tipo": tipo, "id": r["id"], "idioma": l, "donde": donde,
                                                      "queda": a or b, "texto": sin_marcas(n)[:200]})

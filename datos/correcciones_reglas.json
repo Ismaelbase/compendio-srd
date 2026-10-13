@@ -1,0 +1,216 @@
+{
+ "_que_es": "Erratas de traduccion de los capitulos de reglas (fase 1b, 13/10/2026). Salen de comparar las cifras de cada apartado y tabla con el ingles (comprobar_reglas.py) y estan revisadas contra los otros cuatro idiomas. Manda el ingles (decision 34 de T-0111).",
+ "correcciones": [
+  {
+   "id": "spiders-sting",
+   "idioma": "de",
+   "antes": "Spinnenstich (200 GP)",
+   "despues": "Spinnenstich (200 GM)",
+   "por_que": "El alemán pone el precio en GP, la abreviatura inglesa; en todo su SRD las piezas de oro son GM."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "it",
+   "antes": "<i>cura ferite</i> o <i>ristorare inferiore</i>",
+   "despues": "<i>guarigione</i> o <i>ristorare inferiore</i>",
+   "por_que": "En la vista putrefacta el inglés dice Heal (Guarigione en el SRD italiano); el italiano pone cura ferite, que es Cure Wounds."
+  },
+  {
+   "id": "entertainers-pack",
+   "idioma": "it",
+   "antes": "9 razioni giornaliere e un otre",
+   "despues": "9 razioni giornaliere, acciarino con pietra focaia e un otre",
+   "por_que": "El inglés incluye el yesquero (Tinderbox) en el paquete de artista; el italiano se lo deja, y en los otros paquetes sí lo pone como acciarino con pietra focaia."
+  },
+  {
+   "id": "entertainers-pack",
+   "idioma": "it",
+   "antes": "i seguenti i oggetti",
+   "despues": "i seguenti oggetti",
+   "por_que": "Errata de imprenta del italiano: la «i» va repetida."
+  },
+  {
+   "id": "ball-bearings",
+   "idioma": "it",
+   "antes": "una superficie piana di 3 metri quadrati",
+   "despues": "una superficie piana quadrata con lato di 3 metri",
+   "por_que": "El inglés dice un cuadrado de 10 pies de lado (3 m × 3 m, 9 m²); el italiano pone 3 metros cuadrados. El propio SRD italiano dice «area quadrata con lato di 3 metri» en el hielo fino y la red."
+  },
+  {
+   "id": "caltrops",
+   "idioma": "it",
+   "antes": "una superficie di 1,5 metri quadrati",
+   "despues": "una superficie quadrata con lato di 1,5 metri",
+   "por_que": "El inglés dice un cuadrado de 5 pies de lado (1,5 m × 1,5 m); el italiano pone 1,5 metros cuadrados."
+  },
+  {
+   "id": "bottle-glass",
+   "idioma": "en",
+   "antes": "up to 11/2 pints",
+   "despues": "up to 1½ pints",
+   "por_que": "Errata de imprenta del inglés: el PDF pone «11/2» por «1½» (los otros cuatro idiomas dan 0,75 l, que es pinta y media)."
+  },
+  {
+   "id": "oil",
+   "idioma": "it",
+   "antes": "una zona di 1,5 metri quadrati",
+   "despues": "una zona quadrata con lato di 1,5 metri",
+   "por_que": "El inglés dice un cuadrado de 5 pies de lado (1,5 m × 1,5 m); el italiano pone 1,5 metros cuadrados."
+  },
+  {
+   "id": "trinkets",
+   "idioma": "de",
+   "antes": "Hunderten von kleinen Taschen",
+   "despues": "hundert kleinen Taschen",
+   "por_que": "El inglés dice un chaleco con cien bolsillos (one hundred tiny pockets) y el alemán dice cientos de bolsillos; el francés, el español y el italiano ponen cien. El resto de diferencias de la tabla (1 a 100 en vez de 01 a 00, 47 en cifra) no son erratas."
+  },
+  {
+   "id": "mounts-and-vehicles",
+   "idioma": "es",
+   "antes": "2,4 km/h",
+   "despues": "2,25 km/h",
+   "por_que": "El inglés da 1½ mph al bote de remos; con la conversión que usa la propia tabla española (1 milla = 1,5 km: 8 mph = 12 km/h, 2 mph = 3 km/h) son 2,25 km/h, como ponen el francés y el italiano, y el español pone 2,4 km/h."
+  },
+  {
+   "id": "mounts-and-vehicles",
+   "idioma": "es",
+   "antes": "4 km/h",
+   "despues": "3,75 km/h",
+   "por_que": "El inglés da 2½ mph al navío de guerra; con la conversión que usa la propia tabla española (1 milla = 1,5 km) son 3,75 km/h, como ponen el francés y el italiano, y el español pone 4 km/h.",
+   "donde": "bloques[19].filas[6][1]"
+  },
+  {
+   "id": "high-jump",
+   "idioma": "de",
+   "antes": "Stärkemodifikator + 3,",
+   "despues": "Stärkemodifikator + 3 (mindestens 0 Meter),",
+   "por_que": "El inglés pone un mínimo de 0 pies a la altura del salto (minimum of 0 feet) y el alemán no lo trae; el español, el francés y el italiano sí. El tercio de metro por pie es la conversión del alemán para los saltos y no se toca."
+  },
+  {
+   "id": "warlock",
+   "idioma": "es",
+   "antes": "10 veces tu nivel de brujo",
+   "despues": "9 veces tu nivel de brujo",
+   "por_que": "El inglés dice que el alcance aumenta 30 pies por nivel de brujo, que en la conversión del español son 9 m (el francés y el italiano ponen 9 m), y el español pone 10 veces el nivel en metros."
+  },
+  {
+   "id": "warlock",
+   "idioma": "de",
+   "antes": "Zehnfache deiner Hexenmeisterstufe",
+   "despues": "Neunfache deiner Hexenmeisterstufe",
+   "por_que": "El inglés dice que el alcance aumenta 30 pies por nivel de brujo, que en la conversión del alemán son 9 m (el francés y el italiano ponen 9 m), y el alemán pone diez veces el nivel en metros. El aviso emparejó otra invocación, pero la errata está en Unheimlicher Speer."
+  },
+  {
+   "id": "elf",
+   "idioma": "de",
+   "antes": "auf zehn Meter erhöht",
+   "despues": "auf 10,5 Meter erhöht",
+   "por_que": "El inglés sube la velocidad del elfo de los bosques a 35 pies, que son 10,5 m como ponen el español, el francés y el italiano y el propio alemán en el goliat, y el alemán pone diez metros."
+  },
+  {
+   "id": "barrel",
+   "idioma": "de",
+   "antes": "bietet ein Volumen von 112 Litern und kann Flüssigkeiten oder trockene Güter fassen",
+   "despues": "fasst bis zu 160 Liter Flüssigkeit oder trockene Güter in einem Volumen von bis zu 112 Litern",
+   "por_que": "El inglés da dos capacidades, 40 galones de líquido o 4 pies cúbicos de sólidos, y el alemán da 112 litros para las dos cosas. Con las conversiones del propio alemán (1 galón = 4 litros en la jarra y la olla, 28 litros por pie cúbico) son 160 litros de líquido y 112 de sólidos."
+  },
+  {
+   "id": "ball-bearings",
+   "idioma": "de",
+   "antes": "einen 1 Quadratmeter großen",
+   "despues": "einen neun Quadratmeter großen",
+   "por_que": "El inglés dice que las bolas cubren un cuadrado de 10 pies de lado, 3 m por 3 m, y el alemán pone 1 metro cuadrado; el propio alemán pone neun Quadratmeter para el cuadrado de 10 pies en la red que cae y en el hielo delgado."
+  },
+  {
+   "id": "travel-pace",
+   "idioma": "de",
+   "antes": "Bewegungsrate ÷ 10",
+   "despues": "Bewegungsrate ÷ 2",
+   "por_que": "El inglés divide la velocidad en pies entre 10 para sacar millas por hora; con la velocidad en metros hay que dividir entre 2 (9 m dan 4,5 km/h), como ponen el español, el francés y el italiano, y el alemán dejó el entre 10, que da 0,9 km/h."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "de",
+   "antes": "seltsamerweise immun). Eine betroffene Kreatur erleidet folgende Effekte, die nach der Infektion 1W4 Tage lang bestehen bleiben",
+   "despues": "seltsamerweise immun). Eine betroffene Kreatur erleidet 1W4 Tage nach der Infektion folgende Effekte",
+   "por_que": "El inglés dice que los efectos de la fiebre carcajeante empiezan 1d4 días después de la infección y el alemán dice que duran 1d4 días; el español, el francés y el italiano dicen después."
+  },
+  {
+   "id": "curses-and-magical-contagions",
+   "idioma": "de",
+   "antes": "infiziert. Eine betroffene Kreatur erleidet folgende Effekte, die nach der Infektion 1W4 Tage lang bestehen bleiben",
+   "despues": "infiziert. Eine betroffene Kreatur erleidet 1W4 Tage nach der Infektion folgende Effekte",
+   "por_que": "El inglés dice que los efectos de la plaga de las alcantarillas empiezan 1d4 días después de la infección y el alemán dice que duran 1d4 días; el español, el francés y el italiano dicen después."
+  },
+  {
+   "id": "weapons",
+   "idioma": "it",
+   "antes": "7/30",
+   "despues": "7,5/30",
+   "por_que": "El inglés da a la cerbatana alcance 25/100 pies, que son 7,5/30 m, y así lo ponen las otras tres traducciones; el italiano pone 7/30, aunque escribe 7,5 m en el resto del SRD."
+  },
+  {
+   "id": "blowgun",
+   "idioma": "it",
+   "antes": "7/30",
+   "despues": "7,5/30",
+   "por_que": "El inglés da a la cerbatana alcance 25/100 pies, que son 7,5/30 m, y así lo ponen las otras tres traducciones; el italiano pone 7/30, aunque escribe 7,5 m en el resto del SRD."
+  },
+  {
+   "id": "adventuring-gear",
+   "idioma": "it",
+   "antes": "19 kg",
+   "despues": "21 kg",
+   "por_que": "El inglés da al paquete de ladrón 42 lb, que son 21 kg como ponen las otras tres traducciones; el italiano pone 19 kg, y su propio contenido según la misma tabla italiana suma 21 kg."
+  },
+  {
+   "id": "adventuring-gear",
+   "idioma": "it",
+   "antes": "14 kg",
+   "despues": "14,5 kg",
+   "por_que": "El inglés da al paquete de sacerdote 29 lb, que son 14,5 kg como ponen las otras tres traducciones; el italiano pone 14 kg, y su propio contenido según la misma tabla italiana suma 14,5 kg. Los 29 kg del paquete de artista (58,5 lb) se dejan, que es redondeo."
+  },
+  {
+   "id": "barrel",
+   "idioma": "fr",
+   "antes": "140 litres",
+   "despues": "160 litres",
+   "por_que": "El inglés dice 40 galones, que son 160 litros con los 4 litros por galón que el propio SRD francés usa en la jarra y la olla, y que ya ponía el SRD 5.1 francés; el 5.2.1 francés pone 140 litros."
+  },
+  {
+   "id": "barrel",
+   "idioma": "it",
+   "antes": "16 litri",
+   "despues": "160 litri",
+   "por_que": "El inglés dice 40 galones, que son 160 litros con los 4 litros por galón que el propio SRD italiano usa en la jarra y la olla, y que ya ponía el SRD 5.1 italiano; el 5.2.1 italiano pone 16 litros, le falta un cero."
+  },
+  {
+   "id": "speed",
+   "idioma": "it",
+   "antes": "volo di 18 metri",
+   "despues": "volo di 12 metri",
+   "por_que": "El ejemplo inglés es velocidad 30 y volar 40 pies (9 y 12 m) y luego volar 10, caminar 10 y volar 20 más (3, 3 y 6 m), como en las otras tres traducciones; el italiano copia el ejemplo antiguo de 2014, con vuelo de 18 m."
+  },
+  {
+   "id": "speed",
+   "idioma": "it",
+   "antes": "volare per 6 metri",
+   "despues": "volare per 3 metri",
+   "por_que": "Mismo ejemplo: el inglés vuela primero 10 pies (3 m) y el italiano 6 m, que sale del ejemplo antiguo con vuelo de 18 m."
+  },
+  {
+   "id": "speed",
+   "idioma": "it",
+   "antes": "altri 9 metri",
+   "despues": "altri 6 metri",
+   "por_que": "Mismo ejemplo: el inglés termina volando 20 pies más (6 m) y el italiano 9 m, que sale del ejemplo antiguo con vuelo de 18 m."
+  },
+  {
+   "id": "high-jump",
+   "idioma": "fr",
+   "antes": "30 cm,",
+   "despues": "30 cm (minimum 0 m),",
+   "por_que": "El inglés pone un mínimo de 0 pies al salto de altura y el francés no lo trae; sin él, con modificador de Fuerza de -4 o -5 la fórmula da una altura negativa. El español y el italiano sí lo traen."
+  }
+ ]
+}

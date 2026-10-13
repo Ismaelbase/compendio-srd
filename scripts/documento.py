@@ -24,6 +24,7 @@ from marcas import a_html, sin_marcas, unir_html
 from srd import en_paginas, limpia, rango, une
 
 NIVEL_TITULO = {26.0: 0, 23.0: 0, 18.0: 1, 14.0: 2, 12.0: 3}
+FIN_ROTULO = (".", ":", ".”", ":”", ".»", ":»", "?”")  # el rotulo acaba en punto o dos puntos ("“You.”")
 BASE_X = {0: 63.0, 1: 313.5}
 
 
@@ -163,7 +164,7 @@ def rotulo_abierto(spans):
     llenos = [s for s in spans if s[0].strip()]
     if not llenos or not all(_negrita(s[1]) for s in llenos):
         return False
-    return not llenos[-1][0].strip().endswith((".", ":"))
+    return not llenos[-1][0].strip().endswith(FIN_ROTULO)
 
 
 def rotulo_texto(spans):
@@ -175,11 +176,11 @@ def rotulo_texto(spans):
     if "Cambria-BoldItalic" in font:
         return True
     if "Cambria-Bold" in font:
-        if txt.endswith((".", ":")) or re.match(r"\d+[:.]", txt):
+        if txt.endswith(FIN_ROTULO) or re.match(r"\d+[:.]", txt):
             return True
         k = 1
         while k < len(spans) and "Cambria-Bold" in spans[k][1] and "Italic" not in spans[k][1]:
-            if spans[k][0].strip().endswith((".", ":")):
+            if spans[k][0].strip().endswith(FIN_ROTULO):
                 return True
             k += 1
         return rotulo_abierto(spans)
@@ -213,7 +214,7 @@ def marcar_texto(spans, en_rotulo=False):
         k = 0
         while k < len(spans) and ("Cambria-Bold" in spans[k][1] or not spans[k][0].strip()):
             out[k] = ("b", spans[k][0])
-            if spans[k][0].strip().endswith((".", ":")) and not re.fullmatch(r"\d+[:.]", spans[k][0].strip()):
+            if spans[k][0].strip().endswith(FIN_ROTULO) and not re.fullmatch(r"\d+[:.]", spans[k][0].strip()):
                 break
             k += 1
     return out
@@ -439,6 +440,8 @@ def rejilla(pz):
             juntos[-1] = [une([juntos[-1][0], g[0]]), min(juntos[-1][1], g[1]), max(juntos[-1][2], g[2]), g[3]]
         else:
             juntos.append(g)
+    for g in juntos:  # sin las rayas de adorno ("——— Encounter Difficulty ———", "—Espacios de conjuro...—")
+        g[0] = re.sub(r"^[—–\-\s]+|[—–\-\s]+$", "", g[0])
     # cuerpo
     filas_t, prev = [], None
     for key in orden:
@@ -452,9 +455,20 @@ def rejilla(pz):
             filas_t[-1][ks[0]].append(t["html"])
         prev = key
     filas_txt = [[unir_html(c) if c else "" for c in f] for f in filas_t]
+    # fila repetida en la maqueta (estoque y tridente en la tabla de armas del SRD italiano): fuera
+    vistas, sin_rep = set(), []
+    for f in filas_txt:
+        clave = tuple(f)
+        if sum(1 for c in f if c.strip()) >= 3 and clave in vistas:
+            continue
+        vistas.add(clave)
+        sin_rep.append(f)
+    filas_txt = sin_rep
     out = {}
     if cab:
-        out["filas"] = [[une(c) for c in cabecera]] + filas_txt
+        cab_txt = [une(c) for c in cabecera]
+        cab_txt = [re.sub(r"^[—–\-\s]+|[—–\-\s]+$", "", c) if re.search(r"\w", c) else c for c in cab_txt]
+        out["filas"] = [cab_txt] + filas_txt
     else:
         out["filas"] = filas_txt
         out["sin_cabecera"] = True

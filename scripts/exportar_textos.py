@@ -2,7 +2,7 @@
 """Vuelca a texto plano todo lo que es texto del SRD, un fichero por idioma, para pasarle revisar_estilo.py.
 
 Cada linea es un texto sin marcas; el fichero .mapa.json dice de que entrada y campo sale cada linea. Uso:
-    py -3.14 exportar_textos.py <criaturas|conjuros|objetos> <carpeta de salida>
+    py -3.14 exportar_textos.py <criaturas|conjuros|objetos|estados|reglas|personajes|equipo> <carpeta de salida>
 """
 import json
 import os
@@ -33,8 +33,17 @@ def lineas_criatura(r, l):
 
 def lineas_bloques(bloques, donde="bloques"):
     for k, b in enumerate(bloques):
-        if b["t"] in ("p", "li", "nota"):
+        if b["t"] in ("p", "li", "nota", "h", "formula"):
             yield f"{donde}[{k}]", b["txt"]
+        elif b["t"] == "campos":
+            for rot, v in b["filas"]:
+                yield f"{donde}[{k}].campo", f"{rot}: {v}"
+        elif b["t"] == "columnas":
+            for it in b["items"]:
+                yield f"{donde}[{k}].item", it
+        elif b["t"] == "recuadro":
+            yield f"{donde}[{k}].titulo", b["titulo"]
+            yield from lineas_bloques(b["bloques"], f"{donde}[{k}].bloques")
         elif b["t"] == "tabla":
             if b.get("titulo"):
                 yield f"{donde}[{k}].titulo", b["titulo"]
@@ -74,8 +83,17 @@ def lineas_estado(r, l):
     yield from lineas_bloques(r[l]["bloques"])
 
 
+def lineas_nota(r, l):
+    """Notas de reglas, personajes y equipo: nombre, categoria (si la lleva) y bloques."""
+    x = r[l]
+    yield "nombre", x["nombre"]
+    if x.get("categoria"):
+        yield "categoria", x["categoria"]
+    yield from lineas_bloques(x["bloques"])
+
+
 GENERADORES = {"criaturas": lineas_criatura, "conjuros": lineas_conjuro, "objetos": lineas_objeto,
-               "estados": lineas_estado}
+               "estados": lineas_estado, "reglas": lineas_nota, "personajes": lineas_nota, "equipo": lineas_nota}
 
 
 def main():
