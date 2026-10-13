@@ -33,6 +33,7 @@ Importing again updates the notes that are still as the plugin left them. Notes 
 - No network access: all the data is inside the plugin.
 - No telemetry and no accounts.
 - It only writes notes in the folder you choose inside your vault, and its own settings file.
+- It uses the clipboard only when you press **Copy encounter block**, to copy that block.
 - Works on desktop and mobile.
 
 ## License
@@ -80,6 +81,7 @@ Volver a importar actualiza las notas que siguen como las dejó el plugin. Las q
 - No se conecta a internet: los datos van dentro del plugin.
 - Sin telemetría ni cuentas.
 - Solo escribe notas en la carpeta que elijas dentro de tu bóveda, y su propio fichero de ajustes.
+- Solo usa el portapapeles cuando pulsas **Copiar el bloque encounter**, para copiar ese bloque.
 - Funciona en escritorio y en el móvil.
 
 ### Licencia

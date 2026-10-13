@@ -1,6 +1,6 @@
 {
 	"name": "compendio-srd",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": true,
 	"description": "Import the official SRD 5.2.1 into your vault as linked notes in Spanish, English, German, French or Italian.",
 	"main": "main.js",
