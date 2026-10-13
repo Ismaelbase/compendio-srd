@@ -15,6 +15,8 @@ export interface Ajustes {
 	/** ruta de cada nota escrita por el plugin -> huella de lo que escribio (para no pisar lo que cambie el usuario) */
 	huellas: Record<string, string>;
 	encuentro: { grupo: Personajes[]; criaturas: EnEncuentro[] };
+	/** ya se le dijo como crear las notas */
+	avisado: boolean;
 }
 
 export const CARPETA_POR_DEFECTO = "Compendio SRD";
@@ -28,6 +30,7 @@ export function porDefecto(): Ajustes {
 		enlazarEstados: true,
 		huellas: {},
 		encuentro: { grupo: [{ n: 4, nivel: 1 }], criaturas: [] },
+		avisado: false,
 	};
 }
 

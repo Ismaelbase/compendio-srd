@@ -4,6 +4,7 @@ import type { Idioma, Seccion } from "./tipos";
 
 interface Ui {
 	cmdImportar: string;
+	bienvenida: string;
 	cmdBuscar: string;
 	cmdEncuentro: string;
 	cmdAnadir: string;
@@ -76,6 +77,7 @@ interface Ui {
 
 const EN: Ui = {
 	cmdImportar: "Import the SRD",
+	bienvenida: "Compendio SRD 2024 is ready. The notes are created when you import the SRD.",
 	cmdBuscar: "Search the compendium",
 	cmdEncuentro: "Open the encounter builder",
 	cmdAnadir: "Add this creature to the encounter",
@@ -156,6 +158,7 @@ const EN: Ui = {
 
 const ES: Ui = {
 	cmdImportar: "Importar el SRD",
+	bienvenida: "Compendio SRD 2024 está listo. Las notas se crean al importar el SRD.",
 	cmdBuscar: "Buscar en el compendio",
 	cmdEncuentro: "Abrir el encuentro",
 	cmdAnadir: "Añadir esta criatura al encuentro",
@@ -236,6 +239,7 @@ const ES: Ui = {
 
 const DE: Ui = {
 	cmdImportar: "SRD importieren",
+	bienvenida: "Compendio SRD 2024 ist bereit. Die Notizen entstehen, wenn du das SRD importierst.",
 	cmdBuscar: "Im Kompendium suchen",
 	cmdEncuentro: "Begegnung öffnen",
 	cmdAnadir: "Diese Kreatur zur Begegnung hinzufügen",
@@ -316,6 +320,7 @@ const DE: Ui = {
 
 const FR: Ui = {
 	cmdImportar: "Importer le SRD",
+	bienvenida: "Compendio SRD 2024 est prêt. Les notes sont créées quand vous importez le SRD.",
 	cmdBuscar: "Rechercher dans le compendium",
 	cmdEncuentro: "Ouvrir la rencontre",
 	cmdAnadir: "Ajouter cette créature à la rencontre",
@@ -396,6 +401,7 @@ const FR: Ui = {
 
 const IT: Ui = {
 	cmdImportar: "Importa l'SRD",
+	bienvenida: "Compendio SRD 2024 è pronto. Le note vengono create quando importi l'SRD.",
 	cmdBuscar: "Cerca nel compendio",
 	cmdEncuentro: "Apri l'incontro",
 	cmdAnadir: "Aggiungi questa creatura all'incontro",

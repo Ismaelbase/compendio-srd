@@ -38,6 +38,24 @@ export default class CompendioSrd extends Plugin {
 			},
 		});
 		this.addSettingTab(new PestanaAjustes(this.app, this));
+		if (!this.ajustes.avisado && !Object.keys(this.ajustes.huellas).length) {
+			this.app.workspace.onLayoutReady(() => void this.bienvenida());
+		}
+	}
+
+	/** La primera vez: la boveda sigue vacia hasta que se importa, y hay que decirlo. */
+	private async bienvenida(): Promise<void> {
+		const ui = t();
+		const aviso = new Notice(createFragment((f) => {
+			f.createDiv({ text: ui.bienvenida });
+			const b = f.createEl("button", { text: ui.cmdImportar, cls: "mod-cta srd-aviso-boton" });
+			b.addEventListener("click", () => {
+				aviso.hide();
+				this.abrirImportar();
+			});
+		}), 0);
+		this.ajustes.avisado = true;
+		await this.guardar();
 	}
 
 	onunload(): void {

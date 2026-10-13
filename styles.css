@@ -224,6 +224,10 @@
 }
 
 /* Importar y buscar */
+.srd-aviso-boton {
+	margin-top: 8px;
+}
+
 .srd-progreso {
 	width: 100%;
 }

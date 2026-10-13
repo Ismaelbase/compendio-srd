@@ -49,7 +49,8 @@ Module._load = function (pedido, ...resto) {
 	require("fs").copyFileSync(path.resolve(__dirname, "..", "main.js"), copia);
 	const Clase = require(copia).default;
 	const t1 = Date.now();
-	const app = { workspace: { getActiveFile: () => null, getLeavesOfType: () => [] }, metadataCache: {} };
+	const listos = [];
+	const app = { workspace: { getActiveFile: () => null, getLeavesOfType: () => [], onLayoutReady: (f) => listos.push(f) }, metadataCache: {} };
 	const p = new Clase(app, { id: "compendio-srd" });
 	await p.onload();
 	console.log(`main.js cargado en ${t1 - t0} ms, onload en ${Date.now() - t1} ms`);
