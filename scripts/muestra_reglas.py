@@ -83,9 +83,14 @@ def filas_nota(lang, cap, x, tipo):
     h = rows[ini]
     # la tabla a todo el ancho que la maqueta pone al pie de la primera pagina, en la columna de antes del titulo (la
     # de rasgos del bardo): tambien es de la nota
-    antes = [r for r in rows[:ini] if r["p"] == h["p"] and r.get("_ancha") or
-             (r["p"] == h["p"] and h["col"] == 1 and r["col"] == 0 and (D.es_fila_tabla(r) or D.es_titulo_tabla(r))
-              and r["yb"] > h["yb"] + 100)]
+    if h["col"] != 1:
+        return rows[ini:fin]
+    anchas = [r for r in rows[:ini] if r["p"] == h["p"] and r["col"] == 0 and r.get("_ancha")]
+    if not anchas:
+        return rows[ini:fin]
+    arriba = min(r["yb"] for r in anchas)
+    antes = [r for r in rows[:ini] if r["p"] == h["p"] and r["col"] == 0 and r["yb"] >= arriba - 40 and
+             (D.es_fila_tabla(r) or D.es_titulo_tabla(r) or r.get("_ancha"))]
     return antes + rows[ini:fin]
 
 
