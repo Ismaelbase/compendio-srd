@@ -19383,7 +19383,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 14, todas las criaturas en una línea de 12 m de largo y 1,5 m de ancho. <i>Fallo:</i> 38 (11d6) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 14, todas las criaturas en una línea de 12 m de largo y 1,5 m de ancho. <i>Fallo:</i> 38 (11d6) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -19403,7 +19403,7 @@
     "campos.vel": "40 pies, excavar 20 pies, volar 80 pies",
     "campos.sen": "visión ciega 30 pies, visión en la oscuridad 120 pies; Percepción pasiva 16",
     "secciones.0.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +7, alcance 10 pies. <i>Acierto:</i> 15 (2d10 + 4) de daño cortante.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 14, todas las criaturas en una línea de 40 pies de largo y 5 pies de ancho. <i>Fallo:</i> 38 (11d6) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 14, todas las criaturas en una línea de 40 pies de largo y 5 pies de ancho. <i>Fallo:</i> 38 (11d6) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 14, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Inconsciente durante 1 minuto. Este efecto acabará si el objetivo sufre daño o si una criatura que se encuentre a 5 pies o menos de él lleva a cabo una acción para despertarlo."
    }
   },
@@ -19490,7 +19490,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 14, each creature in a 40-foot-long, 5-footwide Line. <i>Failure:</i> 38 (11d6) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 14, each creature in a 40-foot-long, 5-footwide Line. <i>Failure:</i> 38 (11d6) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -19697,7 +19697,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 14, chaque créature dans une Ligne de 12 m de long sur 1,50 m de large. <i>Échec :</i> 38 (11d6) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 14, chaque créature dans une Ligne de 12 m de long sur 1,50 m de large. <i>Échec :</i> 38 (11d6) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -19717,7 +19717,7 @@
     "campos.vel": "40 pieds, fouissement 20 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 30 pieds, Vision dans le noir 120 pieds ; Perception passive 16",
     "secciones.0.items.1.bloques.0.txt": "<i>Corps à corps :</i> +7, allonge 10 pieds. <i>Touché :</i> 15 (2d10 + 4) dégâts tranchants.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 14, chaque créature dans une Ligne de 40 pieds de long sur 5 pieds de large. <i>Échec :</i> 38 (11d6) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
+    "secciones.0.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 14, chaque créature dans une Ligne de 40 pieds de long sur 5 pieds de large. <i>Échec :</i> 38 (11d6) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
     "secciones.0.items.3.bloques.0.txt": "<i>JS Constitution :</i> DD 14, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Inconscient pendant 1 minute. Cet effet prend fin pour la cible si celle-ci subit des dégâts ou si une créature dans un rayon de 5 pieds consacre une action à la réveiller."
    }
   },
@@ -19804,7 +19804,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 14, tutte le creature in una linea lunga 12 metri e larga 1,5 metri. <i>Fallimento:</i> 38 (11d6) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 14, tutte le creature in una linea lunga 12 metri e larga 1,5 metri. <i>Fallimento:</i> 38 (11d6) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -19824,7 +19824,7 @@
     "campos.vel": "40 piedi, scavo 20 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 16; scurovisione 120 piedi, vista cieca 30 piedi",
     "secciones.0.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +7, portata 10 piedi. <i>Colpito:</i> 15 (2d10 + 4) danni taglienti.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 14, tutte le creature in una linea lunga 40 piedi e larga 5 piedi. <i>Fallimento:</i> 38 (11d6) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 14, tutte le creature in una linea lunga 40 piedi e larga 5 piedi. <i>Fallimento:</i> 38 (11d6) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 14, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo, a quel punto ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio cade privo di sensi per 1 minuto. Questo effetto termina se il bersaglio subisce danni o se una creatura entro 5 piedi da esso esegue un'azione per svegliarlo."
    }
   }
@@ -19976,7 +19976,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 45 (10d8) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 45 (10d8) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -20047,7 +20047,7 @@
     "campos.vel": "40 pies, excavar 30 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 21",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +11, alcance 10 pies. <i>Acierto:</i> 17 (2d10 + 6) de daño cortante más 4 (1d8) de daño de fuego.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 45 (10d8) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 45 (10d8) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 18, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Inconsciente durante 10 minutos. Este efecto acabará si el objetivo sufre daño o si una criatura que se encuentre a 5 pies o menos de él lleva a cabo una acción para despertarlo.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 16, una criatura que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 27 (6d8) de daño de fuego y la velocidad del objetivo se reducirá a la mitad hasta el final de su siguiente turno. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -20151,7 +20151,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 18, each creature in a 60-foot-long, 5-footwide Line. <i>Failure:</i> 45 (10d8) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 18, each creature in a 60-foot-long, 5-footwide Line. <i>Failure:</i> 45 (10d8) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -20510,7 +20510,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 45 (10d8) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 45 (10d8) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -20564,7 +20564,7 @@
     "campos.vel": "40 pieds, fouissement 30 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 21",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +11, allonge 10 pieds. <i>Touché :</i> 17 (2d10 + 6) dégâts tranchants plus 4 (1d8) dégâts de feu.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 45 (10d8) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 45 (10d8) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 18, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Inconscient pendant 10 minutes. Cet effet prend fin pour la cible si celle-ci subit des dégâts ou si une créature dans un rayon de 5 pieds consacre une action à la réveiller.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 16, une créature que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 27 (6d8) dégâts de feu, et la Vitesse de la cible est réduite de moitié jusqu’à la fin de son tour suivant. <i>Échec ou réussite :</i> le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -20685,7 +20685,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 45 (10d8) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 45 (10d8) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -20739,7 +20739,7 @@
     "campos.vel": "40 piedi, scavo 30 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 21; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +11, portata 10 piedi. <i>Colpito:</i> 17 (2d10 + 6) danni taglienti più 4 (1d8) danni da fuoco.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 45 (10d8) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 45 (10d8) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 18, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo, a quel punto ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio cade privo di sensi per 10 minuti. Questo effetto termina se il bersaglio subisce danni o se una creatura entro 5 piedi da esso esegue un'azione per svegliarlo.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 16, una creatura che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 27 (6d8) danni da fuoco, e la velocità del bersaglio è dimezzata fino al termine del proprio turno successivo. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -20892,7 +20892,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en una línea de 27 m de largo y 1,5 m de ancho. <i>Fallo:</i> 58 (13d8) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en una línea de 27 m de largo y 1,5 m de ancho. <i>Fallo:</i> 58 (13d8) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -20963,7 +20963,7 @@
     "campos.vel": "40 pies, excavar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 24",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +14, alcance 15 pies. <i>Acierto:</i> 19 (2d10 + 8) de daño cortante más 7 (2d6) de daño de fuego.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en una línea de 90 pies de largo y 5 pies de ancho. <i>Fallo:</i> 58 (13d8) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en una línea de 90 pies de largo y 5 pies de ancho. <i>Fallo:</i> 58 (13d8) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 21, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Inconsciente durante 10 minutos. Este efecto acabará si el objetivo sufre daño o si una criatura que se encuentre a 5 pies o menos de él lleva a cabo una acción para despertarlo.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 20, una criatura que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 36 (8d8) de daño de fuego y la velocidad del objetivo se reducirá a la mitad hasta el final de su siguiente turno. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -21067,7 +21067,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 21, each creature in a 90-foot-long, 5-footwide Line. <i>Failure:</i> 58 (13d8) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 21, each creature in a 90-foot-long, 5-footwide Line. <i>Failure:</i> 58 (13d8) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -21426,7 +21426,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 21, chaque créature dans une Ligne de 27 m de long sur 1,50 m de large. <i>Échec :</i> 58 (13d8) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 21, chaque créature dans une Ligne de 27 m de long sur 1,50 m de large. <i>Échec :</i> 58 (13d8) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -21480,7 +21480,7 @@
     "campos.vel": "40 pieds, fouissement 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 24",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +14, allonge 15 pieds. <i>Touché :</i> 19 (2d10 + 8) dégâts tranchants plus 7 (2d6) dégâts de feu.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 21, chaque créature dans une Ligne de 90 pieds de long sur 5 pieds de large. <i>Échec :</i> 58 (13d8) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 21, chaque créature dans une Ligne de 90 pieds de long sur 5 pieds de large. <i>Échec :</i> 58 (13d8) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 21, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Inconscient pendant 10 minutes. Cet effet prend fin pour la cible si celle-ci subit des dégâts ou si une créature dans un rayon de 5 pieds consacre une action à la réveiller.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 20, une créature que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 36 (8d8) dégâts de feu, et la Vitesse de la cible est réduite de moitié jusqu’à la fin de son tour suivant. <i>Échec ou réussite :</i> le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -21601,7 +21601,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in una linea lunga 27 metri e larga 1,5 metri. <i>Fallimento:</i> 58 (13d8) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in una linea lunga 27 metri e larga 1,5 metri. <i>Fallimento:</i> 58 (13d8) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -21655,7 +21655,7 @@
     "campos.vel": "40 piedi, scavo 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 24; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +14, portata 15 piedi. <i>Colpito:</i> 19 (2d10 + 8) danni taglienti più 7 (2d6) danni da fuoco.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in una linea lunga 90 piedi e larga 5 piedi. <i>Fallimento:</i> 58 (13d8) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in una linea lunga 90 piedi e larga 5 piedi. <i>Fallimento:</i> 58 (13d8) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 21, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo, a quel punto ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio cade privo di sensi per 10 minuti. Questo effetto termina se il bersaglio subisce danni o se una creatura entro 5 piedi da esso esegue un'azione per svegliarlo.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 20, una creatura che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 36 (8d8) danni da fuoco, e la velocità del bersaglio è dimezzata fino al termine del proprio turno successivo. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -21808,7 +21808,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 12, todas las criaturas en una línea de 12 m de largo y 1,5 m de ancho. <i>Fallo:</i> 16 (3d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 12, todas las criaturas en una línea de 12 m de largo y 1,5 m de ancho. <i>Fallo:</i> 16 (3d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -21828,7 +21828,7 @@
     "campos.vel": "30 pies, nadar 30 pies, volar 60 pies",
     "campos.sen": "visión ciega 10 pies, visión en la oscuridad 60 pies; Percepción pasiva 14",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 5 pies. <i>Acierto:</i> 8 (1d10 + 3) de daño cortante.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 12, todas las criaturas en una línea de 40 pies de largo y 5 pies de ancho. <i>Fallo:</i> 16 (3d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 12, todas las criaturas en una línea de 40 pies de largo y 5 pies de ancho. <i>Fallo:</i> 16 (3d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 12, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> el objetivo es empujado hasta 30 pies respecto al dragón en línea recta y tiene el estado de Derribado."
    }
   },
@@ -21931,7 +21931,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 12, each creature in a 40-foot-long, 5-footwide Line. <i>Failure:</i> 16 (3d10) Lightning damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 12, each creature in a 40-foot-long, 5-footwide Line. <i>Failure:</i> 16 (3d10) Lightning damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -22170,7 +22170,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 12, chaque créature dans une Ligne de 12 m de long sur 1,50 m de large. <i>Échec :</i> 16 (3d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 12, chaque créature dans une Ligne de 12 m de long sur 1,50 m de large. <i>Échec :</i> 16 (3d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -22190,7 +22190,7 @@
     "campos.vel": "30 pieds, nage 30 pieds, vol 60 pieds",
     "campos.sen": "Vision aveugle 10 pieds, Vision dans le noir 60 pieds ; Perception passive 14",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +5, allonge 5 pieds. <i>Touché :</i> 8 (1d10 + 3) dégâts tranchants.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 12, chaque créature dans une Ligne de 40 pieds de long sur 5 pieds de large. <i>Échec :</i> 16 (3d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 12, chaque créature dans une Ligne de 40 pieds de long sur 5 pieds de large. <i>Échec :</i> 16 (3d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.3.bloques.0.txt": "<i>JS Force :</i> DD 12, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> la cible est repoussée du dragon sur 30 pieds en ligne droite et subit l’état À terre."
    }
   },
@@ -22293,7 +22293,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 12, tutte le creature in una linea lunga 12 metri e larga 1,5 metri. <i>Fallimento:</i> 16 (3d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 12, tutte le creature in una linea lunga 12 metri e larga 1,5 metri. <i>Fallimento:</i> 16 (3d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -22313,7 +22313,7 @@
     "campos.vel": "30 piedi, nuoto 30 piedi, volo 60 piedi",
     "campos.sen": "Percezione passiva 14; scurovisione 60 piedi, vista cieca 10 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +5, portata 5 piedi <i>Colpito:</i> 8 (1d10 + 3) danni taglienti.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 12, tutte le creature in una linea lunga 40 piedi e larga 5 piedi. <i>Fallimento:</i> 16 (3d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 12, tutte le creature in una linea lunga 40 piedi e larga 5 piedi. <i>Fallimento:</i> 16 (3d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 12, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio viene spinto fino a un massimo di 30 piedi di distanza dal drago e cade a terra prono."
    }
   }
@@ -22465,7 +22465,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 15, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 49 (9d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 15, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 49 (9d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -22485,7 +22485,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 30 pies, visión en la oscuridad 120 pies; Percepción pasiva 17",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +8, alcance 10 pies. <i>Acierto:</i> 16 (2d10 + 5) de daño cortante.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 15, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 49 (9d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 15, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 49 (9d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 15, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> el objetivo es empujado hasta 40 pies respecto al dragón en línea recta y tiene el estado de Derribado."
    }
   },
@@ -22588,7 +22588,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 15, each creature in a 60-foot-long, 5-footwide Line. <i>Failure:</i> 49 (9d10) Lightning damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 15, each creature in a 60-foot-long, 5-footwide Line. <i>Failure:</i> 49 (9d10) Lightning damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -22827,7 +22827,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 15, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 49 (9d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 15, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 49 (9d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -22847,7 +22847,7 @@
     "campos.vel": "40 pieds, nage 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 30 pieds, Vision dans le noir 120 pieds ; Perception passive 17",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +8, allonge 10 pieds. <i>Touché :</i> 16 (2d10 + 5) dégâts tranchants.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 15, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 49 (9d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 15, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 49 (9d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.3.bloques.0.txt": "<i>JS Force :</i> DD 15, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> la cible est repoussée du dragon sur 40 pieds en ligne droite et subit l’état À terre."
    }
   },
@@ -22950,7 +22950,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 15, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 49 (9d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 15, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 49 (9d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -22970,7 +22970,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 17; scurovisione 120 piedi, vista cieca 30 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +8, portata 10 piedi. <i>Colpito:</i> 16 (2d10 + 5) danni taglienti.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 15, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 49 (9d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 15, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 49 (9d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 15, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio viene spinto fino a un massimo di 40 piedi di distanza dal drago e cade a terra prono."
    }
   }
@@ -23131,7 +23131,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 19, todas las criaturas en una línea de 27 m de largo y 1,5 m de ancho. <i>Fallo:</i> 55 (10d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 19, todas las criaturas en una línea de 27 m de largo y 1,5 m de ancho. <i>Fallo:</i> 55 (10d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -23202,7 +23202,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 22",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +12, alcance 10 pies. <i>Acierto:</i> 16 (2d8 + 7) de daño cortante más 5 (1d10) de daño de relámpago.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 19, todas las criaturas en una línea de 90 pies de largo y 5 pies de ancho. <i>Fallo:</i> 55 (10d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 19, todas las criaturas en una línea de 90 pies de largo y 5 pies de ancho. <i>Fallo:</i> 55 (10d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 19, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> el objetivo es empujado hasta 60 pies respecto al dragón en línea recta y tiene el estado de Derribado.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en una esfera de 20 pies de radio centrada en un punto que el dragón pueda ver a 90 pies o menos. <i>Fallo:</i> 10 (3d6) de daño de trueno y el objetivo tendrá el estado de Ensordecido hasta el final de su siguiente turno."
    }
@@ -23315,7 +23315,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 19, each creature in a 90-foot-long, 5-footwide Line. <i>Failure:</i> 55 (10d10) Lightning damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 19, each creature in a 90-foot-long, 5-footwide Line. <i>Failure:</i> 55 (10d10) Lightning damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -23692,7 +23692,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 19, chaque créature dans une Ligne de 27 m de long sur 1,50 m de large. <i>Échec :</i> 55 (10d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 19, chaque créature dans une Ligne de 27 m de long sur 1,50 m de large. <i>Échec :</i> 55 (10d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -23746,7 +23746,7 @@
     "campos.vel": "40 pieds, nage 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 22",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +12, allonge 10 pieds. <i>Touché :</i> 16 (2d8 + 7) dégâts tranchants plus 5 (1d10) dégâts de foudre.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 19, chaque créature dans une Ligne de 90 pieds de long sur 5 pieds de large. <i>Échec :</i> 55 (10d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 19, chaque créature dans une Ligne de 90 pieds de long sur 5 pieds de large. <i>Échec :</i> 55 (10d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Force :</i> DD 19, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> la cible est repoussée du dragon sur 60 pieds en ligne droite et subit l’état À terre.",
     "secciones.2.items.1.bloques.0.txt": "<i>JS Constitution :</i> DD 17, chaque créature dans une Sphère de 20 pieds de rayon centrée sur un point que le dragon voit dans un rayon de 90 pieds. <i>Échec :</i> 10 (3d6) dégâts de tonnerre, et la cible subit l’état Assourdi jusqu’à la fin de son tour suivant."
    }
@@ -23876,7 +23876,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 19, tutte le creature in una linea lunga 27 metri e larga 1,5 metri. <i>Fallimento:</i> 55 (10d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 19, tutte le creature in una linea lunga 27 metri e larga 1,5 metri. <i>Fallimento:</i> 55 (10d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -23930,7 +23930,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 22; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +12, portata 10 piedi. <i>Colpito:</i> 16 (2d8 + 7) danni taglienti più 5 (1d10) danni da fulmine.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 19, tutte le creature in una linea lunga 90 piedi e larga 5 piedi. <i>Fallimento:</i> 55 (10d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 19, tutte le creature in una linea lunga 90 piedi e larga 5 piedi. <i>Fallimento:</i> 55 (10d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 19, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio viene spinto fino a un massimo di 60 piedi di distanza dal drago e cade a terra prono.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in una sfera di 20 piedi di raggio centrata su un punto che il drago è in grado di vedere entro 90 piedi. <i>Fallimento:</i> 10 (3d6) danni da tuono, e il bersaglio è assordato fino al termine del proprio turno successivo."
    }
@@ -24092,7 +24092,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 23, todas las criaturas en una línea de 36 m de largo y 3 m de ancho. <i>Fallo:</i> 82 (15d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 23, todas las criaturas en una línea de 36 m de largo y 3 m de ancho. <i>Fallo:</i> 82 (15d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -24163,7 +24163,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +16, alcance 15 pies. <i>Acierto:</i> 18 (2d8 + 9) de daño cortante más 9 (2d8) de daño de relámpago.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 23, todas las criaturas en una línea de 120 pies de largo y 10 pies de ancho. <i>Fallo:</i> 82 (15d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 23, todas las criaturas en una línea de 120 pies de largo y 10 pies de ancho. <i>Fallo:</i> 82 (15d10) de daño de relámpago. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 23, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> el objetivo es empujado hasta 60 pies respecto al dragón en línea recta y tiene el estado de Derribado.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 22, todas las criaturas en una esfera de 20 pies de radio centrada en un punto que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 13 (3d8) de daño de trueno y el objetivo tendrá el estado de Ensordecido hasta el final de su siguiente turno."
    }
@@ -24276,7 +24276,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 23, each creature in a 120-foot-long, 10-foot-wide Line. <i>Failure:</i> 82 (15d10) Lightning damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 23, each creature in a 120-foot-long, 10-foot-wide Line. <i>Failure:</i> 82 (15d10) Lightning damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -24653,7 +24653,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 23, chaque créature dans une Ligne de 36 m de long sur 3 m de large. <i>Échec :</i> 82 (15d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 23, chaque créature dans une Ligne de 36 m de long sur 3 m de large. <i>Échec :</i> 82 (15d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -24707,7 +24707,7 @@
     "campos.vel": "40 pieds, nage 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +16, allonge 15 pieds. <i>Touché :</i> 18 (2d8 + 9) dégâts tranchants plus 9 (2d8) dégâts de foudre.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 23, chaque créature dans une Ligne de 120 pieds de long sur 10 pieds de large. <i>Échec :</i> 82 (15d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 23, chaque créature dans une Ligne de 120 pieds de long sur 10 pieds de large. <i>Échec :</i> 82 (15d10) dégâts de foudre. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Force :</i> DD 23, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> la cible est repoussée du dragon sur 60 pieds en ligne droite et subit l’état À terre.",
     "secciones.2.items.1.bloques.0.txt": "<i>JS Constitution :</i> DD 22, chaque créature dans une Sphère de 20 pieds de rayon centrée sur un point que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 13 (3d8) dégâts de tonnerre, et la cible subit l’état Assourdi jusqu’à la fin de son tour suivant."
    }
@@ -24837,7 +24837,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 23, tutte le creature in una linea lunga 36 metri e larga 3 metri. <i>Fallimento:</i> 82 (15d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 23, tutte le creature in una linea lunga 36 metri e larga 3 metri. <i>Fallimento:</i> 82 (15d10) danni da fulmine. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -24891,7 +24891,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 27; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +16, portata 15 piedi. <i>Colpito:</i> 18 (2d8 + 9) danni taglienti più 9 (2d8) danni da fulmine.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 23, tutte le creature in una linea lunga 120 piedi e larga 10 piedi. <i>Fallimento:</i> 82 (15d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 23, tutte le creature in una linea lunga 120 piedi e larga 10 piedi. <i>Fallimento:</i> 82 (15d10) danni da fulmine. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 23, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio viene spinto fino a un massimo di 60 piedi di distanza dal drago e cade a terra prono.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 22, tutte le creature in una sfera di 20 piedi di raggio centrata su un punto che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 13 (3d8) danni da tuono, e il bersaglio è assordato fino al termine del proprio turno successivo."
    }
@@ -32644,7 +32644,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 11, todas las criaturas en una línea de 6 m de largo y 1,5 m de ancho. <i>Fallo:</i> 18 (4d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 11, todas las criaturas en una línea de 6 m de largo y 1,5 m de ancho. <i>Fallo:</i> 18 (4d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -32664,7 +32664,7 @@
     "campos.vel": "30 pies, trepar 30 pies, volar 60 pies",
     "campos.sen": "visión ciega 10 pies, visión en la oscuridad 60 pies; Percepción pasiva 14",
     "secciones.0.items.0.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +4, alcance 5 pies. <i>Acierto:</i> 7 (1d10 + 2) de daño cortante.",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 11, todas las criaturas en una línea de 20 pies de largo y 5 pies de ancho. <i>Fallo:</i> 18 (4d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
+    "secciones.0.items.1.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 11, todas las criaturas en una línea de 20 pies de largo y 5 pies de ancho. <i>Fallo:</i> 18 (4d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
     "secciones.0.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 11, todas las criaturas en un cono de 15 pies. <i>Fallo:</i> el objetivo no podrá llevar a cabo reacciones, su velocidad se reducirá a la mitad y podrá realizar una acción o una acción adicional en su turno, pero no ambas. Este efecto durará hasta el final de su siguiente turno."
    }
   },
@@ -32742,7 +32742,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 11, each creature in a 20-foot-long, 5-footwide Line. <i>Failure:</i> 18 (4d8) Acid damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 11, each creature in a 20-foot-long, 5-footwide Line. <i>Failure:</i> 18 (4d8) Acid damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -32931,7 +32931,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 11, chaque créature dans une Ligne de 6 m de long sur 1,50 m de large. <i>Échec :</i> 18 (4d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 11, chaque créature dans une Ligne de 6 m de long sur 1,50 m de large. <i>Échec :</i> 18 (4d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -32951,7 +32951,7 @@
     "campos.vel": "30 pieds, escalade 30 pieds, vol 60 pieds",
     "campos.sen": "Vision aveugle 10 pieds, Vision dans le noir 60 pieds ; Perception passive 14",
     "secciones.0.items.0.bloques.0.txt": "<i>Corps à corps :</i> +4, allonge 5 pieds. <i>Touché :</i> 7 (1d10 + 2) dégâts tranchants.",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 11, chaque créature dans une Ligne de 20 pieds de long sur 5 pieds de large. <i>Échec :</i> 18 (4d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
+    "secciones.0.items.1.bloques.0.txt": "<i>JS Dextérité :</i> DD 11, chaque créature dans une Ligne de 20 pieds de long sur 5 pieds de large. <i>Échec :</i> 18 (4d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
     "secciones.0.items.2.bloques.0.txt": "<i>JS Constitution :</i> DD 11, chaque créature dans un Cône de 15 pieds. <i>Échec :</i> la cible voit sa Vitesse réduite de moitié, ne peut pas jouer de Réaction et peut entreprendre une action ou une action Bonus à son tour, mais pas les deux. L’effet persiste jusqu’à la fin de son tour suivant."
    }
   },
@@ -33029,7 +33029,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 11, tutte le creature in una linea lunga 6 metri e larga 1,5 metri. <i>Fallimento:</i> 18 (4d8) danni da acido. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 11, tutte le creature in una linea lunga 6 metri e larga 1,5 metri. <i>Fallimento:</i> 18 (4d8) danni da acido. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -33049,7 +33049,7 @@
     "campos.vel": "30 piedi, scalata 30 piedi, volo 60 piedi",
     "campos.sen": "Percezione passiva 14; scurovisione 60 piedi, vista cieca 10 piedi",
     "secciones.0.items.0.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +4, portata 5 piedi <i>Colpito:</i> 7 (1d10 + 2) danni taglienti.",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 11, tutte le creature in una linea lunga 20 piedi e larga 5 piedi. <i>Fallimento:</i> 18 (4d8) danni da acido. <i>Successo:</i> danni dimezzati.",
+    "secciones.0.items.1.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 11, tutte le creature in una linea lunga 20 piedi e larga 5 piedi. <i>Fallimento:</i> 18 (4d8) danni da acido. <i>Successo:</i> danni dimezzati.",
     "secciones.0.items.2.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 11, tutte le creature in un cono di 15 piedi. <i>Fallimento:</i> il bersaglio non può effettuare reazioni, la sua velocità è dimezzata e nel suo turno può effettuare un'azione o un'azione bonus, non entrambe. L'effetto dura fino al termine del proprio turno successivo."
    }
   }
@@ -33778,7 +33778,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 54 (12d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 18 m de largo y 1,5 m de ancho. <i>Fallo:</i> 54 (12d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -33849,7 +33849,7 @@
     "campos.vel": "40 pies, trepar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 22",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +11, alcance 10 pies. <i>Acierto:</i> 17 (2d10 + 6) de daño cortante más 4 (1d8) de daño de ácido.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 54 (12d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 18, todas las criaturas en una línea de 60 pies de largo y 5 pies de ancho. <i>Fallo:</i> 54 (12d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 18, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> el objetivo no podrá llevar a cabo reacciones, su velocidad se reducirá a la mitad y podrá realizar una acción o una acción adicional en su turno, pero no ambas. Este efecto durará hasta el final de su siguiente turno.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Carisma:</i> CD 17, una criatura que el dragón pueda ver a 90 pies o menos. <i>Fallo:</i> 24 (7d6) de daño psíquico. Hasta el final de su siguiente turno, el objetivo tirará 1d6 cada vez que haga una prueba de característica o tirada de ataque y restará el resultado a la prueba con d20. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -33953,7 +33953,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 18, each creature in an 60-foot-long, 5-footwide Line. <i>Failure:</i> 54 (12d8) Acid damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 18, each creature in an 60-foot-long, 5-footwide Line. <i>Failure:</i> 54 (12d8) Acid damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -34312,7 +34312,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 54 (12d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 18 m de long sur 1,50 m de large. <i>Échec :</i> 54 (12d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -34366,7 +34366,7 @@
     "campos.vel": "40 pieds, escalade 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 22",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +11, allonge 10 pieds. <i>Touché :</i> 17 (2d10 + 6) dégâts tranchants plus 4 (1d8) dégâts d’acide.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 54 (12d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 18, chaque créature dans une Ligne de 60 pieds de long sur 5 pieds de large. <i>Échec :</i> 54 (12d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 18, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> la cible voit sa Vitesse réduite de moitié, ne peut pas jouer de Réaction et peut entreprendre une action ou une action Bonus à son tour, mais pas les deux. L’effet persiste jusqu’à la fin de son tour suivant.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Charisme :</i> DD 17, une créature que le dragon voit dans un rayon de 90 pieds. <i>Échec :</i> 24 (7d6) dégâts psychiques. Jusqu’à la fin de son tour suivant, la cible lance 1d6 chaque fois qu’elle effectue un test de caractéristique ou un jet d’attaque et soustrait le résultat obtenu au Test d20. <i>Échec ou réussite :</i> Le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -34487,7 +34487,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 54 (12d8) danni da acido. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 18 metri e larga 1,5 metri. <i>Fallimento:</i> 54 (12d8) danni da acido. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -34541,7 +34541,7 @@
     "campos.vel": "40 piedi, scalata 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 22; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +11, portata 10 piedi. <i>Colpito:</i> 17 (2d10 + 6) danni taglienti più 4 (1d8) danni da acido.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 54 (12d8) danni da acido. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 18, tutte le creature in una linea lunga 60 piedi e larga 5 piedi. <i>Fallimento:</i> 54 (12d8) danni da acido. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 18, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> il bersaglio non può effettuare reazioni, la sua velocità è dimezzata e nel suo turno può effettuare un'azione o un'azione bonus, non entrambe. L'effetto dura fino al termine del proprio turno successivo.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tiro salvezza su Carisma:</i> CD 17, una creatura che il drago è in grado di vedere entro 90 piedi. <i>Fallimento:</i> 24 (7d6) danni psichici. Fino al termine del proprio turno successivo, il bersaglio tira 1d6 ogni volta che effettua una prova di caratteristica o un tiro per colpire e sottrae il risultato dalla prova con d20. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -34694,7 +34694,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 22, todas las criaturas en una línea de 27 m de largo y 3 m de ancho. <i>Fallo:</i> 63 (14d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 22, todas las criaturas en una línea de 27 m de largo y 3 m de ancho. <i>Fallo:</i> 63 (14d8) de daño de ácido. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -34765,7 +34765,7 @@
     "campos.vel": "40 pies, trepar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +15, alcance 15 pies. <i>Acierto:</i> 19 (2d10 + 8) de daño cortante más 9 (2d8) de daño de ácido.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 22, todas las criaturas en una línea de 90 pies de largo y 10 pies de ancho. <i>Fallo:</i> 63 (14d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 22, todas las criaturas en una línea de 90 pies de largo y 10 pies de ancho. <i>Fallo:</i> 63 (14d8) de daño de ácido. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 22, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> el objetivo no podrá llevar a cabo reacciones, su velocidad se reducirá a la mitad y podrá realizar una acción o una acción adicional en su turno, pero no ambas. Este efecto durará hasta el final de su siguiente turno.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Carisma:</i> CD 21, una criatura que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 31 (9d6) de daño psíquico. Hasta el final de su siguiente turno, el objetivo tirará 1d8 cada vez que haga una prueba de característica o tirada de ataque y restará el resultado a la prueba con d20. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -34869,7 +34869,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 22, each creature in an 90-foot-long, 10-footwide Line. <i>Failure:</i> 63 (14d8) Acid damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 22, each creature in an 90-foot-long, 10-footwide Line. <i>Failure:</i> 63 (14d8) Acid damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -35228,7 +35228,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 22, chaque créature dans une Ligne de 27 m de long sur 3 m de large. <i>Échec :</i> 63 (14d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 22, chaque créature dans une Ligne de 27 m de long sur 3 m de large. <i>Échec :</i> 63 (14d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -35282,7 +35282,7 @@
     "campos.vel": "40 pieds, escalade 40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +15, allonge 15 pieds. <i>Touché :</i> 19 (2d10 + 8) dégâts tranchants plus 9 (2d8) dégâts d’acide.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 22, chaque créature dans une Ligne de 90 pieds de long sur 10 pieds de large. <i>Échec :</i> 63 (14d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 22, chaque créature dans une Ligne de 90 pieds de long sur 10 pieds de large. <i>Échec :</i> 63 (14d8) dégâts d’acide. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 22, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> la cible voit sa Vitesse réduite de moitié, ne peut pas jouer de Réaction et peut entreprendre une action ou une action Bonus à son tour, mais pas les deux. L’effet persiste jusqu’à la fin de son tour suivant.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Charisme :</i> DD 21, une créature que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 31 (9d6) dégâts psychiques. Jusqu’à la fin de son tour suivant, la cible lance 1d8 chaque fois qu’elle effectue un test de caractéristique ou un jet d’attaque et soustrait le résultat obtenu au Test d20. <i>Échec ou réussite :</i> Le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -35403,7 +35403,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 22, tutte le creature in una linea lunga 27 metri e larga 3 metri. <i>Fallimento:</i> 63 (14d8) danni da acido. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 22, tutte le creature in una linea lunga 27 metri e larga 3 metri. <i>Fallimento:</i> 63 (14d8) danni da acido. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -35457,7 +35457,7 @@
     "campos.vel": "40 piedi, scalata 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 27; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +15, portata 15 piedi. <i>Colpito:</i> 19 (2d10 + 8) danni taglienti più 9 (2d8) danni da acido.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 22, tutte le creature in una linea lunga 90 piedi e larga 10 piedi. <i>Fallimento:</i> 63 (14d8) danni da acido. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 22, tutte le creature in una linea lunga 90 piedi e larga 10 piedi. <i>Fallimento:</i> 63 (14d8) danni da acido. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 22, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> il bersaglio non può effettuare reazioni, la sua velocità è dimezzata e nel suo turno può effettuare un'azione o un'azione bonus, non entrambe. L'effetto dura fino al termine del proprio turno successivo.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tiro salvezza su Carisma:</i> CD 21, una creatura che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 31 (9d6) danni psichici. Fino al termine del proprio turno successivo, il bersaglio tira 1d8 ogni volta che effettua una prova di caratteristica o un tiro per colpire e sottrae il risultato dalla prova con d20. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -58974,7 +58974,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 13, todas las criaturas en un cono de 4,5 m. <i>Fallo:</i> 22 (4d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 13, todas las criaturas en un cono de 4,5 m. <i>Fallo:</i> 22 (4d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -58994,7 +58994,7 @@
     "campos.vel": "30 pies, nadar 30 pies, volar 60 pies",
     "campos.sen": "visión ciega 10 pies, visión en la oscuridad 60 pies; Percepción pasiva 14",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +6, alcance 5 pies. <i>Acierto:</i> 9 (1d10 + 4) de daño cortante.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 13, todas las criaturas en un cono de 15 pies. <i>Fallo:</i> 22 (4d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 13, todas las criaturas en un cono de 15 pies. <i>Fallo:</i> 22 (4d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 13, todas las criaturas que no estén afectadas ya por este aliento en un cono de 15 pies. <i>Fallo:</i> el objetivo tendrá desventaja en las pruebas con d20 basadas en la Fuerza y restará 2 (1d4) a sus tiradas de daño. Repetirá la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente."
    }
   },
@@ -59097,7 +59097,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 13, each creature in a 15-foot Cone. <i>Failure:</i> 22 (4d10) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 13, each creature in a 15-foot Cone. <i>Failure:</i> 22 (4d10) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -59345,7 +59345,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 13, chaque créature dans un Cône de 4,50 m. <i>Échec :</i> 22 (4d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 13, chaque créature dans un Cône de 4,50 m. <i>Échec :</i> 22 (4d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       }
@@ -59357,7 +59357,7 @@
     "campos.sen": "Vision aveugle 10 pieds, Vision dans le noir 60 pieds ; Perception passive 14",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +6, allonge 5 pieds. <i>Touché :</i> 9 (1d10 + 4) dégâts tranchants.",
     "secciones.1.items.2.bloques.0.txt": "<i>JS Force :</i> DD 13, chaque créature non encore affectée par ce souffle dans un Cône de 15 pieds. <i>Échec :</i> la cible subit le Désavantage aux Tests d20 basés sur la Force et soustrait 2 (1d4) à ses jets de dégâts. Elle réitère le JS à la fin de chacun de ses tours, et met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 13, chaque créature dans un Cône de 15 pieds. <i>Échec :</i> 22 (4d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 13, chaque créature dans un Cône de 15 pieds. <i>Échec :</i> 22 (4d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
    }
   },
   "it": {
@@ -59459,7 +59459,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 13, tutte le creature in un cono di 4,5 metri. <i>Fallimento:</i> 22 (4d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 13, tutte le creature in un cono di 4,5 metri. <i>Fallimento:</i> 22 (4d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -59479,7 +59479,7 @@
     "campos.vel": "30 piedi, nuoto 30 piedi, volo 60 piedi",
     "campos.sen": "Percezione passiva 14; scurovisione 60 piedi, vista cieca 10 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +6, portata 5 piedi. <i>Colpito:</i> 9 (1d10 + 4) danni taglienti.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 13, tutte le creature in un cono di 15 piedi. <i>Fallimento:</i> 22 (4d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 13, tutte le creature in un cono di 15 piedi. <i>Fallimento:</i> 22 (4d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 13, ogni creatura che al momento non è sotto l'effetto di questo soffio in un cono di 15 piedi. <i>Fallimento:</i> il bersaglio subisce svantaggio alle prove con d20 basate sulla Forza e sottrae 2 (1d4) ai tiri per i danni. La creatura ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente."
    }
   }
@@ -59631,7 +59631,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 17, todas las criaturas en un cono de 9 m. <i>Fallo:</i> 55 (10d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 17, todas las criaturas en un cono de 9 m. <i>Fallo:</i> 55 (10d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -59651,7 +59651,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 30 pies, visión en la oscuridad 120 pies; Percepción pasiva 19",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +10, alcance 10 pies. <i>Acierto:</i> 17 (2d10 + 6) de daño cortante.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 17, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> 55 (10d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 17, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> 55 (10d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 17, todas las criaturas que no estén afectadas ya por este aliento en un cono de 30 pies. <i>Fallo:</i> el objetivo tendrá desventaja en las pruebas con d20 basadas en la Fuerza y restará 3 (1d6) a sus tiradas de daño. Repetirá la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente."
    }
   },
@@ -59754,7 +59754,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 17, each creature in a 30-foot Cone. <i>Failure:</i> 55 (10d10) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 17, each creature in a 30-foot Cone. <i>Failure:</i> 55 (10d10) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -60002,7 +60002,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 17, chaque créature dans un Cône de 9 m. <i>Échec :</i> 55 (10d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 17, chaque créature dans un Cône de 9 m. <i>Échec :</i> 55 (10d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       }
@@ -60014,7 +60014,7 @@
     "campos.sen": "Vision aveugle 30 pieds, Vision dans le noir 120 pieds ; Perception passive 19",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +10, allonge 10 pieds. <i>Touché :</i> 17 (2d10 + 6) dégâts tranchants.",
     "secciones.1.items.2.bloques.0.txt": "<i>JS Force :</i> DD 17, chaque créature non encore affectée par ce souffle dans un Cône de 30 pieds. <i>Échec :</i> la cible subit le Désavantage aux Tests d20 basés sur la Force et soustrait 3 (1d6) à ses jets de dégâts. Elle réitère le JS à la fin de chacun de ses tours, et met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 17, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> 55 (10d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Dextérité :</i> DD 17, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> 55 (10d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
    }
   },
   "it": {
@@ -60116,7 +60116,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 17, tutte le creature in un cono di 9 metri. <i>Fallimento:</i> 55 (10d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 17, tutte le creature in un cono di 9 metri. <i>Fallimento:</i> 55 (10d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -60136,7 +60136,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 19; scurovisione 120 piedi, vista cieca 30 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +10, portata 10 piedi. <i>Colpito:</i> 17 (2d10 + 6) danni taglienti.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 17, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> 55 (10d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 17, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> 55 (10d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 17, ogni creatura che al momento non è sotto l'effetto di questo soffio in un cono di 30 piedi. <i>Fallimento:</i> il bersaglio subisce svantaggio alle prove con d20 basate sulla Forza e sottrae 3 (1d6) ai tiri per i danni. La creatura ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente."
    }
   }
@@ -60297,7 +60297,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en un cono de 18 m. <i>Fallo:</i> 66 (12d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en un cono de 18 m. <i>Fallo:</i> 66 (12d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -60368,7 +60368,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 24",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +14, alcance 10 pies. <i>Acierto:</i> 17 (2d8 + 8) de daño cortante más 4 (1d8) de daño de fuego.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> 66 (12d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 21, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> 66 (12d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 21, todas las criaturas que no estén afectadas ya por este aliento en un cono de 60 pies. <i>Fallo:</i> el objetivo tendrá desventaja en las pruebas con d20 basadas en la Fuerza y restará 3 (1d6) a sus tiradas de daño. Repetirá la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Carisma:</i> CD 21, una criatura que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 10 (3d6) de daño de fuerza y el objetivo tendrá el estado de Incapacitado y será transportado a un semiplano inofensivo hasta el principio del siguiente turno del dragón, momento en el que reaparecerá en un espacio sin ocupar a elección del dragón a 120 pies o menos de este. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -60481,7 +60481,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 21, each creature in a 60-foot Cone. <i>Failure:</i> 66 (12d10) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 21, each creature in a 60-foot Cone. <i>Failure:</i> 66 (12d10) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -60867,7 +60867,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 21, chaque créature dans un Cône de 18 m. <i>Échec :</i> 66 (12d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 21, chaque créature dans un Cône de 18 m. <i>Échec :</i> 66 (12d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       }
@@ -60913,7 +60913,7 @@
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 24",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +14, allonge 10 pieds. <i>Touché :</i> 17 (2d8 + 8) dégâts tranchants plus 4 (1d8) dégâts de feu.",
     "secciones.1.items.3.bloques.0.txt": "<i>JS Force :</i> DD 21, chaque créature non encore affectée par ce souffle dans un Cône de 60 pieds. <i>Échec :</i> la cible subit le Désavantage aux Tests d20 basés sur la Force et soustrait 3 (1d6) à ses jets de dégâts. Elle réitère le JS à la fin de chacun de ses tours, et met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
-    "secciones.1.items.4.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 21, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> 66 (12d10) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.4.bloques.0.txt": "<i>JS Dextérité :</i> DD 21, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> 66 (12d10) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
     "secciones.2.items.1.bloques.0.txt": "<i>JS Charisme :</i> DD 21, une créature que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 10 (3d6) dégâts de force ; la cible subit l’état Neutralisé et elle est transportée sur un demi-plan qui ne présente pas de danger jusqu’au début du tour suivant du dragon, puis elle réapparaît en un espace inoccupé au choix du dragon dans un rayon de 120 pieds de celui-ci. <i>Échec ou réussite :</i> Le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
   },
@@ -61042,7 +61042,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in un cono di 18 metri. <i>Fallimento:</i> 66 (12d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in un cono di 18 metri. <i>Fallimento:</i> 66 (12d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -61096,7 +61096,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 24; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +14, portata 10 piedi. <i>Colpito:</i> 17 (2d8 + 8) danni taglienti più 4 (1d8) danni da fuoco.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> 66 (12d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 21, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> 66 (12d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 21, ogni creatura che al momento non è sotto l'effetto di questo soffio in un cono di 60 piedi. <i>Fallimento:</i> il bersaglio subisce svantaggio alle prove con d20 basate sulla Forza e sottrae 3 (1d6) ai tiri per i danni. La creatura ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Carisma:</i> CD 21, una creatura che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 10 (3d6) danni da forza, il bersaglio è incapacitato e viene trasportato su un semipiano sicuro fino all'inizio del turno successivo del drago, durante cui riappare in uno spazio libero a scelta del drago entro 120 piedi da quest'ultimo. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -61258,7 +61258,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 24, todas las criaturas en un cono de 27 m. <i>Fallo:</i> 71 (13d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Destreza:</i> CD 24, todas las criaturas en un cono de 27 m. <i>Fallo:</i> 71 (13d10) de daño de fuego. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -61329,7 +61329,7 @@
     "campos.vel": "40 pies, nadar 40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +17 a acertar, alcance 15 pies. <i>Acierto:</i> 19 (2d8 + 10) de daño cortante más 9 (2d8) de daño de fuego.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Destreza:</i> CD 24, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> 71 (13d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 24, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> 71 (13d10) de daño de fuego. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Fuerza:</i> CD 24, todas las criaturas que no estén afectadas ya por este aliento en un cono de 90 pies. <i>Fallo:</i> el objetivo tendrá desventaja en las pruebas con d20 basadas en la Fuerza y restará 5 (1d10) a sus tiradas de daño. Repetirá la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente.",
     "secciones.2.items.1.bloques.0.txt": "<i>Tirada de salvación de Carisma:</i> CD 24, una criatura que el dragón pueda ver a 120 pies o menos. <i>Fallo:</i> 24 (7d6) de daño de fuerza y el objetivo tendrá el estado de Incapacitado y será transportado a un semiplano inofensivo hasta el principio del siguiente turno del dragón, momento en el que reaparecerá en un espacio sin ocupar a elección del dragón a 120 pies o menos de este. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -61442,7 +61442,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Dexterity Saving Throw:</i> DC 24, each creature in a 90-foot Cone. <i>Failure:</i> 71 (13d10) Fire damage. <i>Success:</i> Half damage."
+         "txt": "<i>Dexterity Saving Throw:</i> DC 24, each creature in a 90-foot Cone. <i>Failure:</i> 71 (13d10) Fire damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -61828,7 +61828,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Dextérité :</i> DD 24, chaque créature dans un Cône de 27 m. <i>Échec :</i> 71 (13d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Dextérité :</i> DD 24, chaque créature dans un Cône de 27 m. <i>Échec :</i> 71 (13d10) dégâts de feu. <i>Réussite :</i> demi-dégâts."
         }
        ]
       }
@@ -61874,7 +61874,7 @@
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 27",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +17, allonge 15 pieds. <i>Touché :</i> 19 (2d8 + 10) dégâts tranchants plus 9 (2d8) dégâts de feu.",
     "secciones.1.items.3.bloques.0.txt": "<i>JS Force :</i> DD 24, chaque créature non encore affectée par ce souffle dans un Cône de 90 pieds. <i>Échec :</i> la cible subit le Désavantage aux Tests d20 basés sur la Force et soustrait 5 (1d10) à ses jets de dégâts. Elle réitère le JS à la fin de chacun de ses tours, et met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
-    "secciones.1.items.4.bloques.0.txt": "<strong>.</strong><i>JS Dextérité :</i> DD 24, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> 71 (13d10) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.4.bloques.0.txt": "<i>JS Dextérité :</i> DD 24, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> 71 (13d10) dégâts de feu. <i>Réussite :</i> demi-dégâts.",
     "secciones.2.items.1.bloques.0.txt": "<i>JS Charisme :</i> DD 24, une créature que le dragon voit dans un rayon de 120 pieds. <i>Échec :</i> 24 (7d6) dégâts de force ; la cible subit l’état Neutralisé et elle est transportée sur un demi-plan qui ne présente pas de danger jusqu’au début du tour suivant du dragon, puis elle réapparaît en un espace inoccupé au choix du dragon dans un rayon de 120 pieds. <i>Échec ou réussite :</i> le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
   },
@@ -62003,7 +62003,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 24, tutte le creature in un cono di 27 metri. <i>Fallimento:</i> 71 (13d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Destrezza:</i> CD 24, tutte le creature in un cono di 27 metri. <i>Fallimento:</i> 71 (13d10) danni da fuoco. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -62057,7 +62057,7 @@
     "campos.vel": "40 piedi, nuoto 40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 27; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +17 al tiro per colpire, portata 15 piedi. <i>Colpito:</i> 19 (2d8 + 10) danni taglienti più 9 (2d8) danni da fuoco.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Destrezza:</i> CD 24, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> 71 (13d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 24, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> 71 (13d10) danni da fuoco. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Forza:</i> CD 24, ogni creatura che al momento non è sotto l'effetto di questo soffio in un cono di 90 piedi. <i>Fallimento:</i> il bersaglio subisce svantaggio alle prove con d20 basate sulla Forza e sottrae 5 (1d10) ai tiri per i danni. La creatura ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Carisma:</i> CD 24, una creatura che il drago è in grado di vedere entro 120 piedi. <i>Fallimento:</i> 24 (7d6) danni da forza, il bersaglio è incapacitato e viene trasportato su un semipiano sicuro fino all'inizio del turno successivo del drago, durante cui riappare in uno spazio libero a scelta del drago entro 120 piedi da quest'ultimo. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -119505,7 +119505,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 13, todas las criaturas en un cono de 4,5 m. <i>Fallo:</i> 18 (4d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Constitución:</i> CD 13, todas las criaturas en un cono de 4,5 m. <i>Fallo:</i> 18 (4d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -119525,7 +119525,7 @@
     "campos.vel": "30 pies, volar 60 pies",
     "campos.sen": "visión ciega 10 pies, visión en la oscuridad 60 pies; Percepción pasiva 14",
     "secciones.0.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +6, alcance 5 pies. <i>Acierto:</i> 9 (1d10 + 4) de daño perforante.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 13, todas las criaturas en un cono de 15 pies. <i>Fallo:</i> 18 (4d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 13, todas las criaturas en un cono de 15 pies. <i>Fallo:</i> 18 (4d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 13, todas las criaturas en un cono de 15 pies. <i>Primer fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Paralizado y repetirá la tirada de salvación al final de cada uno de sus turnos. Si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente."
    }
   },
@@ -119612,7 +119612,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Constitution Saving Throw:</i> DC 13, each creature in a 15-foot Cone. <i>Failure:</i> 18 (4d8) Cold damage. <i>Success:</i> Half damage."
+         "txt": "<i>Constitution Saving Throw:</i> DC 13, each creature in a 15-foot Cone. <i>Failure:</i> 18 (4d8) Cold damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -119819,7 +119819,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Constitution :</i> DD 13, chaque créature dans un Cône de 4,50 m. <i>Échec :</i> 18 (4d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts."
+         "txt": "<i>JS Constitution :</i> DD 13, chaque créature dans un Cône de 4,50 m. <i>Échec :</i> 18 (4d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts."
         }
        ]
       },
@@ -119839,7 +119839,7 @@
     "campos.vel": "30 pieds, vol 60 pieds",
     "campos.sen": "Vision aveugle 10 pieds, Vision dans le noir 60 pieds ; Perception passive 14",
     "secciones.0.items.1.bloques.0.txt": "<i>Corps à corps :</i> +6, allonge 5 pieds. <i>Touché :</i> 9 (1d10 + 4) dégâts perforants.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>JS Constitution :</i> DD 13, chaque créature dans un Cône de 15 pieds. <i>Échec :</i> 18 (4d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts.",
+    "secciones.0.items.2.bloques.0.txt": "<i>JS Constitution :</i> DD 13, chaque créature dans un Cône de 15 pieds. <i>Échec :</i> 18 (4d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts.",
     "secciones.0.items.3.bloques.0.txt": "<i>JS Constitution :</i> DD 13, chaque créature dans un Cône de 15 pieds. <i>Premier échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Paralysé et réitère le JS à la fin de chacun de ses tours ; elle met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS."
    }
   },
@@ -119926,7 +119926,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 13, tutte le creature in un cono di 4,5 metri. <i>Fallimento:</i> 18 (4d8) danni da freddo. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Costituzione:</i> CD 13, tutte le creature in un cono di 4,5 metri. <i>Fallimento:</i> 18 (4d8) danni da freddo. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -119946,7 +119946,7 @@
     "campos.vel": "30 piedi, volo 60 piedi",
     "campos.sen": "Percezione passiva 14; scurovisione 60 piedi, vista cieca 10 piedi",
     "secciones.0.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +6, portata 5 piedi. <i>Colpito:</i> 9 (1d10 + 4) danni perforanti.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 13, tutte le creature in un cono di 15 piedi. <i>Fallimento:</i> 18 (4d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 13, tutte le creature in un cono di 15 piedi. <i>Fallimento:</i> 18 (4d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 13, tutte le creature in un cono di 15 piedi. <i>Primo fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo. A quel punto, ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio è paralizzato e ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente."
    }
   }
@@ -120082,7 +120082,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en un cono de 9 m. <i>Fallo:</i> 49 (11d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en un cono de 9 m. <i>Fallo:</i> 49 (11d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -120102,7 +120102,7 @@
     "campos.vel": "40 pies, volar 80 pies",
     "campos.sen": "visión ciega 30 pies, visión en la oscuridad 120 pies; Percepción pasiva 18",
     "secciones.0.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +10, alcance 10 pies. <i>Acierto:</i> 15 (2d8 + 6) de daño cortante.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> 49 (11d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en un cono de 30 pies. <i>Fallo:</i> 49 (11d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 17, todas las criaturas en un cono de 30 pies. <i>Primer fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Paralizado y repetirá la tirada de salvación al final de cada uno de sus turnos. Si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente."
    }
   },
@@ -120189,7 +120189,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Constitution Saving Throw:</i> DC 17, each creature in a 30-foot Cone. <i>Failure:</i> 49 (11d8) Cold damage. <i>Success:</i> Half damage."
+         "txt": "<i>Constitution Saving Throw:</i> DC 17, each creature in a 30-foot Cone. <i>Failure:</i> 49 (11d8) Cold damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -120396,7 +120396,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Constitution :</i> DD 17, chaque créature dans un Cône de 9 m. <i>Échec :</i> 49 (11d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts."
+         "txt": "<i>JS Constitution :</i> DD 17, chaque créature dans un Cône de 9 m. <i>Échec :</i> 49 (11d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts."
         }
        ]
       },
@@ -120416,7 +120416,7 @@
     "campos.vel": "40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 30 pieds, Vision dans le noir 120 pieds ; Perception passive 18",
     "secciones.0.items.1.bloques.0.txt": "<i>Corps à corps :</i> +10, allonge 10 pieds. <i>Touché :</i> 15 (2d8 + 6) dégâts tranchants.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>JS Constitution :</i> DD 17, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> 49 (11d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts.",
+    "secciones.0.items.2.bloques.0.txt": "<i>JS Constitution :</i> DD 17, chaque créature dans un Cône de 30 pieds. <i>Échec :</i> 49 (11d8) dégâts de froid. <i>Réussite :</i> 1/2 dégâts.",
     "secciones.0.items.3.bloques.0.txt": "<i>JS Constitution :</i> DD 17, chaque créature dans un Cône de 30 pieds. <i>Premier échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Paralysé et réitère le JS à la fin de chacun de ses tours ; elle met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS."
    }
   },
@@ -120503,7 +120503,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in un cono di 9 metri. <i>Fallimento:</i> 49 (11d8) danni da freddo. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in un cono di 9 metri. <i>Fallimento:</i> 49 (11d8) danni da freddo. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -120523,7 +120523,7 @@
     "campos.vel": "40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 18; scurovisione 120 piedi, vista cieca 30 piedi",
     "secciones.0.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +10, portata 10 piedi. <i>Colpito:</i> 15 (2d8 + 6) danni taglienti.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> 49 (11d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in un cono di 30 piedi. <i>Fallimento:</i> 49 (11d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
     "secciones.0.items.3.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 17, tutte le creature in un cono di 30 piedi. <i>Primo fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo. A quel punto, ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio è paralizzato e ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente."
    }
   },
@@ -120683,7 +120683,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 20, todas las criaturas en un cono de 18 m. <i>Fallo:</i> 54 (12d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Constitución:</i> CD 20, todas las criaturas en un cono de 18 m. <i>Fallo:</i> 54 (12d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -120754,7 +120754,7 @@
     "campos.vel": "40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 21",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +13, alcance 10 pies. <i>Acierto:</i> 17 (2d8 + 8) de daño cortante más 4 (1d8) de daño de frío.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 20, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> 54 (12d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 20, todas las criaturas en un cono de 60 pies. <i>Fallo:</i> 54 (12d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 20, todas las criaturas en un cono de 60 pies. <i>Primer fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Paralizado y repetirá la tirada de salvación al final de cada uno de sus turnos. Si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 19, todas las criaturas en una línea de 60 pies de largo y 10 pies de ancho. <i>Fallo:</i> 14 (4d6) de daño de frío y el objetivo es empujado hasta 30 pies respecto al dragón en línea recta. <i>Éxito:</i> solo la mitad del daño. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -120858,7 +120858,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Constitution Saving Throw:</i> DC 20, each creature in a 60-foot Cone. <i>Failure:</i> 54 (12d8) Cold damage. <i>Success:</i> Half damage."
+         "txt": "<i>Constitution Saving Throw:</i> DC 20, each creature in a 60-foot Cone. <i>Failure:</i> 54 (12d8) Cold damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -121217,7 +121217,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Constitution :</i> DD 20, chaque créature dans un Cône de 18 m. <i>Échec :</i> 54 (12d8) dégâts de froid. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Constitution :</i> DD 20, chaque créature dans un Cône de 18 m. <i>Échec :</i> 54 (12d8) dégâts de froid. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -121271,7 +121271,7 @@
     "campos.vel": "40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 21",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +13, allonge 10 pieds. <i>Touché :</i> 17 (2d8 + 8) dégâts tranchants plus 4 (1d8) dégâts de froid.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Constitution :</i> DD 20, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> 54 (12d8) dégâts de froid. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Constitution :</i> DD 20, chaque créature dans un Cône de 60 pieds. <i>Échec :</i> 54 (12d8) dégâts de froid. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 20, chaque créature dans un Cône de 60 pieds. <i>Premier échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Paralysé et réitère le JS à la fin de chacun de ses tours ; elle met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 19, chaque créature dans une Ligne de 60 pieds de long sur 10 pieds de large. <i>Échec :</i> 14 (4d6) dégâts de froid, et la cible est repoussée du dragon en ligne droite d’un maximum de 30 pieds. <i>Réussite :</i> demi-dégâts uniquement. <i>Échec ou réussite :</i> le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -121392,7 +121392,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 20, tutte le creature in un cono di 18 metri. <i>Fallimento:</i> 54 (12d8) danni da freddo. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Costituzione:</i> CD 20, tutte le creature in un cono di 18 metri. <i>Fallimento:</i> 54 (12d8) danni da freddo. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -121446,7 +121446,7 @@
     "campos.vel": "40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 21; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +13, portata 10 piedi. <i>Colpito:</i> 17 (2d8 + 8) danni taglienti più 4 (1d8) danni da freddo.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 20, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> 54 (12d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 20, tutte le creature in un cono di 60 piedi. <i>Fallimento:</i> 54 (12d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 20, tutte le creature in un cono di 60 piedi. <i>Primo fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo. A quel punto, ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio è paralizzato e ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 19, tutte le creature in una linea lunga 60 piedi e larga 10 piedi. <i>Fallimento:</i> 14 (4d6) danni da freddo, e il bersaglio viene spinto in linea retta fino a un massimo di 30 piedi lontano dal drago. <i>Successo:</i> danni dimezzati. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -121599,7 +121599,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 24, todas las criaturas en un cono de 27 m. <i>Fallo:</i> 67 (15d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
+         "txt": "<i>Tirada de salvación de Constitución:</i> CD 24, todas las criaturas en un cono de 27 m. <i>Fallo:</i> 67 (15d8) de daño de frío. <i>Éxito:</i> la mitad del daño."
         }
        ]
       },
@@ -121670,7 +121670,7 @@
     "campos.vel": "40 pies, volar 80 pies",
     "campos.sen": "visión ciega 60 pies, visión en la oscuridad 120 pies; Percepción pasiva 26",
     "secciones.1.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +17, alcance 15 pies. <i>Acierto:</i> 19 (2d8 + 10) de daño cortante más 9 (2d8) de daño de frío.",
-    "secciones.1.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de salvación de Constitución:</i> CD 24, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> 67 (15d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
+    "secciones.1.items.2.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 24, todas las criaturas en un cono de 90 pies. <i>Fallo:</i> 67 (15d8) de daño de frío. <i>Éxito:</i> la mitad del daño.",
     "secciones.1.items.3.bloques.0.txt": "<i>Tirada de salvación de Constitución:</i> CD 24, todas las criaturas en un cono de 90 pies. <i>Primer fallo:</i> el objetivo tendrá el estado de Incapacitado hasta el final de su siguiente turno, momento en el que repetirá la tirada de salvación. <i>Segundo fallo:</i> el objetivo tendrá el estado de Paralizado y repetirá la tirada de salvación al final de cada uno de sus turnos. Si tiene éxito, se librará del efecto. Tras 1 minuto, tendrá éxito automáticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 23, todas las criaturas en una línea de 60 pies de largo y 10 pies de ancho. <i>Fallo:</i> 14 (4d6) de daño de frío y el objetivo es empujado hasta 30 pies respecto al dragón en línea recta. <i>Éxito:</i> solo la mitad del daño. <i>Fallo o éxito:</i> el dragón no puede volver a realizar esta acción hasta el principio de su siguiente turno."
    }
@@ -121774,7 +121774,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Constitution Saving Throw:</i> DC 24, each creature in a 90-foot Cone. <i>Failure:</i> 67 (15d8) Cold damage. <i>Success:</i> Half damage."
+         "txt": "<i>Constitution Saving Throw:</i> DC 24, each creature in a 90-foot Cone. <i>Failure:</i> 67 (15d8) Cold damage. <i>Success:</i> Half damage."
         }
        ]
       },
@@ -122133,7 +122133,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>JS Constitution :</i> DD 24, chaque créature dans un Cône de 27 m. <i>Échec :</i> 67 (15d8) dégâts de froid. <i>Réussite :</i> demi-dégâts."
+         "txt": "<i>JS Constitution :</i> DD 24, chaque créature dans un Cône de 27 m. <i>Échec :</i> 67 (15d8) dégâts de froid. <i>Réussite :</i> demi-dégâts."
         }
        ]
       },
@@ -122187,7 +122187,7 @@
     "campos.vel": "40 pieds, vol 80 pieds",
     "campos.sen": "Vision aveugle 60 pieds, Vision dans le noir 120 pieds ; Perception passive 26",
     "secciones.1.items.1.bloques.0.txt": "<i>Corps à corps :</i> +17, allonge 15 pieds. <i>Touché :</i> 19 (2d8 + 10) dégâts tranchants plus 9 (2d8) dégâts de froid.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>JS Constitution :</i> DD 24, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> 67 (15d8) dégâts de froid. <i>Réussite :</i> demi-dégâts.",
+    "secciones.1.items.3.bloques.0.txt": "<i>JS Constitution :</i> DD 24, chaque créature dans un Cône de 90 pieds. <i>Échec :</i> 67 (15d8) dégâts de froid. <i>Réussite :</i> demi-dégâts.",
     "secciones.1.items.4.bloques.0.txt": "<i>JS Constitution :</i> DD 24, chaque créature dans un Cône de 90 pieds. <i>Premier échec :</i> la cible subit l’état Neutralisé jusqu’à la fin de son tour suivant, et réitère alors son JS. <i>Deuxième échec :</i> la cible subit l’état Paralysé et réitère le JS à la fin de chacun de ses tours ; elle met un terme à l’effet sur elle-même en cas de réussite. Au bout de 1 minute, elle réussit automatiquement ce JS.",
     "secciones.2.items.2.bloques.0.txt": "<i>JS Dextérité :</i> DD 23, chaque créature dans une Ligne de 60 pieds de long sur 10 pieds de large. <i>Échec :</i> 14 (4d6) dégâts de froid, et la cible est repoussée du dragon en ligne droite d’un maximum de 30 pieds. <i>Réussite :</i> demi-dégâts uniquement. <i>Échec ou réussite :</i> Le dragon ne peut alors plus entreprendre cette action jusqu’au début de son tour suivant."
    }
@@ -122308,7 +122308,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 24, tutte le creature in un cono di 27 metri. <i>Fallimento:</i> 67 (15d8) danni da freddo. <i>Successo:</i> danni dimezzati."
+         "txt": "<i>Tiro salvezza su Costituzione:</i> CD 24, tutte le creature in un cono di 27 metri. <i>Fallimento:</i> 67 (15d8) danni da freddo. <i>Successo:</i> danni dimezzati."
         }
        ]
       },
@@ -122362,7 +122362,7 @@
     "campos.vel": "40 piedi, volo 80 piedi",
     "campos.sen": "Percezione passiva 26; scurovisione 120 piedi, vista cieca 60 piedi",
     "secciones.1.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +17, portata 15 piedi. <i>Colpito:</i> 19 (2d8 + 10) danni taglienti più 9 (2d8) danni da freddo.",
-    "secciones.1.items.3.bloques.0.txt": "<strong>.</strong><i>Tiro salvezza su Costituzione:</i> CD 24, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> 67 (15d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
+    "secciones.1.items.3.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 24, tutte le creature in un cono di 90 piedi. <i>Fallimento:</i> 67 (15d8) danni da freddo. <i>Successo:</i> danni dimezzati.",
     "secciones.1.items.4.bloques.0.txt": "<i>Tiro salvezza su Costituzione:</i> CD 24, tutte le creature in un cono di 90 piedi. <i>Primo fallimento:</i> il bersaglio è incapacitato fino al termine del proprio turno successivo. A quel punto, ripete il tiro salvezza. <i>Secondo fallimento:</i> il bersaglio è paralizzato e ripete il tiro salvezza alla fine di ogni suo turno e, se lo supera, l'effetto svanisce. Dopo 1 minuto, il tiro viene superato automaticamente.",
     "secciones.2.items.2.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 23, tutte le creature in una linea lunga 60 piedi e larga 10 piedi. <i>Fallimento:</i> 14 (4d6) danni da freddo, e il bersaglio viene spinto in linea retta fino a un massimo di 30 piedi lontano dal drago. <i>Successo:</i> danni dimezzati. <i>Fallimento o successo:</i> il drago non può ripetere quest'azione fino all'inizio del proprio turno successivo."
    }
@@ -137269,7 +137269,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong> The unicorn has Advantage on saving throws against spells and other magical effects."
+         "txt": "The unicorn has Advantage on saving throws against spells and other magical effects."
         }
        ]
       }
@@ -137795,7 +137795,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong> L'unicorno dispone di vantaggio ai tiri salvezza contro incantesimi e altri effetti magici."
+         "txt": "L'unicorno dispone di vantaggio ai tiri salvezza contro incantesimi e altri effetti magici."
         }
        ]
       },
@@ -159529,7 +159529,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 1,5 m. <i>Acierto:</i> 5 (1d4 + 3) de daño cortante. Si el objetivo es una criatura Grande o más pequeña, tendrá el estado de Derribada."
+         "txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 1,5 m. <i>Acierto:</i> 5 (1d4 + 3) de daño cortante. Si el objetivo es una criatura Grande o más pequeña, tendrá el estado de Derribada."
         }
        ]
       },
@@ -159538,7 +159538,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 1,5 m. <i>Acierto:</i> 7 (1d8 + 3) de daño perforante."
+         "txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 1,5 m. <i>Acierto:</i> 7 (1d8 + 3) de daño perforante."
         }
        ]
       }
@@ -159548,8 +159548,8 @@
    "pies": {
     "campos.vel": "40 pies, trepar 30 pies",
     "campos.sen": "visión en la oscuridad 60 pies; Percepción pasiva 13",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 5 pies. <i>Acierto:</i> 5 (1d4 + 3) de daño cortante. Si el objetivo es una criatura Grande o más pequeña, tendrá el estado de Derribada.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 5 pies. <i>Acierto:</i> 7 (1d8 + 3) de daño perforante."
+    "secciones.0.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 5 pies. <i>Acierto:</i> 5 (1d4 + 3) de daño cortante. Si el objetivo es una criatura Grande o más pequeña, tendrá el estado de Derribada.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +5, alcance 5 pies. <i>Acierto:</i> 7 (1d8 + 3) de daño perforante."
    }
   },
   "en": {
@@ -159625,7 +159625,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Melee Attack Roll:</i> +5, reach 5 ft. <i>Hit:</i> 7 (1d8 + 3) Piercing damage."
+         "txt": "<i>Melee Attack Roll:</i> +5, reach 5 ft. <i>Hit:</i> 7 (1d8 + 3) Piercing damage."
         }
        ]
       },
@@ -159634,7 +159634,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Melee Attack Roll:</i> +5, reach 5 ft. <i>Hit:</i> 5 (1d4 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition."
+         "txt": "<i>Melee Attack Roll:</i> +5, reach 5 ft. <i>Hit:</i> 5 (1d4 + 3) Slashing damage. If the target is a Large or smaller creature, it has the Prone condition."
         }
        ]
       }
@@ -159811,7 +159811,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Corps à corps :</i> +5, allonge 1,50 m. <i>Touché :</i> 5 (1d4 + 3) dégâts tranchants. Si la cible est une créature de taille G ou inférieure, elle subit l’état À terre."
+         "txt": "<i>Corps à corps :</i> +5, allonge 1,50 m. <i>Touché :</i> 5 (1d4 + 3) dégâts tranchants. Si la cible est une créature de taille G ou inférieure, elle subit l’état À terre."
         }
        ]
       },
@@ -159820,7 +159820,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Corps à corps :</i> +5, allonge 1,50 m. <i>Touché :</i> 7 (1d8 + 3) dégâts perforants."
+         "txt": "<i>Corps à corps :</i> +5, allonge 1,50 m. <i>Touché :</i> 7 (1d8 + 3) dégâts perforants."
         }
        ]
       }
@@ -159830,8 +159830,8 @@
    "pies": {
     "campos.vel": "40 pieds, escalade 30 pieds",
     "campos.sen": "Vision dans le noir 60 pieds ; Perception passive 13",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Corps à corps :</i> +5, allonge 5 pieds. <i>Touché :</i> 5 (1d4 + 3) dégâts tranchants. Si la cible est une créature de taille G ou inférieure, elle subit l’état À terre.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Corps à corps :</i> +5, allonge 5 pieds. <i>Touché :</i> 7 (1d8 + 3) dégâts perforants."
+    "secciones.0.items.1.bloques.0.txt": "<i>Corps à corps :</i> +5, allonge 5 pieds. <i>Touché :</i> 5 (1d4 + 3) dégâts tranchants. Si la cible est une créature de taille G ou inférieure, elle subit l’état À terre.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Corps à corps :</i> +5, allonge 5 pieds. <i>Touché :</i> 7 (1d8 + 3) dégâts perforants."
    }
   },
   "it": {
@@ -159907,7 +159907,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +5, portata 1,5 m <i>Colpito:</i> 5 (1d4 + 3) danni taglienti. Se il bersaglio è una creatura di taglia Grande o inferiore, cade a terra prono."
+         "txt": "<i>Tiro per colpire in mischia:</i> +5, portata 1,5 m <i>Colpito:</i> 5 (1d4 + 3) danni taglienti. Se il bersaglio è una creatura di taglia Grande o inferiore, cade a terra prono."
         }
        ]
       },
@@ -159916,7 +159916,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +5, portata 1,5 m. <i>Colpito:</i> 7 (1d8 + 3) danni perforanti."
+         "txt": "<i>Tiro per colpire in mischia:</i> +5, portata 1,5 m. <i>Colpito:</i> 7 (1d8 + 3) danni perforanti."
         }
        ]
       }
@@ -159926,8 +159926,8 @@
    "pies": {
     "campos.vel": "40 piedi, scalata 30 piedi",
     "campos.sen": "Percezione passiva 13; scurovisione 60 piedi",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +5, portata 5 piedi <i>Colpito:</i> 5 (1d4 + 3) danni taglienti. Se il bersaglio è una creatura di taglia Grande o inferiore, cade a terra prono.",
-    "secciones.0.items.2.bloques.0.txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +5, portata 5 piedi. <i>Colpito:</i> 7 (1d8 + 3) danni perforanti."
+    "secciones.0.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +5, portata 5 piedi <i>Colpito:</i> 5 (1d4 + 3) danni taglienti. Se il bersaglio è una creatura di taglia Grande o inferiore, cade a terra prono.",
+    "secciones.0.items.2.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +5, portata 5 piedi. <i>Colpito:</i> 7 (1d8 + 3) danni perforanti."
    }
   }
  },
@@ -164323,7 +164323,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +8, alcance 1,5 m. <i>Acierto:</i> 15 (2d8 + 6) de daño perforante. Si el objetivo es una criatura Enorme o más pequeña y el elefante recorre al menos 6 m en línea recta hacia ella justo antes de acertarle, tendrá el estado de Derribada."
+         "txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +8, alcance 1,5 m. <i>Acierto:</i> 15 (2d8 + 6) de daño perforante. Si el objetivo es una criatura Enorme o más pequeña y el elefante recorre al menos 6 m en línea recta hacia ella justo antes de acertarle, tendrá el estado de Derribada."
         }
        ]
       }
@@ -164348,7 +164348,7 @@
    ],
    "pies": {
     "campos.vel": "40 pies",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tirada de ataque cuerpo a cuerpo:</i> +8, alcance 5 pies. <i>Acierto:</i> 15 (2d8 + 6) de daño perforante. Si el objetivo es una criatura Enorme o más pequeña y el elefante recorre al menos 20 pies en línea recta hacia ella justo antes de acertarle, tendrá el estado de Derribada.",
+    "secciones.0.items.1.bloques.0.txt": "<i>Tirada de ataque cuerpo a cuerpo:</i> +8, alcance 5 pies. <i>Acierto:</i> 15 (2d8 + 6) de daño perforante. Si el objetivo es una criatura Enorme o más pequeña y el elefante recorre al menos 20 pies en línea recta hacia ella justo antes de acertarle, tendrá el estado de Derribada.",
     "secciones.1.items.0.bloques.0.txt": "<i>Tirada de salvación de Destreza:</i> CD 16, una criatura a 5 pies o menos que tenga el estado de Derribada. <i>Fallo:</i> 17 (2d10 + 6) de daño contundente. <i>Éxito:</i> la mitad del daño."
    }
   },
@@ -164424,7 +164424,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Melee Attack Roll:</i> +8, reach 5 ft. <i>Hit:</i> 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition."
+         "txt": "<i>Melee Attack Roll:</i> +8, reach 5 ft. <i>Hit:</i> 15 (2d8 + 6) Piercing damage. If the target is a Huge or smaller creature and the elephant moved 20+ feet straight toward it immediately before the hit, the target has the Prone condition."
         }
        ]
       }
@@ -164621,7 +164621,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Corps à corps :</i> +8, allonge 1,50 m. <i>Touché :</i> 15 (2d8 + 6) dégâts perforants. Si la cible est une créature de taille TG ou inférieure et si l’éléphant s’est déplacé en ligne droite d’un minimum de 6 m juste avant de la toucher, la cible subit l’état À terre."
+         "txt": "<i>Corps à corps :</i> +8, allonge 1,50 m. <i>Touché :</i> 15 (2d8 + 6) dégâts perforants. Si la cible est une créature de taille TG ou inférieure et si l’éléphant s’est déplacé en ligne droite d’un minimum de 6 m juste avant de la toucher, la cible subit l’état À terre."
         }
        ]
       }
@@ -164646,7 +164646,7 @@
    ],
    "pies": {
     "campos.vel": "40 pieds",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Corps à corps :</i> +8, allonge 5 pieds. <i>Touché :</i> 15 (2d8 + 6) dégâts perforants. Si la cible est une créature de taille TG ou inférieure et si l’éléphant s’est déplacé en ligne droite d’un minimum de 20 pieds juste avant de la toucher, la cible subit l’état À terre.",
+    "secciones.0.items.1.bloques.0.txt": "<i>Corps à corps :</i> +8, allonge 5 pieds. <i>Touché :</i> 15 (2d8 + 6) dégâts perforants. Si la cible est une créature de taille TG ou inférieure et si l’éléphant s’est déplacé en ligne droite d’un minimum de 20 pieds juste avant de la toucher, la cible subit l’état À terre.",
     "secciones.1.items.0.bloques.0.txt": "<i>JS Dextérité :</i> DD 16, une créature subissant l’état À terre dans un rayon de 5 pieds. <i>Échec :</i> 17 (2d10 + 6) dégâts contondants. <i>Réussite :</i> demi-dégâts."
    }
   },
@@ -164722,7 +164722,7 @@
        "bloques": [
         {
          "t": "p",
-         "txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +8, portata 1,5 m <i>Colpito:</i> 15 (2d8 + 6) danni perforanti. Se il bersaglio è una creatura di taglia Enorme o inferiore e l'elefante si è mosso di 6 metri o più in linea retta verso di esso subito prima del colpo, il bersaglio cade a terra prono."
+         "txt": "<i>Tiro per colpire in mischia:</i> +8, portata 1,5 m <i>Colpito:</i> 15 (2d8 + 6) danni perforanti. Se il bersaglio è una creatura di taglia Enorme o inferiore e l'elefante si è mosso di 6 metri o più in linea retta verso di esso subito prima del colpo, il bersaglio cade a terra prono."
         }
        ]
       }
@@ -164747,7 +164747,7 @@
    ],
    "pies": {
     "campos.vel": "40 piedi",
-    "secciones.0.items.1.bloques.0.txt": "<strong>.</strong><i>Tiro per colpire in mischia:</i> +8, portata 5 piedi <i>Colpito:</i> 15 (2d8 + 6) danni perforanti. Se il bersaglio è una creatura di taglia Enorme o inferiore e l'elefante si è mosso di 20 piedi o più in linea retta verso di esso subito prima del colpo, il bersaglio cade a terra prono.",
+    "secciones.0.items.1.bloques.0.txt": "<i>Tiro per colpire in mischia:</i> +8, portata 5 piedi <i>Colpito:</i> 15 (2d8 + 6) danni perforanti. Se il bersaglio è una creatura di taglia Enorme o inferiore e l'elefante si è mosso di 20 piedi o più in linea retta verso di esso subito prima del colpo, il bersaglio cade a terra prono.",
     "secciones.1.items.0.bloques.0.txt": "<i>Tiro salvezza su Destrezza:</i> CD 16, una creatura prona entro 5 piedi. <i>Fallimento:</i> 17 (2d10 + 6) danni contundenti. <i>Successo:</i> danni dimezzati."
    }
   }

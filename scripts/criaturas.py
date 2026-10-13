@@ -99,6 +99,12 @@ def html_spans(spans, li=False):
     return a_html(marcas)
 
 
+def de_nombre(s):
+    """Trozo del nombre de un rasgo: negrita cursiva, o el punto final en negrita sin cursiva (en 22 acciones de
+    los PDF espanol, ingles, frances e italiano el punto tras el nombre va en otra letra)."""
+    return "BoldItalic" in s[1] or ("Bold" in s[1] and limpia(s[0]) in (".", ":"))
+
+
 def es_rotulo_lista(sp):
     """Punto de lista: la linea empieza por negrita sin cursiva acabada en punto o dos puntos ("A voluntad:",
     "Luz solar.", "1-4."). Una negrita sin ese final es una ficha citada partida entre lineas."""
@@ -325,7 +331,7 @@ def estructurar(lang, e):
         if "BoldItalic" in sp[0][1] and not (sec["items"] and nombre_sigue):
             k = 0
             nm = []
-            while k < len(sp) and "BoldItalic" in sp[k][1]:
+            while k < len(sp) and de_nombre(sp[k]):
                 nm.append(sp[k][0]); k += 1
             resto = sp[k:]
             sec["items"].append({"_nombre": ["".join(nm)], "bloques": [{"t": "p", "lineas": []}]})
@@ -333,10 +339,10 @@ def estructurar(lang, e):
                 sec["items"][-1]["bloques"][-1]["lineas"].append(html_spans(resto))
             nombre_sigue = not resto and not limpia("".join(nm)).endswith((".", ":"))
             continue
-        if nombre_sigue and "BoldItalic" in sp[0][1]:
+        if nombre_sigue and de_nombre(sp[0]):
             k = 0
             nm = []
-            while k < len(sp) and "BoldItalic" in sp[k][1]:
+            while k < len(sp) and de_nombre(sp[k]):
                 nm.append(sp[k][0]); k += 1
             it = sec["items"][-1]
             it["_nombre"].append("".join(nm))
